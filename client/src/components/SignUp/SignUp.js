@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import redux from 'react-redux';
 
 class SignUp extends Component {
   state = {
@@ -14,24 +13,15 @@ class SignUp extends Component {
   }
 
   render () {
+    const { user } = this.state;
     return (<form>
       <div className="user-name">
       <input type="text" className="first-name" />
-      <input type="text" className="last-name" value={this.state.user.last} placeholder="First Name" />
-
+      <input type="text" className="last-name" value={user.last} placeholder="First Name" />
       </div>
-
-
-
-
       </form>
-
-
-
-      )
+    )
   }
-
-
 }
 
 
