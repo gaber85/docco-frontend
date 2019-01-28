@@ -1,7 +1,12 @@
 {
   "extends": ["airbnb", "prettier", "prettier/react"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "jest"],
   "rules": {
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
     "react/jsx-filename-extension": [
       1,
       {
@@ -11,7 +16,8 @@
     "react/prop-types": 0,
     "no-underscore-dangle": 0,
     "import/imports-first": ["error", "absolute-first"],
-    "import/newline-after-import": "error"
+    "import/newline-after-import": "error",
+    "react/prefer-stateless-function": "off"
   },
   "globals": {
     "window": true,
@@ -22,5 +28,9 @@
     "Blob": true,
     "navigator": true
   },
-  "parser": "babel-eslint"
+  "parser": "babel-eslint",
+  "env": {
+    "jest/globals": true
+  }
+
 }
