@@ -1,0 +1,44 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3498DB;
+  height: 65px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.small-logo {
+  height: 60px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.user-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: white;
+
+}
+
+.user-name {
+  color: white;
+  padding-right: 20px;
+}
+
+
+.logout {
+  color: white;
+  cursor: pointer;
+}
+
+.logout:hover {
+  color: black;
+}
