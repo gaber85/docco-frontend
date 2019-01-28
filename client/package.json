@@ -45,15 +45,12 @@
     "prettier": "^1.16.1",
     "pretty-quick": "^1.10.0",
     "react-test-renderer": "^16.7.0",
-    "react-testing-library": "^5.4.4"
+    "react-testing-library": "^5.4.4",
     "jest-transform-stub": "^1.0.0",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "babel7-jest": "^1.0.1",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.8.0",
-
-
+    "enzyme-adapter-react-16": "^1.8.0"
   },
   "precommit": "NODE_ENV=production lint-staged",
   "lint-staged": {
