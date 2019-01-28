@@ -4,10 +4,17 @@
     "setupFilesAfterEnv": ["./setup.config.js"]
   },
   "version": "0.1.0",
+  "jest": {
+    "setupTestFrameworkScriptFile": "./config/setup.config.js",
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss|gif|ttf|eot|svg|png)$": "jest-transform-stub"
+    }
+  },
   "private": true,
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
     "react-scripts": "2.1.3"
   },
   "scripts": {
@@ -26,6 +33,11 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel7-jest": "^1.0.1",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.8.0",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.0.0",
@@ -34,16 +46,10 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "husky": "^1.3.1",
+    "jest-transform-stub": "^1.0.0",
     "lint-staged": "^8.1.0",
     "prettier": "^1.16.1",
     "pretty-quick": "^1.10.0",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
-    "babel-jest": "^24.0.0",
-    "babel7-jest": "^1.0.1",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.8.0",
-    "jest": "^24.0.0",
     "react-test-renderer": "^16.7.0"
   },
   "precommit": "NODE_ENV=production lint-staged",

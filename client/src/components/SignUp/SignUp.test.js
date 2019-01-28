@@ -3,10 +3,24 @@
 // import SignUp from './SignUp';
 // import {shallow} from 'enzyme';
 
-// describe('<SignUp />', () => {
-//   it('should render SignUp', () => {
-//     const wrapper = shallow(<SignUp />)
-//   })
 
-// })
+  it('should render SignUp', () => {
+    const wrapper = shallow(<SignUp />)
+  })
 
+})
+describe('<SignUp />', () => {
+  let wrapper ;
+  beforeEach(function (){ wrapper = shallow(<SignUp />)});
+  it('should render SignUp', () => {
+    expect(wrapper)
+  });
+  it('should render a form', () => {
+    expect(wrapper.containsMatchingElement(<form />)).toEqual(true);
+  });
+  // it('should render the navbar component', () => {
+  //   expect(wrapper.containsMatchingElement(<NavBar />)).toEqual(true);
+  // });
+  // it('should render the navbar component', () => {
+  //   expect(wrapper.containsMatchingElement(<NavBar />)).toEqual(true);
+  })
