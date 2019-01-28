@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavBar.css';
-import Logo from './Docco.png';
-import userImg from './user-image.png';
+import Logo from './assets/Docco.png';
+import userImg from './assets/user-image.png';
 
 const NavBar = (props) => {
     const logo = Logo;
