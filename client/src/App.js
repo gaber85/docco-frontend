@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import MainButton from './components/MainButton';
-import NavBar from './components/NavBar';
+// import MainButton from './components/MainButton';
+import SearchBar from './components/SearchBar';
+// import NavBar from './components/NavBar';
 
+// eslint-disable-next-line
 class App extends Component {
-  // Main App Component
   render() {
-    return <NavBar name={"Gabe Riera"} />;
+    return <SearchBar />;
   }
 }
 

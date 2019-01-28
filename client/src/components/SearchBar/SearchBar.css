@@ -1,0 +1,19 @@
+.search-bar {
+  background-color: #ECF0F1;
+  padding-left: 5px;  
+  border-radius: 15px;
+  min-width: 300px;
+  width: 30%;
+}
+
+.text-input {
+  background-color: #ECF0F1;
+  border-style: none;
+  font-size: 16px;
+  align-items: center;
+  height: 25px;
+  width: 90%;
+  outline: none;
+  padding: 5px;
+  border-radius: 15px;
+}
