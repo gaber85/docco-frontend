@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './MainButton.css';
 
-class MainButton extends Component {
-  render() {
+const MainButton = (props) => {
+  const {text} = props;
     return (
       <div className="main-button">
-      {this.props.text}
+      {text}
       </div>
     );
-  }
 }
 
 export default MainButton;
