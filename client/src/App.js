@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
+import MainButton from './components/MainButton';
 
 class App extends Component {
   // Main App Component
   render() {
-    return <p>Hello World</p>;
+    return <MainButton text={'Create'} />;
   }
 }
 

@@ -1,0 +1,19 @@
+.main-button {
+  background-color: #F1C40F;
+  font-size: 18px;
+  font-weight: 600;
+  min-width: 80px;
+  max-width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 1);
+  border-radius: 15px;
+}
+.main-button:hover {
+  background-color: #f6de62;
+}
+.main-button:active {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1);
+  background-color: #F1C40F;
+}
