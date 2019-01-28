@@ -1,0 +1,49 @@
+.box {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: darkgray;
+  background-color: white;
+  width: 220px;
+  height: 160px;
+  border-color: darkgray;
+  border-style: solid;
+  border-width:3px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-evenly;
+}
+
+.box p {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.email-input {
+  font-size: 16px;
+  color: darkgray;
+  width: 200px;
+  height: 30px;
+  border-color: darkgray;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 3px;
+}
+
+.permissions-box {
+  width: 100px;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+}
+
+.permissions {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
