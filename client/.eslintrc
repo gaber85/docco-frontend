@@ -18,11 +18,6 @@
   ],
   "plugins": ["prettier"],
   "rules": {
-    "jest/no-disabled-tests": "warn",
-    "jest/no-focused-tests": "error",
-    "jest/no-identical-title": "error",
-    "jest/prefer-to-have-length": "warn",
-    "jest/valid-expect": "error",
     "react/jsx-filename-extension": [
       1,
       {
@@ -44,9 +39,5 @@
     "Blob": true,
     "navigator": true
   },
-  "parser": "babel-eslint",
-  "env": {
-    "jest/globals": true
-  }
-
+  "parser": "babel-eslint"
 }
