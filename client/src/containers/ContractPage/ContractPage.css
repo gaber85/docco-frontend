@@ -2,11 +2,13 @@
   display: flex;
   flex-direction: column;
   padding-top: 20px;
+  height: 100%;
 }
 
 .container-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .empty-space {
@@ -15,25 +17,25 @@
 
 .title {
   font-size: 30px;
+  padding-bottom: 10px;
   flex: 1;
 }
 
 .search-bar-section {
-  padding-right: 20px;
 }
 
 .container-middle {
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
 }
 
 .team-section {
-  padding: 15px;
+  padding: 10px;
 }
 
 .contract-display {
   flex: 1;
+  padding: 10px;
 }
 
 .sidebar-controls {

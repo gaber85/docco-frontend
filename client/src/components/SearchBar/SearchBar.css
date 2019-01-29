@@ -2,8 +2,8 @@
   background-color: #ECF0F1;
   padding-left: 5px;  
   border-radius: 15px;
-  min-width: 300px;
-  width: 30%;
+  min-width: 200px;
+  width: 15%;
 }
 
 .text-input {
@@ -11,8 +11,8 @@
   border-style: none;
   font-size: 16px;
   align-items: center;
-  height: 25px;
-  width: 90%;
+  height: 15px;
+  width: 80%;
   outline: none;
   padding: 5px;
   border-radius: 15px;
