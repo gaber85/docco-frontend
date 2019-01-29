@@ -85,41 +85,68 @@ ReactWrapper {
                   <div
                     class="form-container"
                   >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
                     <form
                       class="my-form sign-up-form"
+                      name="signUp"
                     >
                       <div
                         class="user-name"
                       >
                         <input
                           class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
                           type="text"
+                          value=""
                         />
                         <input
                           class="my-input last-name"
-                          placeholder="First Name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
                           type="text"
                           value=""
                         />
                       </div>
                       <input
                         class="my-input user-title"
+                        name="title"
                         placeholder="Job Title"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-email"
+                        name="email"
                         placeholder="Email"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-organization"
+                        name="organization"
                         placeholder="Organization"
+                        required=""
                         type="text"
                         value=""
                       />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
                     </form>
                   </div>
                 </div>,
@@ -217,41 +244,68 @@ ReactWrapper {
                 <div
                   class="form-container"
                 >
+                  <span
+                    class="welcome"
+                  >
+                    <h2>
+                      Getting Started with Docco
+                    </h2>
+                  </span>
                   <form
                     class="my-form sign-up-form"
+                    name="signUp"
                   >
                     <div
                       class="user-name"
                     >
                       <input
                         class="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required=""
                         type="text"
+                        value=""
                       />
                       <input
                         class="my-input last-name"
-                        placeholder="First Name"
+                        name="last"
+                        placeholder="Last Name"
+                        required=""
                         type="text"
                         value=""
                       />
                     </div>
                     <input
                       class="my-input user-title"
+                      name="title"
                       placeholder="Job Title"
+                      required=""
                       type="text"
                       value=""
                     />
                     <input
                       class="my-input user-email"
+                      name="email"
                       placeholder="Email"
+                      required=""
                       type="text"
                       value=""
                     />
                     <input
                       class="my-input user-organization"
+                      name="organization"
                       placeholder="Organization"
+                      required=""
                       type="text"
                       value=""
                     />
+                    <div
+                      class="main-button"
+                      role="button"
+                      tabindex="0"
+                    >
+                      Get Started
+                    </div>
                   </form>
                 </div>
               </div>,
@@ -344,41 +398,68 @@ ReactWrapper {
                   <div
                     class="form-container"
                   >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
                     <form
                       class="my-form sign-up-form"
+                      name="signUp"
                     >
                       <div
                         class="user-name"
                       >
                         <input
                           class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
                           type="text"
+                          value=""
                         />
                         <input
                           class="my-input last-name"
-                          placeholder="First Name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
                           type="text"
                           value=""
                         />
                       </div>
                       <input
                         class="my-input user-title"
+                        name="title"
                         placeholder="Job Title"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-email"
+                        name="email"
                         placeholder="Email"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-organization"
+                        name="organization"
                         placeholder="Organization"
+                        required=""
                         type="text"
                         value=""
                       />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
                     </form>
                   </div>
                 </div>,
@@ -476,41 +557,68 @@ ReactWrapper {
                 <div
                   class="form-container"
                 >
+                  <span
+                    class="welcome"
+                  >
+                    <h2>
+                      Getting Started with Docco
+                    </h2>
+                  </span>
                   <form
                     class="my-form sign-up-form"
+                    name="signUp"
                   >
                     <div
                       class="user-name"
                     >
                       <input
                         class="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required=""
                         type="text"
+                        value=""
                       />
                       <input
                         class="my-input last-name"
-                        placeholder="First Name"
+                        name="last"
+                        placeholder="Last Name"
+                        required=""
                         type="text"
                         value=""
                       />
                     </div>
                     <input
                       class="my-input user-title"
+                      name="title"
                       placeholder="Job Title"
+                      required=""
                       type="text"
                       value=""
                     />
                     <input
                       class="my-input user-email"
+                      name="email"
                       placeholder="Email"
+                      required=""
                       type="text"
                       value=""
                     />
                     <input
                       class="my-input user-organization"
+                      name="organization"
                       placeholder="Organization"
+                      required=""
                       type="text"
                       value=""
                     />
+                    <div
+                      class="main-button"
+                      role="button"
+                      tabindex="0"
+                    >
+                      Get Started
+                    </div>
                   </form>
                 </div>
               </div>,
@@ -608,6 +716,72 @@ ReactWrapper {
             "actualStartTime": -1,
             "alternate": null,
             "child": FiberNode {
+              "_debugID": 54,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": null,
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": "h2",
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": "Getting Started with Docco",
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": "Getting Started with Docco",
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": <h2>
+                Getting Started with Docco
+              </h2>,
+              "tag": 5,
+              "treeBaseDuration": 0,
+              "type": "h2",
+              "updateQueue": null,
+            },
+            "childExpirationTime": 0,
+            "effectTag": 0,
+            "elementType": "span",
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": <h2>
+                Getting Started with Docco
+              </h2>,
+              "className": "welcome",
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "children": <h2>
+                Getting Started with Docco
+              </h2>,
+              "className": "welcome",
+            },
+            "ref": null,
+            "return": [Circular],
+            "selfBaseDuration": 0,
+            "sibling": FiberNode {
               "_debugID": 53,
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
@@ -616,17 +790,123 @@ ReactWrapper {
               "actualStartTime": -1,
               "alternate": null,
               "child": FiberNode {
-                "_debugID": 57,
+                "_debugID": 55,
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": null,
                 "actualDuration": 0,
                 "actualStartTime": -1,
                 "alternate": null,
-                "child": null,
+                "child": FiberNode {
+                  "_debugID": 60,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": null,
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "elementType": "input",
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "className": "my-input first-name",
+                    "name": "first",
+                    "placeholder": "First Name",
+                    "required": true,
+                    "type": "text",
+                    "value": "",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "className": "my-input first-name",
+                    "name": "first",
+                    "placeholder": "First Name",
+                    "required": true,
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": FiberNode {
+                    "_debugID": 61,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "elementType": "input",
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 1,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "className": "my-input last-name",
+                      "name": "last",
+                      "placeholder": "Last Name",
+                      "required": true,
+                      "type": "text",
+                      "value": "",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "className": "my-input last-name",
+                      "name": "last",
+                      "placeholder": "Last Name",
+                      "required": true,
+                      "type": "text",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": null,
+                    "stateNode": <input
+                      class="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required=""
+                      type="text"
+                      value=""
+                    />,
+                    "tag": 5,
+                    "treeBaseDuration": 0,
+                    "type": "input",
+                    "updateQueue": null,
+                  },
+                  "stateNode": <input
+                    class="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required=""
+                    type="text"
+                    value=""
+                  />,
+                  "tag": 5,
+                  "treeBaseDuration": 0,
+                  "type": "input",
+                  "updateQueue": null,
+                },
                 "childExpirationTime": 0,
                 "effectTag": 0,
-                "elementType": "input",
+                "elementType": "div",
                 "expirationTime": 0,
                 "firstContextDependency": null,
                 "firstEffect": null,
@@ -634,21 +914,55 @@ ReactWrapper {
                 "key": null,
                 "lastEffect": null,
                 "memoizedProps": Object {
-                  "className": "my-input first-name",
-                  "type": "text",
+                  "children": Array [
+                    <input
+                      className="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required={true}
+                      type="text"
+                      value=""
+                    />,
+                    <input
+                      className="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required={true}
+                      type="text"
+                      value=""
+                    />,
+                  ],
+                  "className": "user-name",
                 },
                 "memoizedState": null,
                 "mode": 0,
                 "nextEffect": null,
                 "pendingProps": Object {
-                  "className": "my-input first-name",
-                  "type": "text",
+                  "children": Array [
+                    <input
+                      className="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required={true}
+                      type="text"
+                      value=""
+                    />,
+                    <input
+                      className="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required={true}
+                      type="text"
+                      value=""
+                    />,
+                  ],
+                  "className": "user-name",
                 },
                 "ref": null,
                 "return": [Circular],
                 "selfBaseDuration": 0,
                 "sibling": FiberNode {
-                  "_debugID": 58,
+                  "_debugID": 56,
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": null,
@@ -666,8 +980,10 @@ ReactWrapper {
                   "key": null,
                   "lastEffect": null,
                   "memoizedProps": Object {
-                    "className": "my-input last-name",
-                    "placeholder": "First Name",
+                    "className": "my-input user-title",
+                    "name": "title",
+                    "placeholder": "Job Title",
+                    "required": true,
                     "type": "text",
                     "value": "",
                   },
@@ -675,146 +991,10 @@ ReactWrapper {
                   "mode": 0,
                   "nextEffect": null,
                   "pendingProps": Object {
-                    "className": "my-input last-name",
-                    "placeholder": "First Name",
-                    "type": "text",
-                    "value": "",
-                  },
-                  "ref": null,
-                  "return": [Circular],
-                  "selfBaseDuration": 0,
-                  "sibling": null,
-                  "stateNode": <input
-                    class="my-input last-name"
-                    placeholder="First Name"
-                    type="text"
-                    value=""
-                  />,
-                  "tag": 5,
-                  "treeBaseDuration": 0,
-                  "type": "input",
-                  "updateQueue": null,
-                },
-                "stateNode": <input
-                  class="my-input first-name"
-                  type="text"
-                />,
-                "tag": 5,
-                "treeBaseDuration": 0,
-                "type": "input",
-                "updateQueue": null,
-              },
-              "childExpirationTime": 0,
-              "effectTag": 0,
-              "elementType": "div",
-              "expirationTime": 0,
-              "firstContextDependency": null,
-              "firstEffect": null,
-              "index": 0,
-              "key": null,
-              "lastEffect": null,
-              "memoizedProps": Object {
-                "children": Array [
-                  <input
-                    className="my-input first-name"
-                    type="text"
-                  />,
-                  <input
-                    className="my-input last-name"
-                    placeholder="First Name"
-                    type="text"
-                    value=""
-                  />,
-                ],
-                "className": "user-name",
-              },
-              "memoizedState": null,
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": Object {
-                "children": Array [
-                  <input
-                    className="my-input first-name"
-                    type="text"
-                  />,
-                  <input
-                    className="my-input last-name"
-                    placeholder="First Name"
-                    type="text"
-                    value=""
-                  />,
-                ],
-                "className": "user-name",
-              },
-              "ref": null,
-              "return": [Circular],
-              "selfBaseDuration": 0,
-              "sibling": FiberNode {
-                "_debugID": 54,
-                "_debugIsCurrentlyTiming": false,
-                "_debugOwner": [Circular],
-                "_debugSource": null,
-                "actualDuration": 0,
-                "actualStartTime": -1,
-                "alternate": null,
-                "child": null,
-                "childExpirationTime": 0,
-                "effectTag": 0,
-                "elementType": "input",
-                "expirationTime": 0,
-                "firstContextDependency": null,
-                "firstEffect": null,
-                "index": 1,
-                "key": null,
-                "lastEffect": null,
-                "memoizedProps": Object {
-                  "className": "my-input user-title",
-                  "placeholder": "Job Title",
-                  "type": "text",
-                  "value": "",
-                },
-                "memoizedState": null,
-                "mode": 0,
-                "nextEffect": null,
-                "pendingProps": Object {
-                  "className": "my-input user-title",
-                  "placeholder": "Job Title",
-                  "type": "text",
-                  "value": "",
-                },
-                "ref": null,
-                "return": [Circular],
-                "selfBaseDuration": 0,
-                "sibling": FiberNode {
-                  "_debugID": 55,
-                  "_debugIsCurrentlyTiming": false,
-                  "_debugOwner": [Circular],
-                  "_debugSource": null,
-                  "actualDuration": 0,
-                  "actualStartTime": -1,
-                  "alternate": null,
-                  "child": null,
-                  "childExpirationTime": 0,
-                  "effectTag": 0,
-                  "elementType": "input",
-                  "expirationTime": 0,
-                  "firstContextDependency": null,
-                  "firstEffect": null,
-                  "index": 2,
-                  "key": null,
-                  "lastEffect": null,
-                  "memoizedProps": Object {
-                    "className": "my-input user-email",
-                    "placeholder": "Email",
-                    "type": "text",
-                    "value": "",
-                  },
-                  "memoizedState": null,
-                  "mode": 0,
-                  "nextEffect": null,
-                  "pendingProps": Object {
-                    "className": "my-input user-email",
-                    "placeholder": "Email",
+                    "className": "my-input user-title",
+                    "name": "title",
+                    "placeholder": "Job Title",
+                    "required": true,
                     "type": "text",
                     "value": "",
                   },
@@ -822,7 +1002,7 @@ ReactWrapper {
                   "return": [Circular],
                   "selfBaseDuration": 0,
                   "sibling": FiberNode {
-                    "_debugID": 56,
+                    "_debugID": 57,
                     "_debugIsCurrentlyTiming": false,
                     "_debugOwner": [Circular],
                     "_debugSource": null,
@@ -836,12 +1016,14 @@ ReactWrapper {
                     "expirationTime": 0,
                     "firstContextDependency": null,
                     "firstEffect": null,
-                    "index": 3,
+                    "index": 2,
                     "key": null,
                     "lastEffect": null,
                     "memoizedProps": Object {
-                      "className": "my-input user-organization",
-                      "placeholder": "Organization",
+                      "className": "my-input user-email",
+                      "name": "email",
+                      "placeholder": "Email",
+                      "required": true,
                       "type": "text",
                       "value": "",
                     },
@@ -849,18 +1031,165 @@ ReactWrapper {
                     "mode": 0,
                     "nextEffect": null,
                     "pendingProps": Object {
-                      "className": "my-input user-organization",
-                      "placeholder": "Organization",
+                      "className": "my-input user-email",
+                      "name": "email",
+                      "placeholder": "Email",
+                      "required": true,
                       "type": "text",
                       "value": "",
                     },
                     "ref": null,
                     "return": [Circular],
                     "selfBaseDuration": 0,
-                    "sibling": null,
+                    "sibling": FiberNode {
+                      "_debugID": 58,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": null,
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "elementType": "input",
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 3,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "className": "my-input user-organization",
+                        "name": "organization",
+                        "placeholder": "Organization",
+                        "required": true,
+                        "type": "text",
+                        "value": "",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "className": "my-input user-organization",
+                        "name": "organization",
+                        "placeholder": "Organization",
+                        "required": true,
+                        "type": "text",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": FiberNode {
+                        "_debugID": 59,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": [Circular],
+                        "_debugSource": null,
+                        "actualDuration": 0,
+                        "actualStartTime": -1,
+                        "alternate": null,
+                        "child": FiberNode {
+                          "_debugID": 62,
+                          "_debugIsCurrentlyTiming": false,
+                          "_debugOwner": [Circular],
+                          "_debugSource": null,
+                          "actualDuration": 0,
+                          "actualStartTime": -1,
+                          "alternate": null,
+                          "child": null,
+                          "childExpirationTime": 0,
+                          "effectTag": 0,
+                          "elementType": "div",
+                          "expirationTime": 0,
+                          "firstContextDependency": null,
+                          "firstEffect": null,
+                          "index": 0,
+                          "key": null,
+                          "lastEffect": null,
+                          "memoizedProps": Object {
+                            "children": "Get Started",
+                            "className": "main-button",
+                            "onClick": [Function],
+                            "onKeyPress": [Function],
+                            "role": "button",
+                            "tabIndex": "0",
+                          },
+                          "memoizedState": null,
+                          "mode": 0,
+                          "nextEffect": null,
+                          "pendingProps": Object {
+                            "children": "Get Started",
+                            "className": "main-button",
+                            "onClick": [Function],
+                            "onKeyPress": [Function],
+                            "role": "button",
+                            "tabIndex": "0",
+                          },
+                          "ref": null,
+                          "return": [Circular],
+                          "selfBaseDuration": 0,
+                          "sibling": null,
+                          "stateNode": <div
+                            class="main-button"
+                            role="button"
+                            tabindex="0"
+                          >
+                            Get Started
+                          </div>,
+                          "tag": 5,
+                          "treeBaseDuration": 0,
+                          "type": "div",
+                          "updateQueue": null,
+                        },
+                        "childExpirationTime": 0,
+                        "effectTag": 1,
+                        "elementType": [Function],
+                        "expirationTime": 0,
+                        "firstContextDependency": null,
+                        "firstEffect": null,
+                        "index": 4,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": Object {
+                          "click": [Function],
+                          "text": "Get Started",
+                        },
+                        "memoizedState": null,
+                        "mode": 0,
+                        "nextEffect": null,
+                        "pendingProps": Object {
+                          "click": [Function],
+                          "text": "Get Started",
+                        },
+                        "ref": null,
+                        "return": [Circular],
+                        "selfBaseDuration": 0,
+                        "sibling": null,
+                        "stateNode": null,
+                        "tag": 0,
+                        "treeBaseDuration": 0,
+                        "type": [Function],
+                        "updateQueue": null,
+                      },
+                      "stateNode": <input
+                        class="my-input user-organization"
+                        name="organization"
+                        placeholder="Organization"
+                        required=""
+                        type="text"
+                        value=""
+                      />,
+                      "tag": 5,
+                      "treeBaseDuration": 0,
+                      "type": "input",
+                      "updateQueue": null,
+                    },
                     "stateNode": <input
-                      class="my-input user-organization"
-                      placeholder="Organization"
+                      class="my-input user-email"
+                      name="email"
+                      placeholder="Email"
+                      required=""
                       type="text"
                       value=""
                     />,
@@ -870,8 +1199,10 @@ ReactWrapper {
                     "updateQueue": null,
                   },
                   "stateNode": <input
-                    class="my-input user-email"
-                    placeholder="Email"
+                    class="my-input user-title"
+                    name="title"
+                    placeholder="Job Title"
+                    required=""
                     type="text"
                     value=""
                   />,
@@ -880,165 +1211,228 @@ ReactWrapper {
                   "type": "input",
                   "updateQueue": null,
                 },
-                "stateNode": <input
-                  class="my-input user-title"
-                  placeholder="Job Title"
-                  type="text"
-                  value=""
-                />,
+                "stateNode": <div
+                  class="user-name"
+                >
+                  <input
+                    class="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                  <input
+                    class="my-input last-name"
+                    name="last"
+                    placeholder="Last Name"
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                </div>,
                 "tag": 5,
                 "treeBaseDuration": 0,
-                "type": "input",
+                "type": "div",
                 "updateQueue": null,
               },
-              "stateNode": <div
-                class="user-name"
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": "form",
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 1,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": Array [
+                  <div
+                    className="user-name"
+                  >
+                    <input
+                      className="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required={true}
+                      type="text"
+                      value=""
+                    />
+                    <input
+                      className="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required={true}
+                      type="text"
+                      value=""
+                    />
+                  </div>,
+                  <input
+                    className="my-input user-title"
+                    name="title"
+                    placeholder="Job Title"
+                    required={true}
+                    type="text"
+                    value=""
+                  />,
+                  <input
+                    className="my-input user-email"
+                    name="email"
+                    placeholder="Email"
+                    required={true}
+                    type="text"
+                    value=""
+                  />,
+                  <input
+                    className="my-input user-organization"
+                    name="organization"
+                    placeholder="Organization"
+                    required={true}
+                    type="text"
+                    value=""
+                  />,
+                  <MainButton
+                    click={[Function]}
+                    text="Get Started"
+                  />,
+                ],
+                "className": "my-form sign-up-form",
+                "name": "signUp",
+                "onChange": [Function],
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": Array [
+                  <div
+                    className="user-name"
+                  >
+                    <input
+                      className="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required={true}
+                      type="text"
+                      value=""
+                    />
+                    <input
+                      className="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required={true}
+                      type="text"
+                      value=""
+                    />
+                  </div>,
+                  <input
+                    className="my-input user-title"
+                    name="title"
+                    placeholder="Job Title"
+                    required={true}
+                    type="text"
+                    value=""
+                  />,
+                  <input
+                    className="my-input user-email"
+                    name="email"
+                    placeholder="Email"
+                    required={true}
+                    type="text"
+                    value=""
+                  />,
+                  <input
+                    className="my-input user-organization"
+                    name="organization"
+                    placeholder="Organization"
+                    required={true}
+                    type="text"
+                    value=""
+                  />,
+                  <MainButton
+                    click={[Function]}
+                    text="Get Started"
+                  />,
+                ],
+                "className": "my-form sign-up-form",
+                "name": "signUp",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": <form
+                class="my-form sign-up-form"
+                name="signUp"
               >
+                <div
+                  class="user-name"
+                >
+                  <input
+                    class="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                  <input
+                    class="my-input last-name"
+                    name="last"
+                    placeholder="Last Name"
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                </div>
                 <input
-                  class="my-input first-name"
-                  type="text"
-                />
-                <input
-                  class="my-input last-name"
-                  placeholder="First Name"
+                  class="my-input user-title"
+                  name="title"
+                  placeholder="Job Title"
+                  required=""
                   type="text"
                   value=""
                 />
-              </div>,
+                <input
+                  class="my-input user-email"
+                  name="email"
+                  placeholder="Email"
+                  required=""
+                  type="text"
+                  value=""
+                />
+                <input
+                  class="my-input user-organization"
+                  name="organization"
+                  placeholder="Organization"
+                  required=""
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="main-button"
+                  role="button"
+                  tabindex="0"
+                >
+                  Get Started
+                </div>
+              </form>,
               "tag": 5,
               "treeBaseDuration": 0,
-              "type": "div",
+              "type": "form",
               "updateQueue": null,
             },
-            "childExpirationTime": 0,
-            "effectTag": 0,
-            "elementType": "form",
-            "expirationTime": 0,
-            "firstContextDependency": null,
-            "firstEffect": null,
-            "index": 0,
-            "key": null,
-            "lastEffect": null,
-            "memoizedProps": Object {
-              "children": Array [
-                <div
-                  className="user-name"
-                >
-                  <input
-                    className="my-input first-name"
-                    type="text"
-                  />
-                  <input
-                    className="my-input last-name"
-                    placeholder="First Name"
-                    type="text"
-                    value=""
-                  />
-                </div>,
-                <input
-                  className="my-input user-title"
-                  placeholder="Job Title"
-                  type="text"
-                  value=""
-                />,
-                <input
-                  className="my-input user-email"
-                  placeholder="Email"
-                  type="text"
-                  value=""
-                />,
-                <input
-                  className="my-input user-organization"
-                  placeholder="Organization"
-                  type="text"
-                  value=""
-                />,
-              ],
-              "className": "my-form sign-up-form",
-            },
-            "memoizedState": null,
-            "mode": 0,
-            "nextEffect": null,
-            "pendingProps": Object {
-              "children": Array [
-                <div
-                  className="user-name"
-                >
-                  <input
-                    className="my-input first-name"
-                    type="text"
-                  />
-                  <input
-                    className="my-input last-name"
-                    placeholder="First Name"
-                    type="text"
-                    value=""
-                  />
-                </div>,
-                <input
-                  className="my-input user-title"
-                  placeholder="Job Title"
-                  type="text"
-                  value=""
-                />,
-                <input
-                  className="my-input user-email"
-                  placeholder="Email"
-                  type="text"
-                  value=""
-                />,
-                <input
-                  className="my-input user-organization"
-                  placeholder="Organization"
-                  type="text"
-                  value=""
-                />,
-              ],
-              "className": "my-form sign-up-form",
-            },
-            "ref": null,
-            "return": [Circular],
-            "selfBaseDuration": 0,
-            "sibling": null,
-            "stateNode": <form
-              class="my-form sign-up-form"
+            "stateNode": <span
+              class="welcome"
             >
-              <div
-                class="user-name"
-              >
-                <input
-                  class="my-input first-name"
-                  type="text"
-                />
-                <input
-                  class="my-input last-name"
-                  placeholder="First Name"
-                  type="text"
-                  value=""
-                />
-              </div>
-              <input
-                class="my-input user-title"
-                placeholder="Job Title"
-                type="text"
-                value=""
-              />
-              <input
-                class="my-input user-email"
-                placeholder="Email"
-                type="text"
-                value=""
-              />
-              <input
-                class="my-input user-organization"
-                placeholder="Organization"
-                type="text"
-                value=""
-              />
-            </form>,
+              <h2>
+                Getting Started with Docco
+              </h2>
+            </span>,
             "tag": 5,
             "treeBaseDuration": 0,
-            "type": "form",
+            "type": "span",
             "updateQueue": null,
           },
           "childExpirationTime": 0,
@@ -1051,84 +1445,138 @@ ReactWrapper {
           "key": null,
           "lastEffect": null,
           "memoizedProps": Object {
-            "children": <form
-              className="my-form sign-up-form"
-            >
-              <div
-                className="user-name"
+            "children": Array [
+              <span
+                className="welcome"
               >
+                <h2>
+                  Getting Started with Docco
+                </h2>
+              </span>,
+              <form
+                className="my-form sign-up-form"
+                name="signUp"
+                onChange={[Function]}
+              >
+                <div
+                  className="user-name"
+                >
+                  <input
+                    className="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                  <input
+                    className="my-input last-name"
+                    name="last"
+                    placeholder="Last Name"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                </div>
                 <input
-                  className="my-input first-name"
-                  type="text"
-                />
-                <input
-                  className="my-input last-name"
-                  placeholder="First Name"
+                  className="my-input user-title"
+                  name="title"
+                  placeholder="Job Title"
+                  required={true}
                   type="text"
                   value=""
                 />
-              </div>
-              <input
-                className="my-input user-title"
-                placeholder="Job Title"
-                type="text"
-                value=""
-              />
-              <input
-                className="my-input user-email"
-                placeholder="Email"
-                type="text"
-                value=""
-              />
-              <input
-                className="my-input user-organization"
-                placeholder="Organization"
-                type="text"
-                value=""
-              />
-            </form>,
+                <input
+                  className="my-input user-email"
+                  name="email"
+                  placeholder="Email"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+                <input
+                  className="my-input user-organization"
+                  name="organization"
+                  placeholder="Organization"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+                <MainButton
+                  click={[Function]}
+                  text="Get Started"
+                />
+              </form>,
+            ],
             "className": "form-container",
           },
           "memoizedState": null,
           "mode": 0,
           "nextEffect": null,
           "pendingProps": Object {
-            "children": <form
-              className="my-form sign-up-form"
-            >
-              <div
-                className="user-name"
+            "children": Array [
+              <span
+                className="welcome"
               >
+                <h2>
+                  Getting Started with Docco
+                </h2>
+              </span>,
+              <form
+                className="my-form sign-up-form"
+                name="signUp"
+                onChange={[Function]}
+              >
+                <div
+                  className="user-name"
+                >
+                  <input
+                    className="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                  <input
+                    className="my-input last-name"
+                    name="last"
+                    placeholder="Last Name"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                </div>
                 <input
-                  className="my-input first-name"
-                  type="text"
-                />
-                <input
-                  className="my-input last-name"
-                  placeholder="First Name"
+                  className="my-input user-title"
+                  name="title"
+                  placeholder="Job Title"
+                  required={true}
                   type="text"
                   value=""
                 />
-              </div>
-              <input
-                className="my-input user-title"
-                placeholder="Job Title"
-                type="text"
-                value=""
-              />
-              <input
-                className="my-input user-email"
-                placeholder="Email"
-                type="text"
-                value=""
-              />
-              <input
-                className="my-input user-organization"
-                placeholder="Organization"
-                type="text"
-                value=""
-              />
-            </form>,
+                <input
+                  className="my-input user-email"
+                  name="email"
+                  placeholder="Email"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+                <input
+                  className="my-input user-organization"
+                  name="organization"
+                  placeholder="Organization"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+                <MainButton
+                  click={[Function]}
+                  text="Get Started"
+                />
+              </form>,
+            ],
             "className": "form-container",
           },
           "ref": null,
@@ -1138,41 +1586,68 @@ ReactWrapper {
           "stateNode": <div
             class="form-container"
           >
+            <span
+              class="welcome"
+            >
+              <h2>
+                Getting Started with Docco
+              </h2>
+            </span>
             <form
               class="my-form sign-up-form"
+              name="signUp"
             >
               <div
                 class="user-name"
               >
                 <input
                   class="my-input first-name"
+                  name="first"
+                  placeholder="First Name"
+                  required=""
                   type="text"
+                  value=""
                 />
                 <input
                   class="my-input last-name"
-                  placeholder="First Name"
+                  name="last"
+                  placeholder="Last Name"
+                  required=""
                   type="text"
                   value=""
                 />
               </div>
               <input
                 class="my-input user-title"
+                name="title"
                 placeholder="Job Title"
+                required=""
                 type="text"
                 value=""
               />
               <input
                 class="my-input user-email"
+                name="email"
                 placeholder="Email"
+                required=""
                 type="text"
                 value=""
               />
               <input
                 class="my-input user-organization"
+                name="organization"
                 placeholder="Organization"
+                required=""
                 type="text"
                 value=""
               />
+              <div
+                class="main-button"
+                role="button"
+                tabindex="0"
+              >
+                Get Started
+              </div>
             </form>
           </div>,
           "tag": 5,
@@ -1191,13 +1666,11 @@ ReactWrapper {
         "lastEffect": null,
         "memoizedProps": Object {},
         "memoizedState": Object {
-          "user": Object {
-            "email": "",
-            "first": "",
-            "last": "",
-            "organization": "",
-            "title": "",
-          },
+          "email": "",
+          "first": "",
+          "last": "",
+          "organization": "",
+          "title": "",
         },
         "mode": 0,
         "nextEffect": null,
@@ -1271,41 +1744,68 @@ ReactWrapper {
                   <div
                     class="form-container"
                   >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
                     <form
                       class="my-form sign-up-form"
+                      name="signUp"
                     >
                       <div
                         class="user-name"
                       >
                         <input
                           class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
                           type="text"
+                          value=""
                         />
                         <input
                           class="my-input last-name"
-                          placeholder="First Name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
                           type="text"
                           value=""
                         />
                       </div>
                       <input
                         class="my-input user-title"
+                        name="title"
                         placeholder="Job Title"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-email"
+                        name="email"
                         placeholder="Email"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-organization"
+                        name="organization"
                         placeholder="Organization"
+                        required=""
                         type="text"
                         value=""
                       />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
                     </form>
                   </div>
                 </div>,
@@ -1403,41 +1903,68 @@ ReactWrapper {
                 <div
                   class="form-container"
                 >
+                  <span
+                    class="welcome"
+                  >
+                    <h2>
+                      Getting Started with Docco
+                    </h2>
+                  </span>
                   <form
                     class="my-form sign-up-form"
+                    name="signUp"
                   >
                     <div
                       class="user-name"
                     >
                       <input
                         class="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required=""
                         type="text"
+                        value=""
                       />
                       <input
                         class="my-input last-name"
-                        placeholder="First Name"
+                        name="last"
+                        placeholder="Last Name"
+                        required=""
                         type="text"
                         value=""
                       />
                     </div>
                     <input
                       class="my-input user-title"
+                      name="title"
                       placeholder="Job Title"
+                      required=""
                       type="text"
                       value=""
                     />
                     <input
                       class="my-input user-email"
+                      name="email"
                       placeholder="Email"
+                      required=""
                       type="text"
                       value=""
                     />
                     <input
                       class="my-input user-organization"
+                      name="organization"
                       placeholder="Organization"
+                      required=""
                       type="text"
                       value=""
                     />
+                    <div
+                      class="main-button"
+                      role="button"
+                      tabindex="0"
+                    >
+                      Get Started
+                    </div>
                   </form>
                 </div>
               </div>,
@@ -1530,41 +2057,68 @@ ReactWrapper {
                   <div
                     class="form-container"
                   >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
                     <form
                       class="my-form sign-up-form"
+                      name="signUp"
                     >
                       <div
                         class="user-name"
                       >
                         <input
                           class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
                           type="text"
+                          value=""
                         />
                         <input
                           class="my-input last-name"
-                          placeholder="First Name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
                           type="text"
                           value=""
                         />
                       </div>
                       <input
                         class="my-input user-title"
+                        name="title"
                         placeholder="Job Title"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-email"
+                        name="email"
                         placeholder="Email"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-organization"
+                        name="organization"
                         placeholder="Organization"
+                        required=""
                         type="text"
                         value=""
                       />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
                     </form>
                   </div>
                 </div>,
@@ -1662,41 +2216,68 @@ ReactWrapper {
                 <div
                   class="form-container"
                 >
+                  <span
+                    class="welcome"
+                  >
+                    <h2>
+                      Getting Started with Docco
+                    </h2>
+                  </span>
                   <form
                     class="my-form sign-up-form"
+                    name="signUp"
                   >
                     <div
                       class="user-name"
                     >
                       <input
                         class="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required=""
                         type="text"
+                        value=""
                       />
                       <input
                         class="my-input last-name"
-                        placeholder="First Name"
+                        name="last"
+                        placeholder="Last Name"
+                        required=""
                         type="text"
                         value=""
                       />
                     </div>
                     <input
                       class="my-input user-title"
+                      name="title"
                       placeholder="Job Title"
+                      required=""
                       type="text"
                       value=""
                     />
                     <input
                       class="my-input user-email"
+                      name="email"
                       placeholder="Email"
+                      required=""
                       type="text"
                       value=""
                     />
                     <input
                       class="my-input user-organization"
+                      name="organization"
                       placeholder="Organization"
+                      required=""
                       type="text"
                       value=""
                     />
+                    <div
+                      class="main-button"
+                      role="button"
+                      tabindex="0"
+                    >
+                      Get Started
+                    </div>
                   </form>
                 </div>
               </div>,
@@ -1783,16 +2364,16 @@ ReactWrapper {
       },
       "_reactInternalInstance": Object {},
       "context": Object {},
+      "handleChange": [Function],
+      "handleSubmit": [Function],
       "props": Object {},
       "refs": Object {},
       "state": Object {
-        "user": Object {
-          "email": "",
-          "first": "",
-          "last": "",
-          "organization": "",
-          "title": "",
-        },
+        "email": "",
+        "first": "",
+        "last": "",
+        "organization": "",
+        "title": "",
       },
       "updater": Object {
         "enqueueForceUpdate": [Function],
@@ -1809,122 +2390,232 @@ ReactWrapper {
       "instance": <div
         class="form-container"
       >
+        <span
+          class="welcome"
+        >
+          <h2>
+            Getting Started with Docco
+          </h2>
+        </span>
         <form
           class="my-form sign-up-form"
+          name="signUp"
         >
           <div
             class="user-name"
           >
             <input
               class="my-input first-name"
+              name="first"
+              placeholder="First Name"
+              required=""
               type="text"
+              value=""
             />
             <input
               class="my-input last-name"
-              placeholder="First Name"
+              name="last"
+              placeholder="Last Name"
+              required=""
               type="text"
               value=""
             />
           </div>
           <input
             class="my-input user-title"
+            name="title"
             placeholder="Job Title"
+            required=""
             type="text"
             value=""
           />
           <input
             class="my-input user-email"
+            name="email"
             placeholder="Email"
+            required=""
             type="text"
             value=""
           />
           <input
             class="my-input user-organization"
+            name="organization"
             placeholder="Organization"
+            required=""
             type="text"
             value=""
           />
+          <div
+            class="main-button"
+            role="button"
+            tabindex="0"
+          >
+            Get Started
+          </div>
         </form>
       </div>,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <form
-          className="my-form sign-up-form"
-        >
-          <div
-            className="user-name"
+        "children": Array [
+          <span
+            className="welcome"
           >
+            <h2>
+              Getting Started with Docco
+            </h2>
+          </span>,
+          <form
+            className="my-form sign-up-form"
+            name="signUp"
+            onChange={[Function]}
+          >
+            <div
+              className="user-name"
+            >
+              <input
+                className="my-input first-name"
+                name="first"
+                placeholder="First Name"
+                required={true}
+                type="text"
+                value=""
+              />
+              <input
+                className="my-input last-name"
+                name="last"
+                placeholder="Last Name"
+                required={true}
+                type="text"
+                value=""
+              />
+            </div>
             <input
-              className="my-input first-name"
-              type="text"
-            />
-            <input
-              className="my-input last-name"
-              placeholder="First Name"
+              className="my-input user-title"
+              name="title"
+              placeholder="Job Title"
+              required={true}
               type="text"
               value=""
             />
-          </div>
-          <input
-            className="my-input user-title"
-            placeholder="Job Title"
-            type="text"
-            value=""
-          />
-          <input
-            className="my-input user-email"
-            placeholder="Email"
-            type="text"
-            value=""
-          />
-          <input
-            className="my-input user-organization"
-            placeholder="Organization"
-            type="text"
-            value=""
-          />
-        </form>,
+            <input
+              className="my-input user-email"
+              name="email"
+              placeholder="Email"
+              required={true}
+              type="text"
+              value=""
+            />
+            <input
+              className="my-input user-organization"
+              name="organization"
+              placeholder="Organization"
+              required={true}
+              type="text"
+              value=""
+            />
+            <MainButton
+              click={[Function]}
+              text="Get Started"
+            />
+          </form>,
+        ],
         "className": "form-container",
       },
       "ref": null,
       "rendered": Array [
         Object {
+          "instance": <span
+            class="welcome"
+          >
+            <h2>
+              Getting Started with Docco
+            </h2>
+          </span>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h2>
+              Getting Started with Docco
+            </h2>,
+            "className": "welcome",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <h2>
+                Getting Started with Docco
+              </h2>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Getting Started with Docco",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Getting Started with Docco",
+              ],
+              "type": "h2",
+            },
+          ],
+          "type": "span",
+        },
+        Object {
           "instance": <form
             class="my-form sign-up-form"
+            name="signUp"
           >
             <div
               class="user-name"
             >
               <input
                 class="my-input first-name"
+                name="first"
+                placeholder="First Name"
+                required=""
                 type="text"
+                value=""
               />
               <input
                 class="my-input last-name"
-                placeholder="First Name"
+                name="last"
+                placeholder="Last Name"
+                required=""
                 type="text"
                 value=""
               />
             </div>
             <input
               class="my-input user-title"
+              name="title"
               placeholder="Job Title"
+              required=""
               type="text"
               value=""
             />
             <input
               class="my-input user-email"
+              name="email"
               placeholder="Email"
+              required=""
               type="text"
               value=""
             />
             <input
               class="my-input user-organization"
+              name="organization"
               placeholder="Organization"
+              required=""
               type="text"
               value=""
             />
+            <div
+              class="main-button"
+              role="button"
+              tabindex="0"
+            >
+              Get Started
+            </div>
           </form>,
           "key": undefined,
           "nodeType": "host",
@@ -1935,35 +2626,53 @@ ReactWrapper {
               >
                 <input
                   className="my-input first-name"
+                  name="first"
+                  placeholder="First Name"
+                  required={true}
                   type="text"
+                  value=""
                 />
                 <input
                   className="my-input last-name"
-                  placeholder="First Name"
+                  name="last"
+                  placeholder="Last Name"
+                  required={true}
                   type="text"
                   value=""
                 />
               </div>,
               <input
                 className="my-input user-title"
+                name="title"
                 placeholder="Job Title"
+                required={true}
                 type="text"
                 value=""
               />,
               <input
                 className="my-input user-email"
+                name="email"
                 placeholder="Email"
+                required={true}
                 type="text"
                 value=""
               />,
               <input
                 className="my-input user-organization"
+                name="organization"
                 placeholder="Organization"
+                required={true}
                 type="text"
                 value=""
               />,
+              <MainButton
+                click={[Function]}
+                text="Get Started"
+              />,
             ],
             "className": "my-form sign-up-form",
+            "name": "signUp",
+            "onChange": [Function],
           },
           "ref": null,
           "rendered": Array [
@@ -1973,11 +2682,17 @@ ReactWrapper {
               >
                 <input
                   class="my-input first-name"
+                  name="first"
+                  placeholder="First Name"
+                  required=""
                   type="text"
+                  value=""
                 />
                 <input
                   class="my-input last-name"
-                  placeholder="First Name"
+                  name="last"
+                  placeholder="Last Name"
+                  required=""
                   type="text"
                   value=""
                 />
@@ -1988,11 +2703,17 @@ ReactWrapper {
                 "children": Array [
                   <input
                     className="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required={true}
                     type="text"
+                    value=""
                   />,
                   <input
                     className="my-input last-name"
-                    placeholder="First Name"
+                    name="last"
+                    placeholder="Last Name"
+                    required={true}
                     type="text"
                     value=""
                   />,
@@ -2004,13 +2725,21 @@ ReactWrapper {
                 Object {
                   "instance": <input
                     class="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required=""
                     type="text"
+                    value=""
                   />,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
                     "className": "my-input first-name",
+                    "name": "first",
+                    "placeholder": "First Name",
+                    "required": true,
                     "type": "text",
+                    "value": "",
                   },
                   "ref": null,
                   "rendered": Array [
@@ -2021,7 +2750,9 @@ ReactWrapper {
                 Object {
                   "instance": <input
                     class="my-input last-name"
-                    placeholder="First Name"
+                    name="last"
+                    placeholder="Last Name"
+                    required=""
                     type="text"
                     value=""
                   />,
@@ -2029,7 +2760,9 @@ ReactWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "className": "my-input last-name",
-                    "placeholder": "First Name",
+                    "name": "last",
+                    "placeholder": "Last Name",
+                    "required": true,
                     "type": "text",
                     "value": "",
                   },
@@ -2045,7 +2778,9 @@ ReactWrapper {
             Object {
               "instance": <input
                 class="my-input user-title"
+                name="title"
                 placeholder="Job Title"
+                required=""
                 type="text"
                 value=""
               />,
@@ -2053,7 +2788,9 @@ ReactWrapper {
               "nodeType": "host",
               "props": Object {
                 "className": "my-input user-title",
+                "name": "title",
                 "placeholder": "Job Title",
+                "required": true,
                 "type": "text",
                 "value": "",
               },
@@ -2066,7 +2803,9 @@ ReactWrapper {
             Object {
               "instance": <input
                 class="my-input user-email"
+                name="email"
                 placeholder="Email"
+                required=""
                 type="text"
                 value=""
               />,
@@ -2074,7 +2813,9 @@ ReactWrapper {
               "nodeType": "host",
               "props": Object {
                 "className": "my-input user-email",
+                "name": "email",
                 "placeholder": "Email",
+                "required": true,
                 "type": "text",
                 "value": "",
               },
@@ -2087,7 +2828,9 @@ ReactWrapper {
             Object {
               "instance": <input
                 class="my-input user-organization"
+                name="organization"
                 placeholder="Organization"
+                required=""
                 type="text"
                 value=""
               />,
@@ -2095,7 +2838,9 @@ ReactWrapper {
               "nodeType": "host",
               "props": Object {
                 "className": "my-input user-organization",
+                "name": "organization",
                 "placeholder": "Organization",
+                "required": true,
                 "type": "text",
                 "value": "",
               },
@@ -2104,6 +2849,41 @@ ReactWrapper {
                 undefined,
               ],
               "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "click": [Function],
+                "text": "Get Started",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": <div
+                  class="main-button"
+                  role="button"
+                  tabindex="0"
+                >
+                  Get Started
+                </div>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Get Started",
+                  "className": "main-button",
+                  "onClick": [Function],
+                  "onKeyPress": [Function],
+                  "role": "button",
+                  "tabIndex": "0",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Get Started",
+                ],
+                "type": "div",
+              },
+              "type": [Function],
             },
           ],
           "type": "form",
@@ -2187,41 +2967,68 @@ ReactWrapper {
                     <div
                       class="form-container"
                     >
+                      <span
+                        class="welcome"
+                      >
+                        <h2>
+                          Getting Started with Docco
+                        </h2>
+                      </span>
                       <form
                         class="my-form sign-up-form"
+                        name="signUp"
                       >
                         <div
                           class="user-name"
                         >
                           <input
                             class="my-input first-name"
+                            name="first"
+                            placeholder="First Name"
+                            required=""
                             type="text"
+                            value=""
                           />
                           <input
                             class="my-input last-name"
-                            placeholder="First Name"
+                            name="last"
+                            placeholder="Last Name"
+                            required=""
                             type="text"
                             value=""
                           />
                         </div>
                         <input
                           class="my-input user-title"
+                          name="title"
                           placeholder="Job Title"
+                          required=""
                           type="text"
                           value=""
                         />
                         <input
                           class="my-input user-email"
+                          name="email"
                           placeholder="Email"
+                          required=""
                           type="text"
                           value=""
                         />
                         <input
                           class="my-input user-organization"
+                          name="organization"
                           placeholder="Organization"
+                          required=""
                           type="text"
                           value=""
                         />
+                        <div
+                          class="main-button"
+                          role="button"
+                          tabindex="0"
+                        >
+                          Get Started
+                        </div>
                       </form>
                     </div>
                   </div>,
@@ -2319,41 +3126,68 @@ ReactWrapper {
                   <div
                     class="form-container"
                   >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
                     <form
                       class="my-form sign-up-form"
+                      name="signUp"
                     >
                       <div
                         class="user-name"
                       >
                         <input
                           class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
                           type="text"
+                          value=""
                         />
                         <input
                           class="my-input last-name"
-                          placeholder="First Name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
                           type="text"
                           value=""
                         />
                       </div>
                       <input
                         class="my-input user-title"
+                        name="title"
                         placeholder="Job Title"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-email"
+                        name="email"
                         placeholder="Email"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-organization"
+                        name="organization"
                         placeholder="Organization"
+                        required=""
                         type="text"
                         value=""
                       />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
                     </form>
                   </div>
                 </div>,
@@ -2446,41 +3280,68 @@ ReactWrapper {
                     <div
                       class="form-container"
                     >
+                      <span
+                        class="welcome"
+                      >
+                        <h2>
+                          Getting Started with Docco
+                        </h2>
+                      </span>
                       <form
                         class="my-form sign-up-form"
+                        name="signUp"
                       >
                         <div
                           class="user-name"
                         >
                           <input
                             class="my-input first-name"
+                            name="first"
+                            placeholder="First Name"
+                            required=""
                             type="text"
+                            value=""
                           />
                           <input
                             class="my-input last-name"
-                            placeholder="First Name"
+                            name="last"
+                            placeholder="Last Name"
+                            required=""
                             type="text"
                             value=""
                           />
                         </div>
                         <input
                           class="my-input user-title"
+                          name="title"
                           placeholder="Job Title"
+                          required=""
                           type="text"
                           value=""
                         />
                         <input
                           class="my-input user-email"
+                          name="email"
                           placeholder="Email"
+                          required=""
                           type="text"
                           value=""
                         />
                         <input
                           class="my-input user-organization"
+                          name="organization"
                           placeholder="Organization"
+                          required=""
                           type="text"
                           value=""
                         />
+                        <div
+                          class="main-button"
+                          role="button"
+                          tabindex="0"
+                        >
+                          Get Started
+                        </div>
                       </form>
                     </div>
                   </div>,
@@ -2578,41 +3439,68 @@ ReactWrapper {
                   <div
                     class="form-container"
                   >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
                     <form
                       class="my-form sign-up-form"
+                      name="signUp"
                     >
                       <div
                         class="user-name"
                       >
                         <input
                           class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
                           type="text"
+                          value=""
                         />
                         <input
                           class="my-input last-name"
-                          placeholder="First Name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
                           type="text"
                           value=""
                         />
                       </div>
                       <input
                         class="my-input user-title"
+                        name="title"
                         placeholder="Job Title"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-email"
+                        name="email"
                         placeholder="Email"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-organization"
+                        name="organization"
                         placeholder="Organization"
+                        required=""
                         type="text"
                         value=""
                       />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
                     </form>
                   </div>
                 </div>,
@@ -2710,6 +3598,72 @@ ReactWrapper {
               "actualStartTime": -1,
               "alternate": null,
               "child": FiberNode {
+                "_debugID": 54,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": null,
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": "h2",
+                "expirationTime": 0,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": "Getting Started with Docco",
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": "Getting Started with Docco",
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": <h2>
+                  Getting Started with Docco
+                </h2>,
+                "tag": 5,
+                "treeBaseDuration": 0,
+                "type": "h2",
+                "updateQueue": null,
+              },
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": "span",
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": <h2>
+                  Getting Started with Docco
+                </h2>,
+                "className": "welcome",
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": <h2>
+                  Getting Started with Docco
+                </h2>,
+                "className": "welcome",
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": FiberNode {
                 "_debugID": 53,
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
@@ -2718,17 +3672,123 @@ ReactWrapper {
                 "actualStartTime": -1,
                 "alternate": null,
                 "child": FiberNode {
-                  "_debugID": 57,
+                  "_debugID": 55,
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": null,
                   "actualDuration": 0,
                   "actualStartTime": -1,
                   "alternate": null,
-                  "child": null,
+                  "child": FiberNode {
+                    "_debugID": 60,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "elementType": "input",
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "className": "my-input first-name",
+                      "name": "first",
+                      "placeholder": "First Name",
+                      "required": true,
+                      "type": "text",
+                      "value": "",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "className": "my-input first-name",
+                      "name": "first",
+                      "placeholder": "First Name",
+                      "required": true,
+                      "type": "text",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": FiberNode {
+                      "_debugID": 61,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": null,
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "elementType": "input",
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 1,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "className": "my-input last-name",
+                        "name": "last",
+                        "placeholder": "Last Name",
+                        "required": true,
+                        "type": "text",
+                        "value": "",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "className": "my-input last-name",
+                        "name": "last",
+                        "placeholder": "Last Name",
+                        "required": true,
+                        "type": "text",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": null,
+                      "stateNode": <input
+                        class="my-input last-name"
+                        name="last"
+                        placeholder="Last Name"
+                        required=""
+                        type="text"
+                        value=""
+                      />,
+                      "tag": 5,
+                      "treeBaseDuration": 0,
+                      "type": "input",
+                      "updateQueue": null,
+                    },
+                    "stateNode": <input
+                      class="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required=""
+                      type="text"
+                      value=""
+                    />,
+                    "tag": 5,
+                    "treeBaseDuration": 0,
+                    "type": "input",
+                    "updateQueue": null,
+                  },
                   "childExpirationTime": 0,
                   "effectTag": 0,
-                  "elementType": "input",
+                  "elementType": "div",
                   "expirationTime": 0,
                   "firstContextDependency": null,
                   "firstEffect": null,
@@ -2736,21 +3796,55 @@ ReactWrapper {
                   "key": null,
                   "lastEffect": null,
                   "memoizedProps": Object {
-                    "className": "my-input first-name",
-                    "type": "text",
+                    "children": Array [
+                      <input
+                        className="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required={true}
+                        type="text"
+                        value=""
+                      />,
+                      <input
+                        className="my-input last-name"
+                        name="last"
+                        placeholder="Last Name"
+                        required={true}
+                        type="text"
+                        value=""
+                      />,
+                    ],
+                    "className": "user-name",
                   },
                   "memoizedState": null,
                   "mode": 0,
                   "nextEffect": null,
                   "pendingProps": Object {
-                    "className": "my-input first-name",
-                    "type": "text",
+                    "children": Array [
+                      <input
+                        className="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required={true}
+                        type="text"
+                        value=""
+                      />,
+                      <input
+                        className="my-input last-name"
+                        name="last"
+                        placeholder="Last Name"
+                        required={true}
+                        type="text"
+                        value=""
+                      />,
+                    ],
+                    "className": "user-name",
                   },
                   "ref": null,
                   "return": [Circular],
                   "selfBaseDuration": 0,
                   "sibling": FiberNode {
-                    "_debugID": 58,
+                    "_debugID": 56,
                     "_debugIsCurrentlyTiming": false,
                     "_debugOwner": [Circular],
                     "_debugSource": null,
@@ -2768,8 +3862,10 @@ ReactWrapper {
                     "key": null,
                     "lastEffect": null,
                     "memoizedProps": Object {
-                      "className": "my-input last-name",
-                      "placeholder": "First Name",
+                      "className": "my-input user-title",
+                      "name": "title",
+                      "placeholder": "Job Title",
+                      "required": true,
                       "type": "text",
                       "value": "",
                     },
@@ -2777,146 +3873,10 @@ ReactWrapper {
                     "mode": 0,
                     "nextEffect": null,
                     "pendingProps": Object {
-                      "className": "my-input last-name",
-                      "placeholder": "First Name",
-                      "type": "text",
-                      "value": "",
-                    },
-                    "ref": null,
-                    "return": [Circular],
-                    "selfBaseDuration": 0,
-                    "sibling": null,
-                    "stateNode": <input
-                      class="my-input last-name"
-                      placeholder="First Name"
-                      type="text"
-                      value=""
-                    />,
-                    "tag": 5,
-                    "treeBaseDuration": 0,
-                    "type": "input",
-                    "updateQueue": null,
-                  },
-                  "stateNode": <input
-                    class="my-input first-name"
-                    type="text"
-                  />,
-                  "tag": 5,
-                  "treeBaseDuration": 0,
-                  "type": "input",
-                  "updateQueue": null,
-                },
-                "childExpirationTime": 0,
-                "effectTag": 0,
-                "elementType": "div",
-                "expirationTime": 0,
-                "firstContextDependency": null,
-                "firstEffect": null,
-                "index": 0,
-                "key": null,
-                "lastEffect": null,
-                "memoizedProps": Object {
-                  "children": Array [
-                    <input
-                      className="my-input first-name"
-                      type="text"
-                    />,
-                    <input
-                      className="my-input last-name"
-                      placeholder="First Name"
-                      type="text"
-                      value=""
-                    />,
-                  ],
-                  "className": "user-name",
-                },
-                "memoizedState": null,
-                "mode": 0,
-                "nextEffect": null,
-                "pendingProps": Object {
-                  "children": Array [
-                    <input
-                      className="my-input first-name"
-                      type="text"
-                    />,
-                    <input
-                      className="my-input last-name"
-                      placeholder="First Name"
-                      type="text"
-                      value=""
-                    />,
-                  ],
-                  "className": "user-name",
-                },
-                "ref": null,
-                "return": [Circular],
-                "selfBaseDuration": 0,
-                "sibling": FiberNode {
-                  "_debugID": 54,
-                  "_debugIsCurrentlyTiming": false,
-                  "_debugOwner": [Circular],
-                  "_debugSource": null,
-                  "actualDuration": 0,
-                  "actualStartTime": -1,
-                  "alternate": null,
-                  "child": null,
-                  "childExpirationTime": 0,
-                  "effectTag": 0,
-                  "elementType": "input",
-                  "expirationTime": 0,
-                  "firstContextDependency": null,
-                  "firstEffect": null,
-                  "index": 1,
-                  "key": null,
-                  "lastEffect": null,
-                  "memoizedProps": Object {
-                    "className": "my-input user-title",
-                    "placeholder": "Job Title",
-                    "type": "text",
-                    "value": "",
-                  },
-                  "memoizedState": null,
-                  "mode": 0,
-                  "nextEffect": null,
-                  "pendingProps": Object {
-                    "className": "my-input user-title",
-                    "placeholder": "Job Title",
-                    "type": "text",
-                    "value": "",
-                  },
-                  "ref": null,
-                  "return": [Circular],
-                  "selfBaseDuration": 0,
-                  "sibling": FiberNode {
-                    "_debugID": 55,
-                    "_debugIsCurrentlyTiming": false,
-                    "_debugOwner": [Circular],
-                    "_debugSource": null,
-                    "actualDuration": 0,
-                    "actualStartTime": -1,
-                    "alternate": null,
-                    "child": null,
-                    "childExpirationTime": 0,
-                    "effectTag": 0,
-                    "elementType": "input",
-                    "expirationTime": 0,
-                    "firstContextDependency": null,
-                    "firstEffect": null,
-                    "index": 2,
-                    "key": null,
-                    "lastEffect": null,
-                    "memoizedProps": Object {
-                      "className": "my-input user-email",
-                      "placeholder": "Email",
-                      "type": "text",
-                      "value": "",
-                    },
-                    "memoizedState": null,
-                    "mode": 0,
-                    "nextEffect": null,
-                    "pendingProps": Object {
-                      "className": "my-input user-email",
-                      "placeholder": "Email",
+                      "className": "my-input user-title",
+                      "name": "title",
+                      "placeholder": "Job Title",
+                      "required": true,
                       "type": "text",
                       "value": "",
                     },
@@ -2924,7 +3884,7 @@ ReactWrapper {
                     "return": [Circular],
                     "selfBaseDuration": 0,
                     "sibling": FiberNode {
-                      "_debugID": 56,
+                      "_debugID": 57,
                       "_debugIsCurrentlyTiming": false,
                       "_debugOwner": [Circular],
                       "_debugSource": null,
@@ -2938,12 +3898,14 @@ ReactWrapper {
                       "expirationTime": 0,
                       "firstContextDependency": null,
                       "firstEffect": null,
-                      "index": 3,
+                      "index": 2,
                       "key": null,
                       "lastEffect": null,
                       "memoizedProps": Object {
-                        "className": "my-input user-organization",
-                        "placeholder": "Organization",
+                        "className": "my-input user-email",
+                        "name": "email",
+                        "placeholder": "Email",
+                        "required": true,
                         "type": "text",
                         "value": "",
                       },
@@ -2951,18 +3913,165 @@ ReactWrapper {
                       "mode": 0,
                       "nextEffect": null,
                       "pendingProps": Object {
-                        "className": "my-input user-organization",
-                        "placeholder": "Organization",
+                        "className": "my-input user-email",
+                        "name": "email",
+                        "placeholder": "Email",
+                        "required": true,
                         "type": "text",
                         "value": "",
                       },
                       "ref": null,
                       "return": [Circular],
                       "selfBaseDuration": 0,
-                      "sibling": null,
+                      "sibling": FiberNode {
+                        "_debugID": 58,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": [Circular],
+                        "_debugSource": null,
+                        "actualDuration": 0,
+                        "actualStartTime": -1,
+                        "alternate": null,
+                        "child": null,
+                        "childExpirationTime": 0,
+                        "effectTag": 0,
+                        "elementType": "input",
+                        "expirationTime": 0,
+                        "firstContextDependency": null,
+                        "firstEffect": null,
+                        "index": 3,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": Object {
+                          "className": "my-input user-organization",
+                          "name": "organization",
+                          "placeholder": "Organization",
+                          "required": true,
+                          "type": "text",
+                          "value": "",
+                        },
+                        "memoizedState": null,
+                        "mode": 0,
+                        "nextEffect": null,
+                        "pendingProps": Object {
+                          "className": "my-input user-organization",
+                          "name": "organization",
+                          "placeholder": "Organization",
+                          "required": true,
+                          "type": "text",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "return": [Circular],
+                        "selfBaseDuration": 0,
+                        "sibling": FiberNode {
+                          "_debugID": 59,
+                          "_debugIsCurrentlyTiming": false,
+                          "_debugOwner": [Circular],
+                          "_debugSource": null,
+                          "actualDuration": 0,
+                          "actualStartTime": -1,
+                          "alternate": null,
+                          "child": FiberNode {
+                            "_debugID": 62,
+                            "_debugIsCurrentlyTiming": false,
+                            "_debugOwner": [Circular],
+                            "_debugSource": null,
+                            "actualDuration": 0,
+                            "actualStartTime": -1,
+                            "alternate": null,
+                            "child": null,
+                            "childExpirationTime": 0,
+                            "effectTag": 0,
+                            "elementType": "div",
+                            "expirationTime": 0,
+                            "firstContextDependency": null,
+                            "firstEffect": null,
+                            "index": 0,
+                            "key": null,
+                            "lastEffect": null,
+                            "memoizedProps": Object {
+                              "children": "Get Started",
+                              "className": "main-button",
+                              "onClick": [Function],
+                              "onKeyPress": [Function],
+                              "role": "button",
+                              "tabIndex": "0",
+                            },
+                            "memoizedState": null,
+                            "mode": 0,
+                            "nextEffect": null,
+                            "pendingProps": Object {
+                              "children": "Get Started",
+                              "className": "main-button",
+                              "onClick": [Function],
+                              "onKeyPress": [Function],
+                              "role": "button",
+                              "tabIndex": "0",
+                            },
+                            "ref": null,
+                            "return": [Circular],
+                            "selfBaseDuration": 0,
+                            "sibling": null,
+                            "stateNode": <div
+                              class="main-button"
+                              role="button"
+                              tabindex="0"
+                            >
+                              Get Started
+                            </div>,
+                            "tag": 5,
+                            "treeBaseDuration": 0,
+                            "type": "div",
+                            "updateQueue": null,
+                          },
+                          "childExpirationTime": 0,
+                          "effectTag": 1,
+                          "elementType": [Function],
+                          "expirationTime": 0,
+                          "firstContextDependency": null,
+                          "firstEffect": null,
+                          "index": 4,
+                          "key": null,
+                          "lastEffect": null,
+                          "memoizedProps": Object {
+                            "click": [Function],
+                            "text": "Get Started",
+                          },
+                          "memoizedState": null,
+                          "mode": 0,
+                          "nextEffect": null,
+                          "pendingProps": Object {
+                            "click": [Function],
+                            "text": "Get Started",
+                          },
+                          "ref": null,
+                          "return": [Circular],
+                          "selfBaseDuration": 0,
+                          "sibling": null,
+                          "stateNode": null,
+                          "tag": 0,
+                          "treeBaseDuration": 0,
+                          "type": [Function],
+                          "updateQueue": null,
+                        },
+                        "stateNode": <input
+                          class="my-input user-organization"
+                          name="organization"
+                          placeholder="Organization"
+                          required=""
+                          type="text"
+                          value=""
+                        />,
+                        "tag": 5,
+                        "treeBaseDuration": 0,
+                        "type": "input",
+                        "updateQueue": null,
+                      },
                       "stateNode": <input
-                        class="my-input user-organization"
-                        placeholder="Organization"
+                        class="my-input user-email"
+                        name="email"
+                        placeholder="Email"
+                        required=""
                         type="text"
                         value=""
                       />,
@@ -2972,8 +4081,10 @@ ReactWrapper {
                       "updateQueue": null,
                     },
                     "stateNode": <input
-                      class="my-input user-email"
-                      placeholder="Email"
+                      class="my-input user-title"
+                      name="title"
+                      placeholder="Job Title"
+                      required=""
                       type="text"
                       value=""
                     />,
@@ -2982,165 +4093,228 @@ ReactWrapper {
                     "type": "input",
                     "updateQueue": null,
                   },
-                  "stateNode": <input
-                    class="my-input user-title"
-                    placeholder="Job Title"
-                    type="text"
-                    value=""
-                  />,
+                  "stateNode": <div
+                    class="user-name"
+                  >
+                    <input
+                      class="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required=""
+                      type="text"
+                      value=""
+                    />
+                    <input
+                      class="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required=""
+                      type="text"
+                      value=""
+                    />
+                  </div>,
                   "tag": 5,
                   "treeBaseDuration": 0,
-                  "type": "input",
+                  "type": "div",
                   "updateQueue": null,
                 },
-                "stateNode": <div
-                  class="user-name"
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": "form",
+                "expirationTime": 0,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 1,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": Array [
+                    <div
+                      className="user-name"
+                    >
+                      <input
+                        className="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required={true}
+                        type="text"
+                        value=""
+                      />
+                      <input
+                        className="my-input last-name"
+                        name="last"
+                        placeholder="Last Name"
+                        required={true}
+                        type="text"
+                        value=""
+                      />
+                    </div>,
+                    <input
+                      className="my-input user-title"
+                      name="title"
+                      placeholder="Job Title"
+                      required={true}
+                      type="text"
+                      value=""
+                    />,
+                    <input
+                      className="my-input user-email"
+                      name="email"
+                      placeholder="Email"
+                      required={true}
+                      type="text"
+                      value=""
+                    />,
+                    <input
+                      className="my-input user-organization"
+                      name="organization"
+                      placeholder="Organization"
+                      required={true}
+                      type="text"
+                      value=""
+                    />,
+                    <MainButton
+                      click={[Function]}
+                      text="Get Started"
+                    />,
+                  ],
+                  "className": "my-form sign-up-form",
+                  "name": "signUp",
+                  "onChange": [Function],
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": Array [
+                    <div
+                      className="user-name"
+                    >
+                      <input
+                        className="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required={true}
+                        type="text"
+                        value=""
+                      />
+                      <input
+                        className="my-input last-name"
+                        name="last"
+                        placeholder="Last Name"
+                        required={true}
+                        type="text"
+                        value=""
+                      />
+                    </div>,
+                    <input
+                      className="my-input user-title"
+                      name="title"
+                      placeholder="Job Title"
+                      required={true}
+                      type="text"
+                      value=""
+                    />,
+                    <input
+                      className="my-input user-email"
+                      name="email"
+                      placeholder="Email"
+                      required={true}
+                      type="text"
+                      value=""
+                    />,
+                    <input
+                      className="my-input user-organization"
+                      name="organization"
+                      placeholder="Organization"
+                      required={true}
+                      type="text"
+                      value=""
+                    />,
+                    <MainButton
+                      click={[Function]}
+                      text="Get Started"
+                    />,
+                  ],
+                  "className": "my-form sign-up-form",
+                  "name": "signUp",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": <form
+                  class="my-form sign-up-form"
+                  name="signUp"
                 >
+                  <div
+                    class="user-name"
+                  >
+                    <input
+                      class="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required=""
+                      type="text"
+                      value=""
+                    />
+                    <input
+                      class="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required=""
+                      type="text"
+                      value=""
+                    />
+                  </div>
                   <input
-                    class="my-input first-name"
-                    type="text"
-                  />
-                  <input
-                    class="my-input last-name"
-                    placeholder="First Name"
+                    class="my-input user-title"
+                    name="title"
+                    placeholder="Job Title"
+                    required=""
                     type="text"
                     value=""
                   />
-                </div>,
+                  <input
+                    class="my-input user-email"
+                    name="email"
+                    placeholder="Email"
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                  <input
+                    class="my-input user-organization"
+                    name="organization"
+                    placeholder="Organization"
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="main-button"
+                    role="button"
+                    tabindex="0"
+                  >
+                    Get Started
+                  </div>
+                </form>,
                 "tag": 5,
                 "treeBaseDuration": 0,
-                "type": "div",
+                "type": "form",
                 "updateQueue": null,
               },
-              "childExpirationTime": 0,
-              "effectTag": 0,
-              "elementType": "form",
-              "expirationTime": 0,
-              "firstContextDependency": null,
-              "firstEffect": null,
-              "index": 0,
-              "key": null,
-              "lastEffect": null,
-              "memoizedProps": Object {
-                "children": Array [
-                  <div
-                    className="user-name"
-                  >
-                    <input
-                      className="my-input first-name"
-                      type="text"
-                    />
-                    <input
-                      className="my-input last-name"
-                      placeholder="First Name"
-                      type="text"
-                      value=""
-                    />
-                  </div>,
-                  <input
-                    className="my-input user-title"
-                    placeholder="Job Title"
-                    type="text"
-                    value=""
-                  />,
-                  <input
-                    className="my-input user-email"
-                    placeholder="Email"
-                    type="text"
-                    value=""
-                  />,
-                  <input
-                    className="my-input user-organization"
-                    placeholder="Organization"
-                    type="text"
-                    value=""
-                  />,
-                ],
-                "className": "my-form sign-up-form",
-              },
-              "memoizedState": null,
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": Object {
-                "children": Array [
-                  <div
-                    className="user-name"
-                  >
-                    <input
-                      className="my-input first-name"
-                      type="text"
-                    />
-                    <input
-                      className="my-input last-name"
-                      placeholder="First Name"
-                      type="text"
-                      value=""
-                    />
-                  </div>,
-                  <input
-                    className="my-input user-title"
-                    placeholder="Job Title"
-                    type="text"
-                    value=""
-                  />,
-                  <input
-                    className="my-input user-email"
-                    placeholder="Email"
-                    type="text"
-                    value=""
-                  />,
-                  <input
-                    className="my-input user-organization"
-                    placeholder="Organization"
-                    type="text"
-                    value=""
-                  />,
-                ],
-                "className": "my-form sign-up-form",
-              },
-              "ref": null,
-              "return": [Circular],
-              "selfBaseDuration": 0,
-              "sibling": null,
-              "stateNode": <form
-                class="my-form sign-up-form"
+              "stateNode": <span
+                class="welcome"
               >
-                <div
-                  class="user-name"
-                >
-                  <input
-                    class="my-input first-name"
-                    type="text"
-                  />
-                  <input
-                    class="my-input last-name"
-                    placeholder="First Name"
-                    type="text"
-                    value=""
-                  />
-                </div>
-                <input
-                  class="my-input user-title"
-                  placeholder="Job Title"
-                  type="text"
-                  value=""
-                />
-                <input
-                  class="my-input user-email"
-                  placeholder="Email"
-                  type="text"
-                  value=""
-                />
-                <input
-                  class="my-input user-organization"
-                  placeholder="Organization"
-                  type="text"
-                  value=""
-                />
-              </form>,
+                <h2>
+                  Getting Started with Docco
+                </h2>
+              </span>,
               "tag": 5,
               "treeBaseDuration": 0,
-              "type": "form",
+              "type": "span",
               "updateQueue": null,
             },
             "childExpirationTime": 0,
@@ -3153,84 +4327,138 @@ ReactWrapper {
             "key": null,
             "lastEffect": null,
             "memoizedProps": Object {
-              "children": <form
-                className="my-form sign-up-form"
-              >
-                <div
-                  className="user-name"
+              "children": Array [
+                <span
+                  className="welcome"
                 >
+                  <h2>
+                    Getting Started with Docco
+                  </h2>
+                </span>,
+                <form
+                  className="my-form sign-up-form"
+                  name="signUp"
+                  onChange={[Function]}
+                >
+                  <div
+                    className="user-name"
+                  >
+                    <input
+                      className="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required={true}
+                      type="text"
+                      value=""
+                    />
+                    <input
+                      className="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required={true}
+                      type="text"
+                      value=""
+                    />
+                  </div>
                   <input
-                    className="my-input first-name"
-                    type="text"
-                  />
-                  <input
-                    className="my-input last-name"
-                    placeholder="First Name"
+                    className="my-input user-title"
+                    name="title"
+                    placeholder="Job Title"
+                    required={true}
                     type="text"
                     value=""
                   />
-                </div>
-                <input
-                  className="my-input user-title"
-                  placeholder="Job Title"
-                  type="text"
-                  value=""
-                />
-                <input
-                  className="my-input user-email"
-                  placeholder="Email"
-                  type="text"
-                  value=""
-                />
-                <input
-                  className="my-input user-organization"
-                  placeholder="Organization"
-                  type="text"
-                  value=""
-                />
-              </form>,
+                  <input
+                    className="my-input user-email"
+                    name="email"
+                    placeholder="Email"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                  <input
+                    className="my-input user-organization"
+                    name="organization"
+                    placeholder="Organization"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                  <MainButton
+                    click={[Function]}
+                    text="Get Started"
+                  />
+                </form>,
+              ],
               "className": "form-container",
             },
             "memoizedState": null,
             "mode": 0,
             "nextEffect": null,
             "pendingProps": Object {
-              "children": <form
-                className="my-form sign-up-form"
-              >
-                <div
-                  className="user-name"
+              "children": Array [
+                <span
+                  className="welcome"
                 >
+                  <h2>
+                    Getting Started with Docco
+                  </h2>
+                </span>,
+                <form
+                  className="my-form sign-up-form"
+                  name="signUp"
+                  onChange={[Function]}
+                >
+                  <div
+                    className="user-name"
+                  >
+                    <input
+                      className="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required={true}
+                      type="text"
+                      value=""
+                    />
+                    <input
+                      className="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required={true}
+                      type="text"
+                      value=""
+                    />
+                  </div>
                   <input
-                    className="my-input first-name"
-                    type="text"
-                  />
-                  <input
-                    className="my-input last-name"
-                    placeholder="First Name"
+                    className="my-input user-title"
+                    name="title"
+                    placeholder="Job Title"
+                    required={true}
                     type="text"
                     value=""
                   />
-                </div>
-                <input
-                  className="my-input user-title"
-                  placeholder="Job Title"
-                  type="text"
-                  value=""
-                />
-                <input
-                  className="my-input user-email"
-                  placeholder="Email"
-                  type="text"
-                  value=""
-                />
-                <input
-                  className="my-input user-organization"
-                  placeholder="Organization"
-                  type="text"
-                  value=""
-                />
-              </form>,
+                  <input
+                    className="my-input user-email"
+                    name="email"
+                    placeholder="Email"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                  <input
+                    className="my-input user-organization"
+                    name="organization"
+                    placeholder="Organization"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                  <MainButton
+                    click={[Function]}
+                    text="Get Started"
+                  />
+                </form>,
+              ],
               "className": "form-container",
             },
             "ref": null,
@@ -3240,41 +4468,68 @@ ReactWrapper {
             "stateNode": <div
               class="form-container"
             >
+              <span
+                class="welcome"
+              >
+                <h2>
+                  Getting Started with Docco
+                </h2>
+              </span>
               <form
                 class="my-form sign-up-form"
+                name="signUp"
               >
                 <div
                   class="user-name"
                 >
                   <input
                     class="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required=""
                     type="text"
+                    value=""
                   />
                   <input
                     class="my-input last-name"
-                    placeholder="First Name"
+                    name="last"
+                    placeholder="Last Name"
+                    required=""
                     type="text"
                     value=""
                   />
                 </div>
                 <input
                   class="my-input user-title"
+                  name="title"
                   placeholder="Job Title"
+                  required=""
                   type="text"
                   value=""
                 />
                 <input
                   class="my-input user-email"
+                  name="email"
                   placeholder="Email"
+                  required=""
                   type="text"
                   value=""
                 />
                 <input
                   class="my-input user-organization"
+                  name="organization"
                   placeholder="Organization"
+                  required=""
                   type="text"
                   value=""
                 />
+                <div
+                  class="main-button"
+                  role="button"
+                  tabindex="0"
+                >
+                  Get Started
+                </div>
               </form>
             </div>,
             "tag": 5,
@@ -3293,13 +4548,11 @@ ReactWrapper {
           "lastEffect": null,
           "memoizedProps": Object {},
           "memoizedState": Object {
-            "user": Object {
-              "email": "",
-              "first": "",
-              "last": "",
-              "organization": "",
-              "title": "",
-            },
+            "email": "",
+            "first": "",
+            "last": "",
+            "organization": "",
+            "title": "",
           },
           "mode": 0,
           "nextEffect": null,
@@ -3373,41 +4626,68 @@ ReactWrapper {
                     <div
                       class="form-container"
                     >
+                      <span
+                        class="welcome"
+                      >
+                        <h2>
+                          Getting Started with Docco
+                        </h2>
+                      </span>
                       <form
                         class="my-form sign-up-form"
+                        name="signUp"
                       >
                         <div
                           class="user-name"
                         >
                           <input
                             class="my-input first-name"
+                            name="first"
+                            placeholder="First Name"
+                            required=""
                             type="text"
+                            value=""
                           />
                           <input
                             class="my-input last-name"
-                            placeholder="First Name"
+                            name="last"
+                            placeholder="Last Name"
+                            required=""
                             type="text"
                             value=""
                           />
                         </div>
                         <input
                           class="my-input user-title"
+                          name="title"
                           placeholder="Job Title"
+                          required=""
                           type="text"
                           value=""
                         />
                         <input
                           class="my-input user-email"
+                          name="email"
                           placeholder="Email"
+                          required=""
                           type="text"
                           value=""
                         />
                         <input
                           class="my-input user-organization"
+                          name="organization"
                           placeholder="Organization"
+                          required=""
                           type="text"
                           value=""
                         />
+                        <div
+                          class="main-button"
+                          role="button"
+                          tabindex="0"
+                        >
+                          Get Started
+                        </div>
                       </form>
                     </div>
                   </div>,
@@ -3505,41 +4785,68 @@ ReactWrapper {
                   <div
                     class="form-container"
                   >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
                     <form
                       class="my-form sign-up-form"
+                      name="signUp"
                     >
                       <div
                         class="user-name"
                       >
                         <input
                           class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
                           type="text"
+                          value=""
                         />
                         <input
                           class="my-input last-name"
-                          placeholder="First Name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
                           type="text"
                           value=""
                         />
                       </div>
                       <input
                         class="my-input user-title"
+                        name="title"
                         placeholder="Job Title"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-email"
+                        name="email"
                         placeholder="Email"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-organization"
+                        name="organization"
                         placeholder="Organization"
+                        required=""
                         type="text"
                         value=""
                       />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
                     </form>
                   </div>
                 </div>,
@@ -3632,41 +4939,68 @@ ReactWrapper {
                     <div
                       class="form-container"
                     >
+                      <span
+                        class="welcome"
+                      >
+                        <h2>
+                          Getting Started with Docco
+                        </h2>
+                      </span>
                       <form
                         class="my-form sign-up-form"
+                        name="signUp"
                       >
                         <div
                           class="user-name"
                         >
                           <input
                             class="my-input first-name"
+                            name="first"
+                            placeholder="First Name"
+                            required=""
                             type="text"
+                            value=""
                           />
                           <input
                             class="my-input last-name"
-                            placeholder="First Name"
+                            name="last"
+                            placeholder="Last Name"
+                            required=""
                             type="text"
                             value=""
                           />
                         </div>
                         <input
                           class="my-input user-title"
+                          name="title"
                           placeholder="Job Title"
+                          required=""
                           type="text"
                           value=""
                         />
                         <input
                           class="my-input user-email"
+                          name="email"
                           placeholder="Email"
+                          required=""
                           type="text"
                           value=""
                         />
                         <input
                           class="my-input user-organization"
+                          name="organization"
                           placeholder="Organization"
+                          required=""
                           type="text"
                           value=""
                         />
+                        <div
+                          class="main-button"
+                          role="button"
+                          tabindex="0"
+                        >
+                          Get Started
+                        </div>
                       </form>
                     </div>
                   </div>,
@@ -3764,41 +5098,68 @@ ReactWrapper {
                   <div
                     class="form-container"
                   >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
                     <form
                       class="my-form sign-up-form"
+                      name="signUp"
                     >
                       <div
                         class="user-name"
                       >
                         <input
                           class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
                           type="text"
+                          value=""
                         />
                         <input
                           class="my-input last-name"
-                          placeholder="First Name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
                           type="text"
                           value=""
                         />
                       </div>
                       <input
                         class="my-input user-title"
+                        name="title"
                         placeholder="Job Title"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-email"
+                        name="email"
                         placeholder="Email"
+                        required=""
                         type="text"
                         value=""
                       />
                       <input
                         class="my-input user-organization"
+                        name="organization"
                         placeholder="Organization"
+                        required=""
                         type="text"
                         value=""
                       />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
                     </form>
                   </div>
                 </div>,
@@ -3885,16 +5246,16 @@ ReactWrapper {
         },
         "_reactInternalInstance": Object {},
         "context": Object {},
+        "handleChange": [Function],
+        "handleSubmit": [Function],
         "props": Object {},
         "refs": Object {},
         "state": Object {
-          "user": Object {
-            "email": "",
-            "first": "",
-            "last": "",
-            "organization": "",
-            "title": "",
-          },
+          "email": "",
+          "first": "",
+          "last": "",
+          "organization": "",
+          "title": "",
         },
         "updater": Object {
           "enqueueForceUpdate": [Function],
@@ -3911,122 +5272,232 @@ ReactWrapper {
         "instance": <div
           class="form-container"
         >
+          <span
+            class="welcome"
+          >
+            <h2>
+              Getting Started with Docco
+            </h2>
+          </span>
           <form
             class="my-form sign-up-form"
+            name="signUp"
           >
             <div
               class="user-name"
             >
               <input
                 class="my-input first-name"
+                name="first"
+                placeholder="First Name"
+                required=""
                 type="text"
+                value=""
               />
               <input
                 class="my-input last-name"
-                placeholder="First Name"
+                name="last"
+                placeholder="Last Name"
+                required=""
                 type="text"
                 value=""
               />
             </div>
             <input
               class="my-input user-title"
+              name="title"
               placeholder="Job Title"
+              required=""
               type="text"
               value=""
             />
             <input
               class="my-input user-email"
+              name="email"
               placeholder="Email"
+              required=""
               type="text"
               value=""
             />
             <input
               class="my-input user-organization"
+              name="organization"
               placeholder="Organization"
+              required=""
               type="text"
               value=""
             />
+            <div
+              class="main-button"
+              role="button"
+              tabindex="0"
+            >
+              Get Started
+            </div>
           </form>
         </div>,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <form
-            className="my-form sign-up-form"
-          >
-            <div
-              className="user-name"
+          "children": Array [
+            <span
+              className="welcome"
             >
+              <h2>
+                Getting Started with Docco
+              </h2>
+            </span>,
+            <form
+              className="my-form sign-up-form"
+              name="signUp"
+              onChange={[Function]}
+            >
+              <div
+                className="user-name"
+              >
+                <input
+                  className="my-input first-name"
+                  name="first"
+                  placeholder="First Name"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+                <input
+                  className="my-input last-name"
+                  name="last"
+                  placeholder="Last Name"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+              </div>
               <input
-                className="my-input first-name"
-                type="text"
-              />
-              <input
-                className="my-input last-name"
-                placeholder="First Name"
+                className="my-input user-title"
+                name="title"
+                placeholder="Job Title"
+                required={true}
                 type="text"
                 value=""
               />
-            </div>
-            <input
-              className="my-input user-title"
-              placeholder="Job Title"
-              type="text"
-              value=""
-            />
-            <input
-              className="my-input user-email"
-              placeholder="Email"
-              type="text"
-              value=""
-            />
-            <input
-              className="my-input user-organization"
-              placeholder="Organization"
-              type="text"
-              value=""
-            />
-          </form>,
+              <input
+                className="my-input user-email"
+                name="email"
+                placeholder="Email"
+                required={true}
+                type="text"
+                value=""
+              />
+              <input
+                className="my-input user-organization"
+                name="organization"
+                placeholder="Organization"
+                required={true}
+                type="text"
+                value=""
+              />
+              <MainButton
+                click={[Function]}
+                text="Get Started"
+              />
+            </form>,
+          ],
           "className": "form-container",
         },
         "ref": null,
         "rendered": Array [
           Object {
+            "instance": <span
+              class="welcome"
+            >
+              <h2>
+                Getting Started with Docco
+              </h2>
+            </span>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h2>
+                Getting Started with Docco
+              </h2>,
+              "className": "welcome",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <h2>
+                  Getting Started with Docco
+                </h2>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Getting Started with Docco",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Getting Started with Docco",
+                ],
+                "type": "h2",
+              },
+            ],
+            "type": "span",
+          },
+          Object {
             "instance": <form
               class="my-form sign-up-form"
+              name="signUp"
             >
               <div
                 class="user-name"
               >
                 <input
                   class="my-input first-name"
+                  name="first"
+                  placeholder="First Name"
+                  required=""
                   type="text"
+                  value=""
                 />
                 <input
                   class="my-input last-name"
-                  placeholder="First Name"
+                  name="last"
+                  placeholder="Last Name"
+                  required=""
                   type="text"
                   value=""
                 />
               </div>
               <input
                 class="my-input user-title"
+                name="title"
                 placeholder="Job Title"
+                required=""
                 type="text"
                 value=""
               />
               <input
                 class="my-input user-email"
+                name="email"
                 placeholder="Email"
+                required=""
                 type="text"
                 value=""
               />
               <input
                 class="my-input user-organization"
+                name="organization"
                 placeholder="Organization"
+                required=""
                 type="text"
                 value=""
               />
+              <div
+                class="main-button"
+                role="button"
+                tabindex="0"
+              >
+                Get Started
+              </div>
             </form>,
             "key": undefined,
             "nodeType": "host",
@@ -4037,35 +5508,53 @@ ReactWrapper {
                 >
                   <input
                     className="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required={true}
                     type="text"
+                    value=""
                   />
                   <input
                     className="my-input last-name"
-                    placeholder="First Name"
+                    name="last"
+                    placeholder="Last Name"
+                    required={true}
                     type="text"
                     value=""
                   />
                 </div>,
                 <input
                   className="my-input user-title"
+                  name="title"
                   placeholder="Job Title"
+                  required={true}
                   type="text"
                   value=""
                 />,
                 <input
                   className="my-input user-email"
+                  name="email"
                   placeholder="Email"
+                  required={true}
                   type="text"
                   value=""
                 />,
                 <input
                   className="my-input user-organization"
+                  name="organization"
                   placeholder="Organization"
+                  required={true}
                   type="text"
                   value=""
                 />,
+                <MainButton
+                  click={[Function]}
+                  text="Get Started"
+                />,
               ],
               "className": "my-form sign-up-form",
+              "name": "signUp",
+              "onChange": [Function],
             },
             "ref": null,
             "rendered": Array [
@@ -4075,11 +5564,17 @@ ReactWrapper {
                 >
                   <input
                     class="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required=""
                     type="text"
+                    value=""
                   />
                   <input
                     class="my-input last-name"
-                    placeholder="First Name"
+                    name="last"
+                    placeholder="Last Name"
+                    required=""
                     type="text"
                     value=""
                   />
@@ -4090,11 +5585,17 @@ ReactWrapper {
                   "children": Array [
                     <input
                       className="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required={true}
                       type="text"
+                      value=""
                     />,
                     <input
                       className="my-input last-name"
-                      placeholder="First Name"
+                      name="last"
+                      placeholder="Last Name"
+                      required={true}
                       type="text"
                       value=""
                     />,
@@ -4106,13 +5607,21 @@ ReactWrapper {
                   Object {
                     "instance": <input
                       class="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required=""
                       type="text"
+                      value=""
                     />,
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
                       "className": "my-input first-name",
+                      "name": "first",
+                      "placeholder": "First Name",
+                      "required": true,
                       "type": "text",
+                      "value": "",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -4123,7 +5632,9 @@ ReactWrapper {
                   Object {
                     "instance": <input
                       class="my-input last-name"
-                      placeholder="First Name"
+                      name="last"
+                      placeholder="Last Name"
+                      required=""
                       type="text"
                       value=""
                     />,
@@ -4131,7 +5642,9 @@ ReactWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "className": "my-input last-name",
-                      "placeholder": "First Name",
+                      "name": "last",
+                      "placeholder": "Last Name",
+                      "required": true,
                       "type": "text",
                       "value": "",
                     },
@@ -4147,7 +5660,9 @@ ReactWrapper {
               Object {
                 "instance": <input
                   class="my-input user-title"
+                  name="title"
                   placeholder="Job Title"
+                  required=""
                   type="text"
                   value=""
                 />,
@@ -4155,7 +5670,9 @@ ReactWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "className": "my-input user-title",
+                  "name": "title",
                   "placeholder": "Job Title",
+                  "required": true,
                   "type": "text",
                   "value": "",
                 },
@@ -4168,7 +5685,9 @@ ReactWrapper {
               Object {
                 "instance": <input
                   class="my-input user-email"
+                  name="email"
                   placeholder="Email"
+                  required=""
                   type="text"
                   value=""
                 />,
@@ -4176,7 +5695,9 @@ ReactWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "className": "my-input user-email",
+                  "name": "email",
                   "placeholder": "Email",
+                  "required": true,
                   "type": "text",
                   "value": "",
                 },
@@ -4189,7 +5710,9 @@ ReactWrapper {
               Object {
                 "instance": <input
                   class="my-input user-organization"
+                  name="organization"
                   placeholder="Organization"
+                  required=""
                   type="text"
                   value=""
                 />,
@@ -4197,7 +5720,9 @@ ReactWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "className": "my-input user-organization",
+                  "name": "organization",
                   "placeholder": "Organization",
+                  "required": true,
                   "type": "text",
                   "value": "",
                 },
@@ -4206,6 +5731,41 @@ ReactWrapper {
                   undefined,
                 ],
                 "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "click": [Function],
+                  "text": "Get Started",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": <div
+                    class="main-button"
+                    role="button"
+                    tabindex="0"
+                  >
+                    Get Started
+                  </div>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Get Started",
+                    "className": "main-button",
+                    "onClick": [Function],
+                    "onKeyPress": [Function],
+                    "role": "button",
+                    "tabIndex": "0",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Get Started",
+                  ],
+                  "type": "div",
+                },
+                "type": [Function],
               },
             ],
             "type": "form",
