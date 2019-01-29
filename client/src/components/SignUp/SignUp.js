@@ -6,6 +6,9 @@ class SignUp extends Component {
 
   // state holding user data
   state = {
+    user: {
+
+    }
 
   }
 
@@ -13,22 +16,19 @@ class SignUp extends Component {
 
   //  updates states upon input value change
   handleChange = e => {
-
+    const {user} = this.state;
     this.setState({
-
+      ...user,
       [e.target.name]: e.target.value
-
     })
+    console.log(this.state);
   }
 
   // sends http request creating the User
   handleSubmit = () => {
 
     const user = this.state;
-
-
-
-
+    this.setState({});
 
     fetch(`/create`, {
       method: 'post',
@@ -47,7 +47,6 @@ class SignUp extends Component {
 
 
   render () {
-
     const { handleChange, handleSubmit } = this;
     return (
       <div className="form-container">

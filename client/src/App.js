@@ -7,7 +7,7 @@ import SignUp from './components/SignUp';
 // eslint-disable-next-line
 class App extends Component {
   render() {
-    return <SignUp/>;
+    return <SignUp />;
   }
 }
 
