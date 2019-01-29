@@ -1,0 +1,5527 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SignUp /> matches the snapshot 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <SignUp />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": SignUp {
+      "_reactInternalFiber": FiberNode {
+        "_debugID": 50,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": FiberNode {
+          "_debugID": 49,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": [Circular],
+          "childExpirationTime": 0,
+          "effectTag": 1,
+          "elementType": [Function],
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {},
+          },
+          "mode": 0,
+          "nextEffect": FiberNode {
+            "_debugID": 47,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": [Circular],
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": null,
+              "expirationTime": 1073741823,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="form-container"
+                  >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
+                    <form
+                      class="my-form sign-up-form"
+                      name="signUp"
+                    >
+                      <div
+                        class="user-name"
+                      >
+                        <input
+                          class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input last-name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
+                          type="text"
+                        />
+                      </div>
+                      <input
+                        class="my-input user-title"
+                        name="title"
+                        placeholder="Job Title"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-email"
+                        name="email"
+                        placeholder="Email"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-organization"
+                        name="organization"
+                        placeholder="Organization"
+                        required=""
+                        type="text"
+                      />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Set {},
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Map {},
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+              },
+            },
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 32,
+            "elementType": null,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={Object {}}
+              />,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div
+                  class="form-container"
+                >
+                  <span
+                    class="welcome"
+                  >
+                    <h2>
+                      Getting Started with Docco
+                    </h2>
+                  </span>
+                  <form
+                    class="my-form sign-up-form"
+                    name="signUp"
+                  >
+                    <div
+                      class="user-name"
+                    >
+                      <input
+                        class="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input last-name"
+                        name="last"
+                        placeholder="Last Name"
+                        required=""
+                        type="text"
+                      />
+                    </div>
+                    <input
+                      class="my-input user-title"
+                      name="title"
+                      placeholder="Job Title"
+                      required=""
+                      type="text"
+                    />
+                    <input
+                      class="my-input user-email"
+                      name="email"
+                      placeholder="Email"
+                      required=""
+                      type="text"
+                    />
+                    <input
+                      class="my-input user-organization"
+                      name="organization"
+                      placeholder="Organization"
+                      required=""
+                      type="text"
+                    />
+                    <div
+                      class="main-button"
+                      role="button"
+                      tabindex="0"
+                    >
+                      Get Started
+                    </div>
+                  </form>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "didError": false,
+              "earliestPendingTime": 0,
+              "earliestSuspendedTime": 0,
+              "expirationTime": 0,
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "interactionThreadID": 12,
+              "latestPendingTime": 0,
+              "latestPingedTime": 0,
+              "latestSuspendedTime": 0,
+              "memoizedInteractions": Set {},
+              "nextExpirationTimeToWorkOn": 0,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "pendingInteractionMap": Map {},
+              "pingCache": null,
+              "timeoutHandle": -1,
+            },
+            "tag": 3,
+            "treeBaseDuration": 0,
+            "type": null,
+            "updateQueue": Object {
+              "baseState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "firstCapturedEffect": null,
+              "firstCapturedUpdate": null,
+              "firstEffect": null,
+              "firstUpdate": null,
+              "lastCapturedEffect": null,
+              "lastCapturedUpdate": null,
+              "lastEffect": null,
+              "lastUpdate": null,
+            },
+          },
+          "pendingProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 47,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": [Circular],
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": null,
+              "expirationTime": 1073741823,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="form-container"
+                  >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
+                    <form
+                      class="my-form sign-up-form"
+                      name="signUp"
+                    >
+                      <div
+                        class="user-name"
+                      >
+                        <input
+                          class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input last-name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
+                          type="text"
+                        />
+                      </div>
+                      <input
+                        class="my-input user-title"
+                        name="title"
+                        placeholder="Job Title"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-email"
+                        name="email"
+                        placeholder="Email"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-organization"
+                        name="organization"
+                        placeholder="Organization"
+                        required=""
+                        type="text"
+                      />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Set {},
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Map {},
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+              },
+            },
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 32,
+            "elementType": null,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={Object {}}
+              />,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div
+                  class="form-container"
+                >
+                  <span
+                    class="welcome"
+                  >
+                    <h2>
+                      Getting Started with Docco
+                    </h2>
+                  </span>
+                  <form
+                    class="my-form sign-up-form"
+                    name="signUp"
+                  >
+                    <div
+                      class="user-name"
+                    >
+                      <input
+                        class="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input last-name"
+                        name="last"
+                        placeholder="Last Name"
+                        required=""
+                        type="text"
+                      />
+                    </div>
+                    <input
+                      class="my-input user-title"
+                      name="title"
+                      placeholder="Job Title"
+                      required=""
+                      type="text"
+                    />
+                    <input
+                      class="my-input user-email"
+                      name="email"
+                      placeholder="Email"
+                      required=""
+                      type="text"
+                    />
+                    <input
+                      class="my-input user-organization"
+                      name="organization"
+                      placeholder="Organization"
+                      required=""
+                      type="text"
+                    />
+                    <div
+                      class="main-button"
+                      role="button"
+                      tabindex="0"
+                    >
+                      Get Started
+                    </div>
+                  </form>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "didError": false,
+              "earliestPendingTime": 0,
+              "earliestSuspendedTime": 0,
+              "expirationTime": 0,
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "interactionThreadID": 12,
+              "latestPendingTime": 0,
+              "latestPingedTime": 0,
+              "latestSuspendedTime": 0,
+              "memoizedInteractions": Set {},
+              "nextExpirationTimeToWorkOn": 0,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "pendingInteractionMap": Map {},
+              "pingCache": null,
+              "timeoutHandle": -1,
+            },
+            "tag": 3,
+            "treeBaseDuration": 0,
+            "type": null,
+            "updateQueue": Object {
+              "baseState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "firstCapturedEffect": null,
+              "firstCapturedUpdate": null,
+              "firstEffect": null,
+              "firstUpdate": null,
+              "lastCapturedEffect": null,
+              "lastCapturedUpdate": null,
+              "lastEffect": null,
+              "lastUpdate": null,
+            },
+          },
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 1,
+          "treeBaseDuration": 0,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_debugSource": null,
+        "actualDuration": 0,
+        "actualStartTime": -1,
+        "alternate": null,
+        "child": FiberNode {
+          "_debugID": 51,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": [Circular],
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 52,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 54,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": null,
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": "h2",
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": "Getting Started with Docco",
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": "Getting Started with Docco",
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": <h2>
+                Getting Started with Docco
+              </h2>,
+              "tag": 5,
+              "treeBaseDuration": 0,
+              "type": "h2",
+              "updateQueue": null,
+            },
+            "childExpirationTime": 0,
+            "effectTag": 0,
+            "elementType": "span",
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": <h2>
+                Getting Started with Docco
+              </h2>,
+              "className": "welcome",
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "children": <h2>
+                Getting Started with Docco
+              </h2>,
+              "className": "welcome",
+            },
+            "ref": null,
+            "return": [Circular],
+            "selfBaseDuration": 0,
+            "sibling": FiberNode {
+              "_debugID": 53,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 55,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 60,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": null,
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "elementType": "input",
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "className": "my-input first-name",
+                    "name": "first",
+                    "placeholder": "First Name",
+                    "required": true,
+                    "type": "text",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "className": "my-input first-name",
+                    "name": "first",
+                    "placeholder": "First Name",
+                    "required": true,
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": FiberNode {
+                    "_debugID": 61,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "elementType": "input",
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 1,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "className": "my-input last-name",
+                      "name": "last",
+                      "placeholder": "Last Name",
+                      "required": true,
+                      "type": "text",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "className": "my-input last-name",
+                      "name": "last",
+                      "placeholder": "Last Name",
+                      "required": true,
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": null,
+                    "stateNode": <input
+                      class="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required=""
+                      type="text"
+                    />,
+                    "tag": 5,
+                    "treeBaseDuration": 0,
+                    "type": "input",
+                    "updateQueue": null,
+                  },
+                  "stateNode": <input
+                    class="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required=""
+                    type="text"
+                  />,
+                  "tag": 5,
+                  "treeBaseDuration": 0,
+                  "type": "input",
+                  "updateQueue": null,
+                },
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": "div",
+                "expirationTime": 0,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": Array [
+                    <input
+                      className="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required={true}
+                      type="text"
+                    />,
+                    <input
+                      className="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required={true}
+                      type="text"
+                    />,
+                  ],
+                  "className": "user-name",
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": Array [
+                    <input
+                      className="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required={true}
+                      type="text"
+                    />,
+                    <input
+                      className="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required={true}
+                      type="text"
+                    />,
+                  ],
+                  "className": "user-name",
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": FiberNode {
+                  "_debugID": 56,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": null,
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "elementType": "input",
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 1,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "className": "my-input user-title",
+                    "name": "title",
+                    "placeholder": "Job Title",
+                    "required": true,
+                    "type": "text",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "className": "my-input user-title",
+                    "name": "title",
+                    "placeholder": "Job Title",
+                    "required": true,
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": FiberNode {
+                    "_debugID": 57,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "elementType": "input",
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 2,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "className": "my-input user-email",
+                      "name": "email",
+                      "placeholder": "Email",
+                      "required": true,
+                      "type": "text",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "className": "my-input user-email",
+                      "name": "email",
+                      "placeholder": "Email",
+                      "required": true,
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": FiberNode {
+                      "_debugID": 58,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": null,
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "elementType": "input",
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 3,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "className": "my-input user-organization",
+                        "name": "organization",
+                        "placeholder": "Organization",
+                        "required": true,
+                        "type": "text",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "className": "my-input user-organization",
+                        "name": "organization",
+                        "placeholder": "Organization",
+                        "required": true,
+                        "type": "text",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": FiberNode {
+                        "_debugID": 59,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": [Circular],
+                        "_debugSource": null,
+                        "actualDuration": 0,
+                        "actualStartTime": -1,
+                        "alternate": null,
+                        "child": FiberNode {
+                          "_debugID": 62,
+                          "_debugIsCurrentlyTiming": false,
+                          "_debugOwner": [Circular],
+                          "_debugSource": null,
+                          "actualDuration": 0,
+                          "actualStartTime": -1,
+                          "alternate": null,
+                          "child": null,
+                          "childExpirationTime": 0,
+                          "effectTag": 0,
+                          "elementType": "div",
+                          "expirationTime": 0,
+                          "firstContextDependency": null,
+                          "firstEffect": null,
+                          "index": 0,
+                          "key": null,
+                          "lastEffect": null,
+                          "memoizedProps": Object {
+                            "children": "Get Started",
+                            "className": "main-button",
+                            "onClick": [Function],
+                            "onKeyPress": [Function],
+                            "role": "button",
+                            "tabIndex": "0",
+                          },
+                          "memoizedState": null,
+                          "mode": 0,
+                          "nextEffect": null,
+                          "pendingProps": Object {
+                            "children": "Get Started",
+                            "className": "main-button",
+                            "onClick": [Function],
+                            "onKeyPress": [Function],
+                            "role": "button",
+                            "tabIndex": "0",
+                          },
+                          "ref": null,
+                          "return": [Circular],
+                          "selfBaseDuration": 0,
+                          "sibling": null,
+                          "stateNode": <div
+                            class="main-button"
+                            role="button"
+                            tabindex="0"
+                          >
+                            Get Started
+                          </div>,
+                          "tag": 5,
+                          "treeBaseDuration": 0,
+                          "type": "div",
+                          "updateQueue": null,
+                        },
+                        "childExpirationTime": 0,
+                        "effectTag": 1,
+                        "elementType": [Function],
+                        "expirationTime": 0,
+                        "firstContextDependency": null,
+                        "firstEffect": null,
+                        "index": 4,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": Object {
+                          "click": [Function],
+                          "text": "Get Started",
+                        },
+                        "memoizedState": null,
+                        "mode": 0,
+                        "nextEffect": null,
+                        "pendingProps": Object {
+                          "click": [Function],
+                          "text": "Get Started",
+                        },
+                        "ref": null,
+                        "return": [Circular],
+                        "selfBaseDuration": 0,
+                        "sibling": null,
+                        "stateNode": null,
+                        "tag": 0,
+                        "treeBaseDuration": 0,
+                        "type": [Function],
+                        "updateQueue": null,
+                      },
+                      "stateNode": <input
+                        class="my-input user-organization"
+                        name="organization"
+                        placeholder="Organization"
+                        required=""
+                        type="text"
+                      />,
+                      "tag": 5,
+                      "treeBaseDuration": 0,
+                      "type": "input",
+                      "updateQueue": null,
+                    },
+                    "stateNode": <input
+                      class="my-input user-email"
+                      name="email"
+                      placeholder="Email"
+                      required=""
+                      type="text"
+                    />,
+                    "tag": 5,
+                    "treeBaseDuration": 0,
+                    "type": "input",
+                    "updateQueue": null,
+                  },
+                  "stateNode": <input
+                    class="my-input user-title"
+                    name="title"
+                    placeholder="Job Title"
+                    required=""
+                    type="text"
+                  />,
+                  "tag": 5,
+                  "treeBaseDuration": 0,
+                  "type": "input",
+                  "updateQueue": null,
+                },
+                "stateNode": <div
+                  class="user-name"
+                >
+                  <input
+                    class="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required=""
+                    type="text"
+                  />
+                  <input
+                    class="my-input last-name"
+                    name="last"
+                    placeholder="Last Name"
+                    required=""
+                    type="text"
+                  />
+                </div>,
+                "tag": 5,
+                "treeBaseDuration": 0,
+                "type": "div",
+                "updateQueue": null,
+              },
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": "form",
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 1,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": Array [
+                  <div
+                    className="user-name"
+                  >
+                    <input
+                      className="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required={true}
+                      type="text"
+                    />
+                    <input
+                      className="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required={true}
+                      type="text"
+                    />
+                  </div>,
+                  <input
+                    className="my-input user-title"
+                    name="title"
+                    placeholder="Job Title"
+                    required={true}
+                    type="text"
+                  />,
+                  <input
+                    className="my-input user-email"
+                    name="email"
+                    placeholder="Email"
+                    required={true}
+                    type="text"
+                  />,
+                  <input
+                    className="my-input user-organization"
+                    name="organization"
+                    placeholder="Organization"
+                    required={true}
+                    type="text"
+                  />,
+                  <MainButton
+                    click={[Function]}
+                    text="Get Started"
+                  />,
+                ],
+                "className": "my-form sign-up-form",
+                "name": "signUp",
+                "onChange": [Function],
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": Array [
+                  <div
+                    className="user-name"
+                  >
+                    <input
+                      className="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required={true}
+                      type="text"
+                    />
+                    <input
+                      className="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required={true}
+                      type="text"
+                    />
+                  </div>,
+                  <input
+                    className="my-input user-title"
+                    name="title"
+                    placeholder="Job Title"
+                    required={true}
+                    type="text"
+                  />,
+                  <input
+                    className="my-input user-email"
+                    name="email"
+                    placeholder="Email"
+                    required={true}
+                    type="text"
+                  />,
+                  <input
+                    className="my-input user-organization"
+                    name="organization"
+                    placeholder="Organization"
+                    required={true}
+                    type="text"
+                  />,
+                  <MainButton
+                    click={[Function]}
+                    text="Get Started"
+                  />,
+                ],
+                "className": "my-form sign-up-form",
+                "name": "signUp",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": <form
+                class="my-form sign-up-form"
+                name="signUp"
+              >
+                <div
+                  class="user-name"
+                >
+                  <input
+                    class="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required=""
+                    type="text"
+                  />
+                  <input
+                    class="my-input last-name"
+                    name="last"
+                    placeholder="Last Name"
+                    required=""
+                    type="text"
+                  />
+                </div>
+                <input
+                  class="my-input user-title"
+                  name="title"
+                  placeholder="Job Title"
+                  required=""
+                  type="text"
+                />
+                <input
+                  class="my-input user-email"
+                  name="email"
+                  placeholder="Email"
+                  required=""
+                  type="text"
+                />
+                <input
+                  class="my-input user-organization"
+                  name="organization"
+                  placeholder="Organization"
+                  required=""
+                  type="text"
+                />
+                <div
+                  class="main-button"
+                  role="button"
+                  tabindex="0"
+                >
+                  Get Started
+                </div>
+              </form>,
+              "tag": 5,
+              "treeBaseDuration": 0,
+              "type": "form",
+              "updateQueue": null,
+            },
+            "stateNode": <span
+              class="welcome"
+            >
+              <h2>
+                Getting Started with Docco
+              </h2>
+            </span>,
+            "tag": 5,
+            "treeBaseDuration": 0,
+            "type": "span",
+            "updateQueue": null,
+          },
+          "childExpirationTime": 0,
+          "effectTag": 0,
+          "elementType": "div",
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "children": Array [
+              <span
+                className="welcome"
+              >
+                <h2>
+                  Getting Started with Docco
+                </h2>
+              </span>,
+              <form
+                className="my-form sign-up-form"
+                name="signUp"
+                onChange={[Function]}
+              >
+                <div
+                  className="user-name"
+                >
+                  <input
+                    className="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required={true}
+                    type="text"
+                  />
+                  <input
+                    className="my-input last-name"
+                    name="last"
+                    placeholder="Last Name"
+                    required={true}
+                    type="text"
+                  />
+                </div>
+                <input
+                  className="my-input user-title"
+                  name="title"
+                  placeholder="Job Title"
+                  required={true}
+                  type="text"
+                />
+                <input
+                  className="my-input user-email"
+                  name="email"
+                  placeholder="Email"
+                  required={true}
+                  type="text"
+                />
+                <input
+                  className="my-input user-organization"
+                  name="organization"
+                  placeholder="Organization"
+                  required={true}
+                  type="text"
+                />
+                <MainButton
+                  click={[Function]}
+                  text="Get Started"
+                />
+              </form>,
+            ],
+            "className": "form-container",
+          },
+          "memoizedState": null,
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "children": Array [
+              <span
+                className="welcome"
+              >
+                <h2>
+                  Getting Started with Docco
+                </h2>
+              </span>,
+              <form
+                className="my-form sign-up-form"
+                name="signUp"
+                onChange={[Function]}
+              >
+                <div
+                  className="user-name"
+                >
+                  <input
+                    className="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required={true}
+                    type="text"
+                  />
+                  <input
+                    className="my-input last-name"
+                    name="last"
+                    placeholder="Last Name"
+                    required={true}
+                    type="text"
+                  />
+                </div>
+                <input
+                  className="my-input user-title"
+                  name="title"
+                  placeholder="Job Title"
+                  required={true}
+                  type="text"
+                />
+                <input
+                  className="my-input user-email"
+                  name="email"
+                  placeholder="Email"
+                  required={true}
+                  type="text"
+                />
+                <input
+                  className="my-input user-organization"
+                  name="organization"
+                  placeholder="Organization"
+                  required={true}
+                  type="text"
+                />
+                <MainButton
+                  click={[Function]}
+                  text="Get Started"
+                />
+              </form>,
+            ],
+            "className": "form-container",
+          },
+          "ref": null,
+          "return": [Circular],
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": <div
+            class="form-container"
+          >
+            <span
+              class="welcome"
+            >
+              <h2>
+                Getting Started with Docco
+              </h2>
+            </span>
+            <form
+              class="my-form sign-up-form"
+              name="signUp"
+            >
+              <div
+                class="user-name"
+              >
+                <input
+                  class="my-input first-name"
+                  name="first"
+                  placeholder="First Name"
+                  required=""
+                  type="text"
+                />
+                <input
+                  class="my-input last-name"
+                  name="last"
+                  placeholder="Last Name"
+                  required=""
+                  type="text"
+                />
+              </div>
+              <input
+                class="my-input user-title"
+                name="title"
+                placeholder="Job Title"
+                required=""
+                type="text"
+              />
+              <input
+                class="my-input user-email"
+                name="email"
+                placeholder="Email"
+                required=""
+                type="text"
+              />
+              <input
+                class="my-input user-organization"
+                name="organization"
+                placeholder="Organization"
+                required=""
+                type="text"
+              />
+              <div
+                class="main-button"
+                role="button"
+                tabindex="0"
+              >
+                Get Started
+              </div>
+            </form>
+          </div>,
+          "tag": 5,
+          "treeBaseDuration": 0,
+          "type": "div",
+          "updateQueue": null,
+        },
+        "childExpirationTime": 0,
+        "effectTag": 1,
+        "elementType": [Function],
+        "expirationTime": 0,
+        "firstContextDependency": null,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": Object {},
+        "memoizedState": Object {},
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": Object {},
+        "ref": null,
+        "return": FiberNode {
+          "_debugID": 49,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": [Circular],
+          "childExpirationTime": 0,
+          "effectTag": 1,
+          "elementType": [Function],
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {},
+          },
+          "mode": 0,
+          "nextEffect": FiberNode {
+            "_debugID": 47,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": [Circular],
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": null,
+              "expirationTime": 1073741823,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="form-container"
+                  >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
+                    <form
+                      class="my-form sign-up-form"
+                      name="signUp"
+                    >
+                      <div
+                        class="user-name"
+                      >
+                        <input
+                          class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input last-name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
+                          type="text"
+                        />
+                      </div>
+                      <input
+                        class="my-input user-title"
+                        name="title"
+                        placeholder="Job Title"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-email"
+                        name="email"
+                        placeholder="Email"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-organization"
+                        name="organization"
+                        placeholder="Organization"
+                        required=""
+                        type="text"
+                      />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Set {},
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Map {},
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+              },
+            },
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 32,
+            "elementType": null,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={Object {}}
+              />,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div
+                  class="form-container"
+                >
+                  <span
+                    class="welcome"
+                  >
+                    <h2>
+                      Getting Started with Docco
+                    </h2>
+                  </span>
+                  <form
+                    class="my-form sign-up-form"
+                    name="signUp"
+                  >
+                    <div
+                      class="user-name"
+                    >
+                      <input
+                        class="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input last-name"
+                        name="last"
+                        placeholder="Last Name"
+                        required=""
+                        type="text"
+                      />
+                    </div>
+                    <input
+                      class="my-input user-title"
+                      name="title"
+                      placeholder="Job Title"
+                      required=""
+                      type="text"
+                    />
+                    <input
+                      class="my-input user-email"
+                      name="email"
+                      placeholder="Email"
+                      required=""
+                      type="text"
+                    />
+                    <input
+                      class="my-input user-organization"
+                      name="organization"
+                      placeholder="Organization"
+                      required=""
+                      type="text"
+                    />
+                    <div
+                      class="main-button"
+                      role="button"
+                      tabindex="0"
+                    >
+                      Get Started
+                    </div>
+                  </form>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "didError": false,
+              "earliestPendingTime": 0,
+              "earliestSuspendedTime": 0,
+              "expirationTime": 0,
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "interactionThreadID": 12,
+              "latestPendingTime": 0,
+              "latestPingedTime": 0,
+              "latestSuspendedTime": 0,
+              "memoizedInteractions": Set {},
+              "nextExpirationTimeToWorkOn": 0,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "pendingInteractionMap": Map {},
+              "pingCache": null,
+              "timeoutHandle": -1,
+            },
+            "tag": 3,
+            "treeBaseDuration": 0,
+            "type": null,
+            "updateQueue": Object {
+              "baseState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "firstCapturedEffect": null,
+              "firstCapturedUpdate": null,
+              "firstEffect": null,
+              "firstUpdate": null,
+              "lastCapturedEffect": null,
+              "lastCapturedUpdate": null,
+              "lastEffect": null,
+              "lastUpdate": null,
+            },
+          },
+          "pendingProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 47,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": [Circular],
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": null,
+              "expirationTime": 1073741823,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="form-container"
+                  >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
+                    <form
+                      class="my-form sign-up-form"
+                      name="signUp"
+                    >
+                      <div
+                        class="user-name"
+                      >
+                        <input
+                          class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input last-name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
+                          type="text"
+                        />
+                      </div>
+                      <input
+                        class="my-input user-title"
+                        name="title"
+                        placeholder="Job Title"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-email"
+                        name="email"
+                        placeholder="Email"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-organization"
+                        name="organization"
+                        placeholder="Organization"
+                        required=""
+                        type="text"
+                      />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Set {},
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Map {},
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+              },
+            },
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 32,
+            "elementType": null,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={Object {}}
+              />,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div
+                  class="form-container"
+                >
+                  <span
+                    class="welcome"
+                  >
+                    <h2>
+                      Getting Started with Docco
+                    </h2>
+                  </span>
+                  <form
+                    class="my-form sign-up-form"
+                    name="signUp"
+                  >
+                    <div
+                      class="user-name"
+                    >
+                      <input
+                        class="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input last-name"
+                        name="last"
+                        placeholder="Last Name"
+                        required=""
+                        type="text"
+                      />
+                    </div>
+                    <input
+                      class="my-input user-title"
+                      name="title"
+                      placeholder="Job Title"
+                      required=""
+                      type="text"
+                    />
+                    <input
+                      class="my-input user-email"
+                      name="email"
+                      placeholder="Email"
+                      required=""
+                      type="text"
+                    />
+                    <input
+                      class="my-input user-organization"
+                      name="organization"
+                      placeholder="Organization"
+                      required=""
+                      type="text"
+                    />
+                    <div
+                      class="main-button"
+                      role="button"
+                      tabindex="0"
+                    >
+                      Get Started
+                    </div>
+                  </form>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "didError": false,
+              "earliestPendingTime": 0,
+              "earliestSuspendedTime": 0,
+              "expirationTime": 0,
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "interactionThreadID": 12,
+              "latestPendingTime": 0,
+              "latestPingedTime": 0,
+              "latestSuspendedTime": 0,
+              "memoizedInteractions": Set {},
+              "nextExpirationTimeToWorkOn": 0,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "pendingInteractionMap": Map {},
+              "pingCache": null,
+              "timeoutHandle": -1,
+            },
+            "tag": 3,
+            "treeBaseDuration": 0,
+            "type": null,
+            "updateQueue": Object {
+              "baseState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "firstCapturedEffect": null,
+              "firstCapturedUpdate": null,
+              "firstEffect": null,
+              "firstUpdate": null,
+              "lastCapturedEffect": null,
+              "lastCapturedUpdate": null,
+              "lastEffect": null,
+              "lastUpdate": null,
+            },
+          },
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 1,
+          "treeBaseDuration": 0,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "selfBaseDuration": 0,
+        "sibling": null,
+        "stateNode": [Circular],
+        "tag": 1,
+        "treeBaseDuration": 0,
+        "type": [Function],
+        "updateQueue": null,
+      },
+      "_reactInternalInstance": Object {},
+      "context": Object {},
+      "handleChange": [Function],
+      "handleSubmit": [Function],
+      "props": Object {},
+      "refs": Object {},
+      "state": Object {},
+      "updater": Object {
+        "enqueueForceUpdate": [Function],
+        "enqueueReplaceState": [Function],
+        "enqueueSetState": [Function],
+        "isMounted": [Function],
+      },
+    },
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {},
+    "ref": null,
+    "rendered": Object {
+      "instance": <div
+        class="form-container"
+      >
+        <span
+          class="welcome"
+        >
+          <h2>
+            Getting Started with Docco
+          </h2>
+        </span>
+        <form
+          class="my-form sign-up-form"
+          name="signUp"
+        >
+          <div
+            class="user-name"
+          >
+            <input
+              class="my-input first-name"
+              name="first"
+              placeholder="First Name"
+              required=""
+              type="text"
+            />
+            <input
+              class="my-input last-name"
+              name="last"
+              placeholder="Last Name"
+              required=""
+              type="text"
+            />
+          </div>
+          <input
+            class="my-input user-title"
+            name="title"
+            placeholder="Job Title"
+            required=""
+            type="text"
+          />
+          <input
+            class="my-input user-email"
+            name="email"
+            placeholder="Email"
+            required=""
+            type="text"
+          />
+          <input
+            class="my-input user-organization"
+            name="organization"
+            placeholder="Organization"
+            required=""
+            type="text"
+          />
+          <div
+            class="main-button"
+            role="button"
+            tabindex="0"
+          >
+            Get Started
+          </div>
+        </form>
+      </div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="welcome"
+          >
+            <h2>
+              Getting Started with Docco
+            </h2>
+          </span>,
+          <form
+            className="my-form sign-up-form"
+            name="signUp"
+            onChange={[Function]}
+          >
+            <div
+              className="user-name"
+            >
+              <input
+                className="my-input first-name"
+                name="first"
+                placeholder="First Name"
+                required={true}
+                type="text"
+              />
+              <input
+                className="my-input last-name"
+                name="last"
+                placeholder="Last Name"
+                required={true}
+                type="text"
+              />
+            </div>
+            <input
+              className="my-input user-title"
+              name="title"
+              placeholder="Job Title"
+              required={true}
+              type="text"
+            />
+            <input
+              className="my-input user-email"
+              name="email"
+              placeholder="Email"
+              required={true}
+              type="text"
+            />
+            <input
+              className="my-input user-organization"
+              name="organization"
+              placeholder="Organization"
+              required={true}
+              type="text"
+            />
+            <MainButton
+              click={[Function]}
+              text="Get Started"
+            />
+          </form>,
+        ],
+        "className": "form-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <span
+            class="welcome"
+          >
+            <h2>
+              Getting Started with Docco
+            </h2>
+          </span>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h2>
+              Getting Started with Docco
+            </h2>,
+            "className": "welcome",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <h2>
+                Getting Started with Docco
+              </h2>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Getting Started with Docco",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Getting Started with Docco",
+              ],
+              "type": "h2",
+            },
+          ],
+          "type": "span",
+        },
+        Object {
+          "instance": <form
+            class="my-form sign-up-form"
+            name="signUp"
+          >
+            <div
+              class="user-name"
+            >
+              <input
+                class="my-input first-name"
+                name="first"
+                placeholder="First Name"
+                required=""
+                type="text"
+              />
+              <input
+                class="my-input last-name"
+                name="last"
+                placeholder="Last Name"
+                required=""
+                type="text"
+              />
+            </div>
+            <input
+              class="my-input user-title"
+              name="title"
+              placeholder="Job Title"
+              required=""
+              type="text"
+            />
+            <input
+              class="my-input user-email"
+              name="email"
+              placeholder="Email"
+              required=""
+              type="text"
+            />
+            <input
+              class="my-input user-organization"
+              name="organization"
+              placeholder="Organization"
+              required=""
+              type="text"
+            />
+            <div
+              class="main-button"
+              role="button"
+              tabindex="0"
+            >
+              Get Started
+            </div>
+          </form>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="user-name"
+              >
+                <input
+                  className="my-input first-name"
+                  name="first"
+                  placeholder="First Name"
+                  required={true}
+                  type="text"
+                />
+                <input
+                  className="my-input last-name"
+                  name="last"
+                  placeholder="Last Name"
+                  required={true}
+                  type="text"
+                />
+              </div>,
+              <input
+                className="my-input user-title"
+                name="title"
+                placeholder="Job Title"
+                required={true}
+                type="text"
+              />,
+              <input
+                className="my-input user-email"
+                name="email"
+                placeholder="Email"
+                required={true}
+                type="text"
+              />,
+              <input
+                className="my-input user-organization"
+                name="organization"
+                placeholder="Organization"
+                required={true}
+                type="text"
+              />,
+              <MainButton
+                click={[Function]}
+                text="Get Started"
+              />,
+            ],
+            "className": "my-form sign-up-form",
+            "name": "signUp",
+            "onChange": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <div
+                class="user-name"
+              >
+                <input
+                  class="my-input first-name"
+                  name="first"
+                  placeholder="First Name"
+                  required=""
+                  type="text"
+                />
+                <input
+                  class="my-input last-name"
+                  name="last"
+                  placeholder="Last Name"
+                  required=""
+                  type="text"
+                />
+              </div>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required={true}
+                    type="text"
+                  />,
+                  <input
+                    className="my-input last-name"
+                    name="last"
+                    placeholder="Last Name"
+                    required={true}
+                    type="text"
+                  />,
+                ],
+                "className": "user-name",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <input
+                    class="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required=""
+                    type="text"
+                  />,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "my-input first-name",
+                    "name": "first",
+                    "placeholder": "First Name",
+                    "required": true,
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    undefined,
+                  ],
+                  "type": "input",
+                },
+                Object {
+                  "instance": <input
+                    class="my-input last-name"
+                    name="last"
+                    placeholder="Last Name"
+                    required=""
+                    type="text"
+                  />,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "my-input last-name",
+                    "name": "last",
+                    "placeholder": "Last Name",
+                    "required": true,
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    undefined,
+                  ],
+                  "type": "input",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": <input
+                class="my-input user-title"
+                name="title"
+                placeholder="Job Title"
+                required=""
+                type="text"
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "my-input user-title",
+                "name": "title",
+                "placeholder": "Job Title",
+                "required": true,
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "input",
+            },
+            Object {
+              "instance": <input
+                class="my-input user-email"
+                name="email"
+                placeholder="Email"
+                required=""
+                type="text"
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "my-input user-email",
+                "name": "email",
+                "placeholder": "Email",
+                "required": true,
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "input",
+            },
+            Object {
+              "instance": <input
+                class="my-input user-organization"
+                name="organization"
+                placeholder="Organization"
+                required=""
+                type="text"
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "my-input user-organization",
+                "name": "organization",
+                "placeholder": "Organization",
+                "required": true,
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "click": [Function],
+                "text": "Get Started",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": <div
+                  class="main-button"
+                  role="button"
+                  tabindex="0"
+                >
+                  Get Started
+                </div>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Get Started",
+                  "className": "main-button",
+                  "onClick": [Function],
+                  "onKeyPress": [Function],
+                  "role": "button",
+                  "tabIndex": "0",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Get Started",
+                ],
+                "type": "div",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": SignUp {
+        "_reactInternalFiber": FiberNode {
+          "_debugID": 50,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": FiberNode {
+            "_debugID": 49,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 1,
+            "elementType": [Function],
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "mode": 0,
+            "nextEffect": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": FiberNode {
+                "_debugID": 47,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": [Circular],
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": null,
+                "expirationTime": 1073741823,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div
+                      class="form-container"
+                    >
+                      <span
+                        class="welcome"
+                      >
+                        <h2>
+                          Getting Started with Docco
+                        </h2>
+                      </span>
+                      <form
+                        class="my-form sign-up-form"
+                        name="signUp"
+                      >
+                        <div
+                          class="user-name"
+                        >
+                          <input
+                            class="my-input first-name"
+                            name="first"
+                            placeholder="First Name"
+                            required=""
+                            type="text"
+                          />
+                          <input
+                            class="my-input last-name"
+                            name="last"
+                            placeholder="Last Name"
+                            required=""
+                            type="text"
+                          />
+                        </div>
+                        <input
+                          class="my-input user-title"
+                          name="title"
+                          placeholder="Job Title"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input user-email"
+                          name="email"
+                          placeholder="Email"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input user-organization"
+                          name="organization"
+                          placeholder="Organization"
+                          required=""
+                          type="text"
+                        />
+                        <div
+                          class="main-button"
+                          role="button"
+                          tabindex="0"
+                        >
+                          Get Started
+                        </div>
+                      </form>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "didError": false,
+                  "earliestPendingTime": 0,
+                  "earliestSuspendedTime": 0,
+                  "expirationTime": 0,
+                  "finishedWork": null,
+                  "firstBatch": null,
+                  "hydrate": false,
+                  "interactionThreadID": 12,
+                  "latestPendingTime": 0,
+                  "latestPingedTime": 0,
+                  "latestSuspendedTime": 0,
+                  "memoizedInteractions": Set {},
+                  "nextExpirationTimeToWorkOn": 0,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingCommitExpirationTime": 0,
+                  "pendingContext": null,
+                  "pendingInteractionMap": Map {},
+                  "pingCache": null,
+                  "timeoutHandle": -1,
+                },
+                "tag": 3,
+                "treeBaseDuration": 0,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "firstCapturedEffect": null,
+                  "firstCapturedUpdate": null,
+                  "firstEffect": null,
+                  "firstUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                  "lastCapturedEffect": null,
+                  "lastCapturedUpdate": null,
+                  "lastEffect": null,
+                  "lastUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                },
+              },
+              "child": [Circular],
+              "childExpirationTime": 0,
+              "effectTag": 32,
+              "elementType": null,
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="form-container"
+                  >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
+                    <form
+                      class="my-form sign-up-form"
+                      name="signUp"
+                    >
+                      <div
+                        class="user-name"
+                      >
+                        <input
+                          class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input last-name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
+                          type="text"
+                        />
+                      </div>
+                      <input
+                        class="my-input user-title"
+                        name="title"
+                        placeholder="Job Title"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-email"
+                        name="email"
+                        placeholder="Email"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-organization"
+                        name="organization"
+                        placeholder="Organization"
+                        required=""
+                        type="text"
+                      />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Set {},
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Map {},
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": Object {
+                  "element": <WrapperComponent
+                    Component={[Function]}
+                    context={null}
+                    props={Object {}}
+                  />,
+                },
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": null,
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": null,
+              },
+            },
+            "pendingProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": FiberNode {
+                "_debugID": 47,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": [Circular],
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": null,
+                "expirationTime": 1073741823,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div
+                      class="form-container"
+                    >
+                      <span
+                        class="welcome"
+                      >
+                        <h2>
+                          Getting Started with Docco
+                        </h2>
+                      </span>
+                      <form
+                        class="my-form sign-up-form"
+                        name="signUp"
+                      >
+                        <div
+                          class="user-name"
+                        >
+                          <input
+                            class="my-input first-name"
+                            name="first"
+                            placeholder="First Name"
+                            required=""
+                            type="text"
+                          />
+                          <input
+                            class="my-input last-name"
+                            name="last"
+                            placeholder="Last Name"
+                            required=""
+                            type="text"
+                          />
+                        </div>
+                        <input
+                          class="my-input user-title"
+                          name="title"
+                          placeholder="Job Title"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input user-email"
+                          name="email"
+                          placeholder="Email"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input user-organization"
+                          name="organization"
+                          placeholder="Organization"
+                          required=""
+                          type="text"
+                        />
+                        <div
+                          class="main-button"
+                          role="button"
+                          tabindex="0"
+                        >
+                          Get Started
+                        </div>
+                      </form>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "didError": false,
+                  "earliestPendingTime": 0,
+                  "earliestSuspendedTime": 0,
+                  "expirationTime": 0,
+                  "finishedWork": null,
+                  "firstBatch": null,
+                  "hydrate": false,
+                  "interactionThreadID": 12,
+                  "latestPendingTime": 0,
+                  "latestPingedTime": 0,
+                  "latestSuspendedTime": 0,
+                  "memoizedInteractions": Set {},
+                  "nextExpirationTimeToWorkOn": 0,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingCommitExpirationTime": 0,
+                  "pendingContext": null,
+                  "pendingInteractionMap": Map {},
+                  "pingCache": null,
+                  "timeoutHandle": -1,
+                },
+                "tag": 3,
+                "treeBaseDuration": 0,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "firstCapturedEffect": null,
+                  "firstCapturedUpdate": null,
+                  "firstEffect": null,
+                  "firstUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                  "lastCapturedEffect": null,
+                  "lastCapturedUpdate": null,
+                  "lastEffect": null,
+                  "lastUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                },
+              },
+              "child": [Circular],
+              "childExpirationTime": 0,
+              "effectTag": 32,
+              "elementType": null,
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="form-container"
+                  >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
+                    <form
+                      class="my-form sign-up-form"
+                      name="signUp"
+                    >
+                      <div
+                        class="user-name"
+                      >
+                        <input
+                          class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input last-name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
+                          type="text"
+                        />
+                      </div>
+                      <input
+                        class="my-input user-title"
+                        name="title"
+                        placeholder="Job Title"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-email"
+                        name="email"
+                        placeholder="Email"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-organization"
+                        name="organization"
+                        placeholder="Organization"
+                        required=""
+                        type="text"
+                      />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Set {},
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Map {},
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": Object {
+                  "element": <WrapperComponent
+                    Component={[Function]}
+                    context={null}
+                    props={Object {}}
+                  />,
+                },
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": null,
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": null,
+              },
+            },
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {},
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {},
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 1,
+            "treeBaseDuration": 0,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 51,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 52,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 54,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": null,
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": "h2",
+                "expirationTime": 0,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": "Getting Started with Docco",
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": "Getting Started with Docco",
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": <h2>
+                  Getting Started with Docco
+                </h2>,
+                "tag": 5,
+                "treeBaseDuration": 0,
+                "type": "h2",
+                "updateQueue": null,
+              },
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": "span",
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": <h2>
+                  Getting Started with Docco
+                </h2>,
+                "className": "welcome",
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": <h2>
+                  Getting Started with Docco
+                </h2>,
+                "className": "welcome",
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": FiberNode {
+                "_debugID": 53,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 55,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": FiberNode {
+                    "_debugID": 60,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "elementType": "input",
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "className": "my-input first-name",
+                      "name": "first",
+                      "placeholder": "First Name",
+                      "required": true,
+                      "type": "text",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "className": "my-input first-name",
+                      "name": "first",
+                      "placeholder": "First Name",
+                      "required": true,
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": FiberNode {
+                      "_debugID": 61,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": null,
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "elementType": "input",
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 1,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "className": "my-input last-name",
+                        "name": "last",
+                        "placeholder": "Last Name",
+                        "required": true,
+                        "type": "text",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "className": "my-input last-name",
+                        "name": "last",
+                        "placeholder": "Last Name",
+                        "required": true,
+                        "type": "text",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": null,
+                      "stateNode": <input
+                        class="my-input last-name"
+                        name="last"
+                        placeholder="Last Name"
+                        required=""
+                        type="text"
+                      />,
+                      "tag": 5,
+                      "treeBaseDuration": 0,
+                      "type": "input",
+                      "updateQueue": null,
+                    },
+                    "stateNode": <input
+                      class="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required=""
+                      type="text"
+                    />,
+                    "tag": 5,
+                    "treeBaseDuration": 0,
+                    "type": "input",
+                    "updateQueue": null,
+                  },
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "elementType": "div",
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": Array [
+                      <input
+                        className="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required={true}
+                        type="text"
+                      />,
+                      <input
+                        className="my-input last-name"
+                        name="last"
+                        placeholder="Last Name"
+                        required={true}
+                        type="text"
+                      />,
+                    ],
+                    "className": "user-name",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "children": Array [
+                      <input
+                        className="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required={true}
+                        type="text"
+                      />,
+                      <input
+                        className="my-input last-name"
+                        name="last"
+                        placeholder="Last Name"
+                        required={true}
+                        type="text"
+                      />,
+                    ],
+                    "className": "user-name",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": FiberNode {
+                    "_debugID": 56,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "elementType": "input",
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 1,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "className": "my-input user-title",
+                      "name": "title",
+                      "placeholder": "Job Title",
+                      "required": true,
+                      "type": "text",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "className": "my-input user-title",
+                      "name": "title",
+                      "placeholder": "Job Title",
+                      "required": true,
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": FiberNode {
+                      "_debugID": 57,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": null,
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "elementType": "input",
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 2,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "className": "my-input user-email",
+                        "name": "email",
+                        "placeholder": "Email",
+                        "required": true,
+                        "type": "text",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "className": "my-input user-email",
+                        "name": "email",
+                        "placeholder": "Email",
+                        "required": true,
+                        "type": "text",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": FiberNode {
+                        "_debugID": 58,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": [Circular],
+                        "_debugSource": null,
+                        "actualDuration": 0,
+                        "actualStartTime": -1,
+                        "alternate": null,
+                        "child": null,
+                        "childExpirationTime": 0,
+                        "effectTag": 0,
+                        "elementType": "input",
+                        "expirationTime": 0,
+                        "firstContextDependency": null,
+                        "firstEffect": null,
+                        "index": 3,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": Object {
+                          "className": "my-input user-organization",
+                          "name": "organization",
+                          "placeholder": "Organization",
+                          "required": true,
+                          "type": "text",
+                        },
+                        "memoizedState": null,
+                        "mode": 0,
+                        "nextEffect": null,
+                        "pendingProps": Object {
+                          "className": "my-input user-organization",
+                          "name": "organization",
+                          "placeholder": "Organization",
+                          "required": true,
+                          "type": "text",
+                        },
+                        "ref": null,
+                        "return": [Circular],
+                        "selfBaseDuration": 0,
+                        "sibling": FiberNode {
+                          "_debugID": 59,
+                          "_debugIsCurrentlyTiming": false,
+                          "_debugOwner": [Circular],
+                          "_debugSource": null,
+                          "actualDuration": 0,
+                          "actualStartTime": -1,
+                          "alternate": null,
+                          "child": FiberNode {
+                            "_debugID": 62,
+                            "_debugIsCurrentlyTiming": false,
+                            "_debugOwner": [Circular],
+                            "_debugSource": null,
+                            "actualDuration": 0,
+                            "actualStartTime": -1,
+                            "alternate": null,
+                            "child": null,
+                            "childExpirationTime": 0,
+                            "effectTag": 0,
+                            "elementType": "div",
+                            "expirationTime": 0,
+                            "firstContextDependency": null,
+                            "firstEffect": null,
+                            "index": 0,
+                            "key": null,
+                            "lastEffect": null,
+                            "memoizedProps": Object {
+                              "children": "Get Started",
+                              "className": "main-button",
+                              "onClick": [Function],
+                              "onKeyPress": [Function],
+                              "role": "button",
+                              "tabIndex": "0",
+                            },
+                            "memoizedState": null,
+                            "mode": 0,
+                            "nextEffect": null,
+                            "pendingProps": Object {
+                              "children": "Get Started",
+                              "className": "main-button",
+                              "onClick": [Function],
+                              "onKeyPress": [Function],
+                              "role": "button",
+                              "tabIndex": "0",
+                            },
+                            "ref": null,
+                            "return": [Circular],
+                            "selfBaseDuration": 0,
+                            "sibling": null,
+                            "stateNode": <div
+                              class="main-button"
+                              role="button"
+                              tabindex="0"
+                            >
+                              Get Started
+                            </div>,
+                            "tag": 5,
+                            "treeBaseDuration": 0,
+                            "type": "div",
+                            "updateQueue": null,
+                          },
+                          "childExpirationTime": 0,
+                          "effectTag": 1,
+                          "elementType": [Function],
+                          "expirationTime": 0,
+                          "firstContextDependency": null,
+                          "firstEffect": null,
+                          "index": 4,
+                          "key": null,
+                          "lastEffect": null,
+                          "memoizedProps": Object {
+                            "click": [Function],
+                            "text": "Get Started",
+                          },
+                          "memoizedState": null,
+                          "mode": 0,
+                          "nextEffect": null,
+                          "pendingProps": Object {
+                            "click": [Function],
+                            "text": "Get Started",
+                          },
+                          "ref": null,
+                          "return": [Circular],
+                          "selfBaseDuration": 0,
+                          "sibling": null,
+                          "stateNode": null,
+                          "tag": 0,
+                          "treeBaseDuration": 0,
+                          "type": [Function],
+                          "updateQueue": null,
+                        },
+                        "stateNode": <input
+                          class="my-input user-organization"
+                          name="organization"
+                          placeholder="Organization"
+                          required=""
+                          type="text"
+                        />,
+                        "tag": 5,
+                        "treeBaseDuration": 0,
+                        "type": "input",
+                        "updateQueue": null,
+                      },
+                      "stateNode": <input
+                        class="my-input user-email"
+                        name="email"
+                        placeholder="Email"
+                        required=""
+                        type="text"
+                      />,
+                      "tag": 5,
+                      "treeBaseDuration": 0,
+                      "type": "input",
+                      "updateQueue": null,
+                    },
+                    "stateNode": <input
+                      class="my-input user-title"
+                      name="title"
+                      placeholder="Job Title"
+                      required=""
+                      type="text"
+                    />,
+                    "tag": 5,
+                    "treeBaseDuration": 0,
+                    "type": "input",
+                    "updateQueue": null,
+                  },
+                  "stateNode": <div
+                    class="user-name"
+                  >
+                    <input
+                      class="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required=""
+                      type="text"
+                    />
+                    <input
+                      class="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required=""
+                      type="text"
+                    />
+                  </div>,
+                  "tag": 5,
+                  "treeBaseDuration": 0,
+                  "type": "div",
+                  "updateQueue": null,
+                },
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": "form",
+                "expirationTime": 0,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 1,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": Array [
+                    <div
+                      className="user-name"
+                    >
+                      <input
+                        className="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required={true}
+                        type="text"
+                      />
+                      <input
+                        className="my-input last-name"
+                        name="last"
+                        placeholder="Last Name"
+                        required={true}
+                        type="text"
+                      />
+                    </div>,
+                    <input
+                      className="my-input user-title"
+                      name="title"
+                      placeholder="Job Title"
+                      required={true}
+                      type="text"
+                    />,
+                    <input
+                      className="my-input user-email"
+                      name="email"
+                      placeholder="Email"
+                      required={true}
+                      type="text"
+                    />,
+                    <input
+                      className="my-input user-organization"
+                      name="organization"
+                      placeholder="Organization"
+                      required={true}
+                      type="text"
+                    />,
+                    <MainButton
+                      click={[Function]}
+                      text="Get Started"
+                    />,
+                  ],
+                  "className": "my-form sign-up-form",
+                  "name": "signUp",
+                  "onChange": [Function],
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": Array [
+                    <div
+                      className="user-name"
+                    >
+                      <input
+                        className="my-input first-name"
+                        name="first"
+                        placeholder="First Name"
+                        required={true}
+                        type="text"
+                      />
+                      <input
+                        className="my-input last-name"
+                        name="last"
+                        placeholder="Last Name"
+                        required={true}
+                        type="text"
+                      />
+                    </div>,
+                    <input
+                      className="my-input user-title"
+                      name="title"
+                      placeholder="Job Title"
+                      required={true}
+                      type="text"
+                    />,
+                    <input
+                      className="my-input user-email"
+                      name="email"
+                      placeholder="Email"
+                      required={true}
+                      type="text"
+                    />,
+                    <input
+                      className="my-input user-organization"
+                      name="organization"
+                      placeholder="Organization"
+                      required={true}
+                      type="text"
+                    />,
+                    <MainButton
+                      click={[Function]}
+                      text="Get Started"
+                    />,
+                  ],
+                  "className": "my-form sign-up-form",
+                  "name": "signUp",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": <form
+                  class="my-form sign-up-form"
+                  name="signUp"
+                >
+                  <div
+                    class="user-name"
+                  >
+                    <input
+                      class="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required=""
+                      type="text"
+                    />
+                    <input
+                      class="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required=""
+                      type="text"
+                    />
+                  </div>
+                  <input
+                    class="my-input user-title"
+                    name="title"
+                    placeholder="Job Title"
+                    required=""
+                    type="text"
+                  />
+                  <input
+                    class="my-input user-email"
+                    name="email"
+                    placeholder="Email"
+                    required=""
+                    type="text"
+                  />
+                  <input
+                    class="my-input user-organization"
+                    name="organization"
+                    placeholder="Organization"
+                    required=""
+                    type="text"
+                  />
+                  <div
+                    class="main-button"
+                    role="button"
+                    tabindex="0"
+                  >
+                    Get Started
+                  </div>
+                </form>,
+                "tag": 5,
+                "treeBaseDuration": 0,
+                "type": "form",
+                "updateQueue": null,
+              },
+              "stateNode": <span
+                class="welcome"
+              >
+                <h2>
+                  Getting Started with Docco
+                </h2>
+              </span>,
+              "tag": 5,
+              "treeBaseDuration": 0,
+              "type": "span",
+              "updateQueue": null,
+            },
+            "childExpirationTime": 0,
+            "effectTag": 0,
+            "elementType": "div",
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": Array [
+                <span
+                  className="welcome"
+                >
+                  <h2>
+                    Getting Started with Docco
+                  </h2>
+                </span>,
+                <form
+                  className="my-form sign-up-form"
+                  name="signUp"
+                  onChange={[Function]}
+                >
+                  <div
+                    className="user-name"
+                  >
+                    <input
+                      className="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required={true}
+                      type="text"
+                    />
+                    <input
+                      className="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required={true}
+                      type="text"
+                    />
+                  </div>
+                  <input
+                    className="my-input user-title"
+                    name="title"
+                    placeholder="Job Title"
+                    required={true}
+                    type="text"
+                  />
+                  <input
+                    className="my-input user-email"
+                    name="email"
+                    placeholder="Email"
+                    required={true}
+                    type="text"
+                  />
+                  <input
+                    className="my-input user-organization"
+                    name="organization"
+                    placeholder="Organization"
+                    required={true}
+                    type="text"
+                  />
+                  <MainButton
+                    click={[Function]}
+                    text="Get Started"
+                  />
+                </form>,
+              ],
+              "className": "form-container",
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "children": Array [
+                <span
+                  className="welcome"
+                >
+                  <h2>
+                    Getting Started with Docco
+                  </h2>
+                </span>,
+                <form
+                  className="my-form sign-up-form"
+                  name="signUp"
+                  onChange={[Function]}
+                >
+                  <div
+                    className="user-name"
+                  >
+                    <input
+                      className="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required={true}
+                      type="text"
+                    />
+                    <input
+                      className="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required={true}
+                      type="text"
+                    />
+                  </div>
+                  <input
+                    className="my-input user-title"
+                    name="title"
+                    placeholder="Job Title"
+                    required={true}
+                    type="text"
+                  />
+                  <input
+                    className="my-input user-email"
+                    name="email"
+                    placeholder="Email"
+                    required={true}
+                    type="text"
+                  />
+                  <input
+                    className="my-input user-organization"
+                    name="organization"
+                    placeholder="Organization"
+                    required={true}
+                    type="text"
+                  />
+                  <MainButton
+                    click={[Function]}
+                    text="Get Started"
+                  />
+                </form>,
+              ],
+              "className": "form-container",
+            },
+            "ref": null,
+            "return": [Circular],
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": <div
+              class="form-container"
+            >
+              <span
+                class="welcome"
+              >
+                <h2>
+                  Getting Started with Docco
+                </h2>
+              </span>
+              <form
+                class="my-form sign-up-form"
+                name="signUp"
+              >
+                <div
+                  class="user-name"
+                >
+                  <input
+                    class="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required=""
+                    type="text"
+                  />
+                  <input
+                    class="my-input last-name"
+                    name="last"
+                    placeholder="Last Name"
+                    required=""
+                    type="text"
+                  />
+                </div>
+                <input
+                  class="my-input user-title"
+                  name="title"
+                  placeholder="Job Title"
+                  required=""
+                  type="text"
+                />
+                <input
+                  class="my-input user-email"
+                  name="email"
+                  placeholder="Email"
+                  required=""
+                  type="text"
+                />
+                <input
+                  class="my-input user-organization"
+                  name="organization"
+                  placeholder="Organization"
+                  required=""
+                  type="text"
+                />
+                <div
+                  class="main-button"
+                  role="button"
+                  tabindex="0"
+                >
+                  Get Started
+                </div>
+              </form>
+            </div>,
+            "tag": 5,
+            "treeBaseDuration": 0,
+            "type": "div",
+            "updateQueue": null,
+          },
+          "childExpirationTime": 0,
+          "effectTag": 1,
+          "elementType": [Function],
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {},
+          "memoizedState": Object {},
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {},
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 49,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 1,
+            "elementType": [Function],
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "mode": 0,
+            "nextEffect": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": FiberNode {
+                "_debugID": 47,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": [Circular],
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": null,
+                "expirationTime": 1073741823,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div
+                      class="form-container"
+                    >
+                      <span
+                        class="welcome"
+                      >
+                        <h2>
+                          Getting Started with Docco
+                        </h2>
+                      </span>
+                      <form
+                        class="my-form sign-up-form"
+                        name="signUp"
+                      >
+                        <div
+                          class="user-name"
+                        >
+                          <input
+                            class="my-input first-name"
+                            name="first"
+                            placeholder="First Name"
+                            required=""
+                            type="text"
+                          />
+                          <input
+                            class="my-input last-name"
+                            name="last"
+                            placeholder="Last Name"
+                            required=""
+                            type="text"
+                          />
+                        </div>
+                        <input
+                          class="my-input user-title"
+                          name="title"
+                          placeholder="Job Title"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input user-email"
+                          name="email"
+                          placeholder="Email"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input user-organization"
+                          name="organization"
+                          placeholder="Organization"
+                          required=""
+                          type="text"
+                        />
+                        <div
+                          class="main-button"
+                          role="button"
+                          tabindex="0"
+                        >
+                          Get Started
+                        </div>
+                      </form>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "didError": false,
+                  "earliestPendingTime": 0,
+                  "earliestSuspendedTime": 0,
+                  "expirationTime": 0,
+                  "finishedWork": null,
+                  "firstBatch": null,
+                  "hydrate": false,
+                  "interactionThreadID": 12,
+                  "latestPendingTime": 0,
+                  "latestPingedTime": 0,
+                  "latestSuspendedTime": 0,
+                  "memoizedInteractions": Set {},
+                  "nextExpirationTimeToWorkOn": 0,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingCommitExpirationTime": 0,
+                  "pendingContext": null,
+                  "pendingInteractionMap": Map {},
+                  "pingCache": null,
+                  "timeoutHandle": -1,
+                },
+                "tag": 3,
+                "treeBaseDuration": 0,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "firstCapturedEffect": null,
+                  "firstCapturedUpdate": null,
+                  "firstEffect": null,
+                  "firstUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                  "lastCapturedEffect": null,
+                  "lastCapturedUpdate": null,
+                  "lastEffect": null,
+                  "lastUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                },
+              },
+              "child": [Circular],
+              "childExpirationTime": 0,
+              "effectTag": 32,
+              "elementType": null,
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="form-container"
+                  >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
+                    <form
+                      class="my-form sign-up-form"
+                      name="signUp"
+                    >
+                      <div
+                        class="user-name"
+                      >
+                        <input
+                          class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input last-name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
+                          type="text"
+                        />
+                      </div>
+                      <input
+                        class="my-input user-title"
+                        name="title"
+                        placeholder="Job Title"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-email"
+                        name="email"
+                        placeholder="Email"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-organization"
+                        name="organization"
+                        placeholder="Organization"
+                        required=""
+                        type="text"
+                      />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Set {},
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Map {},
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": Object {
+                  "element": <WrapperComponent
+                    Component={[Function]}
+                    context={null}
+                    props={Object {}}
+                  />,
+                },
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": null,
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": null,
+              },
+            },
+            "pendingProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": FiberNode {
+                "_debugID": 47,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": [Circular],
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": null,
+                "expirationTime": 1073741823,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div
+                      class="form-container"
+                    >
+                      <span
+                        class="welcome"
+                      >
+                        <h2>
+                          Getting Started with Docco
+                        </h2>
+                      </span>
+                      <form
+                        class="my-form sign-up-form"
+                        name="signUp"
+                      >
+                        <div
+                          class="user-name"
+                        >
+                          <input
+                            class="my-input first-name"
+                            name="first"
+                            placeholder="First Name"
+                            required=""
+                            type="text"
+                          />
+                          <input
+                            class="my-input last-name"
+                            name="last"
+                            placeholder="Last Name"
+                            required=""
+                            type="text"
+                          />
+                        </div>
+                        <input
+                          class="my-input user-title"
+                          name="title"
+                          placeholder="Job Title"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input user-email"
+                          name="email"
+                          placeholder="Email"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input user-organization"
+                          name="organization"
+                          placeholder="Organization"
+                          required=""
+                          type="text"
+                        />
+                        <div
+                          class="main-button"
+                          role="button"
+                          tabindex="0"
+                        >
+                          Get Started
+                        </div>
+                      </form>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "didError": false,
+                  "earliestPendingTime": 0,
+                  "earliestSuspendedTime": 0,
+                  "expirationTime": 0,
+                  "finishedWork": null,
+                  "firstBatch": null,
+                  "hydrate": false,
+                  "interactionThreadID": 12,
+                  "latestPendingTime": 0,
+                  "latestPingedTime": 0,
+                  "latestSuspendedTime": 0,
+                  "memoizedInteractions": Set {},
+                  "nextExpirationTimeToWorkOn": 0,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingCommitExpirationTime": 0,
+                  "pendingContext": null,
+                  "pendingInteractionMap": Map {},
+                  "pingCache": null,
+                  "timeoutHandle": -1,
+                },
+                "tag": 3,
+                "treeBaseDuration": 0,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "firstCapturedEffect": null,
+                  "firstCapturedUpdate": null,
+                  "firstEffect": null,
+                  "firstUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                  "lastCapturedEffect": null,
+                  "lastCapturedUpdate": null,
+                  "lastEffect": null,
+                  "lastUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                },
+              },
+              "child": [Circular],
+              "childExpirationTime": 0,
+              "effectTag": 32,
+              "elementType": null,
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="form-container"
+                  >
+                    <span
+                      class="welcome"
+                    >
+                      <h2>
+                        Getting Started with Docco
+                      </h2>
+                    </span>
+                    <form
+                      class="my-form sign-up-form"
+                      name="signUp"
+                    >
+                      <div
+                        class="user-name"
+                      >
+                        <input
+                          class="my-input first-name"
+                          name="first"
+                          placeholder="First Name"
+                          required=""
+                          type="text"
+                        />
+                        <input
+                          class="my-input last-name"
+                          name="last"
+                          placeholder="Last Name"
+                          required=""
+                          type="text"
+                        />
+                      </div>
+                      <input
+                        class="my-input user-title"
+                        name="title"
+                        placeholder="Job Title"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-email"
+                        name="email"
+                        placeholder="Email"
+                        required=""
+                        type="text"
+                      />
+                      <input
+                        class="my-input user-organization"
+                        name="organization"
+                        placeholder="Organization"
+                        required=""
+                        type="text"
+                      />
+                      <div
+                        class="main-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        Get Started
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Set {},
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Map {},
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": Object {
+                  "element": <WrapperComponent
+                    Component={[Function]}
+                    context={null}
+                    props={Object {}}
+                  />,
+                },
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": null,
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": null,
+              },
+            },
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {},
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {},
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 1,
+            "treeBaseDuration": 0,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": [Circular],
+          "tag": 1,
+          "treeBaseDuration": 0,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_reactInternalInstance": Object {},
+        "context": Object {},
+        "handleChange": [Function],
+        "handleSubmit": [Function],
+        "props": Object {},
+        "refs": Object {},
+        "state": Object {},
+        "updater": Object {
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+        },
+      },
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {},
+      "ref": null,
+      "rendered": Object {
+        "instance": <div
+          class="form-container"
+        >
+          <span
+            class="welcome"
+          >
+            <h2>
+              Getting Started with Docco
+            </h2>
+          </span>
+          <form
+            class="my-form sign-up-form"
+            name="signUp"
+          >
+            <div
+              class="user-name"
+            >
+              <input
+                class="my-input first-name"
+                name="first"
+                placeholder="First Name"
+                required=""
+                type="text"
+              />
+              <input
+                class="my-input last-name"
+                name="last"
+                placeholder="Last Name"
+                required=""
+                type="text"
+              />
+            </div>
+            <input
+              class="my-input user-title"
+              name="title"
+              placeholder="Job Title"
+              required=""
+              type="text"
+            />
+            <input
+              class="my-input user-email"
+              name="email"
+              placeholder="Email"
+              required=""
+              type="text"
+            />
+            <input
+              class="my-input user-organization"
+              name="organization"
+              placeholder="Organization"
+              required=""
+              type="text"
+            />
+            <div
+              class="main-button"
+              role="button"
+              tabindex="0"
+            >
+              Get Started
+            </div>
+          </form>
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="welcome"
+            >
+              <h2>
+                Getting Started with Docco
+              </h2>
+            </span>,
+            <form
+              className="my-form sign-up-form"
+              name="signUp"
+              onChange={[Function]}
+            >
+              <div
+                className="user-name"
+              >
+                <input
+                  className="my-input first-name"
+                  name="first"
+                  placeholder="First Name"
+                  required={true}
+                  type="text"
+                />
+                <input
+                  className="my-input last-name"
+                  name="last"
+                  placeholder="Last Name"
+                  required={true}
+                  type="text"
+                />
+              </div>
+              <input
+                className="my-input user-title"
+                name="title"
+                placeholder="Job Title"
+                required={true}
+                type="text"
+              />
+              <input
+                className="my-input user-email"
+                name="email"
+                placeholder="Email"
+                required={true}
+                type="text"
+              />
+              <input
+                className="my-input user-organization"
+                name="organization"
+                placeholder="Organization"
+                required={true}
+                type="text"
+              />
+              <MainButton
+                click={[Function]}
+                text="Get Started"
+              />
+            </form>,
+          ],
+          "className": "form-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <span
+              class="welcome"
+            >
+              <h2>
+                Getting Started with Docco
+              </h2>
+            </span>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h2>
+                Getting Started with Docco
+              </h2>,
+              "className": "welcome",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <h2>
+                  Getting Started with Docco
+                </h2>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Getting Started with Docco",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Getting Started with Docco",
+                ],
+                "type": "h2",
+              },
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": <form
+              class="my-form sign-up-form"
+              name="signUp"
+            >
+              <div
+                class="user-name"
+              >
+                <input
+                  class="my-input first-name"
+                  name="first"
+                  placeholder="First Name"
+                  required=""
+                  type="text"
+                />
+                <input
+                  class="my-input last-name"
+                  name="last"
+                  placeholder="Last Name"
+                  required=""
+                  type="text"
+                />
+              </div>
+              <input
+                class="my-input user-title"
+                name="title"
+                placeholder="Job Title"
+                required=""
+                type="text"
+              />
+              <input
+                class="my-input user-email"
+                name="email"
+                placeholder="Email"
+                required=""
+                type="text"
+              />
+              <input
+                class="my-input user-organization"
+                name="organization"
+                placeholder="Organization"
+                required=""
+                type="text"
+              />
+              <div
+                class="main-button"
+                role="button"
+                tabindex="0"
+              >
+                Get Started
+              </div>
+            </form>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="user-name"
+                >
+                  <input
+                    className="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required={true}
+                    type="text"
+                  />
+                  <input
+                    className="my-input last-name"
+                    name="last"
+                    placeholder="Last Name"
+                    required={true}
+                    type="text"
+                  />
+                </div>,
+                <input
+                  className="my-input user-title"
+                  name="title"
+                  placeholder="Job Title"
+                  required={true}
+                  type="text"
+                />,
+                <input
+                  className="my-input user-email"
+                  name="email"
+                  placeholder="Email"
+                  required={true}
+                  type="text"
+                />,
+                <input
+                  className="my-input user-organization"
+                  name="organization"
+                  placeholder="Organization"
+                  required={true}
+                  type="text"
+                />,
+                <MainButton
+                  click={[Function]}
+                  text="Get Started"
+                />,
+              ],
+              "className": "my-form sign-up-form",
+              "name": "signUp",
+              "onChange": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <div
+                  class="user-name"
+                >
+                  <input
+                    class="my-input first-name"
+                    name="first"
+                    placeholder="First Name"
+                    required=""
+                    type="text"
+                  />
+                  <input
+                    class="my-input last-name"
+                    name="last"
+                    placeholder="Last Name"
+                    required=""
+                    type="text"
+                  />
+                </div>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <input
+                      className="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required={true}
+                      type="text"
+                    />,
+                    <input
+                      className="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required={true}
+                      type="text"
+                    />,
+                  ],
+                  "className": "user-name",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <input
+                      class="my-input first-name"
+                      name="first"
+                      placeholder="First Name"
+                      required=""
+                      type="text"
+                    />,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "my-input first-name",
+                      "name": "first",
+                      "placeholder": "First Name",
+                      "required": true,
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": <input
+                      class="my-input last-name"
+                      name="last"
+                      placeholder="Last Name"
+                      required=""
+                      type="text"
+                    />,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "my-input last-name",
+                      "name": "last",
+                      "placeholder": "Last Name",
+                      "required": true,
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "input",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": <input
+                  class="my-input user-title"
+                  name="title"
+                  placeholder="Job Title"
+                  required=""
+                  type="text"
+                />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "my-input user-title",
+                  "name": "title",
+                  "placeholder": "Job Title",
+                  "required": true,
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                ],
+                "type": "input",
+              },
+              Object {
+                "instance": <input
+                  class="my-input user-email"
+                  name="email"
+                  placeholder="Email"
+                  required=""
+                  type="text"
+                />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "my-input user-email",
+                  "name": "email",
+                  "placeholder": "Email",
+                  "required": true,
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                ],
+                "type": "input",
+              },
+              Object {
+                "instance": <input
+                  class="my-input user-organization"
+                  name="organization"
+                  placeholder="Organization"
+                  required=""
+                  type="text"
+                />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "my-input user-organization",
+                  "name": "organization",
+                  "placeholder": "Organization",
+                  "required": true,
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                ],
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "click": [Function],
+                  "text": "Get Started",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": <div
+                    class="main-button"
+                    role="button"
+                    tabindex="0"
+                  >
+                    Get Started
+                  </div>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Get Started",
+                    "className": "main-button",
+                    "onClick": [Function],
+                    "onKeyPress": [Function],
+                    "role": "button",
+                    "tabIndex": "0",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Get Started",
+                  ],
+                  "type": "div",
+                },
+                "type": [Function],
+              },
+            ],
+            "type": "form",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

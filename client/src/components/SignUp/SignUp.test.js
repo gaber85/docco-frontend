@@ -1,49 +1,29 @@
-<<<<<<< Updated upstream
-// // import React from 'react';
-// // // import ReactDOM from 'react-dom';
-// // import SignUp from './SignUp';
-// // import {shallow} from 'enzyme';
-
-
-//   it('should render SignUp', () => {
-//     const wrapper = shallow(<SignUp />)
-//   })
-
-// describe('<SignUp />', () => {
-//   let wrapper ;
-//   beforeEach(function (){ wrapper = shallow(<SignUp />)});
-//   it('should render SignUp', () => {
-//     expect(wrapper)
-//   });
-//   it('should render a form', () => {
-//     expect(wrapper.containsMatchingElement(<form />)).toEqual(true);
-//   });
-//   // it('should render the navbar component', () => {
-//   //   expect(wrapper.containsMatchingElement(<NavBar />)).toEqual(true);
-//   // });
-//   // it('should render the navbar component', () => {
-//   //   expect(wrapper.containsMatchingElement(<NavBar />)).toEqual(true);
-//   })
-=======
 import React from 'react';
-// import ReactDOM from 'react-dom';
-import {shallow} from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import SignUp from './SignUp';
+import MainButton from '../MainButton'
 
 
 describe('<SignUp />', () => {
-  let wrapper ;
-  beforeEach(function (){ wrapper = shallow(<SignUp />)});
+  let wrapper;
+  beforeEach(() => wrapper = shallow(<SignUp />));
   it('should render SignUp', () => {
-    expect(wrapper)
+    expect(wrapper.exists()).toBe(true);
   });
   it('should render a form', () => {
-    expect(wrapper.containsMatchingElement(<form />)).toEqual(true);
+    expect(wrapper.find('form').exists()).toBe(true);
   });
-  // it('should render the navbar component', () => {
-  //   expect(wrapper.containsMatchingElement(<NavBar />)).toEqual(true);
-  // });
-  // it('should render the navbar component', () => {
-  //   expect(wrapper.containsMatchingElement(<NavBar />)).toEqual(true);
-  })
->>>>>>> Stashed changes
+  it('should be made up of 6 input fields', () => {
+    expect(wrapper.find('input').length).toBe(5);
+  });
+  it('should create a state', () => {
+    expect(typeof wrapper.state()).toBe('object');
+  });
+  it('should render the Main Button', () => {
+    expect(wrapper.containsMatchingElement(<MainButton />)).toBe(true);
+  });
+  it('matches the snapshot', () => {
+    let tree = mount(<SignUp />)
+    expect(tree).toMatchSnapshot();
+  });
+});
