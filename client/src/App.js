@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-// import MainButton from './components/MainButton';
-import SearchBar from './components/SearchBar';
-import AddMember from './components/AddMember/AddMember';
-// import NavBar from './components/NavBar';
+import ContractPage from './containers/ContractPage';
 
 // eslint-disable-next-line
 class App extends Component {
   render() {
-    return <AddMember />
+    return <ContractPage />
   }
 }
 

@@ -1,0 +1,76 @@
+.team-container {
+  border: solid;
+  border-color: #ECF0F1;
+  width: auto;
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  min-height: 150px;
+  max-width: auto;
+}
+
+.all-members {
+  flex: 1;
+  padding-bottom: 25px;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.user-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.member-name {
+  margin-right: 10px;
+}
+
+.minus-sign {
+  opacity: 0;
+  cursor: pointer;
+}
+.team-member:hover .minus-sign{
+  opacity: 1;
+}
+
+.add-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.plus-button {
+  margin-right: 10px;
+  border: solid;
+  border-color: #BDC3C7;
+  border-width: thin;
+  border-radius: 50%;
+  padding: 10px;
+  height: 5px;
+  width: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ECF0F1;
+  transition: 500ms;
+}
+
+.plus-button:hover {
+  transition: 500ms;
+  border-color: #F1C40F;
+  background-color: #F1C40F;
+  transform: rotate(90deg)
+}
+
+.add-member-text {
+  font-size: 14px;
+}
+

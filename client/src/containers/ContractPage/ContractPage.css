@@ -1,0 +1,41 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.container-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.empty-space {
+  width: 300px;
+}
+
+.title {
+  font-size: 30px;
+  flex: 1;
+}
+
+.search-bar-section {
+  padding-right: 20px;
+}
+
+.container-middle {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.team-section {
+  padding: 15px;
+}
+
+.contract-display {
+  flex: 1;
+}
+
+.sidebar-controls {
+  width: 200px;
+}
