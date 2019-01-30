@@ -1,0 +1,26 @@
+.contract-list {
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  height: 60vh;
+  width: 60vw;
+}
+
+.my-contract {
+  display:flex;
+  flex-direction: column;
+  width:14%;
+  align-items:center;
+  margin-top: 5%;
+}
+
+.fa-file-contract {
+  font-size: 10vh;
+  font-weight:bold;
+}
+
+.contract-title {
+  margin-top: 1vh;
+}

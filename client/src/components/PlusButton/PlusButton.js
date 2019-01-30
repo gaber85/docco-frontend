@@ -6,7 +6,7 @@ import './PlusButton.css';
 
 const PlusButton = (props) => {
 
-  const {click} = props;
+  const {banana} = props;
   let {size} = props;
 
   if(!size) size=8;
@@ -20,7 +20,7 @@ const PlusButton = (props) => {
   }
 
   return (
-    <div className="plus-button" style={myStyle} tabIndex="0" role="button" onClick={click} onKeyPress={click}><i className="fas fa-plus" /></div>
+    <div className="plus-button" style={myStyle} tabIndex="0" role="button" onClick={banana} onKeyPress={banana}><i className="fas fa-plus" /></div>
   )
 
 }

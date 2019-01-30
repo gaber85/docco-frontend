@@ -3,7 +3,9 @@
 exports[`<PlusButton /> should render correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PlusButton />,
+  Symbol(enzyme.__unrendered__): <PlusButton
+    size="a"
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -26,10 +28,10 @@ ShallowWrapper {
       "onKeyPress": undefined,
       "role": "button",
       "style": Object {
-        "fontSize": "8vw",
-        "height": "8vw",
-        "padding": "0.8vw",
-        "width": "8vw",
+        "fontSize": "avw",
+        "height": "avw",
+        "padding": "NaNvw",
+        "width": "avw",
       },
       "tabIndex": "0",
     },
@@ -61,10 +63,10 @@ ShallowWrapper {
         "onKeyPress": undefined,
         "role": "button",
         "style": Object {
-          "fontSize": "8vw",
-          "height": "8vw",
-          "padding": "0.8vw",
-          "width": "8vw",
+          "fontSize": "avw",
+          "height": "avw",
+          "padding": "NaNvw",
+          "width": "avw",
         },
         "tabIndex": "0",
       },
