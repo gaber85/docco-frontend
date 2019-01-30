@@ -18,11 +18,12 @@ describe('<PlusButton />', () => {
   it('should render correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
-
-  //  couldn't get this test running but need to leave it in for further work;
-
   it('should have a click prop containing a function', () => {
     expect(typeof wrapper.find('.plus-button').prop('onClick')).toBe('function');
   });
+
+  //  couldn't get this test running but need to leave it in for further work;
+
+
 
 });

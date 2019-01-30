@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PlusButton from '../PlusButton';
 import './AddMember.css';
 
 export default class AddMember extends Component {
@@ -32,6 +33,12 @@ export default class AddMember extends Component {
       }
     });
   };
+
+  handleSubmit = () => {
+    const user = this.state;
+    return user;
+    // fetch(post) function to be passed from container and written there
+  }
 
   render() {
     const { email, permissions } = this.state;
@@ -79,7 +86,10 @@ export default class AddMember extends Component {
                 onChange={this.handleCheckboxChange}
               />
             </div>
+            <PlusButton click={this.handleSubmit} size={3} />
+
           </div>
+
         </form>
       </div>
     );

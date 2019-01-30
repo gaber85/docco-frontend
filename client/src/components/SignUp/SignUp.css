@@ -28,6 +28,8 @@
 }
 
 .my-input {
+  border: 3px darkgray solid;
+  border-radius: 3px;
   font-size: 2vh;
   color: #BDC3C7;
   margin-bottom: 4vh;;
