@@ -1,32 +1,7 @@
 .main-container {
   display: flex;
-  flex-direction: column;
   padding-top: 20px;
   height: 100%;
-}
-
-.container-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.empty-space {
-  width: 300px;
-}
-
-.title {
-  font-size: 30px;
-  padding-bottom: 10px;
-  flex: 1;
-}
-
-.search-bar-section {
-}
-
-.container-middle {
-  display: flex;
-  justify-content: space-between;
 }
 
 .team-section {
@@ -36,6 +11,28 @@
 .contract-display {
   flex: 1;
   padding: 10px;
+}
+
+.container-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+  padding-bottom: 10px;
+  flex: 1;
+}
+
+.contract {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+}
+
+.contract-section {
+  flex: 1;
 }
 
 .sidebar-controls {

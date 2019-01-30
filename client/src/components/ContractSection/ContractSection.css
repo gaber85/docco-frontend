@@ -2,9 +2,10 @@
   border: solid;
   border-color: #ECF0F1;
   height: 100%;
+  width: 100%;
   overflow-y: scroll;
 }
 
 .content-body {
-
+  color: #2C3E50;
 }
