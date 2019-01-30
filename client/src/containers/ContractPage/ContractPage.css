@@ -1,6 +1,6 @@
 .main-container {
   display: flex;
-  padding-top: 20px;
+  padding-top: 10px;
   height: 100%;
 }
 
@@ -29,12 +29,4 @@
   display: inline-flex;
   height: 100%;
   width: 100%;
-}
-
-.contract-section {
-  flex: 1;
-}
-
-.sidebar-controls {
-  width: 200px;
 }

@@ -3,6 +3,7 @@ import './ContractPage.css';
 import SearchBar from '../../components/SearchBar'
 import TeamSection from '../../components/TeamSection';
 import ContractSection from '../../components/ContractSection';
+import SideBar from '../../components/SideBar';
 // eslint-disable-next-line
 class ContractPage extends Component {
   render() {
@@ -17,9 +18,9 @@ class ContractPage extends Component {
             <div className="search-bar-section"><SearchBar/></div>
           </div>
           <div className="contract">
-            <ContractSection className="contract-section" />
+            <ContractSection />
             <div className="sidebar-controls">
-            side bar
+            <SideBar />
             </div>
           </div>
           </div>

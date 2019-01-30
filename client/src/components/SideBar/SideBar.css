@@ -1,0 +1,20 @@
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-size: 30px;
+  border: solid;
+  border-left: hidden;
+  border-color: #ECF0F1;
+  height: 100%;
+}
+
+.icons {
+  padding-bottom: 25px;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+  color: #F1C40F;
+}
