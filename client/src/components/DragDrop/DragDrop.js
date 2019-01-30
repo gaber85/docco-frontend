@@ -37,7 +37,7 @@ class DragDrop extends Component {
     e.preventDefault();
     e.stopPropagation();
     this.dragCounter += 1;
-    if (e.dataTransfer.items && e.dataTransfer.items.lenth > 0) {
+    if (e.dataTransfer.items && e.dataTransfer.items.length > 0) {
       this.setState({dragging: true});
     }
   };
@@ -51,8 +51,15 @@ class DragDrop extends Component {
   };
 
   handleDrop = (e) => {
+    const { handleDrop } = this.props;
     e.preventDefault();
     e.stopPropagation();
+    this.setState({dragging: false});
+    if (e.dataTransfer.items && e.dataTransfer.items.length > 0) {
+      handleDrop(e.dataTransfer.items);
+      e.dataTransfer.clearData();
+      this.dragCounter = 0;
+    }
   };
 
   render() {
@@ -67,6 +74,7 @@ class DragDrop extends Component {
           </div>
         </div>
       }
+      Drag and Drop Files
         {children}
       </div>
     )

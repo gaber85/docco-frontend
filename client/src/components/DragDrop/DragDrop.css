@@ -1,6 +1,13 @@
 .drag-drop-container {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  background-color: #ECF0F1;
+  color: #BDC3C7;
+  font-size: 36px;
+  height: 50%;
+  width: 80%;
 }
 
 .drag-drop-dash {
@@ -16,7 +23,7 @@
 
 .drag-drop-inside {
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 0;
   left: 0;
   text-align: center;
