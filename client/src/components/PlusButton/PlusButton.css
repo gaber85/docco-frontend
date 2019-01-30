@@ -1,0 +1,18 @@
+.plus-button {
+  border: solid;
+  border-color: #BDC3C7;
+  border-width: thin;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ECF0F1;
+  transition: 500ms;
+}
+
+.plus-button:hover {
+  transition: 500ms;
+  border-color: #F1C40F;
+  background-color: #F1C40F;
+  transform: rotate(90deg)
+}
