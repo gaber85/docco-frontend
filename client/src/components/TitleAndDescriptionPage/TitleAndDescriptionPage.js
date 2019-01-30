@@ -10,8 +10,7 @@ const TitleAndDescriptionPage = props => {
     handleInputOnBlur
   } = props;
   const { title, description } = document;
-
-  const handleClick = () => console.log('cklick');
+  const handleClick = () => console.log('click');
 
   return (
     <div className="box">
