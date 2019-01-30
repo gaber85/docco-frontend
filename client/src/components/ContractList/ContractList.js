@@ -14,7 +14,7 @@ const ContractList = () => {
 
 
   const view = contracts.map(contract => {
-    z++;
+    z += 1;
     return (
       <div key={z} className="my-contract">
         <i className="fas fa-file-contract" />
