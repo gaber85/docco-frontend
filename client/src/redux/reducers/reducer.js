@@ -5,7 +5,7 @@ const initState = {
 const reducer = (state = initState, action) => {
   switch (action.type) {
     case 'ADD':
-      return state;
+      return {...state, contracts: [...state.contracts, action.contract]}
     default:
       return state;
   }

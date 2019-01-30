@@ -4,7 +4,7 @@ exports[`<PlusButton /> should render correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PlusButton
-    size="a"
+    click={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -24,14 +24,14 @@ ShallowWrapper {
         className="fas fa-plus"
       />,
       "className": "plus-button",
-      "onClick": undefined,
-      "onKeyPress": undefined,
+      "onClick": [MockFunction],
+      "onKeyPress": [MockFunction],
       "role": "button",
       "style": Object {
-        "fontSize": "avw",
-        "height": "avw",
-        "padding": "NaNvw",
-        "width": "avw",
+        "fontSize": "9vw",
+        "height": "9vw",
+        "padding": "0.9vw",
+        "width": "9vw",
       },
       "tabIndex": "0",
     },
@@ -59,14 +59,14 @@ ShallowWrapper {
           className="fas fa-plus"
         />,
         "className": "plus-button",
-        "onClick": undefined,
-        "onKeyPress": undefined,
+        "onClick": [MockFunction],
+        "onKeyPress": [MockFunction],
         "role": "button",
         "style": Object {
-          "fontSize": "avw",
-          "height": "avw",
-          "padding": "NaNvw",
-          "width": "avw",
+          "fontSize": "9vw",
+          "height": "9vw",
+          "padding": "0.9vw",
+          "width": "9vw",
         },
         "tabIndex": "0",
       },

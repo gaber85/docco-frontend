@@ -6,13 +6,8 @@ class SignUp extends Component {
 
   // state holding user data
   state = {
-    user: {
-
-    }
-
+    user: {}
   }
-
-
 
   //  updates states upon input value change
   handleChange = e => {
@@ -21,7 +16,6 @@ class SignUp extends Component {
       ...user,
       [e.target.name]: e.target.value
     })
-    console.log(this.state);
   }
 
   // sends http request creating the User
@@ -40,11 +34,7 @@ class SignUp extends Component {
     })
       .then(res => res.json())
       .catch(err => err);
-
   }
-
-
-
 
   render () {
     const { handleChange, handleSubmit } = this;
@@ -64,13 +54,8 @@ class SignUp extends Component {
           <MainButton text="Get Started" click={handleSubmit} />
         </form>
       </div>
-    )
-  }
-
-
-
-
-}
+    )};
+};
 
 
 export default SignUp;

@@ -6,7 +6,7 @@ import MainButton from '../MainButton'
 
 describe('<SignUp />', () => {
   let wrapper;
-  beforeEach(() => wrapper = shallow(<SignUp />));
+  beforeEach(() => {wrapper = shallow(<SignUp />)});
   it('should render SignUp', () => {
     expect(wrapper.exists()).toBe(true);
   });
@@ -14,7 +14,7 @@ describe('<SignUp />', () => {
     expect(wrapper.find('form').exists()).toBe(true);
   });
   it('should be made up of 5 input fields', () => {
-    expect(wrapper.find('input').length).toBe(5);
+    expect(wrapper.find('input')).toHaveLength(5);
   });
   it('should create a state', () => {
     expect(typeof wrapper.state()).toBe('object');
@@ -26,7 +26,7 @@ describe('<SignUp />', () => {
     expect(wrapper.find('h2').text()).toBe('Getting Started with Docco');
   })
   it('matches the snapshot', () => {
-    let tree = mount(<SignUp />);
+    const tree = mount(<SignUp />);
     expect(tree).toMatchSnapshot();
     tree.unmount();
   });

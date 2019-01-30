@@ -1,17 +1,9 @@
 import React from 'react';
-
 import './PlusButton.css';
 
+const PlusButton = ({click, size = 8}) => {
 
-
-const PlusButton = (props) => {
-
-  const {banana} = props;
-  let {size} = props;
-
-  if(!size) size=8;
-
-
+  // makes sure size button is reusable by making size adaptive to view width;
   const myStyle = {
     width: `${size}vw`,
     height: `${size}vw`,
@@ -20,7 +12,7 @@ const PlusButton = (props) => {
   }
 
   return (
-    <div className="plus-button" style={myStyle} tabIndex="0" role="button" onClick={banana} onKeyPress={banana}><i className="fas fa-plus" /></div>
+    <div className="plus-button" style={myStyle} tabIndex="0" role="button" onClick={click} onKeyPress={click}><i className="fas fa-plus" /></div>
   )
 
 }
