@@ -43,6 +43,16 @@ export default class AddMember extends Component {
   render() {
     const { email, permissions } = this.state;
 
+    const Checkbox = ({name}) => (
+      <input
+        name={name}
+        type="checkbox"
+        checked={permissions[name]}
+        value={permissions[name]}
+        onChange={this.handleCheckboxChange}
+      />
+    );
+
     return (
       <div className="box">
         <form>
@@ -58,33 +68,15 @@ export default class AddMember extends Component {
           <div className="permissions-box">
             <div className="permissions">
               <span>read</span>
-              <input
-                name="read"
-                type="checkbox"
-                checked={permissions.read}
-                value={permissions.read}
-                onChange={this.handleCheckboxChange}
-              />
+              <Checkbox name="read" />
             </div>
             <div className="permissions">
               <span>edit</span>
-              <input
-                name="edit"
-                type="checkbox"
-                checked={permissions.edit}
-                value={permissions.edit}
-                onChange={this.handleCheckboxChange}
-              />
+              <Checkbox name="edit" />
             </div>
             <div className="permissions">
               <span>approve</span>
-              <input
-                name="approve"
-                type="checkbox"
-                checked={permissions.approve}
-                value={permissions.approve}
-                onChange={this.handleCheckboxChange}
-              />
+              <Checkbox name="approve" />
             </div>
             <PlusButton click={this.handleSubmit} size={3} />
 
