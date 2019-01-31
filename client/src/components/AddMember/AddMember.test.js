@@ -1,6 +1,7 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import AddMember from './AddMember';
+import PlusButton from '../PlusButton';
 
 describe('<AddMember />', () => {
   const wrapper = shallow(<AddMember />);
@@ -47,4 +48,8 @@ describe('<AddMember />', () => {
     wrapper.instance().handleCheckboxChange({ target: { name: "approve", checked: false, value: false }});
     expect(wrapper.state().permissions.approve).toBe(!newState);
   });
+  it('should render a plus button', () => {
+    const tree = mount(<AddMember />);
+    expect(tree.find('.plus-button')).toHaveLength(1);
+  })
 });

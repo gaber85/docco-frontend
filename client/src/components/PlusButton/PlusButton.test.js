@@ -4,8 +4,8 @@ import PlusButton from './PlusButton';
 
 describe('<PlusButton />', () => {
   let wrapper;
-  const click = jest.fn();
-  beforeEach(() => {wrapper = shallow(<PlusButton click={click} />)});
+  const mockClick = jest.fn();
+  beforeEach(() => {wrapper = shallow(<PlusButton click={mockClick} />)});
   it('should render a div', () => {
     expect(wrapper.find('div')).toHaveLength(1);
   });
@@ -18,11 +18,15 @@ describe('<PlusButton />', () => {
   it('should render correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
+  it('should have a click prop containing a function that get\'s called on click', () => {
+    expect(typeof wrapper.find('.plus-button').prop('onClick')).toBe('function');
+    wrapper.find('.plus-button').simulate('click');
+    expect(mockClick.mock.calls).toHaveLength(1);
+
+  });
 
   //  couldn't get this test running but need to leave it in for further work;
 
-  it('should have a click prop containing a function', () => {
-    expect(typeof wrapper.find('.plus-button').prop('onClick')).toBe('function');
-  });
+
 
 });
