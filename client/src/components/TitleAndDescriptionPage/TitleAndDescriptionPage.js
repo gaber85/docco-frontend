@@ -4,12 +4,15 @@ import MainButton from '../MainButton';
 
 const TitleAndDescriptionPage = props => {
   const {
-    document,
+    document: {
+      title,
+      description
+    },
     handleInputChange,
     handleInputOnFocus,
     handleInputOnBlur
   } = props;
-  const { title, description } = document;
+  // const { title, description } = document;
   const handleClick = () => console.log('click');
 
   return (
