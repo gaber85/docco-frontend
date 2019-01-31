@@ -11,6 +11,12 @@ ReactWrapper {
         Object {
           "title": "test",
         },
+        Object {
+          "title": "test",
+        },
+        Object {
+          "title": "test",
+        },
       ]
     }
   />,
@@ -29,6 +35,12 @@ ReactWrapper {
     "nodeType": "function",
     "props": Object {
       "contracts": Array [
+        Object {
+          "title": "test",
+        },
+        Object {
+          "title": "test",
+        },
         Object {
           "title": "test",
         },
@@ -68,6 +80,32 @@ ReactWrapper {
             test
           </span>
         </div>
+        <div
+          class="my-contract"
+          index-key="2"
+        >
+          <i
+            class="fas fa-file-contract"
+          />
+          <span
+            class="contract-title"
+          >
+            test
+          </span>
+        </div>
+        <div
+          class="my-contract"
+          index-key="3"
+        >
+          <i
+            class="fas fa-file-contract"
+          />
+          <span
+            class="contract-title"
+          >
+            test
+          </span>
+        </div>
       </div>,
       "key": undefined,
       "nodeType": "host",
@@ -89,6 +127,32 @@ ReactWrapper {
           <div
             className="my-contract"
             index-key={1}
+          >
+            <i
+              className="fas fa-file-contract"
+            />
+            <span
+              className="contract-title"
+            >
+              test
+            </span>
+          </div>,
+          <div
+            className="my-contract"
+            index-key={2}
+          >
+            <i
+              className="fas fa-file-contract"
+            />
+            <span
+              className="contract-title"
+            >
+              test
+            </span>
+          </div>,
+          <div
+            className="my-contract"
+            index-key={3}
           >
             <i
               className="fas fa-file-contract"
@@ -240,6 +304,142 @@ ReactWrapper {
           ],
           "type": "div",
         },
+        Object {
+          "instance": <div
+            class="my-contract"
+            index-key="2"
+          >
+            <i
+              class="fas fa-file-contract"
+            />
+            <span
+              class="contract-title"
+            >
+              test
+            </span>
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <i
+                className="fas fa-file-contract"
+              />,
+              <span
+                className="contract-title"
+              >
+                test
+              </span>,
+            ],
+            "className": "my-contract",
+            "index-key": 2,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <i
+                class="fas fa-file-contract"
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fas fa-file-contract",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "i",
+            },
+            Object {
+              "instance": <span
+                class="contract-title"
+              >
+                test
+              </span>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "test",
+                "className": "contract-title",
+              },
+              "ref": null,
+              "rendered": Array [
+                "test",
+              ],
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": <div
+            class="my-contract"
+            index-key="3"
+          >
+            <i
+              class="fas fa-file-contract"
+            />
+            <span
+              class="contract-title"
+            >
+              test
+            </span>
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <i
+                className="fas fa-file-contract"
+              />,
+              <span
+                className="contract-title"
+              >
+                test
+              </span>,
+            ],
+            "className": "my-contract",
+            "index-key": 3,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <i
+                class="fas fa-file-contract"
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fas fa-file-contract",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "i",
+            },
+            Object {
+              "instance": <span
+                class="contract-title"
+              >
+                test
+              </span>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "test",
+                "className": "contract-title",
+              },
+              "ref": null,
+              "rendered": Array [
+                "test",
+              ],
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
       ],
       "type": "div",
     },
@@ -252,6 +452,12 @@ ReactWrapper {
       "nodeType": "function",
       "props": Object {
         "contracts": Array [
+          Object {
+            "title": "test",
+          },
+          Object {
+            "title": "test",
+          },
           Object {
             "title": "test",
           },
@@ -291,6 +497,32 @@ ReactWrapper {
               test
             </span>
           </div>
+          <div
+            class="my-contract"
+            index-key="2"
+          >
+            <i
+              class="fas fa-file-contract"
+            />
+            <span
+              class="contract-title"
+            >
+              test
+            </span>
+          </div>
+          <div
+            class="my-contract"
+            index-key="3"
+          >
+            <i
+              class="fas fa-file-contract"
+            />
+            <span
+              class="contract-title"
+            >
+              test
+            </span>
+          </div>
         </div>,
         "key": undefined,
         "nodeType": "host",
@@ -312,6 +544,32 @@ ReactWrapper {
             <div
               className="my-contract"
               index-key={1}
+            >
+              <i
+                className="fas fa-file-contract"
+              />
+              <span
+                className="contract-title"
+              >
+                test
+              </span>
+            </div>,
+            <div
+              className="my-contract"
+              index-key={2}
+            >
+              <i
+                className="fas fa-file-contract"
+              />
+              <span
+                className="contract-title"
+              >
+                test
+              </span>
+            </div>,
+            <div
+              className="my-contract"
+              index-key={3}
             >
               <i
                 className="fas fa-file-contract"
@@ -424,6 +682,142 @@ ReactWrapper {
               ],
               "className": "my-contract",
               "index-key": 1,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <i
+                  class="fas fa-file-contract"
+                />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-file-contract",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                ],
+                "type": "i",
+              },
+              Object {
+                "instance": <span
+                  class="contract-title"
+                >
+                  test
+                </span>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "test",
+                  "className": "contract-title",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "test",
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": <div
+              class="my-contract"
+              index-key="2"
+            >
+              <i
+                class="fas fa-file-contract"
+              />
+              <span
+                class="contract-title"
+              >
+                test
+              </span>
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="fas fa-file-contract"
+                />,
+                <span
+                  className="contract-title"
+                >
+                  test
+                </span>,
+              ],
+              "className": "my-contract",
+              "index-key": 2,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <i
+                  class="fas fa-file-contract"
+                />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-file-contract",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                ],
+                "type": "i",
+              },
+              Object {
+                "instance": <span
+                  class="contract-title"
+                >
+                  test
+                </span>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "test",
+                  "className": "contract-title",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "test",
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": <div
+              class="my-contract"
+              index-key="3"
+            >
+              <i
+                class="fas fa-file-contract"
+              />
+              <span
+                class="contract-title"
+              >
+                test
+              </span>
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="fas fa-file-contract"
+                />,
+                <span
+                  className="contract-title"
+                >
+                  test
+                </span>,
+              ],
+              "className": "my-contract",
+              "index-key": 3,
             },
             "ref": null,
             "rendered": Array [
