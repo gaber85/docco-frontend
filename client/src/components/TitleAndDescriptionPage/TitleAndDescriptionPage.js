@@ -9,9 +9,10 @@ const TitleAndDescriptionPage = props => {
       description
     },
     handleInputChange,
+    handleProgress
   } = props;
   // const { title, description } = document;
-  const handleClick = () => console.log('click');
+  const handleClick = () => handleProgress(1);
 
   return (
     <div className="box">
