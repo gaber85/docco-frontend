@@ -5,9 +5,6 @@ import TitleAndDescriptionPage from './TitleAndDescriptionPage';
 afterEach(cleanup);
 test('should write text to input', () => {
   // mock props
-  const handleInputOnFocus = () => {};
-  const handleInputOnBlur = () => {};
-  const handleInputChange = () => {};
   const props = {
     progressTracker: 0,
     document: {
@@ -16,9 +13,6 @@ test('should write text to input', () => {
       files: [],
       beneficiaryEmail: ''
     },
-    handleInputChange,
-    handleInputOnFocus,
-    handleInputOnBlur
   };
 
   props.handleInputChange = event => {

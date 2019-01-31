@@ -8,8 +8,8 @@ export default class CreateNegotiation extends Component {
     this.state = {
       progressTracker: 0,
       document: {
-        title: 'title...',
-        description: 'description...',
+        title: '',
+        description: '',
         files: [],
         beneficiaryEmail: ''
       }
@@ -25,26 +25,6 @@ export default class CreateNegotiation extends Component {
     });
   };
 
-  handleInputOnFocus = event => {
-    const { document } = this.state;
-    const { value, name } = event.target;
-    if (value === `${name}...`) {
-      this.setState({
-        document: { ...document, [name]: '' }
-      });
-    }
-  };
-
-  handleInputOnBlur = event => {
-    const { document } = this.state;
-    const { name } = event.target;
-    if (document[name] === '') {
-      this.setState({
-        document: { ...document, [name]: `${name}...` }
-      });
-    }
-  };
-
   render() {
     const { progressTracker, document } = this.state;
 
@@ -54,12 +34,17 @@ export default class CreateNegotiation extends Component {
           <TitleAndDescriptionPage
             document={document}
             handleInputChange={this.handleInputChange}
-            handleInputOnFocus={this.handleInputOnFocus}
-            handleInputOnBlur={this.handleInputOnBlur}
           />
         </div>
       );
     }
     return <div>default</div>;
+    //
+    // return (
+    //   <div>
+    //     <progressBar />
+    //     {getTheRightThing(progressTracker)}
+    //   </div>
+    // )
   }
 }

@@ -9,8 +9,6 @@ const TitleAndDescriptionPage = props => {
       description
     },
     handleInputChange,
-    handleInputOnFocus,
-    handleInputOnBlur
   } = props;
   // const { title, description } = document;
   const handleClick = () => console.log('click');
@@ -25,10 +23,9 @@ const TitleAndDescriptionPage = props => {
             data-testid="title-input"
             type="text"
             name="title"
+            placeholder="title..."
             value={title}
             onChange={handleInputChange}
-            onFocus={handleInputOnFocus}
-            onBlur={handleInputOnBlur}
           />
           <textarea
             className="description-input"
@@ -37,9 +34,8 @@ const TitleAndDescriptionPage = props => {
             data-testid="description-input"
             name="description"
             value={description}
+            placeholder="description..."
             onChange={handleInputChange}
-            onFocus={handleInputOnFocus}
-            onBlur={handleInputOnBlur}
           />
           <MainButton text="next" click={handleClick} />
         </form>
