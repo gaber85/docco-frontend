@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { add } from './redux/actions'
+import { add } from './redux/actions';
 import './App.css';
 import DragDrop from './components/DragDrop';
 
@@ -22,14 +22,12 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   contracts: state.contracts
-})
+});
 
-const mapDispatchToProps = (dispatch) => ({
-
+const mapDispatchToProps = dispatch => ({
   add: () => dispatch(add())
-
 });
 
 export default connect(
