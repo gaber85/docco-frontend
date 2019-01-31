@@ -6,18 +6,15 @@ class SignUp extends Component {
 
   // state holding user data
   state = {
-
+    user: {}
   }
-
-
 
   //  updates states upon input value change
   handleChange = e => {
-
+    const {user} = this.state;
     this.setState({
-
+      ...user,
       [e.target.name]: e.target.value
-
     })
   }
 
@@ -25,10 +22,7 @@ class SignUp extends Component {
   handleSubmit = () => {
 
     const user = this.state;
-
-
-
-
+    this.setState({});
 
     fetch(`/create`, {
       method: 'post',
@@ -40,14 +34,9 @@ class SignUp extends Component {
     })
       .then(res => res.json())
       .catch(err => err);
-
   }
 
-
-
-
   render () {
-
     const { handleChange, handleSubmit } = this;
     return (
       <div className="form-container">
@@ -65,13 +54,8 @@ class SignUp extends Component {
           <MainButton text="Get Started" click={handleSubmit} />
         </form>
       </div>
-    )
-  }
-
-
-
-
-}
+    )};
+};
 
 
 export default SignUp;

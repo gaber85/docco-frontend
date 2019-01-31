@@ -1,0 +1,32 @@
+.main-container {
+  display: flex;
+  padding-top: 10px;
+  height: 100%;
+}
+
+.team-section {
+  padding: 10px;
+}
+
+.contract-display {
+  flex: 1;
+  padding: 10px;
+}
+
+.container-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+  padding-bottom: 10px;
+  flex: 1;
+}
+
+.contract {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+}

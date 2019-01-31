@@ -1,0 +1,4 @@
+const contracts =
+[{ title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }];
+
+export default contracts;

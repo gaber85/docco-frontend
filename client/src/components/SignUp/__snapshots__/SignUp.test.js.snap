@@ -1594,7 +1594,9 @@ ReactWrapper {
         "key": null,
         "lastEffect": null,
         "memoizedProps": Object {},
-        "memoizedState": Object {},
+        "memoizedState": Object {
+          "user": Object {},
+        },
         "mode": 0,
         "nextEffect": null,
         "pendingProps": Object {},
@@ -2271,7 +2273,9 @@ ReactWrapper {
       "handleSubmit": [Function],
       "props": Object {},
       "refs": Object {},
-      "state": Object {},
+      "state": Object {
+        "user": Object {},
+      },
       "updater": Object {
         "enqueueForceUpdate": [Function],
         "enqueueReplaceState": [Function],
@@ -4339,7 +4343,9 @@ ReactWrapper {
           "key": null,
           "lastEffect": null,
           "memoizedProps": Object {},
-          "memoizedState": Object {},
+          "memoizedState": Object {
+            "user": Object {},
+          },
           "mode": 0,
           "nextEffect": null,
           "pendingProps": Object {},
@@ -5016,7 +5022,9 @@ ReactWrapper {
         "handleSubmit": [Function],
         "props": Object {},
         "refs": Object {},
-        "state": Object {},
+        "state": Object {
+          "user": Object {},
+        },
         "updater": Object {
           "enqueueForceUpdate": [Function],
           "enqueueReplaceState": [Function],
