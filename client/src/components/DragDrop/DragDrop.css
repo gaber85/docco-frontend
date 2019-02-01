@@ -1,6 +1,8 @@
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 
@@ -12,7 +14,7 @@
   background-color: #ECF0F1;
   color: #BDC3C7;
   font-size: 36px;
-  height: 40%;
+  height: 400px;
   width: 50%;
 }
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './DragDrop.css';
-import MainButton from '../TitleAndDescriptionPage/TitleAndDescriptionPage';
+import MainButton from "../MainButton";
 
 class DragDrop extends Component {
   dropRef = React.createRef();
@@ -72,7 +72,6 @@ class DragDrop extends Component {
     handleProgress(2);
   };
 
-
   render() {
     const { children } = this.props;
     const { dragging, allFiles } = this.state;
@@ -89,9 +88,6 @@ class DragDrop extends Component {
           Drag and Drop Files
           {children}
         </div>
-        <div>
-          <MainButton text="next" click={this.handleClick} />
-        </div>
         {allFiles.map(file => {
           return (
             <div>
@@ -99,6 +95,9 @@ class DragDrop extends Component {
             </div>
           );
         })}
+        <div>
+          <MainButton text="next" click={this.handleClick}/>
+        </div>
       </div>
     );
   }

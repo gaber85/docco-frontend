@@ -4,6 +4,7 @@ import TitleAndDescriptionPage from '../../components/TitleAndDescriptionPage';
 import DragDrop from '../../components/DragDrop';
 import ProgressTracker from '../../components/ProgressTracker';
 
+
 export default class CreateNegotiation extends Component {
   constructor(props) {
     super(props);
@@ -37,9 +38,7 @@ export default class CreateNegotiation extends Component {
   };
 
   handleProgress = value => {
-    this.setState({
-      progressTracker: value
-    });
+    this.setState({progressTracker: value})
   };
 
   render() {
@@ -59,8 +58,8 @@ export default class CreateNegotiation extends Component {
       case 1:
         return (
           <div>
-            <ProgressTracker progressTracker={progressTracker} />
-            <DragDrop handleDrop={this.handleDrop} handleProgress={this.handleProgress} />
+            <ProgressTracker progressTracker={progressTracker}/>
+            <DragDrop handleDrop={this.handleDrop} handleProgress={this.handleProgress}/>
           </div>
         );
       default:
