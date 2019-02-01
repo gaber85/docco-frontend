@@ -1,0 +1,126 @@
+.Landing-page-container {
+display: flex;
+flex-direction: column;
+}
+
+.Landing-page-login {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3498DB;
+}
+
+.small-logo {
+  height: 60px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.login {
+  padding: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+.landing-page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./Docco-Geometric.png');
+  background-position: right;
+  color: #2C3E50;
+  padding: 20px;
+}
+
+.comp-name {
+  font-size: 60px;
+}
+
+.catchphrase {
+  font-size: 24px;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.get-started-button {
+  align-self: center;
+  color: #2C3E50;
+  padding: 15px;
+}
+
+.landing-page-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-page-content-title {
+  align-self: center;
+  color: #2C3E50;
+  padding-top: 20px;
+}
+
+.landing-page-content-body {
+  display: flex;
+  padding: 50px;
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing-page-content-body-text {
+  color: #2C3E50;
+  padding-right: 15px;
+  align-self: flex-start;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.landing-page-icons {
+  font-size: 60px;
+  padding-right: 15px;
+  color: #3498DB;
+}
+
+.landing-page-content-body-list {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.sup-img {
+  height: 30%;
+  width: 40%;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 1);
+}
+
+.logo-img {
+  height: 30%;
+  width: 40%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  background-color: #3498DB;
+  height: 50px;
+  font-size: 14px;
+  color: #ECF0F1;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.landing-page-lower-body {
+  display: flex;
+  flex-direction: column;
+
+}

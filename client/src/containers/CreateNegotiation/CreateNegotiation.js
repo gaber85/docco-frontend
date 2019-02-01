@@ -103,3 +103,12 @@ export default class CreateNegotiation extends Component {
     );
   }
 }
+
+// // the drag and drop section will have this function you can pass it. 
+//  handleDrop = (data, arr) => {
+//   const fileList = arr.slice();
+//   for (let i = 0; i < data.files.length; i+=1) {
+//     if (fileList.indexOf(data.files[i].name) === -1) fileList.push(data.files[i].name);
+//   }
+//   return fileList;
+// }

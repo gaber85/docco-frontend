@@ -1,0 +1,888 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContractList /> matches the snapshot 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <ContractList
+    contracts={
+      Array [
+        Object {
+          "title": "test",
+        },
+        Object {
+          "title": "test",
+        },
+        Object {
+          "title": "test",
+        },
+        Object {
+          "title": "test",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "contracts": Array [
+        Object {
+          "title": "test",
+        },
+        Object {
+          "title": "test",
+        },
+        Object {
+          "title": "test",
+        },
+        Object {
+          "title": "test",
+        },
+      ],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <div
+        class="contract-list"
+      >
+        <div
+          class="my-contract"
+          index-key="0"
+        >
+          <i
+            class="fas fa-file-contract"
+          />
+          <span
+            class="contract-title"
+          >
+            test
+          </span>
+        </div>
+        <div
+          class="my-contract"
+          index-key="1"
+        >
+          <i
+            class="fas fa-file-contract"
+          />
+          <span
+            class="contract-title"
+          >
+            test
+          </span>
+        </div>
+        <div
+          class="my-contract"
+          index-key="2"
+        >
+          <i
+            class="fas fa-file-contract"
+          />
+          <span
+            class="contract-title"
+          >
+            test
+          </span>
+        </div>
+        <div
+          class="my-contract"
+          index-key="3"
+        >
+          <i
+            class="fas fa-file-contract"
+          />
+          <span
+            class="contract-title"
+          >
+            test
+          </span>
+        </div>
+      </div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="my-contract"
+            index-key={0}
+          >
+            <i
+              className="fas fa-file-contract"
+            />
+            <span
+              className="contract-title"
+            >
+              test
+            </span>
+          </div>,
+          <div
+            className="my-contract"
+            index-key={1}
+          >
+            <i
+              className="fas fa-file-contract"
+            />
+            <span
+              className="contract-title"
+            >
+              test
+            </span>
+          </div>,
+          <div
+            className="my-contract"
+            index-key={2}
+          >
+            <i
+              className="fas fa-file-contract"
+            />
+            <span
+              className="contract-title"
+            >
+              test
+            </span>
+          </div>,
+          <div
+            className="my-contract"
+            index-key={3}
+          >
+            <i
+              className="fas fa-file-contract"
+            />
+            <span
+              className="contract-title"
+            >
+              test
+            </span>
+          </div>,
+        ],
+        "className": "contract-list",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <div
+            class="my-contract"
+            index-key="0"
+          >
+            <i
+              class="fas fa-file-contract"
+            />
+            <span
+              class="contract-title"
+            >
+              test
+            </span>
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <i
+                className="fas fa-file-contract"
+              />,
+              <span
+                className="contract-title"
+              >
+                test
+              </span>,
+            ],
+            "className": "my-contract",
+            "index-key": 0,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <i
+                class="fas fa-file-contract"
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fas fa-file-contract",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "i",
+            },
+            Object {
+              "instance": <span
+                class="contract-title"
+              >
+                test
+              </span>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "test",
+                "className": "contract-title",
+              },
+              "ref": null,
+              "rendered": Array [
+                "test",
+              ],
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": <div
+            class="my-contract"
+            index-key="1"
+          >
+            <i
+              class="fas fa-file-contract"
+            />
+            <span
+              class="contract-title"
+            >
+              test
+            </span>
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <i
+                className="fas fa-file-contract"
+              />,
+              <span
+                className="contract-title"
+              >
+                test
+              </span>,
+            ],
+            "className": "my-contract",
+            "index-key": 1,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <i
+                class="fas fa-file-contract"
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fas fa-file-contract",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "i",
+            },
+            Object {
+              "instance": <span
+                class="contract-title"
+              >
+                test
+              </span>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "test",
+                "className": "contract-title",
+              },
+              "ref": null,
+              "rendered": Array [
+                "test",
+              ],
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": <div
+            class="my-contract"
+            index-key="2"
+          >
+            <i
+              class="fas fa-file-contract"
+            />
+            <span
+              class="contract-title"
+            >
+              test
+            </span>
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <i
+                className="fas fa-file-contract"
+              />,
+              <span
+                className="contract-title"
+              >
+                test
+              </span>,
+            ],
+            "className": "my-contract",
+            "index-key": 2,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <i
+                class="fas fa-file-contract"
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fas fa-file-contract",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "i",
+            },
+            Object {
+              "instance": <span
+                class="contract-title"
+              >
+                test
+              </span>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "test",
+                "className": "contract-title",
+              },
+              "ref": null,
+              "rendered": Array [
+                "test",
+              ],
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": <div
+            class="my-contract"
+            index-key="3"
+          >
+            <i
+              class="fas fa-file-contract"
+            />
+            <span
+              class="contract-title"
+            >
+              test
+            </span>
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <i
+                className="fas fa-file-contract"
+              />,
+              <span
+                className="contract-title"
+              >
+                test
+              </span>,
+            ],
+            "className": "my-contract",
+            "index-key": 3,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <i
+                class="fas fa-file-contract"
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fas fa-file-contract",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "i",
+            },
+            Object {
+              "instance": <span
+                class="contract-title"
+              >
+                test
+              </span>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "test",
+                "className": "contract-title",
+              },
+              "ref": null,
+              "rendered": Array [
+                "test",
+              ],
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "contracts": Array [
+          Object {
+            "title": "test",
+          },
+          Object {
+            "title": "test",
+          },
+          Object {
+            "title": "test",
+          },
+          Object {
+            "title": "test",
+          },
+        ],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <div
+          class="contract-list"
+        >
+          <div
+            class="my-contract"
+            index-key="0"
+          >
+            <i
+              class="fas fa-file-contract"
+            />
+            <span
+              class="contract-title"
+            >
+              test
+            </span>
+          </div>
+          <div
+            class="my-contract"
+            index-key="1"
+          >
+            <i
+              class="fas fa-file-contract"
+            />
+            <span
+              class="contract-title"
+            >
+              test
+            </span>
+          </div>
+          <div
+            class="my-contract"
+            index-key="2"
+          >
+            <i
+              class="fas fa-file-contract"
+            />
+            <span
+              class="contract-title"
+            >
+              test
+            </span>
+          </div>
+          <div
+            class="my-contract"
+            index-key="3"
+          >
+            <i
+              class="fas fa-file-contract"
+            />
+            <span
+              class="contract-title"
+            >
+              test
+            </span>
+          </div>
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="my-contract"
+              index-key={0}
+            >
+              <i
+                className="fas fa-file-contract"
+              />
+              <span
+                className="contract-title"
+              >
+                test
+              </span>
+            </div>,
+            <div
+              className="my-contract"
+              index-key={1}
+            >
+              <i
+                className="fas fa-file-contract"
+              />
+              <span
+                className="contract-title"
+              >
+                test
+              </span>
+            </div>,
+            <div
+              className="my-contract"
+              index-key={2}
+            >
+              <i
+                className="fas fa-file-contract"
+              />
+              <span
+                className="contract-title"
+              >
+                test
+              </span>
+            </div>,
+            <div
+              className="my-contract"
+              index-key={3}
+            >
+              <i
+                className="fas fa-file-contract"
+              />
+              <span
+                className="contract-title"
+              >
+                test
+              </span>
+            </div>,
+          ],
+          "className": "contract-list",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <div
+              class="my-contract"
+              index-key="0"
+            >
+              <i
+                class="fas fa-file-contract"
+              />
+              <span
+                class="contract-title"
+              >
+                test
+              </span>
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="fas fa-file-contract"
+                />,
+                <span
+                  className="contract-title"
+                >
+                  test
+                </span>,
+              ],
+              "className": "my-contract",
+              "index-key": 0,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <i
+                  class="fas fa-file-contract"
+                />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-file-contract",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                ],
+                "type": "i",
+              },
+              Object {
+                "instance": <span
+                  class="contract-title"
+                >
+                  test
+                </span>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "test",
+                  "className": "contract-title",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "test",
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": <div
+              class="my-contract"
+              index-key="1"
+            >
+              <i
+                class="fas fa-file-contract"
+              />
+              <span
+                class="contract-title"
+              >
+                test
+              </span>
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="fas fa-file-contract"
+                />,
+                <span
+                  className="contract-title"
+                >
+                  test
+                </span>,
+              ],
+              "className": "my-contract",
+              "index-key": 1,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <i
+                  class="fas fa-file-contract"
+                />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-file-contract",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                ],
+                "type": "i",
+              },
+              Object {
+                "instance": <span
+                  class="contract-title"
+                >
+                  test
+                </span>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "test",
+                  "className": "contract-title",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "test",
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": <div
+              class="my-contract"
+              index-key="2"
+            >
+              <i
+                class="fas fa-file-contract"
+              />
+              <span
+                class="contract-title"
+              >
+                test
+              </span>
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="fas fa-file-contract"
+                />,
+                <span
+                  className="contract-title"
+                >
+                  test
+                </span>,
+              ],
+              "className": "my-contract",
+              "index-key": 2,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <i
+                  class="fas fa-file-contract"
+                />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-file-contract",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                ],
+                "type": "i",
+              },
+              Object {
+                "instance": <span
+                  class="contract-title"
+                >
+                  test
+                </span>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "test",
+                  "className": "contract-title",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "test",
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": <div
+              class="my-contract"
+              index-key="3"
+            >
+              <i
+                class="fas fa-file-contract"
+              />
+              <span
+                class="contract-title"
+              >
+                test
+              </span>
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="fas fa-file-contract"
+                />,
+                <span
+                  className="contract-title"
+                >
+                  test
+                </span>,
+              ],
+              "className": "my-contract",
+              "index-key": 3,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <i
+                  class="fas fa-file-contract"
+                />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-file-contract",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                ],
+                "type": "i",
+              },
+              Object {
+                "instance": <span
+                  class="contract-title"
+                >
+                  test
+                </span>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "test",
+                  "className": "contract-title",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "test",
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

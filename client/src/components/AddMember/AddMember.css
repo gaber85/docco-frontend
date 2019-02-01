@@ -34,16 +34,22 @@
 
 .permissions-box {
   width: 100px;
-  background-color: green;
+  height: 70px;
   display: flex;
   flex-direction: column;
+  flex-wrap:wrap;
+  justify-content: space-around;
 }
 
 .permissions {
   background-color: white;
-  width: 100%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
+}
+
+.plus-button{
+  margin-left: 47%;
 }
 
 
