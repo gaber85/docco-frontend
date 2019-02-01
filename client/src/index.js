@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import './index.css';
 import reducer from './redux/reducers/reducer'
 import App from './App';
@@ -11,7 +12,9 @@ const store = createStore(reducer);
 
 ReactDOM.render(
   <Provider store={store}>
+  <ParallaxProvider>
     <App />
+  </ParallaxProvider>
   </Provider>,
   document.getElementById('root'));
 
