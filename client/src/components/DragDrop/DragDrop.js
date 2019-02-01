@@ -58,10 +58,10 @@ class DragDrop extends Component {
     e.stopPropagation();
     this.setState({dragging: false});    
     if (e.dataTransfer.items && e.dataTransfer.items.length > 0) {
-      const files = handleDrop(e.dataTransfer);
+      const files = handleDrop(e.dataTransfer, allFiles);
       e.dataTransfer.clearData();
       this.dragCounter = 0;
-      this.setState({allFiles: [...allFiles, ...files]})
+      this.setState({allFiles: files})
     }
   };
 
