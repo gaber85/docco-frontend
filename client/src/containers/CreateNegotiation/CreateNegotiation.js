@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './CreateNegotiation.css';
 import TitleAndDescriptionPage from '../../components/TitleAndDescriptionPage';
-import DragDrop from '../../components/DragDrop';
 import ProgressTracker from '../../components/ProgressTracker';
 import AddParties from '../../components/AddPartiesPage';
+import AddFiles from "../../components/AddFiles";
 
 export default class CreateNegotiation extends Component {
   constructor(props) {
@@ -27,21 +27,6 @@ export default class CreateNegotiation extends Component {
     this.setState({
       document: { ...document, [name]: value }
     });
-  };
-
-  // add the dragged and dropped files to state
-  handleDrop = data => {
-    const fileList = [];
-    for (let i = 0; i < data.files.length; i += 1) {
-      if (fileList.indexOf(data.files[i].name) === -1)
-        fileList.push(data.files[i].name);
-    }
-    console.log(fileList)
-    return fileList;
-
-    // this.setState({
-    //   document: { ...document, files: fileList }
-    // });
   };
 
   handleProgress = value => {
@@ -76,10 +61,7 @@ export default class CreateNegotiation extends Component {
         break;
       case 1:
         content = (
-          <DragDrop
-            handleDrop={this.handleDrop}
-            handleProgress={this.handleProgress}
-          />
+          <AddFiles handleProgress={this.handleProgress}/>
         );
         break;
       case 2:
@@ -103,12 +85,3 @@ export default class CreateNegotiation extends Component {
     );
   }
 }
-
-// // the drag and drop section will have this function you can pass it. 
-//  handleDrop = (data, arr) => {
-//   const fileList = arr.slice();
-//   for (let i = 0; i < data.files.length; i+=1) {
-//     if (fileList.indexOf(data.files[i].name) === -1) fileList.push(data.files[i].name);
-//   }
-//   return fileList;
-// }

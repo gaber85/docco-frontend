@@ -89,4 +89,4 @@ class DragDrop extends Component {
   }
 }
 
-export default DragDrop;
+export default DragDrop
