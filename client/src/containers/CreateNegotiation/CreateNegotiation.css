@@ -44,3 +44,16 @@ form {
   letter-spacing: 1px;
   outline: none;
 }
+
+.email-input {
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  font-size: .8rem;
+  letter-spacing: 1px;
+  outline: none;
+}

@@ -66,8 +66,7 @@ class DragDrop extends Component {
     }
   };
 
-  handleClick = e => {
-    e.preventDefault();
+  handleClick = () => {
     const { handleProgress } = this.props;
     handleProgress(2);
   };

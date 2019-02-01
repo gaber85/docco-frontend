@@ -20,6 +20,7 @@ li {
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px #999;
   border-radius: 50%;
+  cursor: pointer;
 }
 .active {
   background-color: #F1C40F;
