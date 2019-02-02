@@ -3,11 +3,12 @@ import { connect } from 'react-redux';
 import { add } from './redux/actions';
 import './App.css';
 import CreateNegotiation from './containers/CreateNegotiation';
+import AddMember from './components/AddMember'
 
 // eslint-disable-next-line
 class App extends Component {
   render() {
-    return <CreateNegotiation />;
+    return <AddMember />;
   }
 }
 
