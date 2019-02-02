@@ -3,8 +3,10 @@
   font-size: 16px;
   color: darkgray;
   background-color: white;
-  width: 220px;
-  height: 160px;
+  width: 20%;
+  height: 20%;
+  min-height: 300px;
+  min-width: 200px;
   border-color: darkgray;
   border-style: solid;
   border-width: 3px;

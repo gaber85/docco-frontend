@@ -35,10 +35,10 @@ export default class AddMember extends Component {
   };
 
   handleSubmit = () => {
-    const user = this.state;
-    return user;
-    // fetch(post) function to be passed from container and written there
-  }
+    // const user = this.state;
+    // return user;
+    // // fetch(post) function to be passed from container and written there
+  };
 
   render() {
     const { email, permissions } = this.state;
@@ -55,7 +55,7 @@ export default class AddMember extends Component {
 
     return (
       <div className="box">
-        <form>
+        <form className='form'>
           <input
             className="email-input"
             type="email"
@@ -78,11 +78,12 @@ export default class AddMember extends Component {
               <span>approve</span>
               <Checkbox name="approve" />
             </div>
-            <PlusButton click={this.handleSubmit} size={3} />
+
 
           </div>
 
         </form>
+
       </div>
     );
   }
