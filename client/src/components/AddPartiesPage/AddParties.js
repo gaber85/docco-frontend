@@ -4,6 +4,7 @@ import './AddParties.css';
 import MainButton from '../MainButton';
 
 const AddParties = props => {
+
   const { document, handleInputChange, handleCreateNegotiation } = props;
   const { party_b_email } = document;
 

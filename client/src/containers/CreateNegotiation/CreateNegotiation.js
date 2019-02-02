@@ -3,7 +3,7 @@ import './CreateNegotiation.css';
 import TitleAndDescriptionPage from '../../components/TitleAndDescriptionPage';
 import ProgressTracker from '../../components/ProgressTracker';
 import AddParties from '../../components/AddPartiesPage';
-import AddFiles from "../../components/AddFiles";
+import AddFiles from '../../components/AddFiles';
 
 export default class CreateNegotiation extends Component {
   constructor(props) {
@@ -14,6 +14,7 @@ export default class CreateNegotiation extends Component {
         title: '',
         description: '',
         files: [],
+        // Todo: email party a is hardcoded for now, change that
         party_a_email: 'hans@butt-insurance.com',
         party_b_email: ''
       }
@@ -23,21 +24,30 @@ export default class CreateNegotiation extends Component {
   handleInputChange = event => {
     const { document } = this.state;
     const { name, value } = event.target;
-
     this.setState({
       document: { ...document, [name]: value }
     });
   };
 
   handleProgress = value => {
-    console.log('ProgressTracker: ', value);
     this.setState({ progressTracker: value });
   };
 
   handleCreateNegotiation = () => {
     const { document } = this.state;
-    console.log('create Negotiation', document.title,
-      document.description, document.party_b_email);
+    console.log(
+      'create Negotiation',
+      document.title,
+      document.description,
+      document.party_b_email,
+      document.files
+    );
+  };
+
+  handleFileContent = content => {
+    console.log('content', content);
+    const { document } = this.state;
+    this.setState({ document: { ...document, files: [...document.files, content] }});
   };
 
   render() {
@@ -61,7 +71,10 @@ export default class CreateNegotiation extends Component {
         break;
       case 1:
         content = (
-          <AddFiles handleProgress={this.handleProgress}/>
+          <AddFiles
+            handleProgress={this.handleProgress}
+            handleFileContent={this.handleFileContent}
+          />
         );
         break;
       case 2:
