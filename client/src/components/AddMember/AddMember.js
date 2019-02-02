@@ -6,7 +6,7 @@ export default class AddMember extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: 'Email',
+      email: '',
       permissions: {
         read: true,
         edit: true,
@@ -17,10 +17,6 @@ export default class AddMember extends Component {
 
   handleInputChange = event => {
     this.setState({ [event.target.name]: event.target.value });
-  };
-
-  clearInputOnFocus = event => {
-    this.setState({ [event.target.name]: '' });
   };
 
   handleCheckboxChange = event => {
@@ -35,15 +31,13 @@ export default class AddMember extends Component {
   };
 
   handleSubmit = () => {
-    // const user = this.state;
-    // return user;
-    // // fetch(post) function to be passed from container and written there
+    // add user to state
   };
 
   render() {
     const { email, permissions } = this.state;
 
-    const Checkbox = ({name}) => (
+    const Checkbox = ({ name }) => (
       <input
         name={name}
         type="checkbox"
@@ -55,14 +49,14 @@ export default class AddMember extends Component {
 
     return (
       <div className="box">
-        <form className='form'>
+        <form className="form">
           <input
             className="email-input"
             type="email"
             value={email}
             name="email"
-            onFocus={this.clearInputOnFocus}
             onChange={this.handleInputChange}
+            placeholder="email..."
           />
           <p>permissions</p>
           <div className="permissions-box">
@@ -78,12 +72,11 @@ export default class AddMember extends Component {
               <span>approve</span>
               <Checkbox name="approve" />
             </div>
-
-
           </div>
-
         </form>
-
+        <div className='button'>
+          <PlusButton size="2" />
+        </div>
       </div>
     );
   }
