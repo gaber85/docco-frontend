@@ -13,8 +13,8 @@ class SignUp extends Component {
   handleChange = e => {
     const {user} = this.state;
     this.setState({
-      ...user,
-      [e.target.name]: e.target.value
+      user: {...user,
+      [e.target.name]: e.target.value}
     })
   }
 

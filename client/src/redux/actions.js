@@ -3,12 +3,32 @@ const addContract = (contract) => ({
   contract
 })
 
-const addUser = (user) => ({
-  type: 'ADD_USER',
+const signUp = (user) => ({
+  type: 'SIGN_UP',
   user
 })
 
+const login = (api)  =>({
+  type: 'LOGIN',
+  api
+})
+
+const token = (authToken) => ({
+  type: 'TOKEN',
+  authToken
+})
+
+const getAll = (api) => ({
+  type: 'GET_ALL',
+  api
+})
+
+
+
 module.exports = {
   addContract,
-  addUser
+  signUp,
+  login,
+  token,
+  getAll
 }
