@@ -1,0 +1,59 @@
+.box {
+  width: 95%;
+  height: 95%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-evenly;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.title-input {
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  font-size: .8rem;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+.description-input {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  font-size: .8rem;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+.email-input {
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  font-size: .8rem;
+  letter-spacing: 1px;
+  outline: none;
+}

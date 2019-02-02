@@ -1,0 +1,32 @@
+
+ul {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #ccc;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+
+}
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.active {
+  background-color: #F1C40F;
+  width: 32px;
+  height: 32px;
+  border: black;
+  color: black;
+
+}

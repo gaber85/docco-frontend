@@ -18,7 +18,9 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
+  <ParallaxProvider>
     <App />
+  </ParallaxProvider>
   </Provider>,
   document.getElementById('root'));
 
