@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './CreateNegotiation.css';
 import TitleAndDescriptionPage from '../../components/TitleAndDescriptionPage';
+import ProgressTracker from '../../components/ProgressTracker';
+import AddParties from '../../components/AddPartiesPage';
+import AddFiles from '../../components/AddFiles';
 
 export default class CreateNegotiation extends Component {
   constructor(props) {
@@ -11,7 +14,9 @@ export default class CreateNegotiation extends Component {
         title: '',
         description: '',
         files: [],
-        beneficiaryEmail: ''
+        // Todo: email party a is hardcoded for now, change that
+        party_a_email: 'hans@butt-insurance.com',
+        party_b_email: ''
       }
     };
   }
@@ -19,41 +24,77 @@ export default class CreateNegotiation extends Component {
   handleInputChange = event => {
     const { document } = this.state;
     const { name, value } = event.target;
-
     this.setState({
       document: { ...document, [name]: value }
     });
   };
 
+  handleProgress = value => {
+    this.setState({ progressTracker: value });
+  };
+
+  handleCreateNegotiation = () => {
+    const { document } = this.state;
+    console.log(
+      'create Negotiation',
+      document.title,
+      document.description,
+      document.party_b_email,
+      document.files
+    );
+  };
+
+  handleFileContent = content => {
+    console.log('content', content);
+    const { document } = this.state;
+    this.setState({ document: { ...document, files: [...document.files, content] }});
+  };
+
   render() {
     const { progressTracker, document } = this.state;
-
-    if (progressTracker === 0) {
-      return (
-        <div>
+    const StepsTracker = () => (
+      <ProgressTracker
+        progressTracker={progressTracker}
+        handleProgress={this.handleProgress}
+      />
+    );
+    let content;
+    switch (progressTracker) {
+      case 0:
+        content = (
           <TitleAndDescriptionPage
             document={document}
             handleInputChange={this.handleInputChange}
+            handleProgress={this.handleProgress}
           />
-        </div>
-      );
+        );
+        break;
+      case 1:
+        content = (
+          <AddFiles
+            handleProgress={this.handleProgress}
+            handleFileContent={this.handleFileContent}
+          />
+        );
+        break;
+      case 2:
+        content = (
+          <AddParties
+            document={document}
+            handleProgress={this.handleProgress}
+            handleInputChange={this.handleInputChange}
+            handleCreateNegotiation={this.handleCreateNegotiation}
+          />
+        );
+        break;
+      default:
+        break;
     }
-    return <div>default</div>;
-    //
-    // return (
-    //   <div>
-    //     <progressBar />
-    //     {getTheRightThing(progressTracker)}
-    //   </div>
-    // )
+    return (
+      <div>
+        <StepsTracker />
+        {content}
+      </div>
+    );
   }
 }
-
-// // the drag and drop section will have this function you can pass it. 
-//  handleDrop = (data, arr) => {
-//   const fileList = arr.slice();
-//   for (let i = 0; i < data.files.length; i+=1) {
-//     if (fileList.indexOf(data.files[i].name) === -1) fileList.push(data.files[i].name);
-//   }
-//   return fileList;
-// }
