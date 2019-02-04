@@ -8,14 +8,9 @@ const signUp = (user) => ({
   user
 })
 
-const login = (api)  =>({
+const login = (api) => ({
   type: 'LOGIN',
   api
-})
-
-const token = (authToken) => ({
-  type: 'TOKEN',
-  authToken
 })
 
 const getAll = (api) => ({
@@ -23,12 +18,34 @@ const getAll = (api) => ({
   api
 })
 
+const getOne = (api) => ({
+  type: 'GET_ONE',
+  api
+});
+
+const postNeg = () => ({
+  type: 'POST_NEG',
+  api: {
+    route: 'parties'
+  }
+});
+
+const getUser = api => ({
+  type:'GET_USER',
+  api
+})
 
 
-module.exports = {
+
+
+
+
+export {
   addContract,
   signUp,
   login,
-  token,
-  getAll
+  getAll,
+  postNeg,
+  getOne,
+  getUser
 }

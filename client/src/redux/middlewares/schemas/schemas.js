@@ -9,18 +9,21 @@ import { normalize, schema } from 'normalizr';
 // { idAttribute: 'iso_3166_1'
 // });
 
-// const company = new schema.Entity('companies',
-//   {origin_country: country},
-// );
 const party = new schema.Entity('parties');
+const proposal = new schema.Entity('proposals');
+
+
+// );
+// const proposalSchema = new schema.Entity('proposal');
 
 // const user = new schema.Entity('user');
 
-const negotiationSchema = new schema.Entity('negotiations',{
-  party_a: party,
-  party_b: party
-},{
-  idAttribute: 'negotiation_id'
+const negotiationSchema = new schema.Entity('negotiations', {
+  yourDetails: party,
+  yourContent: proposal,
+  theirDetails: party,
+  theirContent: proposal
+
 });
 
 // export const currentNegotiationSchema = new schema.Entity('currentNegotiation',undefined,{

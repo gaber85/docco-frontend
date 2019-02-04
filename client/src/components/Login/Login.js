@@ -5,7 +5,7 @@ import { jsx } from '@emotion/core';
 import base64 from 'base-64';
 import styles from './styles';
 import MainButton from "../MainButton";
-import {login, getAll} from '../../redux/actions';
+import { login, getAll } from '../../redux/actions';
 import negotiationSchema from '../../redux/middlewares/schemas/schemas';
 
 class Login extends Component {
@@ -14,7 +14,7 @@ class Login extends Component {
   }
 
   handleChange = e => {
-    const {user} = this.state;
+    const { user } = this.state;
     this.setState({
       user: {
         ...user,
@@ -25,38 +25,21 @@ class Login extends Component {
 
   handleSubmit = () => {
     const { user } = this.state;
-    const {getAllAct} = this.props;
+    const { getAllAct } = this.props;
     const loginData = `${user.email} : ${user.password}`
     const api = {
       route: 'negotiations',
       schema: [negotiationSchema],
       headers: {
-      'Authorization': `${base64.encode(loginData)}`
+        Authorization: `Basic ${base64.encode(loginData)}`
       }
     }
     getAllAct(api);
 
   }
-
-  handleSubmit2 = () => {
-    const { user } = this.state;
-    const {getAllAct} = this.props;
-    const loginData = `${user.email} : ${user.password}`
-    const api = {
-      route: 'negotiations/2',
-      schema: negotiationSchema,
-      headers: {
-      'Authorization': `${base64.encode(loginData)}`
-      }
-    }
-    getAllAct(api);
-
-  }
-
-
 
   render () {
-    const {handleSubmit, handleSubmit2} = this;
+    const { handleSubmit, handleSubmit2 } = this;
 
     return (
       <div className="login" css={styles.login} >
@@ -69,7 +52,7 @@ class Login extends Component {
             <input type="text" name="email" className="the-input first-name" css={styles.input} placeholder="email" />
             <input type="password" name="password" className="the-input last-name" css={styles.input} placeholder="password" autoComplete="current-password" />
           </form>
-          <MainButton text="LOGIN" click={handleSubmit}/>
+          <MainButton text="LOGIN" click={handleSubmit} />
           <button type="submit" onClick={handleSubmit2}>CLICK ME</button>
         </div>
       </div>)

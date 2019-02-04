@@ -1,5 +1,7 @@
 const initState = {
-  negotiations: {}
+  negotiations: {},
+  parties: {},
+  proposals: {}
 }
 
 const entities = (state = initState, action) => {
@@ -7,7 +9,9 @@ const entities = (state = initState, action) => {
 
   return {
     ...state,
-    negotiations: {...state.negotiations, ...action.data.entities.negotiations}
+    negotiations: {...state.negotiations, ...action.data.entities.negotiations},
+    parties: {...state.parties, ...action.data.entities.parties},
+    proposals: {...state.propsals, ...action.data.entities.proposals}
   }
 
 

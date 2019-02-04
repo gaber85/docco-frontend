@@ -3,12 +3,10 @@ const initState = {
     result: [],
     loading: true
   },
-  currentContract: {
+  contractPage: {
     result: [],
     loading: true
-  },
-  profile: {},
-  counterParty: {}
+  }
 }
 
 const pages = (state = initState, action) => {
@@ -30,39 +28,32 @@ const pages = (state = initState, action) => {
         ...state, contractList: {
           ...state.contractList,
           loading: false,
-          result: action.data.result
-        }
-      };
-    case 'GET_CONTRACT_PENDING':
-      return {
-        ...state,
-        contractList: {
-          ...state.counterParty,
-          loading: true,
+          result: [...state.contractList.result,...action.data.result]
         }
       };
 
-    case 'GET_CONTRACT_SUCCESS':
+      case 'POST_NEG_SUCCESS':
       return {
         ...state, contractList: {
-          ...state.currentContract,
+          ...state.contractList,
           loading: false,
-          result: action.data.result
+          result: [...state.contractList.result,action.data.result]
         }
       };
-    case 'GET_PARTY_PENDING':
+
+    case 'GET_ONE_PENDING':
       return {
         ...state,
-        counterparty: {
-          ...state.counterparty,
+        contractPage: {
+          ...state.contractPage,
           loading: true,
         }
       };
 
-    case 'GET_PARTY_SUCCESS':
+    case 'GET_ONE_SUCCESS':
       return {
-        ...state, counterparty: {
-          ...state.counterparty,
+        ...state, contractPage: {
+          ...state.contractPage,
           loading: false,
           result: action.data.result
         }

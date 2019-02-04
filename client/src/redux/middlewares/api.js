@@ -4,8 +4,6 @@ const apiMiddleware = store => next => action => {
 
   const { api } = action;
 
-  // console.log(action)
-
   if (!api) return next(action);
 
   const defaultHeaders = {
@@ -26,9 +24,10 @@ const apiMiddleware = store => next => action => {
 
   fetch(`http://private-81546b-docco.apiary-mock.com/${api.route}`, {
     method: api.method || 'GET',
+    body: api.body,
     headers: {
       ...defaultHeaders,
-      // ...api.headers
+      ...api.headers
     }
   })
     .then(response => response.json())
@@ -36,7 +35,6 @@ const apiMiddleware = store => next => action => {
       let finalData;
       if (api.schema) finalData = normalize(data, api.schema);
       else finalData = data;
-      console.log(finalData);
       store.dispatch({
         type: `${action.type}_SUCCESS`,
         data: finalData
