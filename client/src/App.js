@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { getAll, getUser} from './redux/actions';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { getAll, getUser } from './redux/actions';
 
 import './App.css';
 
@@ -9,21 +9,18 @@ import './App.css';
 //  import SignUp from './components/SignUp';
 // import NavBar from './components/NavBar';
 // import AddMember from './components/AddMember';
-import ContractList from './components/ContractList';
+// import ContractList from './components/ContractList';
 // import contracts from './components/ContractList/contracts';
-import Login from './components/Login';
-import CreateNegotiation from './containers/CreateNegotiation/CreateNegotiation';
-import ContractPage from './containers/ContractPage/ContractPage';
-
-
+// import Login from './components/Login';
+// import CreateNegotiation from './containers/CreateNegotiation/CreateNegotiation';
+// import ContractPage from './containers/ContractPage/ContractPage';
+import Dashboard from './containers/Dashboard';
 
 // eslint-disable-next-line
 class App extends Component {
-
-  componentDidMount () {
+  componentDidMount() {
     this.checkLocal();
-    const { getAllAct } =this.props;
-    ;
+    const { getAllAct } = this.props;
     getAllAct();
   }
 
@@ -31,30 +28,25 @@ class App extends Component {
     const { getUserAct } = this.props;
     const authToken = localStorage.getItem('token');
     if (authToken) getUserAct();
-  }
+  };
 
-  render () {
+  render() {
     return (
       <div>
-        <ContractList />
-        <ContractPage id={2} />
-        <Login />
-        <CreateNegotiation />
-      </div>);
-
+        <Dashboard />
+      </div>
+    );
   }
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   entities: state.entities,
   authentication: state.authentication
-})
+});
 
-const mapDispatchToProps = (dispatch) => ({
-
+const mapDispatchToProps = dispatch => ({
   getAllAct: () => dispatch(getAll()),
   getUserAct: () => dispatch(getUser())
-
 });
 
 export default connect(

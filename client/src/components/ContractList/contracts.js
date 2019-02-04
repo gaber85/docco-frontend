@@ -1,4 +1,36 @@
-const contracts =
-[{ title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }, { title: 'My Contract' }];
+const contracts = [
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' },
+  { title: 'My Contract' }
+];
 
 export default contracts;
