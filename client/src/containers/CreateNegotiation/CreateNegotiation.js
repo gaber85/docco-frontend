@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './CreateNegotiation.css';
 import TitleAndDescriptionPage from '../../components/TitleAndDescriptionPage';
 import ProgressTracker from '../../components/ProgressTracker';
 import AddParties from '../../components/AddPartiesPage';
 import AddFiles from '../../components/AddFiles';
+import {negotiationSchema} from '../../redux/middlewares/schemas/schemas';
+import {postNeg} from '../../redux/actions'
 
-export default class CreateNegotiation extends Component {
+
+class CreateNegotiation extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,7 +23,9 @@ export default class CreateNegotiation extends Component {
         party_b_email: ''
       }
     };
+
   }
+
 
   handleInputChange = event => {
     const { document } = this.state;
@@ -35,17 +41,24 @@ export default class CreateNegotiation extends Component {
 
   handleCreateNegotiation = () => {
     const { document } = this.state;
-    console.log(
-      'create Negotiation',
-      document.title,
-      document.description,
-      document.party_b_email,
-      document.files
-    );
+    const {postIt, email} = this.props;
+    const newNeg = {
+      title: document.title,
+      description: document.description,
+      party_a: email,
+      party_b: document.party_b_email,
+      files: document.files
+    };
+    const api = {
+      route: 'negotiations',
+      schema: negotiationSchema,
+      method: 'POST',
+      body: newNeg
+    }
+    postIt(api);
   };
 
   handleFileContent = content => {
-    console.log('content', content);
     const { document } = this.state;
     this.setState({ document: { ...document, files: [...document.files, content] }});
   };
@@ -98,3 +111,16 @@ export default class CreateNegotiation extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  email: state.authentication.user.email
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  postIt: (obj) => dispatch(postNeg(obj))
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(CreateNegotiation)

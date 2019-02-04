@@ -3,12 +3,49 @@ const addContract = (contract) => ({
   contract
 })
 
-const addUser = (user) => ({
-  type: 'ADD_USER',
+const signUp = (user) => ({
+  type: 'SIGN_UP',
   user
 })
 
-module.exports = {
+const login = (api) => ({
+  type: 'LOGIN',
+  api
+})
+
+const getAll = (api) => ({
+  type: 'GET_ALL',
+  api
+})
+
+const getOne = (api) => ({
+  type: 'GET_ONE',
+  api
+});
+
+const postNeg = () => ({
+  type: 'POST_NEG',
+  api: {
+    route: 'parties'
+  }
+});
+
+const getUser = api => ({
+  type:'GET_USER',
+  api
+})
+
+
+
+
+
+
+export {
   addContract,
-  addUser
+  signUp,
+  login,
+  getAll,
+  postNeg,
+  getOne,
+  getUser
 }

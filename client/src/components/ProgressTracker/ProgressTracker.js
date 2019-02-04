@@ -4,8 +4,7 @@ import './ProgressTracker.css';
 const ProgressTracker = props => {
   const { progressTracker, handleProgress } = props;
   const handleClick = event =>
-    handleProgress(parseInt(event.currentTarget.dataset.id, 10));
-  // handleProgress(parseInt(event.target.value, 10));
+    handleProgress(Number(event.currentTarget.dataset.id));
   return (
     <div>
       <ul className="progress-tracker">

@@ -1,23 +1,60 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { add } from './redux/actions';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { getAll, getUser} from './redux/actions';
+
 import './App.css';
-import CreateNegotiation from './containers/CreateNegotiation';
-import AddMember from './components/AddMember'
+
+// import MainButton from './components/MainButton';
+//  import SignUp from './components/SignUp';
+// import NavBar from './components/NavBar';
+// import AddMember from './components/AddMember';
+import ContractList from './components/ContractList';
+// import contracts from './components/ContractList/contracts';
+import Login from './components/Login';
+import CreateNegotiation from './containers/CreateNegotiation/CreateNegotiation';
+import ContractPage from './containers/ContractPage/ContractPage';
+
+
 
 // eslint-disable-next-line
 class App extends Component {
-  render() {
-    return <AddMember />;
+
+  componentDidMount () {
+    this.checkLocal();
+    const { getAllAct } =this.props;
+    ;
+    getAllAct();
+  }
+
+  checkLocal = () => {
+    const { getUserAct } = this.props;
+    const authToken = localStorage.getItem('token');
+    if (authToken) getUserAct();
+  }
+
+  render () {
+    return (
+      <div>
+        <ContractList />
+        <ContractPage id={2} />
+        <Login />
+        <CreateNegotiation />
+      </div>);
+
   }
 }
 
-const mapStateToProps = state => ({
-  contracts: state.contracts
-});
+const mapStateToProps = (state) => ({
+  entities: state.entities,
+  authentication: state.authentication
+})
 
-const mapDispatchToProps = dispatch => ({
-  add: () => dispatch(add())
+const mapDispatchToProps = (dispatch) => ({
+
+  getAllAct: () => dispatch(getAll()),
+  getUserAct: () => dispatch(getUser())
+
 });
 
 export default connect(

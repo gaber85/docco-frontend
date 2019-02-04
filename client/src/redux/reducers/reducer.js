@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux';
 import entities from './entities';
 import authentication from './authentication';
-
+import pages from './pages';
 // const initState = {
 //   contracts: []
 // }
@@ -18,7 +18,8 @@ import authentication from './authentication';
 
 const reducer = combineReducers({
   entities,
-  authentication
+  authentication,
+  pages
 });
 
 export default reducer;

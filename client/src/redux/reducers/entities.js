@@ -1,14 +1,17 @@
 const initState = {
-  entities: {},
-  results: []
+  negotiations: {},
+  parties: {},
+  proposals: {}
 }
 
 const entities = (state = initState, action) => {
-  if (!action.entities) return state;
+  if (!action.data || !action.data.entities ) return state;
 
   return {
     ...state,
-    user: {...state.user, ...action.entities.user},
+    negotiations: {...state.negotiations, ...action.data.entities.negotiations},
+    parties: {...state.parties, ...action.data.entities.parties},
+    proposals: {...state.propsals, ...action.data.entities.proposals}
   }
 
 
