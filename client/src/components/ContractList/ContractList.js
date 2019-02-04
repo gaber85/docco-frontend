@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import './ContractList.css';
 // import {css,jsx} from '@emotion/core';
 
-const ContractList = (props) => {
+export const ContractList = (props) => {
   const {contractList} = props;
   // renders each contract with font awesome symbol;
   const view = contractList.map((contract) => {

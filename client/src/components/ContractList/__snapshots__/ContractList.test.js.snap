@@ -3,7 +3,7 @@
 exports[`<ContractList /> matches the snapshot 1`] = `
 ReactWrapper {
   Symbol(enzyme.__unrendered__): <ContractList
-    contracts={
+    contractList={
       Array [
         Object {
           "title": "test",
@@ -34,7 +34,7 @@ ReactWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "contracts": Array [
+      "contractList": Array [
         Object {
           "title": "test",
         },
@@ -56,7 +56,6 @@ ReactWrapper {
       >
         <div
           class="my-contract"
-          index-key="0"
         >
           <i
             class="fas fa-file-contract"
@@ -69,7 +68,6 @@ ReactWrapper {
         </div>
         <div
           class="my-contract"
-          index-key="1"
         >
           <i
             class="fas fa-file-contract"
@@ -82,7 +80,6 @@ ReactWrapper {
         </div>
         <div
           class="my-contract"
-          index-key="2"
         >
           <i
             class="fas fa-file-contract"
@@ -95,7 +92,6 @@ ReactWrapper {
         </div>
         <div
           class="my-contract"
-          index-key="3"
         >
           <i
             class="fas fa-file-contract"
@@ -113,7 +109,6 @@ ReactWrapper {
         "children": Array [
           <div
             className="my-contract"
-            index-key={0}
           >
             <i
               className="fas fa-file-contract"
@@ -126,7 +121,6 @@ ReactWrapper {
           </div>,
           <div
             className="my-contract"
-            index-key={1}
           >
             <i
               className="fas fa-file-contract"
@@ -139,7 +133,6 @@ ReactWrapper {
           </div>,
           <div
             className="my-contract"
-            index-key={2}
           >
             <i
               className="fas fa-file-contract"
@@ -152,7 +145,6 @@ ReactWrapper {
           </div>,
           <div
             className="my-contract"
-            index-key={3}
           >
             <i
               className="fas fa-file-contract"
@@ -171,7 +163,6 @@ ReactWrapper {
         Object {
           "instance": <div
             class="my-contract"
-            index-key="0"
           >
             <i
               class="fas fa-file-contract"
@@ -196,7 +187,6 @@ ReactWrapper {
               </span>,
             ],
             "className": "my-contract",
-            "index-key": 0,
           },
           "ref": null,
           "rendered": Array [
@@ -239,7 +229,6 @@ ReactWrapper {
         Object {
           "instance": <div
             class="my-contract"
-            index-key="1"
           >
             <i
               class="fas fa-file-contract"
@@ -264,7 +253,6 @@ ReactWrapper {
               </span>,
             ],
             "className": "my-contract",
-            "index-key": 1,
           },
           "ref": null,
           "rendered": Array [
@@ -307,7 +295,6 @@ ReactWrapper {
         Object {
           "instance": <div
             class="my-contract"
-            index-key="2"
           >
             <i
               class="fas fa-file-contract"
@@ -332,7 +319,6 @@ ReactWrapper {
               </span>,
             ],
             "className": "my-contract",
-            "index-key": 2,
           },
           "ref": null,
           "rendered": Array [
@@ -375,7 +361,6 @@ ReactWrapper {
         Object {
           "instance": <div
             class="my-contract"
-            index-key="3"
           >
             <i
               class="fas fa-file-contract"
@@ -400,7 +385,6 @@ ReactWrapper {
               </span>,
             ],
             "className": "my-contract",
-            "index-key": 3,
           },
           "ref": null,
           "rendered": Array [
@@ -451,7 +435,7 @@ ReactWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "contracts": Array [
+        "contractList": Array [
           Object {
             "title": "test",
           },
@@ -473,7 +457,6 @@ ReactWrapper {
         >
           <div
             class="my-contract"
-            index-key="0"
           >
             <i
               class="fas fa-file-contract"
@@ -486,7 +469,6 @@ ReactWrapper {
           </div>
           <div
             class="my-contract"
-            index-key="1"
           >
             <i
               class="fas fa-file-contract"
@@ -499,7 +481,6 @@ ReactWrapper {
           </div>
           <div
             class="my-contract"
-            index-key="2"
           >
             <i
               class="fas fa-file-contract"
@@ -512,7 +493,6 @@ ReactWrapper {
           </div>
           <div
             class="my-contract"
-            index-key="3"
           >
             <i
               class="fas fa-file-contract"
@@ -530,7 +510,6 @@ ReactWrapper {
           "children": Array [
             <div
               className="my-contract"
-              index-key={0}
             >
               <i
                 className="fas fa-file-contract"
@@ -543,7 +522,6 @@ ReactWrapper {
             </div>,
             <div
               className="my-contract"
-              index-key={1}
             >
               <i
                 className="fas fa-file-contract"
@@ -556,7 +534,6 @@ ReactWrapper {
             </div>,
             <div
               className="my-contract"
-              index-key={2}
             >
               <i
                 className="fas fa-file-contract"
@@ -569,7 +546,6 @@ ReactWrapper {
             </div>,
             <div
               className="my-contract"
-              index-key={3}
             >
               <i
                 className="fas fa-file-contract"
@@ -588,7 +564,6 @@ ReactWrapper {
           Object {
             "instance": <div
               class="my-contract"
-              index-key="0"
             >
               <i
                 class="fas fa-file-contract"
@@ -613,7 +588,6 @@ ReactWrapper {
                 </span>,
               ],
               "className": "my-contract",
-              "index-key": 0,
             },
             "ref": null,
             "rendered": Array [
@@ -656,7 +630,6 @@ ReactWrapper {
           Object {
             "instance": <div
               class="my-contract"
-              index-key="1"
             >
               <i
                 class="fas fa-file-contract"
@@ -681,7 +654,6 @@ ReactWrapper {
                 </span>,
               ],
               "className": "my-contract",
-              "index-key": 1,
             },
             "ref": null,
             "rendered": Array [
@@ -724,7 +696,6 @@ ReactWrapper {
           Object {
             "instance": <div
               class="my-contract"
-              index-key="2"
             >
               <i
                 class="fas fa-file-contract"
@@ -749,7 +720,6 @@ ReactWrapper {
                 </span>,
               ],
               "className": "my-contract",
-              "index-key": 2,
             },
             "ref": null,
             "rendered": Array [
@@ -792,7 +762,6 @@ ReactWrapper {
           Object {
             "instance": <div
               class="my-contract"
-              index-key="3"
             >
               <i
                 class="fas fa-file-contract"
@@ -817,7 +786,6 @@ ReactWrapper {
                 </span>,
               ],
               "className": "my-contract",
-              "index-key": 3,
             },
             "ref": null,
             "rendered": Array [

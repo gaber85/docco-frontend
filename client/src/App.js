@@ -23,7 +23,6 @@ class App extends Component {
   componentDidMount () {
     this.checkLocal();
     const { getAllAct } =this.props;
-    ;
     getAllAct();
   }
 

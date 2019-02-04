@@ -1,7 +1,7 @@
 import React from 'react';
 import {render, fireEvent} from 'react-testing-library'
 import 'jest-dom/extend-expect'
-import CreateNegotiation from './CreateNegotiation'
+import {CreateNegotiation} from './CreateNegotiation'
 
 // automatically unmount and cleanup DOM after the test is finished.
 // afterEach(cleanup); Ask Arol why it errors
