@@ -9,7 +9,7 @@ import {negotiationSchema} from '../../redux/middlewares/schemas/schemas';
 import {postNeg} from '../../redux/actions'
 
 
-class CreateNegotiation extends Component {
+export class CreateNegotiation extends Component {
   constructor(props) {
     super(props);
     this.state = {

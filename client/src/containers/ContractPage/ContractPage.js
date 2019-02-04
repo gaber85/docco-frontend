@@ -27,11 +27,7 @@ class ContractPage extends Component {
     const { contract } = this.props;
     let info = {};
     if (contract) {
-      const { yourDetails, theirDetails, yourContent, theirContent } = contract;
-      const yDetails = this.props.parties[yourDetails];
-      const tDetails = this.props.parties[theirDetails];
-      const yContent = this.props.proposals[yourContent];
-      const tContent = this.props.proposals[theirContent];
+      const { yDetails, tDetails, yContent, tContent } = contract;
       info = {
         contract,
         yDetails,
@@ -62,12 +58,32 @@ class ContractPage extends Component {
     )
   }
 }
-const mapStateToProps = (state, ownProps) => ({
-  contract: state.entities.negotiations[16],//  should be changed to ownProps.match.params.id
-  parties: state.entities.parties,
-  proposals: state.entities.proposals,
-  page: state.pages.contractPage
-})
+// const mapStateToProps = (state, ownProps) => ({
+//   contract: state.entities.negotiations[16],//  should be changed to ownProps.match.params.id
+//   parties: state.entities.parties,
+//   proposals: state.entities.proposals,
+//   page: state.pages.contractPage
+// })
+
+const mapStateToProps = (state, ownProps) => {
+
+  const contract = state.entities.negotiations[16]; //  should be changed to ownProps.match.params.id
+  console.log(contract);
+  if(contract) {
+  const yDetails = state.entities.parties[contract.yourDetails];
+  const tDetails = state.entities.parties[contract.theirDetails];
+  const yContent = state.entities.proposals[contract.yourContent];
+  const tContent = state.entities.proposals[contract.theirContent];
+  return {
+    contract,
+    yDetails,
+    tDetails,
+    yContent,
+    tContent
+  }
+}
+return null;
+}
 
 const mapDispatchToProps = (dispatch) => ({
   getOneAct: (x) => dispatch(getOne(x))
