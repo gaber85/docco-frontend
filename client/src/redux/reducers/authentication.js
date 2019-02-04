@@ -1,6 +1,6 @@
 const initState = {
   authToken: null,
-  user: {},
+  user: {}
 }
 
 const authentication = (state = initState, action) => {

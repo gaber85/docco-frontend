@@ -20,7 +20,9 @@ import Dashboard from './containers/Dashboard';
 class App extends Component {
   componentDidMount() {
     this.checkLocal();
-    const { getAllAct } = this.props;
+
+    const { getAllAct } =this.props;
+
     getAllAct();
   }
 
