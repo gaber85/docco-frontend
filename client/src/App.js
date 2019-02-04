@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { add } from './redux/actions';
 import './App.css';
-import LandingPage from './containers/LandingPage';
+import ContractPage from './containers/ContractPage';
 
 
 // eslint-disable-next-line
 class App extends Component {
   render() {
-    return (<LandingPage />)
+    return <ContractPage />
   }
 }
 

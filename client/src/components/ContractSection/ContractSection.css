@@ -1,11 +1,202 @@
 .contract-container {
   border: solid;
   border-color: #ECF0F1;
-  height: 100%;
   width: 100%;
   overflow-y: scroll;
+  /* padding: 10px; */
 }
 
 .content-body {
   color: #2C3E50;
+  outline: none;
+  height: 100%;
+  position: relative;
+}
+
+.btn-link {
+  font-size: 20px;
+  background-color: #3498DB;
+  border: none;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 1);
+}
+
+.btn-link:hover {
+  transform: scale(1.1);
+}
+
+.btn-link-modes {
+  font-size: 20px;
+  background-color: #3498DB;
+  border: none;
+  color: white;
+  margin: 5px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 1);
+  border-radius: 5px;
+}
+
+.btn-link-modes:hover {
+  transform: scale(1.1);
+}
+
+.main-textarea {
+  background-color: white;
+  outline: none;
+  border: none;
+  resize: none;
+  font-size: 16px;
+  padding-top: 15px;
+  width: 100%;
+}
+
+.wk-commands {
+  padding: 5px;
+  display: block;
+  position: fixed;
+  top: 54px;
+  background-color: white;
+}
+
+/* .wk-switchboard {
+  display: inline-flex;
+  opacity: 0;
+  position: relative;
+  left: 120px;
+  top: -36px;
+} */
+
+.wk-container:hover .wk-commands {
+  opacity: 1;
+}
+.wk-container:hover .wk-switchboard {
+  opacity: 1;
+}
+
+p {
+  outline: none;
+}
+
+.wk-wysiwyg {
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+.wk-wysiwyg:focus {
+  outline: none;
+}
+
+.wk-hide {
+  display: none !important;
+}
+.wk-container {
+  position: relative;
+}
+.wk-container-drop {
+  display: none;
+}
+.wk-container-dragging {
+  display: block;
+}
+.wk-wysiwyg-placeholder {
+  position: absolute;
+  pointer-events: none;
+  display: none;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  color: #999;
+}
+.wk-wysiwyg:empty + .wk-wysiwyg-placeholder {
+  display: block;
+}
+.wk-prompt {
+  position: fixed;
+  top: 20%;
+  left: 2%;
+  right: 2%;
+  background-color: #dedede;
+  color: #555;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 450px;
+}
+.wk-prompt-body {
+  text-align: left;
+}
+.wk-prompt-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+.wk-prompt-cancel {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.wk-prompt-upload {
+  position: relative;
+  overflow: hidden;
+}
+.wk-prompt-browse {
+  font-weight: bold;
+}
+.wk-prompt-dragdrop {
+  text-align: center;
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+}
+.wk-prompt-fileupload {
+  position: absolute;
+  top: 0;
+  left: -200%;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.wk-dragging {
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+}
+.wk-prompt-error {
+  display: none;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.1);
+}
+.wk-prompt-error-show {
+  display: block;
+}
+.wk-prompt-drop,
+.wk-prompt-drop-icon,
+.wk-prompt-progress {
+  display: none;
+}
+.wk-prompt-upload-dragging .wk-prompt-drop,
+.wk-prompt-upload-dragging .wk-prompt-drop-icon {
+  display: block;
+}
+.wk-prompt-upload-dragging .wk-prompt-dragdrop {
+  display: none;
+}
+.wk-prompt-uploading {
+  pointer-events: none;
+}
+.wk-prompt-uploading .wk-prompt-progress {
+  display: block;
+}
+.wk-prompt-uploading .wk-prompt-drop,
+.wk-prompt-uploading .wk-prompt-dragdrop {
+  display: none;
+}
+.wk-prompt-progress {
+  cursor: not-allowed;
 }

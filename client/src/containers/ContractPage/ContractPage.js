@@ -18,7 +18,7 @@ class ContractPage extends Component {
             <div className="search-bar-section"><SearchBar/></div>
           </div>
           <div className="contract">
-            <ContractSection />
+            <ContractSection content='hello world' />
             <div className="sidebar-controls">
             <SideBar />
             </div>
