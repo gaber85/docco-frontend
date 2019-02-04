@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { getAll, getUser} from './redux/actions';
 
 import './App.css';
+
 // import MainButton from './components/MainButton';
 //  import SignUp from './components/SignUp';
 // import NavBar from './components/NavBar';
@@ -40,6 +41,7 @@ class App extends Component {
         <Login />
         <CreateNegotiation />
       </div>);
+
   }
 }
 
