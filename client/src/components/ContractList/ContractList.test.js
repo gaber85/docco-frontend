@@ -1,19 +1,19 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import ContractList from './ContractList';
+import {ContractList} from './ContractList';
 
 
 
 
-describe('<ContractList />', () => {
+describe.only('<ContractList />', () => {
   let wrapper;
   const mock = [{title:'test'},{title:'test'},{title:'test'},{title:'test'}];
-  beforeEach(() => { wrapper = shallow(<ContractList contracts={mock}/>) });
+  beforeEach(() => { wrapper = shallow(<ContractList contractList={mock}/>) });
   it('should render ContractList', () => {
     expect(wrapper.exists()).toBe(true);
   });
   it('matches the snapshot', () => {
-    const tree = mount(<ContractList contracts={mock} />);
+    const tree = mount(<ContractList contractList={mock} />);
     expect(tree).toMatchSnapshot();
     tree.unmount();
   });

@@ -6,25 +6,30 @@ const login = {
   alignItems: 'center',
   justifyContent: 'center'
 };
-
 const welcome = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   marginBottom: '24vh'
 }
-
 const title = {
   fontSize: '8vh'
-
-
 }
 const phrase = {
   fontSize: '3vh'
-
 }
-
+const theform = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center'
+}
+const form = {
+  display: 'flex',
+  flexDirection: 'column'
+}
 const input = {
+  fontSize: '2vh',
+  height: '3vh',
   minWidth: '30vw',
   maxWidth: '80vw',
   marginBottom: '2vh',
@@ -32,21 +37,12 @@ const input = {
   borderRadius: '3px'
 }
 
-
-
-const form = {
-  display: 'flex',
-  flexDirection: 'column'
-}
-
-
-
-
 module.exports = {
   login,
   input,
   form,
   welcome,
   title,
-  phrase
+  phrase,
+  theform
 };

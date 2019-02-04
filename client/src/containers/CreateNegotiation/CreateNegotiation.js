@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './CreateNegotiation.css';
 import TitleAndDescriptionPage from '../../components/TitleAndDescriptionPage';
+import ProgressTracker from '../../components/ProgressTracker';
+import AddParties from '../../components/AddPartiesPage';
+import AddFiles from '../../components/AddFiles';
+import {negotiationSchema} from '../../redux/middlewares/schemas/schemas';
+import {postNeg} from '../../redux/actions'
 
-export default class CreateNegotiation extends Component {
+
+export class CreateNegotiation extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,49 +18,109 @@ export default class CreateNegotiation extends Component {
         title: '',
         description: '',
         files: [],
-        beneficiaryEmail: ''
+        // Todo: email party a is hardcoded for now, change that
+        party_a_email: 'hans@butt-insurance.com',
+        party_b_email: ''
       }
     };
+
   }
+
 
   handleInputChange = event => {
     const { document } = this.state;
     const { name, value } = event.target;
-
     this.setState({
       document: { ...document, [name]: value }
     });
   };
 
+  handleProgress = value => {
+    this.setState({ progressTracker: value });
+  };
+
+  handleCreateNegotiation = () => {
+    const { document } = this.state;
+    const {postIt, email} = this.props;
+    const newNeg = {
+      title: document.title,
+      description: document.description,
+      party_a: email,
+      party_b: document.party_b_email,
+      files: document.files
+    };
+    const api = {
+      route: 'negotiations',
+      schema: negotiationSchema,
+      method: 'POST',
+      body: newNeg
+    }
+    postIt(api);
+  };
+
+  handleFileContent = content => {
+    const { document } = this.state;
+    this.setState({ document: { ...document, files: [...document.files, content] }});
+  };
+
   render() {
     const { progressTracker, document } = this.state;
-
-    if (progressTracker === 0) {
-      return (
-        <div>
+    const StepsTracker = () => (
+      <ProgressTracker
+        progressTracker={progressTracker}
+        handleProgress={this.handleProgress}
+      />
+    );
+    let content;
+    switch (progressTracker) {
+      case 0:
+        content = (
           <TitleAndDescriptionPage
             document={document}
             handleInputChange={this.handleInputChange}
+            handleProgress={this.handleProgress}
           />
-        </div>
-      );
+        );
+        break;
+      case 1:
+        content = (
+          <AddFiles
+            handleProgress={this.handleProgress}
+            handleFileContent={this.handleFileContent}
+          />
+        );
+        break;
+      case 2:
+        content = (
+          <AddParties
+            document={document}
+            handleProgress={this.handleProgress}
+            handleInputChange={this.handleInputChange}
+            handleCreateNegotiation={this.handleCreateNegotiation}
+          />
+        );
+        break;
+      default:
+        break;
     }
-    return <div>default</div>;
-    //
-    // return (
-    //   <div>
-    //     <progressBar />
-    //     {getTheRightThing(progressTracker)}
-    //   </div>
-    // )
+    return (
+      <div>
+        <StepsTracker />
+        {content}
+      </div>
+    );
   }
 }
 
-// // the drag and drop section will have this function you can pass it. 
-//  handleDrop = (data, arr) => {
-//   const fileList = arr.slice();
-//   for (let i = 0; i < data.files.length; i+=1) {
-//     if (fileList.indexOf(data.files[i].name) === -1) fileList.push(data.files[i].name);
-//   }
-//   return fileList;
-// }
+const mapStateToProps = (state) => ({
+  email: state.authentication.user.email
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  postIt: (obj) => dispatch(postNeg(obj))
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(CreateNegotiation)

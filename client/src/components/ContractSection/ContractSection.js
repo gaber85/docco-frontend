@@ -47,7 +47,16 @@ class ContractSection extends Component {
   }
 
   render() {
-    const { content } = this.props;
+    const { info } = this.props;
+    const { yContent, tContent, contract } = info;
+    let content = 'No Content'
+    // the if logic is necessary because at (the dev stage I don't always pass a contract); can be removed in final
+    if (info && yContent){
+    const {content:content1} = yContent;
+    const {content:content2} = tContent;
+      if (contract.youEditedLast) { content = content1}
+      else { content = content2 };
+    }
     return (
       <div className="contract-container">
         <div className="content-body">

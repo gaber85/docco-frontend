@@ -1,0 +1,67 @@
+.container {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.top-row {
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  width: 50vw;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+  width: 50vw;
+}
+
+.main-row {
+  width: 90vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.bottom-row {
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inactive-negotiation {
+  flex-basis: 30%;
+  margin-left: 10%;
+  color: blue;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.inactive-negotiation:visited {
+  color: pink;
+}
+
+.add-negotiation {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.add-new-negotiation-text {
+  margin-left: 20px;
+}

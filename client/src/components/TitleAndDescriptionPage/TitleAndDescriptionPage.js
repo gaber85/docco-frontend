@@ -3,15 +3,10 @@ import './TitleAndDescrpiptionPage.css';
 import MainButton from '../MainButton';
 
 const TitleAndDescriptionPage = props => {
-  const {
-    document: {
-      title,
-      description
-    },
-    handleInputChange,
-  } = props;
-  // const { title, description } = document;
-  const handleClick = () => console.log('click');
+
+  const { document, handleInputChange, handleProgress } = props;
+  const { title, description } = document;
+  const handleClick = () => handleProgress(1);
 
   return (
     <div className="box">

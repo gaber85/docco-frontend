@@ -1,13 +1,17 @@
 const initState = {
-  auth_token:''
+  authToken: null,
+  user: {}
 }
 
 const authentication = (state = initState, action) => {
-  if(!action.auth_token) return state;
+  if(!action.authToken || !action.user) return state;
+
+  localStorage.setItem('token');
 
   return {
     ...state,
-    auth_token: action.auth_token
+    authToken: action.authToken,
+    user: action.user
   }
 }
 
