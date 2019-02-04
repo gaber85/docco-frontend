@@ -1,3 +1,5 @@
+import {negotiationSchema} from './middlewares/schemas/schemas'
+
 const addContract = (contract) => ({
   type: 'ADD_CONTRACT',
   contract
@@ -13,9 +15,12 @@ const login = (api) => ({
   api
 })
 
-const getAll = (api) => ({
+const getAll = () => ({
   type: 'GET_ALL',
-  api
+  api: {
+    route: 'negotiations',
+    schema: [negotiationSchema]
+  }
 })
 
 const getOne = (api) => ({
