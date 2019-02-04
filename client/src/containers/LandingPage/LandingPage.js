@@ -37,7 +37,7 @@ class LandingPage extends Component {
             className="test2"
             layers={[
               {
-                image: 'https://uc5b8c83d1da4205805ead9d5414.previews.dropboxusercontent.com/p/thumb/AAUHrYC5QfxpeXX0wpl4aBOWw5sNT-qeOJUN7aE6gm5oguntBG_UHp6Es9WBi9QQ5hKmjSSF_d_3zZrT2Y2NoKntEEcmFbbOTSj8mZclYPXy0wBMZPGd1oiSqY0frkYT66zExIRxU1JTnDyHtEh5ht7R6YKP2cH8w2hJT4pfDgFlMRMS_FF6jhtbg4k4E-xa3wz4-H2zWFmwILz6BLotNaA1SNWI-DfRMaWkqUZA7dpNEY1T6iKzaH3qBq2fgrJBNMkINTw1p9X8Urz5mrzP8O6u/p.jpeg?size_mode=5',
+                image: 'https://ucf23f8c229e520ef1bd659318fa.previews.dropboxusercontent.com/p/thumb/AAWsoQ6q1WBC-Qt1dkIxCeQjyw4KoocZ8TazJV2ftjWe_SkTwO4Wjn4AG98KEB4_dcqQDhA9inOUh1jezT4sM1C-Hi-koUHVrUVcuQRW0zx52VT69qKSNVFC4xiNXOrijJCYU9eB7S4M1hwB8TVoUZprBA1Xe2ihtMYkJD4iEG_DIsgYyPVbRfK1CK006W423oqTZ0hpQ94F0aN2prhp8cwggi-XE2Vnpdg-Tf8hBIyZ3J-6BJI72RBikT9y9O0iLbV7iVa8N0wvQB9cGIoSxL-M/p.jpeg?size_mode=5',
                 amount: 0.5,
                 slowerScrollRate: true,
               }

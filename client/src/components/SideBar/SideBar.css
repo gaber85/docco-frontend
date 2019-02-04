@@ -7,11 +7,11 @@
   border: solid;
   border-left: hidden;
   border-color: #ECF0F1;
-  height: 100%;
 }
 
 .icons {
   padding-bottom: 25px;
+  color: #3498DB;
 }
 
 .icons:hover {

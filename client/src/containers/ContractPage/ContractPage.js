@@ -65,10 +65,9 @@ class ContractPage extends Component {
 //   page: state.pages.contractPage
 // })
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state, ownProps) => { // eslint-disable-line
 
   const contract = state.entities.negotiations[16]; //  should be changed to ownProps.match.params.id
-  console.log(contract);
   if(contract) {
   const yDetails = state.entities.parties[contract.yourDetails];
   const tDetails = state.entities.parties[contract.theirDetails];
