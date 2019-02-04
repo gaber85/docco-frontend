@@ -6,7 +6,7 @@ import TeamSection from '../../components/TeamSection';
 import ContractSection from '../../components/ContractSection';
 import SideBar from '../../components/SideBar';
 import { getOne } from '../../redux/actions';
-import negotiationsSchema from '../../redux/middlewares/schemas/schemas';
+import {negotiationSchema}from '../../redux/middlewares/schemas/schemas';
 
 // eslint-disable-next-line
 class ContractPage extends Component {
@@ -17,7 +17,7 @@ class ContractPage extends Component {
     const { getOneAct } = this.props;
     const api = {
       route: `negotiations/${id}`,
-      schema: negotiationsSchema
+      schema: negotiationSchema
     }
     getOneAct(api);
   }

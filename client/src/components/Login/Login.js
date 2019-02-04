@@ -5,8 +5,8 @@ import { jsx } from '@emotion/core';
 import base64 from 'base-64';
 import styles from './styles';
 import MainButton from "../MainButton";
-import { login, getAll } from '../../redux/actions';
-import negotiationSchema from '../../redux/middlewares/schemas/schemas';
+import { login} from '../../redux/actions';
+
 
 class Login extends Component {
   state = {
@@ -25,21 +25,21 @@ class Login extends Component {
 
   handleSubmit = () => {
     const { user } = this.state;
-    const { getAllAct } = this.props;
+    const { loginAct } = this.props;
     const loginData = `${user.email} : ${user.password}`
     const api = {
-      route: 'negotiations',
-      schema: [negotiationSchema],
+      route: 'login',
       headers: {
         Authorization: `Basic ${base64.encode(loginData)}`
       }
     }
-    getAllAct(api);
+    loginAct(api);
+
 
   }
 
   render () {
-    const { handleSubmit, handleSubmit2 } = this;
+    const { handleSubmit } = this;
 
     return (
       <div className="login" css={styles.login} >
@@ -53,7 +53,6 @@ class Login extends Component {
             <input type="password" name="password" className="the-input last-name" css={styles.input} placeholder="password" autoComplete="current-password" />
           </form>
           <MainButton text="LOGIN" click={handleSubmit} />
-          <button type="submit" onClick={handleSubmit2}>CLICK ME</button>
         </div>
       </div>)
   }
@@ -64,8 +63,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  loginAct: (obj) => dispatch(login(obj)),
-  getAllAct: (obj) => dispatch(getAll(obj))
+  loginAct: (obj) => dispatch(login(obj))
 });
 
 export default connect(

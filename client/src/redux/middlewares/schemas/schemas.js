@@ -1,4 +1,4 @@
-import { normalize, schema } from 'normalizr';
+import { schema } from 'normalizr';
 
 // const language = new schema.Entity('languages',{},{ idAttribute: 'iso_639_1'
 // });
@@ -30,5 +30,8 @@ const negotiationSchema = new schema.Entity('negotiations', {
 //   idAttribute: 'negotiation_id'
 // });
 
-export default negotiationSchema;
+export {
+  negotiationSchema,
+  party
+};
 
