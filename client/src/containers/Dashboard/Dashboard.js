@@ -4,6 +4,7 @@ import ContractList from '../../components/ContractList';
 import './Dashboard.css';
 import PlusButton from '../../components/PlusButton';
 
+// add redux later
 const Dashboard = props => {
   const handleInactiveNegotiations = () => {
     console.log('click handle Inactive Negotiations');
@@ -23,7 +24,15 @@ const Dashboard = props => {
         <ContractList />
       </div>
       <div className="bottom-row">
-        <div className='inactive-negotiation' onClick={handleInactiveNegotiations}>inactive negotiations</div>
+        <div
+          role="button"
+          tabIndex={0}
+          className="inactive-negotiation"
+          onClick={handleInactiveNegotiations}
+          onKeyPress={null}
+        >
+          inactive negotiations
+        </div>
         <div className="add-negotiation">
           <PlusButton size="2" />
           <h3 className="add-new-negotiation-text">Add new negotiation</h3>
