@@ -5,6 +5,10 @@ import './Dashboard.css';
 import PlusButton from '../../components/PlusButton';
 
 const Dashboard = props => {
+  const handleInactiveNegotiations = () => {
+    console.log('click handle Inactive Negotiations');
+  };
+
   return (
     <div className="container">
       <div className="top-row">
@@ -19,7 +23,7 @@ const Dashboard = props => {
         <ContractList />
       </div>
       <div className="bottom-row">
-        <div className='inactive-negotiation'>inactive negotiations</div>
+        <div className='inactive-negotiation' onClick={handleInactiveNegotiations}>inactive negotiations</div>
         <div className="add-negotiation">
           <PlusButton size="2" />
           <h3 className="add-new-negotiation-text">Add new negotiation</h3>
