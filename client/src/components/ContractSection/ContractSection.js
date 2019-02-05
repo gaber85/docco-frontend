@@ -46,17 +46,25 @@ class ContractSection extends Component {
     });
   }
 
+  componentDidUpdate() {
+    woofmark.find(this.textareaRef.current).value(this.props.info.tContent.content);
+  }
+
   render() {
     const { info } = this.props;
+    console.log('these are the props in the contract section', this.props);
     const { yContent, tContent, contract } = info;
     let content = 'No Content'
     // the if logic is necessary because at (the dev stage I don't always pass a contract); can be removed in final
-    if (info && yContent){
-    const {content:content1} = yContent;
+    if (info && tContent){
+    // const {content:content1} = yContent;
+    const content1 = 'thisjttjtfhtfjhtj';
     const {content:content2} = tContent;
-      if (contract.youEditedLast) { content = content1}
-      else { content = content2 };
+      // if (contract.youEditedLast) { content = content1}
+      // else { content = content2 };
+      content = content2;
     }
+    console.log('this os the content', content)
     return (
       <div className="contract-container">
         <div className="content-body">
