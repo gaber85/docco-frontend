@@ -12,7 +12,7 @@ import './App.css';
 // import ContractList from './components/ContractList';
 // import contracts from './components/ContractList/contracts';
 // import Login from './components/Login';
-// import CreateNegotiation from './containers/CreateNegotiation/CreateNegotiation';
+import CreateNegotiation from './containers/CreateNegotiation/CreateNegotiation';
 import ContractPage from './containers/ContractPage/ContractPage';
 import Dashboard from './containers/Dashboard';
 
@@ -35,7 +35,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ContractPage />
+        <CreateNegotiation />
       </div>
     );
   }

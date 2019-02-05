@@ -6,7 +6,7 @@ import MainButton from '../MainButton';
 const AddParties = props => {
 
   const { document, handleInputChange, handleCreateNegotiation } = props;
-  const { party_b_email } = document;
+  const { partyBEmail } = document;
 
   const handleClick = () => handleCreateNegotiation();
 
@@ -17,8 +17,8 @@ const AddParties = props => {
         <input
           className="email-input"
           type="email"
-          name="party_b_email"
-          value={party_b_email}
+          name="partyBEmail"
+          value={partyBEmail}
           onChange={handleInputChange}
           placeholder="email..."
         />

@@ -18,9 +18,7 @@ export class CreateNegotiation extends Component {
         title: '',
         description: '',
         files: [],
-        // Todo: email party a is hardcoded for now, change that
-        party_a_email: 'hans@butt-insurance.com',
-        party_b_email: ''
+        partyBEmail: ''
       }
     };
 
@@ -41,19 +39,18 @@ export class CreateNegotiation extends Component {
 
   handleCreateNegotiation = () => {
     const { document } = this.state;
-    const {postIt, email} = this.props;
+    const { postIt } = this.props;
     const newNeg = {
       title: document.title,
       description: document.description,
-      party_a: email,
-      party_b: document.party_b_email,
-      files: document.files
+      partyBEmail: document.partyBEmail,
+      content: document.files[0],
     };
     const api = {
       route: 'negotiations',
       schema: negotiationSchema,
       method: 'POST',
-      body: newNeg
+      body: JSON.stringify(newNeg),
     }
     postIt(api);
   };
@@ -112,15 +109,11 @@ export class CreateNegotiation extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  email: state.authentication.user.email
-})
-
 const mapDispatchToProps = (dispatch) => ({
-  postIt: (obj) => dispatch(postNeg(obj))
+  postIt: (api) => dispatch(postNeg(api))
 })
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(CreateNegotiation)
