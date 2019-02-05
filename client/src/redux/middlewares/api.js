@@ -13,8 +13,8 @@ const apiMiddleware = store => next => action => {
 
   const state = store.getState();
   if (state.authToken) {
-    defaultHeaders.Authorization = `Bearer ${state.authToken}`;
   }
+  defaultHeaders.Authorization = `Bearer 2`;
 
   // THE FETCH
   next({
@@ -22,13 +22,13 @@ const apiMiddleware = store => next => action => {
   });
   // http:// private-81546b-docco.apiary-mock.com/${api.route}
 
-  fetch(`http://private-81546b-docco.apiary-mock.com/${api.route}`, {
+  fetch(`http://localhost:3008/${api.route}`, {
     method: api.method || 'GET',
-    body: api.body,
     headers: {
       ...defaultHeaders,
-      ...api.headers
-    }
+      ...api.headers,
+    },
+    body: api.body,
   })
     .then(response => response.json())
     .then(data => {

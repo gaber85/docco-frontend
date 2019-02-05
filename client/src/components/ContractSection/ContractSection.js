@@ -46,8 +46,14 @@ class ContractSection extends Component {
     });
   }
 
+  componentDidUpdate() {
+    woofmark.find(this.textareaRef.current).value(this.props.info.tContent.content);
+  }
+
   render() {
+
     const {content} = this.props || 'No Content';
+
 
     return (
       <div className="contract-container">
