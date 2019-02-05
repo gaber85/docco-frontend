@@ -25,22 +25,19 @@ class ContractPage extends Component {
   render () {
 
     const { contract } = this.props;
-    let info = {};
+    console.log(this.props)
+    let content = '';
+    const {yourDetails, theirDetails} = contract || {};
     if (contract) {
-      const { yDetails, tDetails, yContent, tContent } = contract;
-      info = {
-        contract,
-        yDetails,
-        tDetails,
-        yContent,
-        tContent
+      if (contract.youEditedLast) content = this.props.yourContent.content;
+      else content = this.props.theirContent.content;
       }
-    }
+
 
     return (
       <div className="main-container">
         <div className="team-section">
-          <TeamSection info={info} />
+          <TeamSection yourDetails={yourDetails || 'No Party'} theirDetails={theirDetails || 'No Party'} />
         </div>
         <div className="contract-display">
           <div className="container-top">
@@ -48,7 +45,7 @@ class ContractPage extends Component {
             <div className="search-bar-section"><SearchBar /></div>
           </div>
           <div className="contract">
-            <ContractSection info={info} />
+            <ContractSection content={content} />
             <div className="sidebar-controls">
               <SideBar />
             </div>
@@ -69,16 +66,16 @@ const mapStateToProps = (state, ownProps) => { // eslint-disable-line
 
   const contract = state.entities.negotiations[16]; //  should be changed to ownProps.match.params.id
   if(contract) {
-  const yDetails = state.entities.parties[contract.yourDetails];
-  const tDetails = state.entities.parties[contract.theirDetails];
-  const yContent = state.entities.proposals[contract.yourContent];
-  const tContent = state.entities.proposals[contract.theirContent];
+  const yourDetails = state.entities.parties[contract.yourDetails];
+  const theirDetails = state.entities.parties[contract.theirDetails];
+  const yourContent = state.entities.proposals[contract.yourContent];
+  const theirContent = state.entities.proposals[contract.theirContent];
   return {
     contract,
-    yDetails,
-    tDetails,
-    yContent,
-    tContent
+    yourDetails,
+    theirDetails,
+    yourContent,
+    theirContent
   }
 }
 return null;
