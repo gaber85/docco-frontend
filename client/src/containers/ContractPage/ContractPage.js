@@ -25,14 +25,18 @@ class ContractPage extends Component {
   render () {
 
     const { contract } = this.props;
-    console.log(this.props)
     let content = '';
-    const {yourDetails, theirDetails} = contract || {};
+    let yourText = '';
+    let theirText = '';
+    const {yourDetails, theirDetails, yourContent, theirContent} = contract || {};
     if (contract) {
-      if (contract.youEditedLast) content = this.props.yourContent.content;
-      else content = this.props.theirContent.content;
+      yourText = yourContent.content;
+      theirText = theirContent.content;
+      if (contract.youEditedLast) content = yourContent.content;
+      else content = theirContent.content;
       }
 
+      // yourText and theirText to be passed down to diff Component
 
     return (
       <div className="main-container">
@@ -55,12 +59,7 @@ class ContractPage extends Component {
     )
   }
 }
-// const mapStateToProps = (state, ownProps) => ({
-//   contract: state.entities.negotiations[16],//  should be changed to ownProps.match.params.id
-//   parties: state.entities.parties,
-//   proposals: state.entities.proposals,
-//   page: state.pages.contractPage
-// })
+
 
 const mapStateToProps = (state, ownProps) => { // eslint-disable-line
 

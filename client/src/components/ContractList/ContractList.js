@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+
 import './ContractList.css';
 // import {css,jsx} from '@emotion/core';
 
@@ -21,14 +21,5 @@ export const ContractList = (props) => {
 };
 
 // this can be moved to the parent Container ones the structure is passed and the contracts passed as props.contractList; the pages entry can be accordingly changed to name of parent container;
-const mapStateToProps = state => ({
-  contractList: state.pages.contractList.result.map(
-    id => state.entities.negotiations[id]
-  ),
-  page: state.pages.contractList // this can be changed from contractList to parent-container name
-});
 
-export default connect(
-  mapStateToProps,
-  null
-)(ContractList);
+export default ContractList;

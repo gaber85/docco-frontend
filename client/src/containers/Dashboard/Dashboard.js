@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import SearchBar from '../../components/SearchBar';
 import ContractList from '../../components/ContractList';
 import './Dashboard.css';
@@ -8,6 +9,8 @@ const Dashboard = props => {
   const handleInactiveNegotiations = () => {
     console.log('click handle Inactive Negotiations');
   };
+
+  const {contractList} = props;
 
   return (
     <div className="container">
@@ -20,7 +23,7 @@ const Dashboard = props => {
         </div>
       </div>
       <div className="main-row">
-        <ContractList />
+        <ContractList contractList={contractList} />
       </div>
       <div className="bottom-row">
         <div className='inactive-negotiation' onClick={handleInactiveNegotiations}>inactive negotiations</div>
@@ -32,5 +35,15 @@ const Dashboard = props => {
     </div>
   );
 };
+const mapStateToProps = state => ({
+  contractList: state.pages.contractList.result.map(
+    id => state.entities.negotiations[id]
+  ),
+  page: state.pages.contractList // this can be changed from contractList to parent-container name
+});
 
-export default Dashboard;
+export default connect(
+  mapStateToProps,
+  null
+)(Dashboard);
+
