@@ -9,12 +9,13 @@ import './App.css';
 //  import SignUp from './components/SignUp';
 // import NavBar from './components/NavBar';
 // import AddMember from './components/AddMember';
-// import ContractList from './components/ContractList';
+import ContractList from './components/ContractList';
 // import contracts from './components/ContractList/contracts';
-// import Login from './components/Login';
+import Login from './components/Login';
 // import CreateNegotiation from './containers/CreateNegotiation/CreateNegotiation';
 // import ContractPage from './containers/ContractPage/ContractPage';
 import Dashboard from './containers/Dashboard';
+import ContractPage from './containers/ContractPage/ContractPage';
 
 // eslint-disable-next-line
 class App extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <ContractPage />
         <Dashboard />
       </div>
     );

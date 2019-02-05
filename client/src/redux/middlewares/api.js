@@ -20,15 +20,15 @@ const apiMiddleware = store => next => action => {
   next({
     type: `${action.type}_PENDING`
   });
-  // http:// private-81546b-docco.apiary-mock.com/${api.route}
+  // http://private-81546b-docco.apiary-mock.com/${api.route}
 
   fetch(`http://private-81546b-docco.apiary-mock.com/${api.route}`, {
     method: api.method || 'GET',
-    body: api.body,
     headers: {
       ...defaultHeaders,
       ...api.headers
-    }
+    },
+    body: api.body
   })
     .then(response => response.json())
     .then(data => {
