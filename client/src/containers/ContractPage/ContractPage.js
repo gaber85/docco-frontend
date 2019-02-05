@@ -25,23 +25,24 @@ class ContractPage extends Component {
   render () {
 
     const { contract } = this.props;
-    console.log('these are the props', this.props);
-    let info = {};
+
+    let content = '';
+    let yourText = '';
+    let theirText = '';
+    const {yourDetails, theirDetails, yourContent, theirContent} = contract || {};
     if (contract) {
-      const { yDetails, tDetails, yContent, tContent } = this.props;
-      info = {
-        contract,
-        yDetails,
-        tDetails,
-        yContent,
-        tContent
+      yourText = yourContent.content;
+      theirText = theirContent.content;
+      if (contract.youEditedLast) content = yourContent.content;
+      else content = theirContent.content;
       }
-    }
+
+      // yourText and theirText to be passed down to diff Component
 
     return (
       <div className="main-container">
         <div className="team-section">
-          <TeamSection info={info} />
+          <TeamSection yourDetails={yourDetails || 'No Party'} theirDetails={theirDetails || 'No Party'} />
         </div>
         <div className="contract-display">
           <div className="container-top">
@@ -49,7 +50,7 @@ class ContractPage extends Component {
             <div className="search-bar-section"><SearchBar /></div>
           </div>
           <div className="contract">
-            <ContractSection info={info} />
+            <ContractSection content={content} />
             <div className="sidebar-controls">
               <SideBar />
             </div>
@@ -59,27 +60,22 @@ class ContractPage extends Component {
     )
   }
 }
-// const mapStateToProps = (state, ownProps) => ({
-//   contract: state.entities.negotiations[16],//  should be changed to ownProps.match.params.id
-//   parties: state.entities.parties,
-//   proposals: state.entities.proposals,
-//   page: state.pages.contractPage
-// })
+
 
 const mapStateToProps = (state, ownProps) => { // eslint-disable-line
 
   const contract = state.entities.negotiations[2]; //  should be changed to ownProps.match.params.id
   if(contract) {
-  const yDetails = state.entities.parties[contract.yourDetails];
-  const tDetails = state.entities.parties[contract.theirDetails];
-  const yContent = state.entities.proposals[contract.yourContent];
-  const tContent = state.entities.proposals[contract.theirContent];
+  const yourDetails = state.entities.parties[contract.yourDetails];
+  const theirDetails = state.entities.parties[contract.theirDetails];
+  const yourContent = state.entities.proposals[contract.yourContent];
+  const theirContent = state.entities.proposals[contract.theirContent];
   return {
     contract,
-    yDetails,
-    tDetails,
-    yContent,
-    tContent
+    yourDetails,
+    theirDetails,
+    yourContent,
+    theirContent
   }
 }
 return null;

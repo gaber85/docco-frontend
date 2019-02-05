@@ -1,9 +1,9 @@
+import woofmark from 'woofmark';
+import megamark from 'megamark';
+import domador from 'domador';
 import React, { Component } from 'react';
 import './ContractSection.css';
 
-const woofmark = require('woofmark');
-const megamark = require('megamark');
-const domador = require('domador');
 
 class ContractSection extends Component {
 
@@ -51,20 +51,10 @@ class ContractSection extends Component {
   }
 
   render() {
-    const { info } = this.props;
-    console.log('these are the props in the contract section', this.props);
-    const { yContent, tContent, contract } = info;
-    let content = 'No Content'
-    // the if logic is necessary because at (the dev stage I don't always pass a contract); can be removed in final
-    if (info && tContent){
-    // const {content:content1} = yContent;
-    const content1 = 'thisjttjtfhtfjhtj';
-    const {content:content2} = tContent;
-      // if (contract.youEditedLast) { content = content1}
-      // else { content = content2 };
-      content = content2;
-    }
-    console.log('this os the content', content)
+
+    const {content} = this.props || 'No Content';
+
+
     return (
       <div className="contract-container">
         <div className="content-body">
