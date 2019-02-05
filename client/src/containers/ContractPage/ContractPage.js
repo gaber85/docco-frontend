@@ -13,7 +13,7 @@ class ContractPage extends Component {
 
   componentDidMount () {
     // will be written out of this.props.match.params
-    const id = 16;
+    const id = 1;
     const { getOneAct } = this.props;
     const api = {
       route: `negotiations/${id}`,
@@ -25,9 +25,10 @@ class ContractPage extends Component {
   render () {
 
     const { contract } = this.props;
+    console.log('these are the props', this.props);
     let info = {};
     if (contract) {
-      const { yDetails, tDetails, yContent, tContent } = contract;
+      const { yDetails, tDetails, yContent, tContent } = this.props;
       info = {
         contract,
         yDetails,
@@ -67,7 +68,7 @@ class ContractPage extends Component {
 
 const mapStateToProps = (state, ownProps) => { // eslint-disable-line
 
-  const contract = state.entities.negotiations[16]; //  should be changed to ownProps.match.params.id
+  const contract = state.entities.negotiations[2]; //  should be changed to ownProps.match.params.id
   if(contract) {
   const yDetails = state.entities.parties[contract.yourDetails];
   const tDetails = state.entities.parties[contract.theirDetails];

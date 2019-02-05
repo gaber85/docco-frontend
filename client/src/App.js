@@ -13,7 +13,7 @@ import './App.css';
 // import contracts from './components/ContractList/contracts';
 // import Login from './components/Login';
 // import CreateNegotiation from './containers/CreateNegotiation/CreateNegotiation';
-// import ContractPage from './containers/ContractPage/ContractPage';
+import ContractPage from './containers/ContractPage/ContractPage';
 import Dashboard from './containers/Dashboard';
 
 // eslint-disable-next-line
@@ -35,7 +35,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Dashboard />
+        <ContractPage />
       </div>
     );
   }
