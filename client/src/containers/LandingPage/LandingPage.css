@@ -1,6 +1,8 @@
 .Landing-page-container {
 display: flex;
 flex-direction: column;
+max-width: 1300px;
+margin: auto;
 }
 
 .Landing-page-login {
@@ -27,7 +29,8 @@ flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url('./Docco-Geometric.png');
-  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #2C3E50;
   padding: 20px;
 }
@@ -78,6 +81,8 @@ flex-direction: column;
 
 .landing-page-content-body-text {
   color: #2C3E50;
+  padding: 20px;
+  line-height: 30px;
   padding-right: 15px;
   align-self: flex-start;
 }

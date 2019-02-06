@@ -12,12 +12,12 @@
   z-index: 1;
   font-size: 1.3em;
   flex-direction: column;
-  background: #f4f4f;
+  background: #f4f4f4;
 }
 
 #contractInfo {
   margin: 20px;
-  lineheight: 20px;
+  line-height: 20px;
 }
 
 .container {

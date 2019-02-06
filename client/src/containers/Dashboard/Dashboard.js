@@ -1,59 +1,106 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
+import styled from '@emotion/styled';
 import SearchBar from '../../components/SearchBar';
 import ContractList from '../../components/ContractList';
-import './Dashboard.css';
 import PlusButton from '../../components/PlusButton';
 import NavBar from '../../components/NavBar';
 import { getAll, logOut } from '../../redux/actions';
 
 class Dashboard extends Component {
+
   componentDidMount() {
     const { getAllAct } = this.props;
     getAllAct();
   }
 
-  render() {
-    const handleInactiveNegotiations = () => {
-      // console.log('click handle Inactive Negotiations');
-    };
+  handleInactiveNegotiations = () => {
+    // handles inactive negotiations
+  }
 
+  render() {
+    const {handleInactiveNegotiations} = this;
     const { contractList, history, logOutAct } = this.props;
     return (
-      <div className="container">
-        <NavBar name="Gabe Riera" history={history} logOutAct={logOutAct} />
-        <div className="top-row">
+      <DashboardContainer>
+        <NavBar name="Gabe Riera" history={history} logOutAct={logOutAct}/>
+        <DashboardTopRow>
           <div className="left">
             <h1>My Active Negotiations</h1>
           </div>
           <div className="right">
-            <SearchBar />
+              <SearchBar />
           </div>
-        </div>
-        <div className="main-row">
+        </DashboardTopRow>
+        <DashboardMainRow>
           <ContractList contractList={contractList} />
-        </div>
-        <div className="bottom-row">
-          <div className="add-negotiation">
-            <PlusButton size="2" />
-            <div className="add-new-negotiation-text">
-              Create New Negotiation
-            </div>
-          </div>
-          <div
+        </DashboardMainRow>
+        <DashboardBottomRow>
+          <AddNegotiation>
+            <NavLink className="createNewNegotiationLink" exact to="/create-new" ><PlusButton size="2" /></NavLink>
+            <NavLink className="createNewNegotiationLink" exact to="/create-new" ><AddNegotiationText>Create New Negotiation</AddNegotiationText></NavLink>
+          </AddNegotiation>
+          <InactiveNegotiations
             role="button"
             tabIndex="-1"
-            className="inactive-negotiation"
             onClick={handleInactiveNegotiations}
             onKeyPress={handleInactiveNegotiations}
           >
             inactive negotiations
-          </div>
-        </div>
-      </div>
+          </InactiveNegotiations>
+        </DashboardBottomRow>
+      </DashboardContainer>
     );
   }
-}
+};
+
+const DashboardContainer = styled('div')`
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+const DashboardTopRow = styled('div')`
+  padding: 20px;
+  width: 90%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+const DashboardMainRow = styled('div')`
+  margin: 20px;
+  margin-top: 0;
+  width: 90%;
+  flex: 1;
+  border: solid;
+  border-color: #ecf0f1;
+`;
+const DashboardBottomRow = styled('div')`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+const InactiveNegotiations = styled('div')`
+  font-size: 14px;
+  color: blue;
+  text-decoration-line: underline;
+  cursor: pointer;
+  outline: none;
+  &:visited {
+    color: purple;
+  }
+`;
+const AddNegotiation = styled('div')`
+  display: flex;
+  align-items: center;
+`;
+const AddNegotiationText = styled('div')`
+  font-size: 24px;
+  padding: 15px;
+`;
 
 const mapDispatchToProps = dispatch => ({
   getAllAct: () => dispatch(getAll()),

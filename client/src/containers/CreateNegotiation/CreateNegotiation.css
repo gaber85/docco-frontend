@@ -1,16 +1,23 @@
-.box {
-  width: 95%;
-  height: 95%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  background-color: white;
+/* .box { */
+  /* width: 95%;
+  height: 95%; */
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-size: 16px;
+  background-color: #3498DB;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  align-content: space-evenly;
-}
+  align-content: space-evenly; */
+/* } */
 
+/* .black-back {
+  background-image: linear-gradient(to left top,#3498db,rgb(174, 217, 247));
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+} */
 /* form {
   display: flex;
   flex-direction: column;
@@ -20,6 +27,7 @@
 
 .title-input {
   width: 300px;
+  justify-self: flex-start;
   margin: 20px;
   padding: 10px;
   line-height: 1.5;

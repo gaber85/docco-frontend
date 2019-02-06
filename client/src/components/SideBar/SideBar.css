@@ -12,6 +12,7 @@
 .icons {
   padding-bottom: 25px;
   color: #3498DB;
+  outline: none;
 }
 
 .icons:hover {

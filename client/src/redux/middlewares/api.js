@@ -12,7 +12,7 @@ const apiMiddleware = store => next => action => {
     'Content-Type': 'application/json'
   };
 
-  const token = localStorage.getItem('token');
+  const token = store.getState().authentication.token;
   if (token) {
     defaultHeaders.authorization = `Bearer ${token}`
   }

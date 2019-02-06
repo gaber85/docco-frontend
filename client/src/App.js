@@ -5,34 +5,28 @@ import { getAll, getUser } from './redux/actions';
 
 import './App.css';
 
-// import MainButton from './components/MainButton';
-// import NavBar from './components/NavBar';
-// import AddMember from './components/AddMember';
-import ContractList from './components/ContractList';
-// import contracts from './components/ContractList/contracts';
 import Login from './components/Login';
 import CreateNegotiation from './containers/CreateNegotiation';
 import ContractPage from './containers/ContractPage';
 import LandingPage from './containers/LandingPage';
 import Dashboard from './containers/Dashboard';
 import SignUp from './components/SignUp';
+import ContractBrancher from './components/ContractBrancher/ContractBrancher';
 
 // eslint-disable-next-line
 class App extends React.Component {
   componentDidMount() {
     this.checkLocal();
-    const { getAllAct } = this.props;
   }
 
-
   checkLocal = () => {
-    const { getUserAct } = this.props;
-    const authToken = localStorage.getItem('token');
+    const { getUserAct, authentication } = this.props;
+    const authToken = authentication.token;
     if (authToken) getUserAct();
   };
 
   isLoggedIn = () => {
-    const authToken = localStorage.getItem('token');
+    const authToken = this.props.authentication.token;
     return authToken;
   };
 
@@ -68,6 +62,7 @@ class App extends React.Component {
           <PrivateRoute path="/create-new" component={CreateNegotiation} />
           <PrivateRoute path="/contract/:id" component={ContractPage} />
           <PrivateRoute path="/contractid" component={ContractPage} />
+          <PrivateRoute path="/diff" component={ContractBrancher} />
         </div>
       </Router>
     );
