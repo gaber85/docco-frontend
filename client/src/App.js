@@ -36,7 +36,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ContractPage />
+        <Login />
         <Dashboard />
       </div>
     );

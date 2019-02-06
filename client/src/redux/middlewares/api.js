@@ -22,7 +22,7 @@ const apiMiddleware = store => next => action => {
   });
   // http://private-81546b-docco.apiary-mock.com/${api.route}
 
-  fetch(`http://private-81546b-docco.apiary-mock.com/${api.route}`, {
+  fetch(`http:///private-81546b-docco.apiary-mock.com/${api.route}`, {
     method: api.method || 'GET',
     headers: {
       ...defaultHeaders,
