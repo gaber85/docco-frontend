@@ -17,7 +17,13 @@ import ContractBrancher from './components/ContractBrancher/ContractBrancher';
 class App extends React.Component {
   componentDidMount() {
     this.checkLocal();
+<<<<<<< HEAD
   }
+=======
+    const { getAllAct } = this.props;
+  }
+
+>>>>>>> fix/App
 
   checkLocal = () => {
     const { getUserAct, authentication } = this.props;
