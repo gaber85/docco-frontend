@@ -14,7 +14,6 @@ const apiMiddleware = store => next => action => {
 
   // const token = store.getState('token');
   // if (token) {
-
   // }
   // defaultHeaders.authorization = `Bearer eyJhbGciOiJIUzI1NiJ9.ZnJhbXpAd2F2ZXMuY29t.F9HjmgBqW_sRQtVtedsWEitrVlgM9anhsSQ1cXSfMNU`;
 
