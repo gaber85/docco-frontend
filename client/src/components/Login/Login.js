@@ -1,17 +1,15 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
 /** @jsx jsx */
-import { jsx } from '@emotion/core';
+import { css, jsx } from '@emotion/core';
 import base64 from 'base-64';
-import styles from './styles';
-import MainButton from "../MainButton";
-import { login} from '../../redux/actions';
-
+import MainButton from '../MainButton';
+import { login } from '../../redux/actions';
 
 class Login extends Component {
   state = {
     user: {}
-  }
+  };
 
   handleChange = e => {
     const { user } = this.state;
@@ -20,50 +18,124 @@ class Login extends Component {
         ...user,
         [e.target.name]: e.target.value
       }
-    })
-  }
+    });
+  };
 
   handleSubmit = () => {
     const { user } = this.state;
     const { loginAct } = this.props;
-    const loginData = `${user.email} : ${user.password}`
+    const loginData = `${user.email} : ${user.password}`;
     const api = {
       route: 'login',
       headers: {
         Authorization: `Basic ${base64.encode(loginData)}`
       }
-    }
+    };
     loginAct(api);
+  };
 
-
-  }
-
-  render () {
+  render() {
     const { handleSubmit } = this;
 
     return (
-      <div className="login" css={styles.login} >
-        <div className="welcome" css={styles.welcome}>
-          <span className="title" css={styles.title}>Docco</span>
-          <span className="phrase" css={styles.phrase}>Trust But Verify</span>
+      <div
+        css={css`
+          margin: auto;
+          display: flex;
+          height: 100%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-image: linear-gradient(
+            to left top,
+            #3498db,
+            rgb(174, 217, 247)
+          );
+          background-repeat: no-repeat;
+        `}
+      >
+        <div
+          css={css`
+            font-size: 9vw;
+            color: #2C3E50;
+          `}
+        >
+          Docco
         </div>
-        <div className="the-form" css={styles.theform} >
-          <form onChange={this.handleChange} css={styles.form} >
-            <input type="text" name="email" className="the-input first-name" css={styles.input} placeholder="email" />
-            <input type="password" name="password" className="the-input last-name" css={styles.input} placeholder="password" autoComplete="current-password" />
-          </form>
-          <MainButton text="LOGIN" click={handleSubmit} />
+        <div
+          css={css`
+            font-style: italic;
+            font-size: 2.5vw;
+            color: #2C3E50;
+          `}
+        >
+          An Innovative Approach to Contract Management
         </div>
-      </div>)
+        <form
+          css={css`
+            width: 80%;
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+          `}
+          onChange={this.handleChange}
+        >
+          <input
+            css={css`
+            margin-bottom: 10px;              
+              height: 35px;
+              font-size: 18px;
+              border: none;
+              padding: 4px;
+              outline: none;
+            `}
+            autoComplete="off"
+            type="text"
+            name="email"
+            placeholder="email..."
+            required
+          />
+          <input
+            css={css`
+              margin-bottom: 20px;
+              height: 35px;
+              font-size: 18px;
+              border: none;
+              padding: 4px;
+              outline: none;
+            `}
+            autoComplete="off"
+            type="password"
+            name="password"
+            className="login-first-name-input"
+            placeholder="password..."
+            required
+          />
+         
+            <MainButton align="flex-end" text="LOGIN" click={handleSubmit} />
+        </form>
+        <div
+          css={css`
+            font-size: 2vw;
+            font-weight: 400;
+            color: white;
+          `}
+          className="login-second-tagline"
+        >
+          Trust but Verify
+        </div>
+      </div>
+    );
   }
-};
+}
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   entities: state.entities
-})
+});
 
-const mapDispatchToProps = (dispatch) => ({
-  loginAct: (obj) => dispatch(login(obj))
+const mapDispatchToProps = dispatch => ({
+  loginAct: obj => dispatch(login(obj))
 });
 
 export default connect(

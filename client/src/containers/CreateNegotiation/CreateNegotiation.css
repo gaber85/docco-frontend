@@ -11,12 +11,12 @@
   align-content: space-evenly;
 }
 
-form {
+/* form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .title-input {
   width: 300px;
