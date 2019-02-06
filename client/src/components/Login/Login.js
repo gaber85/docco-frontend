@@ -15,7 +15,6 @@ class Login extends Component {
   componentDidUpdate () {
     const {user,history} = this.props;
     if(user && user.token) {
-      localStorage.setItem('token', user.token)
       history.push('/dashboard');
     }
   }

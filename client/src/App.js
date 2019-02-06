@@ -22,21 +22,18 @@ class App extends React.Component {
   componentDidMount() {
     this.checkLocal();
     const { getAllAct } = this.props;
-    getAllAct();
+    // getAllAct();
   }
 
-  componentDidUpdate() {
-    this.checkLocal();
-  }
 
   checkLocal = () => {
-    const { getUserAct } = this.props;
-    const authToken = localStorage.getItem('token');
+    const { getUserAct, authentication } = this.props;
+    const authToken = authentication.token;
     if (authToken) getUserAct();
   };
 
   isLoggedIn = () => {
-    const authToken = localStorage.getItem('token');
+    const authToken = this.props.authentication.token;
     return true;
   };
 
