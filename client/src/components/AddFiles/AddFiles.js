@@ -33,7 +33,7 @@ const BackAndNextButtons = styled('div')`
   padding: 30px;
 `;
 const Title = styled('div')`
-  font-size: 7vw;
+  font-size: 6vw;
   text-align: center;
   margin-bottom: 40px;
 `;

@@ -13,7 +13,7 @@ const TitleAndDescriptionPage = props => {
     <TitleDescriptionContainer>
       <div
         css={css`
-          font-size: 7vw;
+          font-size: 6vw;
           color: #2c3e50;
           padding-bottom: 10%;
           justify-self: flex-start;
