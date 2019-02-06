@@ -10,21 +10,12 @@ import './App.css';
 // import AddMember from './components/AddMember';
 import ContractList from './components/ContractList';
 // import contracts from './components/ContractList/contracts';
-<<<<<<< HEAD
-import Login from './components/Login';
-// import CreateNegotiation from './containers/CreateNegotiation/CreateNegotiation';
-// import ContractPage from './containers/ContractPage/ContractPage';
-import Dashboard from './containers/Dashboard';
-import ContractPage from './containers/ContractPage/ContractPage';
-=======
-
 import Login from './components/Login';
 import CreateNegotiation from './containers/CreateNegotiation';
 import ContractPage from './containers/ContractPage';
 import LandingPage from './containers/LandingPage';
 import Dashboard from './containers/Dashboard';
 import SignUp from './components/SignUp';
->>>>>>> develop
 
 // eslint-disable-next-line
 class App extends React.Component {
@@ -74,7 +65,7 @@ class App extends React.Component {
           <Route path="/login" component={Login} />
           <Route path="/sign-up" component={SignUp} />
           <PrivateRoute path="/dashboard" component={Dashboard} />
-          <PrivateRoute path="/create-new" component={CreateNegotiation} />
+          <PrivateRoute path="/create-new" component={CgitreateNegotiation} />
           <PrivateRoute path="/contract/:id" component={ContractPage} />
           <PrivateRoute path="/contractid" component={ContractPage} />
         </div>
