@@ -42,7 +42,7 @@ class ContractPage extends Component {
         </div>
         <div className="contract-display">
           <div className="container-top">
-            <div className="title">Contract Editor{ this.contract && this.contract.title }</div>
+            <div className="title">Apple Contract{ this.contract && this.contract.title }</div>
             <div className="search-bar-section"><SearchBar /></div>
           </div>
           <div className="contract">

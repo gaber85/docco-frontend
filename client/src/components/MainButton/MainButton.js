@@ -2,7 +2,7 @@
 import { css, jsx } from '@emotion/core';
 
 const MainButton = props => {
-  const { text, click, align, width } = props;
+  const { text, click, align, width, margin } = props;
   return (
     <div
       css={css`
@@ -12,6 +12,7 @@ const MainButton = props => {
         max-width: 200px;
         text-align: center;
         padding: 10px;
+        margin: ${margin};
         box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 1);
         border-radius: 15px;
         cursor: pointer;
