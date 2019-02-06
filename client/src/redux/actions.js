@@ -5,9 +5,9 @@ const addContract = (contract) => ({
   contract
 })
 
-const signUp = (user) => ({
+const signUp = (api) => ({
   type: 'SIGN_UP',
-  user
+  api
 })
 
 const login = (api) => ({
@@ -37,11 +37,6 @@ const getUser = api => ({
   type:'GET_USER',
   api
 })
-
-
-
-
-
 
 export {
   addContract,

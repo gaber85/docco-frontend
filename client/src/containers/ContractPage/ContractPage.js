@@ -6,7 +6,7 @@ import TeamSection from '../../components/TeamSection';
 import EditorView from '../../components/EditorView';
 import SideBar from '../../components/SideBar';
 import { getOne } from '../../redux/actions';
-import {negotiationSchema} from '../../redux/middlewares/schemas/schemas';
+import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
 import ContractBrancher from '../../components/ContractBrancher/ContractBrancher';
 // eslint-disable-next-line
 class ContractPage extends Component {
@@ -14,10 +14,10 @@ class ContractPage extends Component {
   componentDidMount () {
     // will be written out of this.props.match.params
     const content = {}; // eslint-disable-line
-    const id = 31;
+    const { match } = this.props;
     const { getOneAct } = this.props;
     const api = {
-      route: `negotiations/${id}`,
+      route: `negotiations/${match.params.id}`,
       schema: negotiationSchema
     }
     getOneAct(api);
@@ -27,13 +27,14 @@ class ContractPage extends Component {
 
     const { contract, yourContent, theirContent, yourDetails, theirDetails } = this.props; // eslint-disable-line
 
-    if (contract) {
+    if (contract && (yourContent || theirContent)) {
       if (contract.youEditedLast) {
-        this.content = theirContent.content;
-      } else {
         this.content = yourContent.content;
+      } else {
+        this.content = theirContent.content;
       }
     }
+
     return (
       <div className="main-container">
         <div className="team-section">
@@ -58,8 +59,7 @@ class ContractPage extends Component {
 
 const mapStateToProps = (state, ownProps) => { // eslint-disable-line
 
-  const contract = state.entities.negotiations[31]; //  should be changed to ownProps.match.params.id
-
+  const contract = state.entities.negotiations[ownProps.match.params.id]; //  should be changed to ownProps.match.params.id
   if (contract) {
     const yourDetails = state.entities.parties[contract.yourDetails];
     const theirDetails = state.entities.parties[contract.theirDetails];

@@ -1,4 +1,5 @@
 import { normalize } from "normalizr";
+// import { fetch } from 'react';
 
 const apiMiddleware = store => next => action => {
 
@@ -11,10 +12,10 @@ const apiMiddleware = store => next => action => {
     'Content-Type': 'application/json'
   };
 
-  const state = store.getState();
-  if (state.authToken) {
-  }
-  defaultHeaders.authorization = `Bearer eyJhbGciOiJIUzI1NiJ9.ZnJhbXpAd2F2ZXMuY29t.F9HjmgBqW_sRQtVtedsWEitrVlgM9anhsSQ1cXSfMNU`;
+  // const token = store.getState('token');
+  // if (token) {
+  // }
+  // defaultHeaders.authorization = `Bearer eyJhbGciOiJIUzI1NiJ9.ZnJhbXpAd2F2ZXMuY29t.F9HjmgBqW_sRQtVtedsWEitrVlgM9anhsSQ1cXSfMNU`;
 
   // THE FETCH
   next({
@@ -26,9 +27,9 @@ const apiMiddleware = store => next => action => {
     method: api.method || 'GET',
     headers: {
       ...defaultHeaders,
-      ...api.headers,
+      ...api.headers
     },
-    body: api.body,
+    body: api.body
   })
     .then(response => response.json())
     .then(data => {

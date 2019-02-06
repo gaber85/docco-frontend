@@ -8,9 +8,8 @@ import './App.css';
 // import MainButton from './components/MainButton';
 // import NavBar from './components/NavBar';
 // import AddMember from './components/AddMember';
-// import ContractList from './components/ContractList';
+import ContractList from './components/ContractList';
 // import contracts from './components/ContractList/contracts';
-
 import Login from './components/Login';
 import CreateNegotiation from './containers/CreateNegotiation';
 import ContractPage from './containers/ContractPage';
@@ -66,7 +65,7 @@ class App extends React.Component {
           <Route path="/login" component={Login} />
           <Route path="/sign-up" component={SignUp} />
           <PrivateRoute path="/dashboard" component={Dashboard} />
-          <PrivateRoute path="/create-new" component={CreateNegotiation} />
+          <PrivateRoute path="/create-new" component={CgitreateNegotiation} />
           <PrivateRoute path="/contract/:id" component={ContractPage} />
           <PrivateRoute path="/contractid" component={ContractPage} />
         </div>

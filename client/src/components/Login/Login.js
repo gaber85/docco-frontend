@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { css, jsx } from '@emotion/core';
 import base64 from 'base-64';
 import MainButton from '../MainButton';
+
 import { login } from '../../redux/actions';
 
 class Login extends Component {
@@ -24,11 +25,12 @@ class Login extends Component {
   handleSubmit = () => {
     const { user } = this.state;
     const { loginAct } = this.props;
-    const loginData = `${user.email} : ${user.password}`;
+    const loginData = `${user.email}:${user.password}`;
     const api = {
-      route: 'login',
+      method: 'POST',
+      route: 'parties/login',
       headers: {
-        Authorization: `Basic ${base64.encode(loginData)}`
+        Authorization: `Basic ${base64.encode(loginData)}`,
       }
     };
     loginAct(api);
@@ -83,7 +85,7 @@ class Login extends Component {
         >
           <input
             css={css`
-            margin-bottom: 10px;              
+            margin-bottom: 10px;
               height: 35px;
               font-size: 18px;
               border: none;
@@ -112,7 +114,7 @@ class Login extends Component {
             placeholder="password..."
             required
           />
-         
+
             <MainButton align="flex-end" text="LOGIN" click={handleSubmit} />
         </form>
         <div
