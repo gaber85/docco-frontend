@@ -68,12 +68,6 @@ class App extends React.Component {
   render() {
     const { PrivateRoute } = this;
     return (
-<<<<<<< HEAD
-      <div>
-        <Login />
-        <Dashboard />
-      </div>
-=======
       <Router>
         <div className="main-app-container">
           <Route exact path="/" component={LandingPage} />
@@ -85,7 +79,6 @@ class App extends React.Component {
           <PrivateRoute path="/contractid" component={ContractPage} />
         </div>
       </Router>
->>>>>>> develop
     );
   }
 }
