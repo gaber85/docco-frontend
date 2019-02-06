@@ -1,48 +1,57 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import styled from '@emotion/styled';
 import SearchBar from '../../components/SearchBar';
 import ContractList from '../../components/ContractList';
 import PlusButton from '../../components/PlusButton';
 import NavBar from '../../components/NavBar';
+import { getAll, logOut } from '../../redux/actions';
 
-const Dashboard = props => {
-  const handleInactiveNegotiations = () => {
-    // console.log('click handle Inactive Negotiations');
-  };
+class Dashboard extends Component {
 
-  const { contractList } = props;
+  componentDidMount() {
+    const { getAllAct } = this.props;
+    getAllAct();
+  }
 
-  return (
-    <DashboardContainer>
-      <NavBar name="Gabe Riera" />
-      <DashboardTopRow>
-        <div className="left">
-          <h1>My Active Negotiations</h1>
-        </div>
-        <div className="right">
-          <SearchBar />
-        </div>
-      </DashboardTopRow>
-      <DashboardMainRow>
-        <ContractList contractList={contractList} />
-      </DashboardMainRow>
-      <DashboardBottomRow>
-        <AddNegotiation>
-          <PlusButton size="2" />
-          <AddNegotiationText>Create New Negotiation</AddNegotiationText>
-        </AddNegotiation>
-        <InactiveNegotiations
-          role="button"
-          tabIndex="-1"
-          onClick={handleInactiveNegotiations}
-          onKeyPress={handleInactiveNegotiations}
-        >
-          inactive negotiations
-        </InactiveNegotiations>
-      </DashboardBottomRow>
-    </DashboardContainer>
-  );
+  handleInactiveNegotiations = () => {
+    // handles inactive negotiations
+  }
+
+  render() {
+    const {handleInactiveNegotiations} = this;
+    const { contractList, history, logOutAct } = this.props;
+    return (
+      <DashboardContainer>
+        <NavBar name="Gabe Riera" history={history} logOutAct={logOutAct}/>
+        <DashboardTopRow>
+          <div className="left">
+            <h1>My Active Negotiations</h1>
+          </div>
+          <div className="right">
+              <SearchBar />
+          </div>
+        </DashboardTopRow>
+        <DashboardMainRow>
+          <ContractList contractList={contractList} />
+        </DashboardMainRow>
+        <DashboardBottomRow>
+          <AddNegotiation>
+            <PlusButton size="2" />
+            <AddNegotiationText>Create New Negotiation</AddNegotiationText>
+          </AddNegotiation>
+          <InactiveNegotiations
+            role="button"
+            tabIndex="-1"
+            onClick={handleInactiveNegotiations}
+            onKeyPress={handleInactiveNegotiations}
+          >
+            inactive negotiations
+          </InactiveNegotiations>
+        </DashboardBottomRow>
+      </DashboardContainer>
+    );
+  }
 };
 
 const DashboardContainer = styled('div')`
@@ -92,14 +101,21 @@ const AddNegotiationText = styled('div')`
   padding: 15px;
 `;
 
+const mapDispatchToProps = dispatch => ({
+  getAllAct: () => dispatch(getAll()),
+  logOutAct: () => dispatch(logOut())
+});
+
 const mapStateToProps = state => ({
-  contractList: state.pages.contractList.result.map(
-    id => state.entities.negotiations[id]
-  ),
-  page: state.pages.contractList // this can be changed from contractList to parent-container name
+  contractList: state.pages.contractList.result.map(id => {
+    console.log('this is id ', id);
+    console.log('this is contract ', state.entities.negotiations[id]);
+    return state.entities.negotiations[id];
+  }),
+  page: state.pages.contractList // this can be changed from contractList to parent-container name)
 });
 
 export default connect(
   mapStateToProps,
-  null
+  mapDispatchToProps
 )(Dashboard);

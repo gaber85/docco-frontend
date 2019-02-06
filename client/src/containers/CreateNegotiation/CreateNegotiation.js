@@ -19,8 +19,19 @@ export class CreateNegotiation extends Component {
         description: '',
         files: [],
         partyBEmail: ''
-      }
+      },
+      checked: false
     };
+  }
+
+  componentDidUpdate() {
+    const { negotiations, history } = this.props;
+    const { document, checked } = this.state;
+    const negotiationArr = Object.values(negotiations);
+    const specificNegotiation = negotiationArr[negotiationArr.length - 1];
+    if (checked && specificNegotiation.title === document.title) {
+      history.push(`/contract/${specificNegotiation.id}`);
+    }
   }
 
   handleInputChange = event => {
@@ -51,6 +62,7 @@ export class CreateNegotiation extends Component {
       body: JSON.stringify(newNeg)
     };
     postIt(api);
+    this.setState({ checked: true });
   };
 
   handleFileContent = content => {
@@ -117,11 +129,15 @@ const CreateNegotiationContainer = styled('div')`
   flex-direction: column;
 `;
 
+const mapStateToProps = state => ({
+  negotiations: state.entities.negotiations
+});
+
 const mapDispatchToProps = dispatch => ({
   postIt: api => dispatch(postNeg(api))
 });
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(CreateNegotiation);

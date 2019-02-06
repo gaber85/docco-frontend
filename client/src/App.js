@@ -8,9 +8,8 @@ import './App.css';
 // import MainButton from './components/MainButton';
 // import NavBar from './components/NavBar';
 // import AddMember from './components/AddMember';
-// import ContractList from './components/ContractList';
+import ContractList from './components/ContractList';
 // import contracts from './components/ContractList/contracts';
-
 import Login from './components/Login';
 import CreateNegotiation from './containers/CreateNegotiation';
 import ContractPage from './containers/ContractPage';
@@ -26,6 +25,10 @@ class App extends React.Component {
     getAllAct();
   }
 
+  componentDidUpdate() {
+    this.checkLocal();
+  }
+
   checkLocal = () => {
     const { getUserAct } = this.props;
     const authToken = localStorage.getItem('token');
@@ -34,7 +37,7 @@ class App extends React.Component {
 
   isLoggedIn = () => {
     const authToken = localStorage.getItem('token');
-    return authToken;
+    return true;
   };
 
   PrivateRoute = ({ component: Component, ...rest }) => {

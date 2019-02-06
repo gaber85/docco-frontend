@@ -12,6 +12,8 @@ const initState = {
 const pages = (state = initState, action) => {
   if (!action.data || !action.data.result) return state;
 
+
+
   switch (action.type) {
 
     case 'GET_ALL_PENDING':
@@ -28,18 +30,18 @@ const pages = (state = initState, action) => {
         ...state, contractList: {
           ...state.contractList,
           loading: false,
-          result: [...state.contractList.result,...action.data.result]
+          result: [...action.data.result]
         }
       };
 
-      case 'POST_NEG_SUCCESS':
-      return {
-        ...state, contractList: {
-          ...state.contractList,
-          loading: false,
-          result: [...state.contractList.result,action.data.result]
-        }
-      };
+    case 'POST_NEG_SUCCESS':
+    return {
+      ...state, contractList: {
+        ...state.contractList,
+        loading: false,
+        result: [ ...state.contractList.result, ...action.data.result ]
+      }
+    };
 
     case 'GET_ONE_PENDING':
       return {
@@ -58,6 +60,8 @@ const pages = (state = initState, action) => {
           result: action.data.result
         }
       };
+
+
 
     default: return state;
 

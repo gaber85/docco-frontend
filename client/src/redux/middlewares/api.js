@@ -1,4 +1,5 @@
 import { normalize } from "normalizr";
+// import { fetch } from 'react';
 
 const apiMiddleware = store => next => action => {
 
@@ -11,24 +12,27 @@ const apiMiddleware = store => next => action => {
     'Content-Type': 'application/json'
   };
 
-  const state = store.getState();
-  if (state.authToken) {
+  const token = localStorage.getItem('token');
+  if (token) {
+    defaultHeaders.authorization = `Bearer ${token}`
   }
-  defaultHeaders.authorization = `Bearer eyJhbGciOiJIUzI1NiJ9.ZnJhbXpAd2F2ZXMuY29t.F9HjmgBqW_sRQtVtedsWEitrVlgM9anhsSQ1cXSfMNU`;
+
 
   // THE FETCH
   next({
     type: `${action.type}_PENDING`
-  });
-  // http:// private-81546b-docco.apiary-mock.com/${api.route}
+  })
 
-  fetch(`http://localhost:3008/${api.route}`, {
+
+  const baseURL = "http://192.168.1.145:3000/"
+  fetch(`${baseURL}${api.route}`, {
+
     method: api.method || 'GET',
     headers: {
       ...defaultHeaders,
-      ...api.headers,
+      ...api.headers
     },
-    body: api.body,
+    body: api.body
   })
     .then(response => response.json())
     .then(data => {

@@ -5,9 +5,9 @@ const addContract = (contract) => ({
   contract
 })
 
-const signUp = (user) => ({
+const signUp = (api) => ({
   type: 'SIGN_UP',
-  user
+  api
 })
 
 const login = (api) => ({
@@ -38,10 +38,9 @@ const getUser = api => ({
   api
 })
 
-
-
-
-
+const logOut = () => ({
+  type: 'LOG_OUT'
+})
 
 export {
   addContract,
@@ -50,5 +49,6 @@ export {
   getAll,
   postNeg,
   getOne,
-  getUser
+  getUser,
+  logOut
 }

@@ -4,9 +4,16 @@ import Logo from './assets/Docco.png';
 import userImg from './assets/user-image.png';
 
 const NavBar = props => {
+  console.log(props);
   const logo = Logo;
   const userPic = userImg;
-  const { img, name } = props;
+  const { img, name, history, logOutAct } = props;
+  const logout = () => {
+    localStorage.clear();
+    logOutAct();
+    history.push('/');
+  }
+
   return (
     <div
       css={css`
@@ -62,6 +69,10 @@ const NavBar = props => {
             }
           `}
           className="logout"
+          onClick={logout}
+          onKeyPress={logout}
+          role="button"
+          tabIndex="-1"
         >
           Logout
         </div>
@@ -69,5 +80,7 @@ const NavBar = props => {
     </div>
   );
 };
+
+
 
 export default NavBar;
