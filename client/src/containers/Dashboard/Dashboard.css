@@ -1,67 +1,52 @@
 .container {
   background-color: white;
-  width: 100vw;
-  height: 100vh;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  /* height: 100vh; */
+  width: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
 }
 
 .top-row {
-  width: 90vw;
-  height: 20vh;
-  display: flex;
+  padding: 20px;
+  width: 90%;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.left {
-  width: 50vw;
-}
-.right {
-  display: flex;
-  justify-content: flex-end;
-  width: 50vw;
 }
 
 .main-row {
-  width: 90vw;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: auto;
+  margin: 20px;
+  margin-top: 0;
+  width: 90%;
+  flex: 1;
+  border: solid;
+  border-color: #ECF0F1;
 }
 
 .bottom-row {
-  width: 90vw;
-  height: 20vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
 .inactive-negotiation {
-  flex-basis: 30%;
-  margin-left: 10%;
+  font-size: 14px;
   color: blue;
   text-decoration-line: underline;
   cursor: pointer;
 }
+
 .inactive-negotiation:visited {
   color: pink;
 }
 
 .add-negotiation {
-  flex: 1;
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
 .add-new-negotiation-text {
-  margin-left: 20px;
+  font-size: 24px;
+  padding: 15px;
 }

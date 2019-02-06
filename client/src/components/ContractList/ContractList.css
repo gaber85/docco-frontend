@@ -4,23 +4,20 @@
   align-items: flex-start;
   flex-wrap: wrap;
   overflow-y: scroll;
-  height: 60vh;
-  width: 60vw;
 }
 
 .my-contract {
   display:flex;
   flex-direction: column;
-  width:14%;
-  align-items:center;
-  margin-top: 5%;
+  align-items: center;
+  padding: 15px;
 }
 
-.fa-file-contract {
+.icon-sizing {
   font-size: 10vh;
-  font-weight:bold;
 }
 
 .contract-title {
-  margin-top: 1vh;
+  text-align: center;
+  padding-top: 5px;
 }

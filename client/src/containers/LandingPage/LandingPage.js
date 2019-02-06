@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { ParallaxBanner } from 'react-scroll-parallax';
+import { Link } from 'react-router-dom';
+
 import './LandingPage.css';
 import MainButton from '../../components/MainButton'
 import supImg from './Docco-Hero.jpg';
@@ -11,12 +13,16 @@ class LandingPage extends Component {
       <div className="Landing-page-container">
         <div className="Landing-page-login">
           <img className="small-logo" alt="logo" src={logo} />
-          <div className="login">Sign-up | Login</div>
+          <div className="login"><Link className="white-link" to='/sign-up'>Sign-up</Link> | <Link className="white-link" to='/login'>Login</Link></div>
         </div>
         <div className="landing-page-header">
           <div className="comp-name">Docco</div>
           <div className="catchphrase">An Innovative Approach to Contract Management</div>
-        <div className="get-started-button"><MainButton text='Get Started'/></div>
+        <div className="get-started-button">
+          <Link className="midnight-link" to='/sign-up'>
+            <MainButton text='Get Started'/>
+          </Link>
+        </div>
         </div>
         <div className="landing-page-content">
           <div className="landing-page-content-title"><h2>Get Up and Running in No Time!</h2></div>
@@ -37,7 +43,7 @@ class LandingPage extends Component {
             className="test2"
             layers={[
               {
-                image: 'https://ucf23f8c229e520ef1bd659318fa.previews.dropboxusercontent.com/p/thumb/AAWsoQ6q1WBC-Qt1dkIxCeQjyw4KoocZ8TazJV2ftjWe_SkTwO4Wjn4AG98KEB4_dcqQDhA9inOUh1jezT4sM1C-Hi-koUHVrUVcuQRW0zx52VT69qKSNVFC4xiNXOrijJCYU9eB7S4M1hwB8TVoUZprBA1Xe2ihtMYkJD4iEG_DIsgYyPVbRfK1CK006W423oqTZ0hpQ94F0aN2prhp8cwggi-XE2Vnpdg-Tf8hBIyZ3J-6BJI72RBikT9y9O0iLbV7iVa8N0wvQB9cGIoSxL-M/p.jpeg?size_mode=5',
+                image: 'https://previews.dropbox.com/p/thumb/AAXisU6So2EtX-xC_squ48M69T3zpUFdlA304Sgzakj8fWzi1QCn__m39gTc91op2eq5sTcY5QMrY-_dmUZTu2zmSXXyGzHQDKxxT8GnOpzSuFjly8Fzw23WZo37fTyC69IaRA1ioCP5Vgfi6G-MMQBuTywPNc0_iAcAbr4uFh1l6YFIHgXlEg2mozBqynv_cy5SYKNRb-j4jvWIalBfgqcGy27FKZ-yiM1AaJnoO2j_mA/p.jpeg?size_mode=5',
                 amount: 0.5,
                 slowerScrollRate: true,
               }
@@ -47,12 +53,12 @@ class LandingPage extends Component {
             <div className="landing-page-content">
               <div className="landing-page-content-title"><h2>Consolidate Your Contract Management Process</h2></div>
               <div className="landing-page-content-body">
-                <ul className="landing-page-content-body-list">
-                  <li><i className="fas fa-users landing-page-icons"/>Collaborate and share with your team and beneficiaries</li>
-                  <li><i className="far fa-edit landing-page-icons"/>Edit contracts on the spot and instantly share changes</li>
-                  <li><i className="fas fa-history landing-page-icons"/>Revisit and track previous amendments</li>
-                  <li><i className="far fa-calendar-check landing-page-icons"/>Keep deadlines with built-in contract countdowns</li>
-                </ul>
+                <div className="landing-page-content-body-list">
+                  <div className="line-icon"><i className="fas fa-users landing-page-icons"/>Collaborate and share with your team and beneficiaries</div>
+                  <div className="line-icon"><i className="far fa-edit landing-page-icons"/>Edit contracts on the spot and instantly share changes</div>
+                  <div className="line-icon"><i className="fas fa-history landing-page-icons"/>Revisit and track previous amendments</div>
+                  <div className="line-icon"><i className="far fa-calendar-check landing-page-icons"/>Keep deadlines with built-in contract countdowns</div>
+                </div>
                 <img className="logo-img" alt="people sharing" src={logo} />
               </div>
             </div>
@@ -63,7 +69,11 @@ class LandingPage extends Component {
                     Get started with your first contract today! Simply create an account, upload an existing contract with supporting documentation,
                     and begin share with team members and beneficiary parties.
                 </div>
-                <div className="get-started-button"><MainButton text='Get Started'/></div>
+                <div className="get-started-button">
+                  <Link className="midnight-link" to='/sign-up'>
+                    <MainButton text='Get Started'/>
+                  </Link>
+                </div>
               </div>
             </div>
             
