@@ -22,12 +22,8 @@ class App extends React.Component {
   componentDidMount() {
     this.checkLocal();
     const { getAllAct } = this.props;
-    getAllAct();
   }
 
-  componentDidUpdate() {
-    this.checkLocal();
-  }
 
   checkLocal = () => {
     const { getUserAct } = this.props;
@@ -37,7 +33,7 @@ class App extends React.Component {
 
   isLoggedIn = () => {
     const authToken = localStorage.getItem('token');
-    return true;
+    return authToken;
   };
 
   PrivateRoute = ({ component: Component, ...rest }) => {
