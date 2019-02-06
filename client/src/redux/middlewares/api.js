@@ -11,10 +11,10 @@ const apiMiddleware = store => next => action => {
     'Content-Type': 'application/json'
   };
 
-  const state = store.getState();
-  if (state.authToken) {
-    defaultHeaders.Authorization = `Bearer ${state.authToken}`;
-  }
+  // const state = store.getState('token');
+  // if (state.token) {
+  // }
+  defaultHeaders.authorization = `Bearer eyJhbGciOiJIUzI1NiJ9.ZnJhbXpAd2F2ZXMuY29t.F9HjmgBqW_sRQtVtedsWEitrVlgM9anhsSQ1cXSfMNU`;
 
   // THE FETCH
   next({

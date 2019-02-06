@@ -4,13 +4,13 @@ import domador from 'domador';
 import React, { Component } from 'react';
 import './ContractSection.css';
 
-
 class ContractSection extends Component {
 
   textareaRef = React.createRef();
 
   componentDidMount() {
     const textarea = this.textareaRef.current;
+
     const commandButtonsStyle = {
       bold: { innerHTML: '<i class="fas fa-bold"/>', className: 'btn-link' },
       italic: { innerHTML: '<i class="fas fa-italic"/>', className: 'btn-link' },
@@ -23,11 +23,13 @@ class ContractSection extends Component {
       image: { innerHTML: '<i class="fas fa-image"/>', className: 'btn-link' },
       attachment: { innerHTML: '<i class="fas fa-paperclip"/>', className: 'btn-link' }
     };
+
     const modeButtonsStyle = {
       markdown: { hidden: true },
       html: { hidden: true },
       wysiwyg: { hidden: true } // { innerHTML: '<i class="fas fa-edit"/>', className: 'btn-link-modes' }
-    }
+    };
+
     woofmark(textarea, {
       parseMarkdown: megamark,
       parseHTML: domador,
@@ -46,13 +48,17 @@ class ContractSection extends Component {
     });
   }
 
-  render() {
-    const {content} = this.props || 'No Content';
+  componentDidUpdate() {
+    // eslint-disable-next-line
+    woofmark.find(this.textareaRef.current).value(this.props.content);
+  }
 
+  render() {
+    const { content } = this.props || 'No Content';
     return (
       <div className="contract-container">
         <div className="content-body">
-          <textarea className="main-textarea" ref={this.textareaRef}>{content}</textarea>
+          <textarea className="main-textarea" ref={ this.textareaRef }>{ content }</textarea>
         </div>
       </div>
     );

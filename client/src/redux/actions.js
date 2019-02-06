@@ -28,11 +28,9 @@ const getOne = (api) => ({
   api
 });
 
-const postNeg = () => ({
+const postNeg = (api) => ({
   type: 'POST_NEG',
-  api: {
-    route: 'parties'
-  }
+  api
 });
 
 const getUser = api => ({

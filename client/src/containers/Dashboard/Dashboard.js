@@ -4,16 +4,18 @@ import SearchBar from '../../components/SearchBar';
 import ContractList from '../../components/ContractList';
 import './Dashboard.css';
 import PlusButton from '../../components/PlusButton';
+import NavBar from '../../components/NavBar';
 
-const Dashboard = props => {
+const Dashboard = (props) => {
   const handleInactiveNegotiations = () => {
-    console.log('click handle Inactive Negotiations');
-  };
+    // console.log('click handle Inactive Negotiations');
+  }
 
   const {contractList} = props;
 
   return (
     <div className="container">
+      <NavBar name='Gabe Riera' />
       <div className="top-row">
         <div className="left">
           <h1>My Active Negotiations</h1>
@@ -26,10 +28,18 @@ const Dashboard = props => {
         <ContractList contractList={contractList} />
       </div>
       <div className="bottom-row">
-        <div className='inactive-negotiation' onClick={handleInactiveNegotiations}>inactive negotiations</div>
         <div className="add-negotiation">
           <PlusButton size="2" />
-          <h3 className="add-new-negotiation-text">Add new negotiation</h3>
+          <div className="add-new-negotiation-text">Create New Negotiation</div>
+        </div>
+        <div
+          role="button"
+          tabIndex="-1"
+          className="inactive-negotiation"
+          onClick={handleInactiveNegotiations}
+          onKeyPress={handleInactiveNegotiations}
+        >
+          inactive negotiations
         </div>
       </div>
     </div>

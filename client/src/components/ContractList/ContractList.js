@@ -11,8 +11,8 @@ export const ContractList = (props) => {
   const view = contractList.map(contract => {
     return (
       <div key={contract.id} className="my-contract">
-        <i className="fas fa-file-contract" />
-        <span className="contract-title">{contract.title}</span>
+        <i className="far fa-file icon-sizing" />
+        <div className="contract-title">{contract.title}</div>
       </div>
     );
   });
