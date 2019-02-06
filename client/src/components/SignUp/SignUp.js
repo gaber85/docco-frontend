@@ -1,7 +1,10 @@
-import { Component, fetch } from 'react';
+import { Component} from 'react';
+import {connect} from 'react-redux';
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
 import MainButton from '../MainButton';
+import { signUp } from '../../redux/actions';
+
 
 class SignUp extends Component {
   // state holding user data
@@ -9,7 +12,7 @@ class SignUp extends Component {
     user: {}
   };
 
-  //  updates states upon input value change
+  //  updates state upon input value change
   handleChange = e => {
     const { user } = this.state;
     this.setState({
@@ -19,22 +22,21 @@ class SignUp extends Component {
 
   // sends http request creating the User
   handleSubmit = () => {
-    const user = this.state;
+    const { user }= this.state;
+    const {signUpAct} = this.props;
     this.setState({});
-
-    fetch(`/create`, {
-      method: 'post',
+    const api = {
+      route: 'parties',
+      method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer `
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(user)
-    })
-      .then(res => res.json())
-      .catch(err => err);
-  };
+    }
+    signUpAct(api);
+  }
 
-  render() {
+  render () {
     const { handleChange, handleSubmit } = this;
     return (
       <div
@@ -72,49 +74,39 @@ class SignUp extends Component {
           name="signUp"
           onChange={handleChange}
         >
-          <div
-            css={css`
-              display: flex;
-              justify-content: space-between;
-            `}
-          >
             <input
               css={css`
-                border: none;
-                font-size: 16px;
-                color: #bdc3c7;
-                margin-bottom: 25px;
-                height: 25px;
-                padding: 4px;
-                outline: none;
-                max-width: 45%;
-                min-width: 45%;
+              border: none;
+              font-size: 16px;
+              color: #bdc3c7;
+              margin-bottom: 25px;
+              height: 25px;
+              padding: 4px;
+              outline: none;
               `}
               type="text"
-              name="first"
-              placeholder="First Name"
+              name="legalName"
+              placeholder="Legal Name"
               autoComplete="off"
               required
             />
             <input
               css={css`
-                border: none;
-                font-size: 16px;
-                color: #bdc3c7;
-                margin-bottom: 25px;
-                height: 25px;
-                padding: 4px;
-                outline: none;
-                max-width: 45%;
-                min-width: 45%;
+              border: none;
+              font-size: 16px;
+              color: #bdc3c7;
+              margin-bottom: 25px;
+              height: 25px;
+              padding: 4px;
+              outline: none;
               `}
               type="text"
-              name="last"
-              placeholder="Last Name"
+              name="displayName"
+              placeholder="Display Name"
               autoComplete="off"
               required
             />
-          </div>
+
           <input
             css={css`
               border: none;
@@ -126,8 +118,8 @@ class SignUp extends Component {
               outline: none;
             `}
             type="text"
-            name="title"
-            placeholder="Job Title"
+            name="address"
+            placeholder="Address"
             autoComplete="off"
             required
           />
@@ -158,8 +150,25 @@ class SignUp extends Component {
               outline: none;
             `}
             type="text"
-            name="organization"
-            placeholder="Organization"
+            name="phone"
+            placeholder="Mobile Phone Number"
+            autoComplete="off"
+            required
+          />
+
+          <input
+            css={css`
+              border: none;
+              font-size: 16px;
+              color: #bdc3c7;
+              margin-bottom: 25px;
+              height: 25px;
+              padding: 4px;
+              outline: none;
+            `}
+            type="text"
+            name="authorisation"
+            placeholder="Password"
             autoComplete="off"
             required
           />
@@ -173,6 +182,14 @@ class SignUp extends Component {
       </div>
     );
   }
-}
+};
 
-export default SignUp;
+
+const mapDispatchToProps = dispatch => ({
+  signUpAct: obj => dispatch(signUp(obj))
+});
+
+
+export default connect(
+  null,
+  mapDispatchToProps)(SignUp);
