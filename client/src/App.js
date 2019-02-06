@@ -25,6 +25,10 @@ class App extends React.Component {
     getAllAct();
   }
 
+  componentDidUpdate() {
+    this.checkLocal();
+  }
+
   checkLocal = () => {
     const { getUserAct } = this.props;
     const authToken = localStorage.getItem('token');
@@ -33,7 +37,7 @@ class App extends React.Component {
 
   isLoggedIn = () => {
     const authToken = localStorage.getItem('token');
-    return authToken;
+    return true;
   };
 
   PrivateRoute = ({ component: Component, ...rest }) => {
@@ -65,7 +69,7 @@ class App extends React.Component {
           <Route path="/login" component={Login} />
           <Route path="/sign-up" component={SignUp} />
           <PrivateRoute path="/dashboard" component={Dashboard} />
-          <PrivateRoute path="/create-new" component={CgitreateNegotiation} />
+          <PrivateRoute path="/create-new" component={CreateNegotiation} />
           <PrivateRoute path="/contract/:id" component={ContractPage} />
           <PrivateRoute path="/contractid" component={ContractPage} />
         </div>

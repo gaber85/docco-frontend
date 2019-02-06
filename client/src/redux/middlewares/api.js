@@ -12,10 +12,11 @@ const apiMiddleware = store => next => action => {
     'Content-Type': 'application/json'
   };
 
-  // const token = store.getState('token');
-  // if (token) {
-  // }
-  // defaultHeaders.authorization = `Bearer eyJhbGciOiJIUzI1NiJ9.ZnJhbXpAd2F2ZXMuY29t.F9HjmgBqW_sRQtVtedsWEitrVlgM9anhsSQ1cXSfMNU`;
+  const token = localStorage.getItem('token');
+  if (token) {
+    defaultHeaders.authorization = `Bearer ${token}`
+  }
+
 
   // THE FETCH
   next({
@@ -25,7 +26,7 @@ const apiMiddleware = store => next => action => {
 
   console.log('API',api)
 
-  fetch(`http://localhost:3000/${api.route}`, {
+  fetch(`http://192.168.1.145:3000/${api.route}`, {
     method: api.method || 'GET',
     headers: {
       ...defaultHeaders,
