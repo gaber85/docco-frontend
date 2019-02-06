@@ -21,7 +21,7 @@ class ContractSection extends Component {
       heading: { hidden: true }, // { innerHTML: '<i class="fas fa-heading"/>', className: 'btn-link' },
       link: { hidden: true }, // { innerHTML: '<i class="fas fa-link"/>', className: 'btn-link' },
       image: { hidden: true }, // { innerHTML: '<i class="fas fa-image"/>', className: 'btn-link' },
-      attachment: { hidden: true }//  { innerHTML: '<i class="fas fa-paperclip"/>', className: 'btn-link' }
+      attachment: { hidden: true }//
     };
 
     const modeButtonsStyle = {
@@ -33,6 +33,9 @@ class ContractSection extends Component {
     woofmark(textarea, {
       parseMarkdown: megamark,
       parseHTML: domador,
+      wysiwyg: true,
+      html: false,
+      markdown: false,
       render: {
         modes: (button, id) => {
           if (modeButtonsStyle[id].innerHTML) button.innerHTML = modeButtonsStyle[id].innerHTML; //  eslint-disable-line
