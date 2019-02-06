@@ -38,6 +38,10 @@ const getUser = api => ({
   api
 })
 
+const logOut = () => ({
+  type: 'LOG_OUT'
+})
+
 export {
   addContract,
   signUp,
@@ -45,5 +49,6 @@ export {
   getAll,
   postNeg,
   getOne,
-  getUser
+  getUser,
+  logOut
 }

@@ -7,9 +7,10 @@ const NavBar = props => {
   console.log(props);
   const logo = Logo;
   const userPic = userImg;
-  const { img, name, history } = props;
+  const { img, name, history, logOutAct } = props;
   const logout = () => {
-    localStorage.removeItem('token');
+    localStorage.clear();
+    logOutAct();
     history.push('/');
   }
 
@@ -79,5 +80,7 @@ const NavBar = props => {
     </div>
   );
 };
+
+
 
 export default NavBar;
