@@ -28,18 +28,18 @@ const pages = (state = initState, action) => {
         ...state, contractList: {
           ...state.contractList,
           loading: false,
-          result: [...state.contractList.result,...action.data.result]
+          result: [...state.contractList.result, action.data.result]
         }
       };
 
-      case 'POST_NEG_SUCCESS':
-      return {
-        ...state, contractList: {
-          ...state.contractList,
-          loading: false,
-          result: [...state.contractList.result,action.data.result]
-        }
-      };
+    case 'POST_NEG_SUCCESS':
+    return {
+      ...state, contractList: {
+        ...state.contractList,
+        loading: false,
+        result: [ ...state.contractList.result, action.data.result ]
+      }
+    };
 
     case 'GET_ONE_PENDING':
       return {

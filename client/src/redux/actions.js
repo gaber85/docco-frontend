@@ -39,11 +39,6 @@ const getUser = api => ({
 })
 
 
-
-
-
-
-
 export {
   addContract,
   signUp,
