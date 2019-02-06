@@ -6,8 +6,9 @@ const Diff = require('diff');
 class DifferencesView extends Component {
 
   getAdditionsByLine() {
-    console.log(this.props.content);
-    const { yourContent, theirContent } = this.props.content;
+    const { content } = this.props;
+    console.log(content);
+    const { yourContent, theirContent } = content;
     const changes = Diff.diffTrimmedLines(yourContent, theirContent);
     const changedString = changes.map(change => {
       const diff = change.added ? 'added' : change.removed ? 'hidden' : 'stays';
@@ -17,7 +18,8 @@ class DifferencesView extends Component {
   }
 
   getAdditionsByWord() {
-    const { yourContent, theirContent } = this.props.content;
+    const { content } = this.props;
+    const { yourContent, theirContent } = content;
     const changes = Diff.diffWordsWithSpace(yourContent, theirContent);
     const changedString = changes.map(change => {
       const diff = change.added ? 'added' : change.removed ? 'hidden' : 'stays';
@@ -29,7 +31,8 @@ class DifferencesView extends Component {
   }
 
   getSubtractionsByLine() {
-    const { yourContent, theirContent } = this.props.content;
+    const { content } = this.props;
+    const { yourContent, theirContent } = content;
     const changes = Diff.diffTrimmedLines(yourContent, theirContent);
     const changedString = changes.map(change => {
       const diff = change.added
@@ -43,7 +46,8 @@ class DifferencesView extends Component {
   }
 
   getSubtractionsByWord() {
-    const { yourContent, theirContent } = this.props.content;
+    const { content } = this.props;
+    const { yourContent, theirContent } = content;
     const changes = Diff.diffWordsWithSpace(yourContent, theirContent);
     const changedString = changes.map(change => {
       const diff = change.added

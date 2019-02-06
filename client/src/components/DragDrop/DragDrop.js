@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './DragDrop.css';
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core';
+import styled from '@emotion/styled';
 
 class DragDrop extends Component {
   dropRef = React.createRef();
@@ -84,29 +86,85 @@ class DragDrop extends Component {
     const { children } = this.props;
     const { dragging, allFiles } = this.state;
     return (
-      <div className="container">
-        <div className="drag-drop-container" ref={this.dropRef}>
+      <DragDropMain>
+        <DragDropContainer ref={this.dropRef}>
           {dragging && (
-            <div className="drag-drop-dash">
-              <div className="drag-drop-inside">
+            <DragDropDash>
+              <DragDropInside>
                 <div>Drop Here</div>
-              </div>
-            </div>
+              </DragDropInside>
+            </DragDropDash>
           )}
           Drag and Drop Files
           {children}
-        </div>
-        {allFiles.map(file => {
-          return (
-            <div key={file}>
-              <i className="far fa-file" />
-              {file}
-            </div>
-          );
-        })}
-      </div>
+        </DragDropContainer>
+        <DroppedFiles>
+          {allFiles.map(file => {
+            return (
+              <EachFile key={file}>
+                <i
+                  css={css`
+                    padding-right: 5px;
+                  `}
+                  className="far fa-file"
+                />
+                {file}
+              </EachFile>
+            );
+          })}
+        </DroppedFiles>
+      </DragDropMain>
     );
   }
 }
+
+const DragDropMain = styled('div')`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+`;
+const DroppedFiles = styled('div')`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf0f1;
+`;
+const EachFile = styled('div')`
+  background-color: #ecf0f1;
+  font-size: 18px;
+  padding: 10px;
+`;
+const DragDropContainer = styled('div')`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #ecf0f1;
+  color: #bdc3c7;
+  font-size: 5vw;
+  width: 75%;
+  height: 30vh;
+`;
+const DragDropDash = styled('div')`
+  border: dashed #bdc3c7 4px;
+  background-color: #ecf0f1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+`;
+const DragDropInside = styled('div')`
+  position: absolute;
+  top: 35%;
+  right: 0;
+  left: 0;
+  text-align: center;
+  color: #bdc3c7;
+  font-size: 5vw;
+`;
 
 export default DragDrop;

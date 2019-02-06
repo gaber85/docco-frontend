@@ -2,13 +2,13 @@
 import { css, jsx } from '@emotion/core';
 
 const MainButton = props => {
-  const { text, click, align } = props;
+  const { text, click, align, width } = props;
   return (
     <div
       css={css`
         background-color: #f1c40f;
         font-size: 18px;
-        min-width: 80px;
+        min-width: ${width};
         max-width: 200px;
         text-align: center;
         padding: 10px;

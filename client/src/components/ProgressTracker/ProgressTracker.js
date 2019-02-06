@@ -1,37 +1,56 @@
 import React from 'react';
-import './ProgressTracker.css';
+import styled from '@emotion/styled';
 
 const ProgressTracker = props => {
   const { progressTracker, handleProgress } = props;
   const handleClick = event =>
     handleProgress(Number(event.currentTarget.dataset.id));
   return (
-    <div>
-      <ul className="progress-tracker">
-        <li
-          className={progressTracker === 0 ? 'active' : undefined}
-          data-id="0"
-          onClick={handleClick}
-        >
-          <span className="progress-marker">1</span>
-        </li>
-        <li
-          className={progressTracker === 1 ? 'active' : undefined}
-          data-id="1"
-          onClick={handleClick}
-        >
-          <span className="progress-marker">2</span>
-        </li>
-        <li
-          className={progressTracker === 2 ? 'active' : undefined}
-          data-id="2"
-          onClick={handleClick}
-        >
-          <span className="progress-marker">3</span>
-        </li>
-      </ul>
-    </div>
+    <ProgressTrackerContainer>
+      <ProgressMarker
+        active={progressTracker === 0 && true}
+        data-id="0"
+        onClick={handleClick}
+      >
+        1
+      </ProgressMarker>
+      <ProgressMarker
+        active={progressTracker === 1 && true}
+        data-id="1"
+        onClick={handleClick}
+      >
+        2
+      </ProgressMarker>
+      <ProgressMarker
+        active={progressTracker === 2 && true}
+        data-id="2"
+        onClick={handleClick}
+      >
+        3
+      </ProgressMarker>
+    </ProgressTrackerContainer>
   );
 };
+
+const ProgressTrackerContainer = styled('div')`
+  font-size: 16px;
+  color: #bdc3c7;
+  display: flex;
+  justify-content: flex-end;
+`;
+const ProgressMarker = styled('div')`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${props => (props.active ? '#F1C40F' : 'white')};
+  margin: 20px;
+  width: ${props => (props.active ? '32px' : '30px')};
+  height: ${props => (props.active ? '32px' : '30px')};
+  color: ${props => (props.active ? '#2C3E50' : '#bdc3c7')};
+  border: ${props => (props.active ? '1px solid #2C3E50' : '1px solid #bdc3c7')};
+  box-shadow: 1px 1px 1px #bdc3c7;
+  border-radius: 50%;
+  cursor: pointer;
+`;
 
 export default ProgressTracker;
