@@ -24,7 +24,6 @@ export class CreateNegotiation extends Component {
 
   }
 
-
   handleInputChange = event => {
     const { document } = this.state;
     const { name, value } = event.target;
