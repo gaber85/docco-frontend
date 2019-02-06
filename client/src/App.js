@@ -22,12 +22,9 @@ class App extends React.Component {
   componentDidMount() {
     this.checkLocal();
     const { getAllAct } = this.props;
-    getAllAct();
+    // getAllAct();
   }
 
-  componentDidUpdate() {
-    this.checkLocal();
-  }
 
   checkLocal = () => {
     const { getUserAct } = this.props;
