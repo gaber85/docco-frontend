@@ -7,16 +7,26 @@
   width: 100%;
 }
 
+.files-for-rent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #ECF0F1;
+  font-size: 18px;
+  padding: 10px;
+}
+
 .drag-drop-container {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   background-color: #ECF0F1;
   color: #BDC3C7;
   font-size: 36px;
-  height: 400px;
-  width: 50%;
+  height: 50vh;
+  /* width: 50%; */
 }
 
 .drag-drop-dash {

@@ -1,7 +1,6 @@
 import React from 'react';
 import DragDrop from '../DragDrop';
 import MainButton from '../MainButton';
-import './AddFiles.css';
 
 const AddFiles = props => {
   const { handleProgress, handleFileContent } = props;

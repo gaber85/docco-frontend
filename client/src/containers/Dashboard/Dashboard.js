@@ -1,50 +1,97 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import styled from '@emotion/styled';
 import SearchBar from '../../components/SearchBar';
 import ContractList from '../../components/ContractList';
-import './Dashboard.css';
 import PlusButton from '../../components/PlusButton';
 import NavBar from '../../components/NavBar';
 
-const Dashboard = (props) => {
+const Dashboard = props => {
   const handleInactiveNegotiations = () => {
     // console.log('click handle Inactive Negotiations');
-  }
+  };
 
-  const {contractList} = props;
+  const { contractList } = props;
 
   return (
-    <div className="container">
-      <NavBar name='Gabe Riera' />
-      <div className="top-row">
+    <DashboardContainer>
+      <NavBar name="Gabe Riera" />
+      <DashboardTopRow>
         <div className="left">
           <h1>My Active Negotiations</h1>
         </div>
         <div className="right">
           <SearchBar />
         </div>
-      </div>
-      <div className="main-row">
+      </DashboardTopRow>
+      <DashboardMainRow>
         <ContractList contractList={contractList} />
-      </div>
-      <div className="bottom-row">
-        <div className="add-negotiation">
+      </DashboardMainRow>
+      <DashboardBottomRow>
+        <AddNegotiation>
           <PlusButton size="2" />
-          <div className="add-new-negotiation-text">Create New Negotiation</div>
-        </div>
-        <div
+          <AddNegotiationText>Create New Negotiation</AddNegotiationText>
+        </AddNegotiation>
+        <InactiveNegotiations
           role="button"
           tabIndex="-1"
-          className="inactive-negotiation"
           onClick={handleInactiveNegotiations}
           onKeyPress={handleInactiveNegotiations}
         >
           inactive negotiations
-        </div>
-      </div>
-    </div>
+        </InactiveNegotiations>
+      </DashboardBottomRow>
+    </DashboardContainer>
   );
 };
+
+const DashboardContainer = styled('div')`
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+const DashboardTopRow = styled('div')`
+  padding: 20px;
+  width: 90%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+const DashboardMainRow = styled('div')`
+  margin: 20px;
+  margin-top: 0;
+  width: 90%;
+  flex: 1;
+  border: solid;
+  border-color: #ecf0f1;
+`;
+const DashboardBottomRow = styled('div')`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+const InactiveNegotiations = styled('div')`
+  font-size: 14px;
+  color: blue;
+  text-decoration-line: underline;
+  cursor: pointer;
+  outline: none;
+  &:visited {
+    color: purple;
+  }
+`;
+const AddNegotiation = styled('div')`
+  display: flex;
+  align-items: center;
+`;
+const AddNegotiationText = styled('div')`
+  font-size: 24px;
+  padding: 15px;
+`;
+
 const mapStateToProps = state => ({
   contractList: state.pages.contractList.result.map(
     id => state.entities.negotiations[id]
@@ -56,4 +103,3 @@ export default connect(
   mapStateToProps,
   null
 )(Dashboard);
-

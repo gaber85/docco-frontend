@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import styled from '@emotion/styled';
 import './CreateNegotiation.css';
 import TitleAndDescriptionPage from '../../components/TitleAndDescriptionPage';
 import ProgressTracker from '../../components/ProgressTracker';
@@ -100,13 +101,21 @@ export class CreateNegotiation extends Component {
         break;
     }
     return (
-      <div>
+      <CreateNegotiationContainer>
         <StepsTracker />
         {content}
-      </div>
+      </CreateNegotiationContainer>
     );
   }
 }
+
+const CreateNegotiationContainer = styled('div')`
+background-image: linear-gradient(to left top,#3498db,rgb(174, 217, 247));
+background-repeat: no-repeat;
+height: 100%;
+display: flex;
+flex-direction: column;
+`
 
 const mapDispatchToProps = (dispatch) => ({
   postIt: (api) => dispatch(postNeg(api))
