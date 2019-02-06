@@ -20,12 +20,10 @@ const apiMiddleware = store => next => action => {
   // THE FETCH
   next({
     type: `${action.type}_PENDING`
-  });
-  // http://private-81546b-docco.apiary-mock.com/${api.route}
+  })
 
-  console.log('API',api)
-
-  fetch(`http://localhost:3000/${api.route}`, {
+  const baseURL = "http://localhost:3000"
+  fetch(`${baseURL}/${api.route}`, {
     method: api.method || 'GET',
     headers: {
       ...defaultHeaders,

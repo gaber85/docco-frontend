@@ -2,7 +2,7 @@ import woofmark from 'woofmark';
 import megamark from 'megamark';
 import domador from 'domador';
 import React, { Component } from 'react';
-import './ContractSection.css';
+import './EditorView.css';
 
 class ContractSection extends Component {
 
@@ -12,22 +12,22 @@ class ContractSection extends Component {
     const textarea = this.textareaRef.current;
 
     const commandButtonsStyle = {
-      bold: { innerHTML: '<i class="fas fa-bold"/>', className: 'btn-link' },
-      italic: { innerHTML: '<i class="fas fa-italic"/>', className: 'btn-link' },
-      quote: { innerHTML: '<i class="fas fa-quote-right"/>', className: 'btn-link' },
-      code: { innerHTML: '<i class="fas fa-code"/>', className: 'btn-link' },
-      ol: { innerHTML: '<i class="fas fa-list-ol"/>', className: 'btn-link' },
-      ul: { innerHTML: '<i class="fas fa-list-ul"/>', className: 'btn-link' },
-      heading: { innerHTML: '<i class="fas fa-heading"/>', className: 'btn-link' },
-      link: { innerHTML: '<i class="fas fa-link"/>', className: 'btn-link' },
-      image: { innerHTML: '<i class="fas fa-image"/>', className: 'btn-link' },
-      attachment: { innerHTML: '<i class="fas fa-paperclip"/>', className: 'btn-link' }
+      bold: { hidden: true }, // { innerHTML: '<i class="fas fa-bold"/>', className: 'btn-link' },
+      italic: { hidden: true }, // { innerHTML: '<i class="fas fa-italic"/>', className: 'btn-link' },
+      quote: { hidden: true }, // { innerHTML: '<i class="fas fa-quote-right"/>', className: 'btn-link' },
+      code: { hidden: true }, // { innerHTML: '<i class="fas fa-code"/>', className: 'btn-link' },
+      ol: { hidden: true }, // { innerHTML: '<i class="fas fa-list-ol"/>', className: 'btn-link' },
+      ul: { hidden: true }, // { innerHTML: '<i class="fas fa-list-ul"/>', className: 'btn-link' },
+      heading: { hidden: true }, // { innerHTML: '<i class="fas fa-heading"/>', className: 'btn-link' },
+      link: { hidden: true }, // { innerHTML: '<i class="fas fa-link"/>', className: 'btn-link' },
+      image: { hidden: true }, // { innerHTML: '<i class="fas fa-image"/>', className: 'btn-link' },
+      attachment: { hidden: true }//  { innerHTML: '<i class="fas fa-paperclip"/>', className: 'btn-link' }
     };
 
     const modeButtonsStyle = {
       markdown: { hidden: true },
       html: { hidden: true },
-      wysiwyg: { hidden: true } // { innerHTML: '<i class="fas fa-edit"/>', className: 'btn-link-modes' }
+      wysiwyg: { hidden: true },
     };
 
     woofmark(textarea, {
