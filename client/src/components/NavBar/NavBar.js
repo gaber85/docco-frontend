@@ -7,6 +7,10 @@ const NavBar = props => {
   const logo = Logo;
   const userPic = userImg;
   const { img, name } = props;
+  const logout = () => {
+    localStorage.removeItem('token');
+  }
+
   return (
     <div
       css={css`
@@ -62,6 +66,10 @@ const NavBar = props => {
             }
           `}
           className="logout"
+          onClick={logout}
+          onKeyPress={logout}
+          role="button"
+          tabIndex="-1"
         >
           Logout
         </div>
