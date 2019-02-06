@@ -3,11 +3,11 @@ import { connect } from 'react-redux';
 import './ContractPage.css';
 import SearchBar from '../../components/SearchBar'
 import TeamSection from '../../components/TeamSection';
-import ContractSection from '../../components/ContractSection';
+import EditorView from '../../components/EditorView';
 import SideBar from '../../components/SideBar';
 import { getOne } from '../../redux/actions';
-import { negotiationSchema }from '../../redux/middlewares/schemas/schemas';
-
+import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
+import ContractBrancher from '../../components/ContractBrancher/ContractBrancher';
 // eslint-disable-next-line
 class ContractPage extends Component {
 
@@ -46,7 +46,7 @@ class ContractPage extends Component {
             <div className="search-bar-section"><SearchBar /></div>
           </div>
           <div className="contract">
-            <ContractSection content={ this.content } allProps={ this.props } />
+            <ContractBrancher {...this.props} />
             <div className="sidebar-controls">
               <SideBar />
             </div>

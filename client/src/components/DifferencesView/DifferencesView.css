@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bar {
+  position: fixed;
+  background: #f4f4f4;
+  flex: 1;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  font-size: 1.3em;
+  flex-direction: column;
+  background: #f4f4f;
+}
+
+#contractInfo {
+  margin: 20px;
+  lineheight: 20px;
+}
+
+.container {
+  flex-direction: column;
+  background-color: #f4f4f4;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  font-size: 1em;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  background: lightgray;
+}
+
+.differences {
+  top: 110px;
+  display: flex;
+  flex: 1;
+  color: transparent;
+  position: absolute;
+  padding-bottom: 30px;
+}
+
+.differences span {
+  white-space: pre;
+}
+
+.diff {
+  line-height: 1.3em;
+  width: 50vw;
+}
+
+.diff.right {
+  padding-right: 30px;
+  line-height: 1.3em;
+  width: 50vw;
+}
+
+.diff {
+  padding-top: 30px;
+  line-height: 1.3em;
+  width: 50vw;
+}
+
+.diff.left {
+  padding-left: 30px;
+  line-height: 1.3em;
+  width: 50vw;
+}
+
+.differences.visible #added {
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: rgba(255, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 1px;
+  transition: padding 300ms;
+}
+
+.differences.visible #added:hover {
+  padding: 5px;
+  transition: padding 300ms;
+}
+
+.differences.hidden-content #added {
+  background-color: rgba(255, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.differences.visible #removed {
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: rgba(15, 240, 0, 0.3);
+  border-radius: 5px;
+  padding: 1px;
+  transition: padding 300ms;
+}
+
+.differences.visible #removed:hover {
+  padding: 5px;
+  transition: padding 300ms;
+}
+
+.differences.hidden-content #removed {
+  background-color: rgba(0, 255, 0, 0.1);
+  border-radius: 6px;
+}
+
+.differences.visible #stays {
+  color: black;
+}
+
+#hidden {
+  display: none;
+}
