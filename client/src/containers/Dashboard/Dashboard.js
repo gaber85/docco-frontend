@@ -1,6 +1,9 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core';
+
 import { connect } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 import SearchBar from '../../components/SearchBar';
 import ContractList from '../../components/ContractList';
@@ -38,8 +41,15 @@ class Dashboard extends Component {
         </DashboardMainRow>
         <DashboardBottomRow>
           <AddNegotiation>
-            <NavLink className="createNewNegotiationLink" exact to="/create-new" ><PlusButton size="2" /></NavLink>
-            <NavLink className="createNewNegotiationLink" exact to="/create-new" ><AddNegotiationText>Create New Negotiation</AddNegotiationText></NavLink>
+            <Link css={css`
+              text-decoration: none;
+              color: #2C3E50;
+              pointer: cursor;
+            `} to="/create-new" ><PlusButton size="2" /></Link>
+            <Link css={css`
+              text-decoration: none;
+              color: #2C3E50;
+            `} to="/create-new" ><AddNegotiationText>Create New Negotiation</AddNegotiationText></Link>
           </AddNegotiation>
           <InactiveNegotiations
             role="button"
@@ -109,8 +119,6 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = state => ({
   contractList: state.pages.contractList.result.map(id => {
-    console.log('this is id ', id);
-    console.log('this is contract ', state.entities.negotiations[id]);
     return state.entities.negotiations[id];
   }),
   page: state.pages.contractList // this can be changed from contractList to parent-container name)

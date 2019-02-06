@@ -25,7 +25,8 @@ class App extends React.Component {
   };
 
   isLoggedIn = () => {
-    const authToken = localStorage.getItem('token');
+    const { authentication } = this.props;
+    const authToken = authentication.token;
     return authToken;
   };
 

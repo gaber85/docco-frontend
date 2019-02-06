@@ -31,13 +31,6 @@ const TitleAndDescriptionPage = props => {
         `}
       >
         <Input
-          autoComplete="off"
-          type="text"
-          name="email"
-          placeholder="email..."
-          required
-        />
-        <Input
           data-testid="title-input"
           type="text"
           name="title"
@@ -68,7 +61,7 @@ const TitleDescriptionContainer = styled('div')`
   flex: 1;
 `;
 const Input = styled('input')`
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding-left: 5px;
   height: 35px;
   width: 100%;

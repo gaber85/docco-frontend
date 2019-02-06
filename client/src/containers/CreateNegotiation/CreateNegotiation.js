@@ -28,9 +28,11 @@ export class CreateNegotiation extends Component {
     const { negotiations, history } = this.props;
     const { document, checked } = this.state;
     const negotiationArr = Object.values(negotiations);
-    const specificNegotiation = negotiationArr[negotiationArr.length-1];
-    if (specificNegotiation.title === document.title) {
-      history.push( `/contract/${specificNegotiation.id}`)
+    const specificNegotiation = negotiationArr[negotiationArr.length - 1];
+    console.log('this is the negotation', specificNegotiation);
+    console.log('this is a list of negotiations', negotiationArr);
+    if (specificNegotiation && specificNegotiation.title === document.title) {
+      history.push(`/contract/${specificNegotiation.id}`);
     }
   }
 

@@ -3,17 +3,21 @@ import { ParallaxBanner } from 'react-scroll-parallax';
 import { Link } from 'react-router-dom';
 
 import './LandingPage.css';
+import { connect } from 'react-redux';
 import MainButton from '../../components/MainButton'
 import supImg from './Docco-Hero.jpg';
 import logo from './Docco.png';
+import { logOut } from '../../redux/actions';
 // eslint-disable-next-line
 class LandingPage extends Component {
   render() {
+    const {authentication, logOutAct} = this.props;
+    console.log(this.props);
     return (
       <div className="Landing-page-container">
         <div className="Landing-page-login">
           <img className="small-logo" alt="logo" src={logo} />
-          <div className="login"><Link className="white-link" to='/sign-up'>Sign-up</Link> | <Link className="white-link" to='/login'>Login</Link></div>
+          {authentication.token ? <div className="login"><Link className="white-link" to='/dashboard'>DashBoard</Link> | <div className="white-link" role="button" onClick={logOutAct} onKeyPress={logOutAct} tabIndex="-1" >Logout</div></div> : <div className="login"><Link className="white-link" to='/sign-up'>Sign-up</Link> | <Link className="white-link" to='/login'>Login</Link></div>}
         </div>
         <div className="landing-page-header">
           <div className="comp-name">Docco</div>
@@ -32,7 +36,7 @@ class LandingPage extends Component {
               business easily share contracts and update without the typical paper trail associated. Facilitate collaboration with your
               internal team and external parties.
               <p><h2>Contract Versioning At Your Fingertips</h2></p>
-              Navigate through all the versions of a contract created during the negotiation period. Keep track of all 
+              Navigate through all the versions of a contract created during the negotiation period. Keep track of all
               the changes made by all parties and beneficiaries, all with a click of a button. Easily revert back to any versions
               without upsetting the creator-beneficiary dynamic.
             </div>
@@ -76,11 +80,23 @@ class LandingPage extends Component {
                 </div>
               </div>
             </div>
-            
+
         <div className="footer">2019 Docco Inc. All rights reserved</div>
       </div>
     )
   }
 }
 
-export default LandingPage;
+const mapDispatchToProps = dispatch => ({
+  logOutAct: () => dispatch(logOut())
+})
+
+const mapStateToProps = state => ({
+  authentication: state.authentication
+});
+
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(LandingPage);
