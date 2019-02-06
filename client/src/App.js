@@ -22,6 +22,7 @@ class App extends React.Component {
   checkLocal = () => {
     const { getUserAct, authentication } = this.props;
     const authToken = authentication.token;
+    console.log(authToken)
     if (authToken) getUserAct();
   };
 
