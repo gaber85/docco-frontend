@@ -8,13 +8,12 @@ const TitleAndDescriptionPage = props => {
   const { document, handleInputChange, handleProgress } = props;
   const { title, description } = document;
   const handleClick = () => handleProgress(1);
-  const handleClickBack = () => handleProgress(0);
 
   return (
     <TitleDescriptionContainer>
       <div
         css={css`
-          font-size: 9vw;
+          font-size: 7vw;
           color: #2c3e50;
           padding-bottom: 10%;
           justify-self: flex-start;
@@ -54,7 +53,7 @@ const TitleAndDescriptionPage = props => {
           placeholder="description..."
           onChange={handleInputChange}
         />
-        <MainButton text="Next" align='flex-end' click={handleClick} />
+        <MainButton text="Next" width="175px" align='flex-end' click={handleClick} />
       </form>
     </TitleDescriptionContainer>
   );
@@ -70,6 +69,7 @@ const TitleDescriptionContainer = styled('div')`
 `;
 const Input = styled('input')`
   margin-bottom: 10px;
+  padding-left: 5px;
   height: 35px;
   width: 100%;
   font-size: 18px;

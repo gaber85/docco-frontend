@@ -118,12 +118,11 @@ class DragDrop extends Component {
   }
 }
 
-
-
 const DragDropMain = styled('div')`
-background-color: white;
-width: 100%;
-flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
 `;
 const DroppedFiles = styled('div')`
   display: flex;
@@ -138,18 +137,19 @@ const EachFile = styled('div')`
   padding: 10px;
 `;
 const DragDropContainer = styled('div')`
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: #ECF0F1;
-  color: #BDC3C7;
-  font-size: 36px;
-  height: 50vh;
+  background-color: #ecf0f1;
+  color: #bdc3c7;
+  font-size: 5vw;
+  width: 75%;
+  height: 30vh;
 `;
 const DragDropDash = styled('div')`
-border: dashed #BDC3C7 4px;
-  background-color: #ECF0F1;
+  border: dashed #bdc3c7 4px;
+  background-color: #ecf0f1;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -158,14 +158,13 @@ border: dashed #BDC3C7 4px;
   z-index: 9999;
 `;
 const DragDropInside = styled('div')`
-position: absolute;
-  top: 40%;
+  position: absolute;
+  top: 35%;
   right: 0;
   left: 0;
   text-align: center;
-  color: #BDC3C7;
-  font-size: 36px;
+  color: #bdc3c7;
+  font-size: 5vw;
 `;
-
 
 export default DragDrop;
