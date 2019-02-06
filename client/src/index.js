@@ -15,7 +15,15 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || window.c
 
 const store = createStore(
   reducer,
+  JSON.parse(localStorage.getItem('state')) || undefined,
   composeEnhancers(applyMiddleware(apiMiddleware)));
+
+store.subscribe(() => {
+  const state = store.getState();
+  localStorage.setItem('state', JSON.stringify({
+    authentication: state.authentication
+  }));
+});
 
 ReactDOM.render(
   <Provider store={store}>
