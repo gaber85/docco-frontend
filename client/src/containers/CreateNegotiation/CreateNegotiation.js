@@ -5,11 +5,11 @@ import TitleAndDescriptionPage from '../../components/TitleAndDescriptionPage';
 import ProgressTracker from '../../components/ProgressTracker';
 import AddParties from '../../components/AddPartiesPage';
 import AddFiles from '../../components/AddFiles';
-import {negotiationSchema} from '../../redux/middlewares/schemas/schemas';
-import {postNeg} from '../../redux/actions'
-
+import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
+import { postNeg } from '../../redux/actions'
 
 export class CreateNegotiation extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -19,9 +19,19 @@ export class CreateNegotiation extends Component {
         description: '',
         files: [],
         partyBEmail: ''
-      }
+      },
+      checked: false,
     };
+  }
 
+  componentDidUpdate() {
+    const { negotiations, history } = this.props;
+    const { document, checked } = this.state;
+    const negotiationArr = Object.values(negotiations);
+    const specificNegotiation = negotiationArr[negotiationArr.length-1];
+    if (checked && specificNegotiation.title === document.title) {
+      history.push(`/contract/${specificNegotiation.id}`)
+    }
   }
 
   handleInputChange = event => {
@@ -51,7 +61,8 @@ export class CreateNegotiation extends Component {
       method: 'POST',
       body: JSON.stringify(newNeg),
     }
-    postIt(api);
+    postIt(api)
+    this.setState({ checked: true });
   };
 
   handleFileContent = content => {
@@ -108,11 +119,15 @@ export class CreateNegotiation extends Component {
   }
 }
 
+const mapStateToProps = (state) => ({
+  negotiations: state.entities.negotiations,
+})
+
 const mapDispatchToProps = (dispatch) => ({
   postIt: (api) => dispatch(postNeg(api))
 })
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(CreateNegotiation)
