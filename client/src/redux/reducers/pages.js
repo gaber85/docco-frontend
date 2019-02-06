@@ -39,7 +39,7 @@ const pages = (state = initState, action) => {
       ...state, contractList: {
         ...state.contractList,
         loading: false,
-        result: [ ...state.contractList.result, ...action.data.result ]
+        result: [ ...state.contractList.result, action.data.result ]
       }
     };
 

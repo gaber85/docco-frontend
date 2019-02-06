@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NavLink } from 'react-router-dom';
 import './ContractList.css';
 // import {css,jsx} from '@emotion/core';
 
@@ -11,8 +11,8 @@ export const ContractList = (props) => {
   const view = contractList.map(contract => {
     return (
       <div key={contract.id} className="my-contract">
-        <i className="far fa-file icon-sizing" />
-        <div className="contract-title">{contract.title}</div>
+        <NavLink className="specificContract" exact to={`/contract/${contract.id}`}><i className="far fa-file icon-sizing" />
+        <div className="contract-title">{contract.title}</div></NavLink>
       </div>
     );
   });

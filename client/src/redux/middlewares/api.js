@@ -12,7 +12,7 @@ const apiMiddleware = store => next => action => {
     'Content-Type': 'application/json'
   };
 
-  const token = localStorage.getItem('token');
+  const token = store.getState().authentication.token;
   if (token) {
     defaultHeaders.authorization = `Bearer ${token}`
   }
@@ -24,7 +24,7 @@ const apiMiddleware = store => next => action => {
   })
 
 
-  const baseURL = "http://192.168.1.145:3000/"
+  const baseURL = "http://localhost:3008/"
   fetch(`${baseURL}${api.route}`, {
 
     method: api.method || 'GET',
