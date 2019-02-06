@@ -5,8 +5,14 @@ import ContractList from '../../components/ContractList';
 import './Dashboard.css';
 import PlusButton from '../../components/PlusButton';
 import NavBar from '../../components/NavBar';
+import { getAll } from '../../redux/actions';
 
 class Dashboard extends Component  {
+
+  componentDidMount() {
+    const {getAllAct} = this.props;
+    getAllAct();
+  }
 
   render () {
   const handleInactiveNegotiations = () => {
@@ -49,6 +55,10 @@ class Dashboard extends Component  {
   }
 };
 
+const mapDispatchToProps = dispatch => ({
+  getAllAct: () => dispatch(getAll())
+});
+
 const mapStateToProps = state => ({
   contractList: state.pages.contractList.result.map((id) => {
     console.log('this is id ', id);
@@ -60,6 +70,6 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  null
+  mapDispatchToProps
 )(Dashboard);
 
