@@ -4,11 +4,13 @@ import Logo from './assets/Docco.png';
 import userImg from './assets/user-image.png';
 
 const NavBar = props => {
+  console.log(props);
   const logo = Logo;
   const userPic = userImg;
-  const { img, name } = props;
+  const { img, name, history } = props;
   const logout = () => {
     localStorage.removeItem('token');
+    history.push('/');
   }
 
   return (

@@ -12,6 +12,14 @@ class Login extends Component {
     user: {}
   };
 
+  componentDidUpdate () {
+    const {user,history} = this.props;
+    if(user && user.token) {
+      localStorage.setItem('token', user.token)
+      history.push('/dashboard');
+    }
+  }
+
   handleChange = e => {
     const { user } = this.state;
     this.setState({
@@ -133,7 +141,7 @@ class Login extends Component {
 }
 
 const mapStateToProps = state => ({
-  entities: state.entities
+  user: state.authentication
 });
 
 const mapDispatchToProps = dispatch => ({

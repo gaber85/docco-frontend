@@ -12,6 +12,14 @@ class SignUp extends Component {
     user: {}
   };
 
+  componentDidUpdate () {
+    const {user,history} = this.props;
+    if(user && user.token) {
+      localStorage.setItem('token', user.token)
+      history.push('/dashboard');
+    }
+  }
+
   //  updates state upon input value change
   handleChange = e => {
     const { user } = this.state;
@@ -184,6 +192,10 @@ class SignUp extends Component {
   }
 };
 
+const mapStateToProps = state => ({
+  user: state.authentication
+});
+
 
 const mapDispatchToProps = dispatch => ({
   signUpAct: obj => dispatch(signUp(obj))
@@ -191,5 +203,5 @@ const mapDispatchToProps = dispatch => ({
 
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps)(SignUp);
