@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
 import SearchBar from '../../components/SearchBar';
 import ContractList from '../../components/ContractList';
@@ -37,8 +38,8 @@ class Dashboard extends Component {
         </DashboardMainRow>
         <DashboardBottomRow>
           <AddNegotiation>
-            <PlusButton size="2" />
-            <AddNegotiationText>Create New Negotiation</AddNegotiationText>
+            <NavLink className="createNewNegotiationLink" exact to="/create-new" ><PlusButton size="2" /></NavLink>
+            <NavLink className="createNewNegotiationLink" exact to="/create-new" ><AddNegotiationText>Create New Negotiation</AddNegotiationText></NavLink>
           </AddNegotiation>
           <InactiveNegotiations
             role="button"
