@@ -11,10 +11,11 @@
   "dependencies": {
     "@emotion/core": "^10.0.6",
     "@emotion/styled": "^10.0.7",
+    "base-64": "^0.1.0",
+    "diff": "^4.0.1",
     "domador": "^2.4.4",
     "emotion": "^10.0.6",
     "megamark": "^3.3.0",
-    "base-64": "^0.1.0",
     "normalizr": "^3.3.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
