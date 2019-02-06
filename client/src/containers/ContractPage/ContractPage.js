@@ -13,7 +13,8 @@ class ContractPage extends Component {
 
   componentDidMount () {
     // will be written out of this.props.match.params
-    const id = 1;
+    const content = {}; // eslint-disable-line
+    const id = 31;
     const { getOneAct } = this.props;
     const api = {
       route: `negotiations/${id}`,
@@ -24,33 +25,27 @@ class ContractPage extends Component {
 
   render () {
 
-    const { contract } = this.props;
+    const { contract, yourContent, theirContent, yourDetails, theirDetails } = this.props; // eslint-disable-line
 
-    let content = '';
-    let yourText = '';
-    let theirText = '';
-    const {yourDetails, theirDetails, yourContent, theirContent} = contract || {};
     if (contract) {
-      yourText = yourContent.content;
-      theirText = theirContent.content;
-      if (contract.youEditedLast) content = yourContent.content;
-      else content = theirContent.content;
+      if (contract.youEditedLast) {
+        this.content = theirContent.content;
+      } else {
+        this.content = yourContent.content;
       }
-
-      // yourText and theirText to be passed down to diff Component
-
+    }
     return (
       <div className="main-container">
         <div className="team-section">
-          <TeamSection yourDetails={yourDetails || 'No Party'} theirDetails={theirDetails || 'No Party'} />
+          <TeamSection yourDetails={ this.yourDetails || 'No Party' } theirDetails={ this.theirDetails || 'No Party' } />
         </div>
         <div className="contract-display">
           <div className="container-top">
-            <div className="title">Apple Contract</div>
+            <div className="title">Contract Editor{ this.contract && this.contract.title }</div>
             <div className="search-bar-section"><SearchBar /></div>
           </div>
           <div className="contract">
-            <ContractSection content={content} />
+            <ContractSection content={ this.content } />
             <div className="sidebar-controls">
               <SideBar />
             </div>
@@ -61,28 +56,28 @@ class ContractPage extends Component {
   }
 }
 
-
 const mapStateToProps = (state, ownProps) => { // eslint-disable-line
 
-  const contract = state.entities.negotiations[2]; //  should be changed to ownProps.match.params.id
-  if(contract) {
-  const yourDetails = state.entities.parties[contract.yourDetails];
-  const theirDetails = state.entities.parties[contract.theirDetails];
-  const yourContent = state.entities.proposals[contract.yourContent];
-  const theirContent = state.entities.proposals[contract.theirContent];
-  return {
-    contract,
-    yourDetails,
-    theirDetails,
-    yourContent,
-    theirContent
+  const contract = state.entities.negotiations[31]; //  should be changed to ownProps.match.params.id
+
+  if (contract) {
+    const yourDetails = state.entities.parties[contract.yourDetails];
+    const theirDetails = state.entities.parties[contract.theirDetails];
+    const yourContent = state.entities.proposals[contract.yourContent];
+    const theirContent = state.entities.proposals[contract.theirContent];
+    return {
+      contract,
+      yourDetails,
+      theirDetails,
+      yourContent,
+      theirContent
+    }
   }
-}
-return null;
+  return {};
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  getOneAct: (x) => dispatch(getOne(x))
+  getOneAct: (api) => dispatch(getOne(api))
 })
 
 export default connect(
