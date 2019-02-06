@@ -20,17 +20,14 @@ export class CreateNegotiation extends Component {
         files: [],
         partyBEmail: ''
       },
-      checked: false
     };
   }
 
   componentDidUpdate() {
     const { negotiations, history } = this.props;
-    const { document, checked } = this.state;
+    const { document } = this.state;
     const negotiationArr = Object.values(negotiations);
     const specificNegotiation = negotiationArr[negotiationArr.length - 1];
-    console.log('this is the negotation', specificNegotiation);
-    console.log('this is a list of negotiations', negotiationArr);
     if (specificNegotiation && specificNegotiation.title === document.title) {
       history.push(`/contract/${specificNegotiation.id}`);
     }
@@ -64,7 +61,6 @@ export class CreateNegotiation extends Component {
       body: JSON.stringify(newNeg)
     };
     postIt(api);
-    this.setState({ checked: true });
   };
 
   handleFileContent = content => {
