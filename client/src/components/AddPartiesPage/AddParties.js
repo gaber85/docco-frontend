@@ -13,11 +13,11 @@ const AddParties = props => {
 
   return (
     <AddPartiesContainer>
-      <Title>Add party to negotiation</Title>
+      <Title>Add Party to Negotiation</Title>
       <form 
       css={css`
           display: flex;
-          max-width: 400px;
+          max-width: 30%;
           flex-direction: column;
           width: 75vw;
           flex: 1;
@@ -44,13 +44,13 @@ const AddPartiesContainer = styled('div')`
   align-items: center;
 `;
 const Title = styled('div')`
-font-size: 7vw;
+font-size: 6vw;
 text-align: center;
 margin-bottom: 40px;
 `;
 const BackAndNextButtons = styled('div')`
   display: flex;
-  width: 80%;
+  width: 30%;
   text-align: center;
   justify-content: space-around;
   padding: 30px;
