@@ -1,15 +1,32 @@
+import { connect } from 'react-redux';
 import React, { Component } from 'react';
 import './DifferencesView.css';
+import { getOne } from '../../redux/actions';
+import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
 
 const Diff = require('diff');
 
 class DifferencesView extends Component {
 
+  componentDidMount () {
+    // will be written out of this.props.match.params
+    const content = {}; // eslint-disable-line
+    const { match } = this.props;
+    const { getOneAct } = this.props;
+    const api = {
+      route: `negotiations/${match.params.id}`,
+      schema: negotiationSchema
+    }
+
+    const { contract, yourContent, theirContent, yourDetails, theirDetails } = this.props; // eslint-disable-line
+    if (contract && yourContent && theirContent) {
+      const content = { yourContent: yourContent.content, theirContent: theirContent.content }
+    }
+  }
+
   getAdditionsByLine() {
-    const { content } = this.props;
-    console.log(content);
-    const { yourContent, theirContent } = content;
-    const changes = Diff.diffTrimmedLines(yourContent, theirContent);
+    const { yourContent, theirContent } = this.props;
+    const changes = Diff.diffTrimmedLines(yourContent.content, theirContent.content);
     const changedString = changes.map(change => {
       const diff = change.added ? 'added' : change.removed ? 'hidden' : 'stays';
       return <span id={diff}>{change.value}</span>;
@@ -18,13 +35,13 @@ class DifferencesView extends Component {
   }
 
   getAdditionsByWord() {
-    const { content } = this.props;
-    const { yourContent, theirContent } = content;
-    const changes = Diff.diffWordsWithSpace(yourContent, theirContent);
+    const { yourContent, theirContent } = this.props;
+    const changes = Diff.diffWordsWithSpace(yourContent.content, theirContent.content);
     const changedString = changes.map(change => {
       const diff = change.added ? 'added' : change.removed ? 'hidden' : 'stays';
       return <span id={diff}>{change.value}</span>;
     });
+
     console.log('additions', changes.filter(change => change.added).length);
     console.log('deletions', changes.filter(change => change.removed).length);
     return changedString;
@@ -32,8 +49,8 @@ class DifferencesView extends Component {
 
   getSubtractionsByLine() {
     const { content } = this.props;
-    const { yourContent, theirContent } = content;
-    const changes = Diff.diffTrimmedLines(yourContent, theirContent);
+    const { yourContent, theirContent } = this.props;
+    const changes = Diff.diffTrimmedLines(yourContent.content, theirContent.content);
     const changedString = changes.map(change => {
       const diff = change.added
         ? 'hidden'
@@ -47,8 +64,8 @@ class DifferencesView extends Component {
 
   getSubtractionsByWord() {
     const { content } = this.props;
-    const { yourContent, theirContent } = content;
-    const changes = Diff.diffWordsWithSpace(yourContent, theirContent);
+    const { yourContent, theirContent } = this.props;
+    const changes = Diff.diffWordsWithSpace(yourContent.content, theirContent.content);
     const changedString = changes.map(change => {
       const diff = change.added
         ? 'hidden'
@@ -78,12 +95,12 @@ class DifferencesView extends Component {
               {this.getAdditionsByLine()}
             </div>
             <div className="diff right hidden-content">
-              {this.getSubtractionsByLine()}
+            {this.getSubtractionsByLine()}
             </div>
           </div>
           <div className="differences visible">
-            <div className="diff left">{this.getAdditionsByWord()}</div>
-            <div className="diff right">{this.getSubtractionsByWord()}</div>
+            {<div className="diff left">{this.getAdditionsByWord()}</div>}
+            {<div className="diff right">{this.getSubtractionsByWord()}</div>}
           </div>
         </div>
       </div>
@@ -91,4 +108,26 @@ class DifferencesView extends Component {
   }
 }
 
-export default DifferencesView;
+const mapStateToProps = (state, ownProps) => { // eslint-disable-line
+
+  const contract = state.entities.negotiations[68]; //  should be changed to ownProps.match.params.id
+  if (contract) {
+    const yourContent = state.entities.proposals[contract.yourContent];
+    const theirContent = state.entities.proposals[contract.theirContent];
+    return {
+      contract,
+      yourContent,
+      theirContent
+    }
+  }
+  return {};
+}
+
+const mapDispatchToProps = (dispatch) => ({
+  getOneAct: (api) => dispatch(getOne(api))
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(DifferencesView);

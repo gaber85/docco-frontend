@@ -50,9 +50,8 @@
   white-space: pre;
 }
 
-.diff {
-  line-height: 1.3em;
-  width: 50vw;
+.diff p {
+  flex-wrap: wrap;
 }
 
 .diff.right {

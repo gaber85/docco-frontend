@@ -11,8 +11,7 @@ import ContractPage from './containers/ContractPage';
 import LandingPage from './containers/LandingPage';
 import Dashboard from './containers/Dashboard';
 import SignUp from './components/SignUp';
-import ContractBrancher from './components/ContractBrancher/ContractBrancher';
-
+import DifferencesView from './components/DifferencesView/DifferencesView';
 // eslint-disable-next-line
 class App extends React.Component {
   componentDidMount() {
@@ -62,7 +61,7 @@ class App extends React.Component {
           <PrivateRoute path="/create-new" component={CreateNegotiation} />
           <PrivateRoute path="/contract/:id" component={ContractPage} />
           <PrivateRoute path="/contractid" component={ContractPage} />
-          <PrivateRoute path="/diff" component={ContractBrancher} />
+          <PrivateRoute path="/diff" component={DifferencesView} />
         </div>
       </Router>
     );

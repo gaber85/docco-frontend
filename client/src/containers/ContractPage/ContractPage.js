@@ -10,6 +10,10 @@ import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
 import ContractBrancher from '../../components/ContractBrancher/ContractBrancher';
 // eslint-disable-next-line
 class ContractPage extends Component {
+  constructor(props) {
+    super(props);
+    this.toggleView = this.toggleView.bind(this);
+  }
 
   componentDidMount () {
     // will be written out of this.props.match.params
@@ -21,6 +25,11 @@ class ContractPage extends Component {
       schema: negotiationSchema
     }
     getOneAct(api);
+  }
+
+  toggleView() {
+    const { match } = this.props;
+    this.props.history.push(`/diff/${68}`);
   }
 
   render () {
@@ -48,7 +57,7 @@ class ContractPage extends Component {
           <div className="contract">
             <ContractBrancher {...this.props} />
             <div className="sidebar-controls">
-              <SideBar />
+              <SideBar toggleChanges={this.toggleView}/>
             </div>
           </div>
         </div>
