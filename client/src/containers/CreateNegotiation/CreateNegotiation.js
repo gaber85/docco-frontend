@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import styled from '@emotion/styled';
 import './CreateNegotiation.css';
 import TitleAndDescriptionPage from '../../components/TitleAndDescriptionPage';
 import ProgressTracker from '../../components/ProgressTracker';
 import AddParties from '../../components/AddPartiesPage';
 import AddFiles from '../../components/AddFiles';
 import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
-import { postNeg } from '../../redux/actions';
+import { postNeg } from '../../redux/actions'
 
 export class CreateNegotiation extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -52,7 +52,7 @@ export class CreateNegotiation extends Component {
       title: document.title,
       description: document.description,
       partyBEmail: document.partyBEmail,
-      content: document.files[0]
+      content: document.files[0],
     };
     const api = {
       route: 'negotiations',
@@ -65,9 +65,7 @@ export class CreateNegotiation extends Component {
 
   handleFileContent = content => {
     const { document } = this.state;
-    this.setState({
-      document: { ...document, files: [...document.files, content] }
-    });
+    this.setState({ document: { ...document, files: [...document.files, content] }});
   };
 
   render() {
@@ -111,31 +109,23 @@ export class CreateNegotiation extends Component {
         break;
     }
     return (
-      <CreateNegotiationContainer>
+      <div>
         <StepsTracker />
         {content}
-      </CreateNegotiationContainer>
+      </div>
     );
   }
 }
 
-const CreateNegotiationContainer = styled('div')`
-  background-image: linear-gradient(to left top, #3498db, rgb(174, 217, 247));
-  background-repeat: no-repeat;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-`;
+const mapStateToProps = (state) => ({
+  negotiations: state.entities.negotiations,
+})
 
-const mapStateToProps = state => ({
-  negotiations: state.entities.negotiations
-});
-
-const mapDispatchToProps = dispatch => ({
-  postIt: api => dispatch(postNeg(api))
-});
+const mapDispatchToProps = (dispatch) => ({
+  postIt: (api) => dispatch(postNeg(api))
+})
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(CreateNegotiation);
+)(CreateNegotiation)
