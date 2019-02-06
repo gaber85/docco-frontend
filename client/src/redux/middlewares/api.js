@@ -24,8 +24,8 @@ const apiMiddleware = store => next => action => {
   })
 
 
-  const baseURL = "http://localhost:3000"
-  fetch(`${baseURL}/${api.route}`, {
+  const baseURL = "http://192.168.1.145:3000/"
+  fetch(`${baseURL}${api.route}`, {
 
     method: api.method || 'GET',
     headers: {
