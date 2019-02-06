@@ -29,7 +29,9 @@ export class CreateNegotiation extends Component {
     const { document, checked } = this.state;
     const negotiationArr = Object.values(negotiations);
     const specificNegotiation = negotiationArr[negotiationArr.length - 1];
-    if (checked && specificNegotiation.title === document.title) {
+    console.log('this is the negotation', specificNegotiation);
+    console.log('this is a list of negotiations', negotiationArr);
+    if (specificNegotiation && specificNegotiation.title === document.title) {
       history.push(`/contract/${specificNegotiation.id}`);
     }
   }
