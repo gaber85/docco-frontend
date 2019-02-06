@@ -31,8 +31,8 @@ const AddParties = props => {
         />
       </form>
       <BackAndNextButtons>
-        <MainButton text="Back" align="flex-start" width="175px" click={handleClickBack} />
-        <MainButton text="Create negotiation" width="175px" click={handleClick} />
+        <MainButton text="Back" align="flex-start" margin="10px" width="175px" click={handleClickBack} />
+        <MainButton text="Create negotiation" margin="10px" width="175px" click={handleClick} />
       </BackAndNextButtons>
     </AddPartiesContainer>
   );
@@ -50,10 +50,11 @@ margin-bottom: 40px;
 `;
 const BackAndNextButtons = styled('div')`
   display: flex;
-  width: 30%;
-  text-align: center;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 30px;
+  padding-right: 0;
+  padding-left: 0;
 `;
 const Input = styled('input')`
   margin-bottom: 10px;

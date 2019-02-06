@@ -27,15 +27,15 @@
   width: 100%;
 }
 
-.title {
-  font-size: 1em;
+/* .title { */
+  /* font-size: 1em;
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
-  padding: 10px;
-  background: lightgray;
-}
+  padding: 10px; */
+  /* background: lightgray; */
+/* } */
 
 .differences {
   top: 110px;
