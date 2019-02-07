@@ -17,19 +17,20 @@ class DifferencesView extends Component {
   }
 
   componentDidMount () {
-    // will be written out of this.props.match.params
-    const { match } = this.props;
-    const { getOneAct } = this.props;
+    const { match, getOneAct } = this.props;
+    console.log('this is the id', match.params.id);
     const api = {
       route: `negotiations/${match.params.id}`,
       schema: negotiationSchema
     }
+    getOneAct(api);
 
     const { contract, yourContent, theirContent, yourDetails, theirDetails } = this.props; // eslint-disable-line
     if (contract && yourContent && theirContent) {
       const content = { yourContent: yourContent.content, theirContent: theirContent.content }
-      this.setState({content});
+      this.setState({ content });
     }
+
   }
 
   getChanges(options) {
@@ -88,7 +89,7 @@ class DifferencesView extends Component {
 
 const mapStateToProps = (state, ownProps) => { // eslint-disable-line
 
-  const contract = state.entities.negotiations[31]; //  should be changed to ownProps.match.params.id
+  const contract = state.entities.negotiations[this.props.match.params.id]; //  should be changed to ownProps.match.params.id
   if (contract) {
     const yourContent = state.entities.proposals[contract.yourContent];
     const theirContent = state.entities.proposals[contract.theirContent];

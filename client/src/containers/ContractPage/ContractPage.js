@@ -6,19 +6,17 @@ import TeamSection from '../../components/TeamSection';
 import SideBar from '../../components/SideBar';
 import { getOne } from '../../redux/actions';
 import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
-import ContractBrancher from '../../components/ContractBrancher/ContractBrancher';
-// eslint-disable-next-line
+import EditorView from '../../components/EditorView/EditorView';
+
 class ContractPage extends Component {
+
   constructor(props) {
     super(props);
     this.toggleView = this.toggleView.bind(this);
   }
 
   componentDidMount () {
-    // will be written out of this.props.match.params
-    const content = {}; // eslint-disable-line
-    const { match } = this.props;
-    const { getOneAct } = this.props;
+    const { match, getOneAct } = this.props;
     const api = {
       route: `negotiations/${match.params.id}`,
       schema: negotiationSchema
@@ -27,34 +25,26 @@ class ContractPage extends Component {
   }
 
   toggleView() {
-    const { match } = this.props; // eslint-disable-line
-    this.props.history.push(`/diff/${31}`); // eslint-disable-line
+    const { contract } = this.props;
+    this.props.history.push(`/diff/${contract.id}`); // eslint-disable-line
   }
 
   render () {
 
-    const { contract, yourContent, theirContent, yourDetails, theirDetails } = this.props; // eslint-disable-line
-
-    if (contract && (yourContent || theirContent)) {
-      if (contract.youEditedLast) {
-        this.content = yourContent.content;
-      } else {
-        this.content = theirContent.content;
-      }
-    }
+    const { details, contract, content } = this.props;
 
     return (
       <div className="main-container">
         <div className="team-section">
-          <TeamSection yourDetails={ this.yourDetails || 'No Party' } theirDetails={ this.theirDetails || 'No Party' } />
+          <TeamSection yourDetails={ details && details.yours } theirDetails={ details && details.theirs } />
         </div>
         <div className="contract-display">
           <div className="container-top">
-            <div className="title">Apple Contract{ this.contract && this.contract.title }</div>
+            <div className="title">Negotiation: { contract && contract.title }</div>
             <div className="search-bar-section"><SearchBar /></div>
           </div>
           <div className="contract">
-            <ContractBrancher {...this.props} />
+            <EditorView content={ content } />
             <div className="sidebar-controls">
               <SideBar toggleChanges={this.toggleView}/>
             </div>
@@ -73,10 +63,21 @@ const mapStateToProps = (state, ownProps) => { // eslint-disable-line
     const theirDetails = state.entities.parties[contract.theirDetails];
     const yourContent = state.entities.proposals[contract.yourContent];
     const theirContent = state.entities.proposals[contract.theirContent];
+
+    const details = {
+      yours: yourDetails,
+      theirs: theirDetails,
+    }
+    let content = '';
+    if (contract && contract.youEditedLast) {
+      content = yourContent.content; // eslint-disable-line
+    } else {
+      content = theirContent.content; // eslint-disable-line
+    }
     return {
+      content,
       contract,
-      yourDetails,
-      theirDetails,
+      details,
       yourContent,
       theirContent
     }

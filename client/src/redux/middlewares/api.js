@@ -24,7 +24,7 @@ const apiMiddleware = store => next => action => {
   })
 
 
-  const baseURL = "http://localhost:3000/"
+  const baseURL = "http://192.168.1.145:3000/"
   // eslint-disable-next-line
   fetch(`${baseURL}${api.route}`, {
 
