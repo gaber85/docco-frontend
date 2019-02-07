@@ -6,10 +6,8 @@ import './EditorView.css';
 
 class ContractSection extends Component {
 
-  textareaRef = React.createRef();
-
   componentDidMount() {
-    const textarea = this.textareaRef.current;
+    const textarea = this.props.forwardedRef.current;
 
     const commandButtonsStyle = {
       bold: { hidden: true }, // { innerHTML: '<i class="fas fa-bold"/>', className: 'btn-link' },
@@ -53,15 +51,16 @@ class ContractSection extends Component {
 
   componentDidUpdate() {
     // eslint-disable-next-line
-    woofmark.find(this.textareaRef.current).value(this.props.content);
+    woofmark.find(this.props.forwardedRef.current).value(this.props.content);
   }
+
 
   render() {
     const { content } = this.props || 'No Content';
     return (
       <div className="contract-container">
         <div className="content-body">
-          <textarea className="main-textarea" ref={ this.textareaRef }>{ content }</textarea>
+          <textarea className="main-textarea" ref={ this.props.forwardedRef }>{ content }</textarea>
         </div>
       </div>
     );

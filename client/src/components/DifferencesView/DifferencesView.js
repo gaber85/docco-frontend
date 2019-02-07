@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import './DifferencesView.css';
 import { getOne } from '../../redux/actions';
 import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
@@ -55,7 +56,7 @@ class DifferencesView extends Component {
       <div className="container">
         <div className="bar">
           <div id="contractInfo">
-            <i className="fas fa-arrow-left" id="backIcon"/> { this.props.title || "Agreement on Doccos development team execution method"}
+            <Link exact to={`/contract/:${this.props.contract.id}`}> <i className="fas fa-arrow-left" id="backIcon"/> { this.props.title || "Agreement on Doccos development team execution method"}</Link>
           </div>
           <div className="title">
             <div id="yours">{additionsByWord.additionCount} Deletions</div>

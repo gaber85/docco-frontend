@@ -2,7 +2,7 @@ import React from 'react';
 import './SideBar.css';
 
 const SideBar = (props) => {
-  const { clickUp, clickDown, table, toggleChanges, saveChanges } = props;
+  const { clickUp, clickDown, table, toggleChanges, saveContract } = props;
     return (
       <div className="side-bar">
         <div className="tooltip">
@@ -22,11 +22,11 @@ const SideBar = (props) => {
         <span className="tooltiptext">View Changes</span>
         </div>
         <div className="tooltip">
-        <i role='button' tabIndex='-1' className="far fa-save icons" onClick={saveChanges} onKeyPress={saveChanges}/>
+        <i role='button' tabIndex='-1' className="far fa-save icons" onClick={saveContract} onKeyPress={saveContract}/>
         <span className="tooltiptext">Save Changes</span>
         </div>
       </div>
     );
-}
+};
 
 export default SideBar;

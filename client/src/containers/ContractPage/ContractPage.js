@@ -5,17 +5,21 @@ import './ContractPage.css';
 import SearchBar from '../../components/SearchBar';
 import TeamSection from '../../components/TeamSection';
 import SideBar from '../../components/SideBar';
-import { getOne } from '../../redux/actions';
+import { getOne, saveNegotiation } from '../../redux/actions';
 import NavBar from '../../components/NavBar';
 import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
+import EditorView from '../../components/EditorView/EditorView';
+import woofmark from 'woofmark';
 import { gabeImg } from './gabe-image.jpg';
-import ContractBrancher from '../../components/ContractBrancher/ContractBrancher';
+
 // eslint-disable-next-line
 class ContractPage extends Component {
 
   constructor(props) {
     super(props);
     this.toggleView = this.toggleView.bind(this);
+
+    this.editorRef = React.createRef();
   }
 
   componentDidMount () {
@@ -27,55 +31,53 @@ class ContractPage extends Component {
     getOneAct(api);
   }
 
+  getWoofmarkText = () => {
+    return woofmark.find(this.editorRef.current).value();
+  }
+
+  handleSaveContract = () => {
+    const { saveContractAct, contract } = this.props;
+    const text = {content: this.getWoofmarkText(), dealAgreed: false};
+    const api = {
+      route: `negotiations/publish/${contract.id}`,
+      method: 'POST',
+      body: JSON.stringify(text)
+    };
+    saveContractAct(api);
+  };
+
   toggleView() {
     const { contract } = this.props;
     this.props.history.push(`/diff/${contract.id}`); // eslint-disable-line
   }
 
-  render() {
-    const {
-      contract,
-      yourContent,
-      theirContent,
-      yourDetails,
-      theirDetails
-    } = this.props; // eslint-disable-line
+  render () {
 
-    if (contract && (yourContent || theirContent)) {
-      if (contract.youEditedLast) {
-        this.content = yourContent.content;
-      } else {
-        this.content = theirContent.content;
-      }
-    }
+    const { details, contract, content } = this.props;
 
     return (
+
       <ContractContainer>
         <NavBar img={gabeImg} name="Gabe Riera" />
-        <div className="main-container">
-          <div className="team-section">
-            <TeamSection
-              yourDetails={this.yourDetails || 'No Party'}
-              theirDetails={this.theirDetails || 'No Party'}
-            />
+      <div className="main-container">
+        <div className="team-section">
+          <TeamSection yourDetails={ details && details.yours } theirDetails={ details && details.theirs } />
+        </div>
+        <div className="contract-display">
+          <div className="container-top">
+            <ContractTitle>
+            <div className="title">Negotiation: { contract && contract.title }</div>
+            </ContractTitle>
+            <div className="search-bar-section"><SearchBar /></div>
           </div>
-          <div className="contract-display">
-            <div className="container-top">
-              <ContractTitle>
-                Apple Contract{this.contract && this.contract.title}
-              </ContractTitle>
-              <div className="search-bar-section">
-                <SearchBar />
-              </div>
-            </div>
-            <div className="contract">
-              <ContractBrancher {...this.props} />
-              <div className="sidebar-controls">
-                <SideBar toggleChanges={this.toggleView} />
-              </div>
+          <div className="contract">
+            <EditorView content={ content } forwardedRef={this.editorRef}/>
+            <div className="sidebar-controls">
+              <SideBar saveContract={this.handleSaveContract} toggleChanges={this.toggleView} />
             </div>
           </div>
         </div>
+      </div>
       </ContractContainer>
     );
   }
@@ -83,7 +85,6 @@ class ContractPage extends Component {
 
 const mapStateToProps = (state, ownProps) => {
   // eslint-disable-line
-
   const contract = state.entities.negotiations[ownProps.match.params.id]; //  should be changed to ownProps.match.params.id
   if (contract) {
     const yourDetails = state.entities.parties[contract.yourDetails];
@@ -123,7 +124,8 @@ const ContractContainer = styled('div')`
 `;
 
 const mapDispatchToProps = dispatch => ({
-  getOneAct: api => dispatch(getOne(api))
+  getOneAct: api => dispatch(getOne(api)),
+  saveContractAct: api => dispatch(saveNegotiation(api))
 });
 
 export default connect(

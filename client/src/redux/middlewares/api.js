@@ -17,7 +17,6 @@ const apiMiddleware = store => next => action => {
     defaultHeaders.authorization = `Bearer ${token}`
   }
 
-
   // THE FETCH
   next({
     type: `${action.type}_PENDING`
