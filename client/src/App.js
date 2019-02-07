@@ -62,7 +62,7 @@ class App extends React.Component {
           <PrivateRoute path="/create-new" component={CreateNegotiation} />
           <PrivateRoute path="/contract/:id" component={ContractPage} />
           <PrivateRoute path="/contractid" component={ContractPage} />
-          <PrivateRoute path="/diff" component={DifferencesView} />
+          <PrivateRoute path="/diff/:id" component={DifferencesView} />
         </div>
       </Router>
     );

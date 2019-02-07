@@ -22,7 +22,9 @@ const apiMiddleware = store => next => action => {
     type: `${action.type}_PENDING`
   })
 
-  const baseURL = "http://192.168.1.145:3000/";
+
+  const baseURL = "http://192.168.1.145:3000/"
+  // eslint-disable-next-line
   fetch(`${baseURL}${api.route}`, {
 
     method: api.method || 'GET',

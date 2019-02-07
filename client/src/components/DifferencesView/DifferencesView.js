@@ -17,25 +17,18 @@ class DifferencesView extends Component {
   }
 
   componentDidMount () {
-    // will be written out of this.props.match.params
-    const { match } = this.props;
-    const { getOneAct } = this.props;
+    const { match, getOneAct } = this.props;
     const api = {
       route: `negotiations/${match.params.id}`,
       schema: negotiationSchema
     }
-
-    const { contract, yourContent, theirContent, yourDetails, theirDetails } = this.props; // eslint-disable-line
-    if (contract && yourContent && theirContent) {
-      const content = { yourContent: yourContent.content, theirContent: theirContent.content }
-      this.setState({content});
-    }
+    getOneAct(api);
   }
 
   getChanges(options) {
     const { yourContent, theirContent } = this.props;
     const { diffingMode, additions } = options;
-    const changes = Diff[diffingMode](yourContent.content, theirContent.content);
+    const changes = Diff[diffingMode](yourContent && yourContent.content || '', theirContent && theirContent.content || '');
     let diff;
     const content = changes.map(change => {
       if (additions) {
@@ -51,16 +44,18 @@ class DifferencesView extends Component {
   }
 
   render() {
-    const deletionsByWord = this.getChanges({additions: false, diffingMode: 'diffWordsWithSpace'});
-    const deletionsByLine = this.getChanges({additions: false, diffingMode: 'diffTrimmedLines'});
-    const additionsByWord = this.getChanges({additions: true, diffingMode: 'diffWordsWithSpace'});
-    const additionsByLine = this.getChanges({additions: true, diffingMode: 'diffTrimmedLines'});
+    if (this.props.contract) {
+      const deletionsByWord = this.getChanges({additions: false, diffingMode: 'diffWordsWithSpace'});
+      const deletionsByLine = this.getChanges({additions: false, diffingMode: 'diffTrimmedLines'});
+      const additionsByWord = this.getChanges({additions: true, diffingMode: 'diffWordsWithSpace'});
+      const additionsByLine = this.getChanges({additions: true, diffingMode: 'diffTrimmedLines'});
+
 
     return (
       <div className="container">
         <div className="bar">
           <div id="contractInfo">
-            <i className="fas fa-arrow-left" id="backIcon"/> {this.props.title || "Agreement on Doccos development team execution method"}
+            <i className="fas fa-arrow-left" id="backIcon"/> { this.props.title || "Agreement on Doccos development team execution method"}
           </div>
           <div className="title">
             <div id="yours">{additionsByWord.additionCount} Deletions</div>
@@ -83,15 +78,27 @@ class DifferencesView extends Component {
         </div>
       </div>
     );
+  } else {
+    return (
+      <div>LOADING</div>
+    )
   }
+}
 }
 
 const mapStateToProps = (state, ownProps) => { // eslint-disable-line
 
-  const contract = state.entities.negotiations[31]; //  should be changed to ownProps.match.params.id
+  const contract = state.entities.negotiations[ownProps.match.params.id]; //  should be changed to ownProps.match.params.id
+  let yourContent = {
+    content: '',
+  };
+  let theirContent = {
+    content: '',
+  };
+
   if (contract) {
-    const yourContent = state.entities.proposals[contract.yourContent];
-    const theirContent = state.entities.proposals[contract.theirContent];
+    yourContent = state.entities.proposals[contract.yourContent];
+    theirContent = state.entities.proposals[contract.theirContent];
     return {
       contract,
       yourContent,
