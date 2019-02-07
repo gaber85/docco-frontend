@@ -20,6 +20,16 @@
   line-height: 20px;
 }
 
+#backIcon {
+  margin-right: 10px;
+  color: #3498DB;
+}
+
+#backIcon:hover {
+  transform: scale(1.2);
+  color: #F1C40F;
+}
+
 .container {
   flex-direction: column;
   background-color: #f4f4f4;
@@ -27,15 +37,15 @@
   width: 100%;
 }
 
-/* .title { */
-  /* font-size: 1em;
+.title {
+  font-size: 1em;
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
-  padding: 10px; */
-  /* background: lightgray; */
-/* } */
+  padding: 10px;
+  background: lightgray;
+}
 
 .differences {
   top: 110px;

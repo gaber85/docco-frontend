@@ -29,7 +29,7 @@ class ContractPage extends Component {
 
   toggleView() {
     const { match } = this.props;
-    this.props.history.push(`/diff/${68}`);
+    this.props.history.push(`/diff/${88}`);
   }
 
   render () {
