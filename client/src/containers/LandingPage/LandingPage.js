@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { ParallaxBanner } from 'react-scroll-parallax';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import './LandingPage.css';
-import { connect } from 'react-redux';
 import MainButton from '../../components/MainButton'
 import supImg from './Docco-Hero.jpg';
 import logo from './Docco.png';
@@ -12,12 +12,20 @@ import { logOut } from '../../redux/actions';
 class LandingPage extends Component {
   render() {
     const {authentication, logOutAct} = this.props;
-    console.log(this.props);
     return (
       <div className="Landing-page-container">
         <div className="Landing-page-login">
           <img className="small-logo" alt="logo" src={logo} />
-          {authentication.token ? <div className="login"><Link className="white-link" to='/dashboard'>DashBoard</Link> | <div className="white-link" role="button" onClick={logOutAct} onKeyPress={logOutAct} tabIndex="-1" >Logout</div></div> : <div className="login"><Link className="white-link" to='/sign-up'>Sign-up</Link> | <Link className="white-link" to='/login'>Login</Link></div>}
+          {authentication.token ? 
+            (<div className="login">
+              <Link className="white-link" to='/dashboard'>DashBoard</Link> | 
+              <div className="white-link" role="button" onClick={logOutAct} onKeyPress={logOutAct} tabIndex="-1" >Logout</div>
+            </div>)
+          : (<div className="login">
+              <Link className="white-link" to='/sign-up'>Sign-up</Link> |
+              <Link className="white-link" to='/login'>Login</Link>
+            </div>)
+          }
         </div>
         <div className="landing-page-header">
           <div className="comp-name">Docco</div>

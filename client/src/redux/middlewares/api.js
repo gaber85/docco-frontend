@@ -11,7 +11,7 @@ const apiMiddleware = store => next => action => {
     Accept: 'application/json',
     'Content-Type': 'application/json'
   };
-
+// eslint-disable-next-line
   const token = store.getState().authentication.token;
   if (token) {
     defaultHeaders.authorization = `Bearer ${token}`
@@ -24,7 +24,8 @@ const apiMiddleware = store => next => action => {
   })
 
 
-  const baseURL = "http://192.168.1.145:3000/"
+  const baseURL = "http://localhost:3000/"
+  // eslint-disable-next-line
   fetch(`${baseURL}${api.route}`, {
 
     method: api.method || 'GET',
