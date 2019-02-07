@@ -8,7 +8,6 @@ import SideBar from '../../components/SideBar';
 import { getOne } from '../../redux/actions';
 import NavBar from '../../components/NavBar';
 import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
-
 import { gabeImg } from './gabe-image.jpg';
 import ContractBrancher from '../../components/ContractBrancher/ContractBrancher';
 // eslint-disable-next-line
