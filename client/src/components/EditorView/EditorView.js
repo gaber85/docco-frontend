@@ -31,9 +31,9 @@ class ContractSection extends Component {
     woofmark(textarea, {
       parseMarkdown: megamark,
       parseHTML: domador,
-      wysiwyg: true,
-      html: false,
       markdown: false,
+      html: false,
+      wysiwyg: true,
       render: {
         modes: (button, id) => {
           if (modeButtonsStyle[id].innerHTML) button.innerHTML = modeButtonsStyle[id].innerHTML; //  eslint-disable-line

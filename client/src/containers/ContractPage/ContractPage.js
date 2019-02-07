@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import styled from '@emotion/styled';
 import './ContractPage.css';
 import SearchBar from '../../components/SearchBar';
 import TeamSection from '../../components/TeamSection';
 import SideBar from '../../components/SideBar';
 import { getOne, saveNegotiation } from '../../redux/actions';
+import NavBar from '../../components/NavBar';
 import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
 import EditorView from '../../components/EditorView/EditorView';
-
 import woofmark from 'woofmark';
+import { gabeImg } from './gabe-image.jpg';
 
+// eslint-disable-next-line
 class ContractPage extends Component {
 
   constructor(props) {
@@ -48,20 +51,23 @@ class ContractPage extends Component {
     this.props.history.push(`/diff/${contract.id}`); // eslint-disable-line
   }
 
-
-
   render () {
 
-    const { details, contract, content, getWoofmarkText } = this.props;
+    const { details, contract, content } = this.props;
 
     return (
+
+      <ContractContainer>
+        <NavBar img={gabeImg} name="Gabe Riera" />
       <div className="main-container">
         <div className="team-section">
           <TeamSection yourDetails={ details && details.yours } theirDetails={ details && details.theirs } />
         </div>
         <div className="contract-display">
           <div className="container-top">
+            <ContractTitle>
             <div className="title">Negotiation: { contract && contract.title }</div>
+            </ContractTitle>
             <div className="search-bar-section"><SearchBar /></div>
           </div>
           <div className="contract">
@@ -72,6 +78,7 @@ class ContractPage extends Component {
           </div>
         </div>
       </div>
+      </ContractContainer>
     );
   }
 }
@@ -105,6 +112,16 @@ const mapStateToProps = (state, ownProps) => {
   }
   return {};
 };
+
+const ContractTitle = styled('div')`
+  font-size: 30px;
+  padding-bottom: 10px;
+`;
+const ContractContainer = styled('div')`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
 
 const mapDispatchToProps = dispatch => ({
   getOneAct: api => dispatch(getOne(api)),
