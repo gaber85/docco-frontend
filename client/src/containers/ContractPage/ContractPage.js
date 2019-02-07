@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import './ContractPage.css';
 import SearchBar from '../../components/SearchBar'
 import TeamSection from '../../components/TeamSection';
-import EditorView from '../../components/EditorView';
 import SideBar from '../../components/SideBar';
 import { getOne } from '../../redux/actions';
 import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
@@ -27,8 +26,8 @@ class ContractPage extends Component {
   }
 
   toggleView() {
-    const { match } = this.props;
-    this.props.history.push(`/diff/${68}`);
+    const { match } = this.props; // eslint-disable-line
+    this.props.history.push(`/diff/${31}`); // eslint-disable-line
   }
 
   render () {

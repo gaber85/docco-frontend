@@ -9,7 +9,6 @@ import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
 import { postNeg } from '../../redux/actions';
 
 export class CreateNegotiation extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -53,7 +52,7 @@ export class CreateNegotiation extends Component {
       title: document.title,
       description: document.description,
       partyBEmail: document.partyBEmail,
-      content: document.files[0],
+      content: document.files[0]
     };
     const api = {
       route: 'negotiations',
@@ -66,7 +65,9 @@ export class CreateNegotiation extends Component {
 
   handleFileContent = content => {
     const { document } = this.state;
-    this.setState({ document: { ...document, files: [...document.files, content] }});
+    this.setState({
+      document: { ...document, files: [...document.files, content] }
+    });
   };
 
   render() {
@@ -118,15 +119,15 @@ export class CreateNegotiation extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  negotiations: state.entities.negotiations,
-})
+const mapStateToProps = state => ({
+  negotiations: state.entities.negotiations
+});
 
-const mapDispatchToProps = (dispatch) => ({
-  postIt: (api) => dispatch(postNeg(api))
-})
+const mapDispatchToProps = dispatch => ({
+  postIt: api => dispatch(postNeg(api))
+});
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(CreateNegotiation)
+)(CreateNegotiation);

@@ -1,25 +1,55 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core';
+import styled from '@emotion/styled';
 import './ContractList.css';
 // import {css,jsx} from '@emotion/core';
 
-
-export const ContractList = (props) => {
-  const {contractList} = props;
+export const ContractList = props => {
+  const { contractList } = props;
 
   // renders each contract with font awesome symbol;
   const view = contractList.map(contract => {
     return (
-      <div key={contract.id} className="my-contract">
-        <NavLink className="specificContract" exact to={`/contract/${contract.id}`}><i className="far fa-file icon-sizing" />
-        <div className="contract-title">{contract.title}</div></NavLink>
+      <div key={contract.id} alt={contract.title} className="my-contract">
+        <Link
+          css={css`
+            text-decoration: none;
+            color: #2c3e50;
+            pointer: cursor;
+          `}
+          className="specificContract"
+          to={`/contract/${contract.id}`}
+        >
+          <i
+            css={css`
+              font-size: 10vh;
+            `}
+            className="far fa-file"
+          />
+          <ContractTitle>{contract.title}</ContractTitle>
+        </Link>
       </div>
     );
   });
 
-  return <div className="contract-list">{view}</div>;
+  return <ContractListContainer>{view}</ContractListContainer>;
 };
 
-// this can be moved to the parent Container ones the structure is passed and the contracts passed as props.contractList; the pages entry can be accordingly changed to name of parent container;
+const ContractListContainer = styled('div')`
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+`;
+const ContractTitle = styled('div')`
+  text-align: center;
+  padding-top: 5px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
 
 export default ContractList;
