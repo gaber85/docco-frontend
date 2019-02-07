@@ -6,7 +6,7 @@ import ProgressTracker from '../../components/ProgressTracker';
 import AddParties from '../../components/AddPartiesPage';
 import AddFiles from '../../components/AddFiles';
 import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
-import { postNeg } from '../../redux/actions'
+import { postNeg } from '../../redux/actions';
 
 export class CreateNegotiation extends Component {
 
@@ -29,7 +29,8 @@ export class CreateNegotiation extends Component {
     const negotiationArr = Object.values(negotiations);
     const specificNegotiation = negotiationArr[negotiationArr.length - 1];
     if (specificNegotiation && specificNegotiation.title === document.title) {
-      history.push(`/contract/${specificNegotiation.id}`);
+      history.push('/dashboard')
+      // history.push(`/contract/${specificNegotiation.id}`);
     }
   }
 
