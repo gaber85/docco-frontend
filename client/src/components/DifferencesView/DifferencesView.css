@@ -57,7 +57,7 @@
 }
 
 .differences span {
-  white-space: pre;
+  white-space: pre-wrap;
 }
 
 .diff p {
