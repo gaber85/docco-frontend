@@ -7,10 +7,17 @@ import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
 const Diff = require('diff');
 
 class DifferencesView extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      content: {},
+      additions: 0,
+      deletions: 0,
+    }
+  }
 
   componentDidMount () {
     // will be written out of this.props.match.params
-    const content = {}; // eslint-disable-line
     const { match } = this.props;
     const { getOneAct } = this.props;
     const api = {
@@ -21,86 +28,57 @@ class DifferencesView extends Component {
     const { contract, yourContent, theirContent, yourDetails, theirDetails } = this.props; // eslint-disable-line
     if (contract && yourContent && theirContent) {
       const content = { yourContent: yourContent.content, theirContent: theirContent.content }
+      this.setState({content});
     }
   }
 
-  getAdditionsByLine() {
+  getChanges(options) {
     const { yourContent, theirContent } = this.props;
-    const changes = Diff.diffTrimmedLines(yourContent.content, theirContent.content);
-    const changedString = changes.map(change => {
-      const diff = change.added ? 'added' : change.removed ? 'hidden' : 'stays';
+    const { diffingMode, additions } = options;
+    const changes = Diff[diffingMode](yourContent.content, theirContent.content);
+    let diff;
+    const content = changes.map(change => {
+      if (additions) {
+        diff = change.added ? 'added' : change.removed ? 'hidden' : 'stays';
+      } else {
+        diff = change.added ? 'hidden' : change.removed ? 'removed' : 'stays';
+      }
       return <span id={diff}>{change.value}</span>;
     });
-    return changedString;
-  }
-
-  getAdditionsByWord() {
-    const { yourContent, theirContent } = this.props;
-    const changes = Diff.diffWordsWithSpace(yourContent.content, theirContent.content);
-    const changedString = changes.map(change => {
-      const diff = change.added ? 'added' : change.removed ? 'hidden' : 'stays';
-      return <span id={diff}>{change.value}</span>;
-    });
-
-    console.log('additions', changes.filter(change => change.added).length);
-    console.log('deletions', changes.filter(change => change.removed).length);
-    return changedString;
-  }
-
-  getSubtractionsByLine() {
-    const { content } = this.props;
-    const { yourContent, theirContent } = this.props;
-    const changes = Diff.diffTrimmedLines(yourContent.content, theirContent.content);
-    const changedString = changes.map(change => {
-      const diff = change.added
-        ? 'hidden'
-        : change.removed
-        ? 'removed'
-        : 'stays';
-      return <span id={diff}>{change.value}</span>;
-    });
-    return changedString;
-  }
-
-  getSubtractionsByWord() {
-    const { content } = this.props;
-    const { yourContent, theirContent } = this.props;
-    const changes = Diff.diffWordsWithSpace(yourContent.content, theirContent.content);
-    const changedString = changes.map(change => {
-      const diff = change.added
-        ? 'hidden'
-        : change.removed
-        ? 'removed'
-        : 'stays';
-      return <span id={diff}>{change.value}</span>;
-    });
-    return changedString;
+    const additionCount = changes.filter(change => change.added).length;
+    const deletionCount = changes.filter(change => change.removed).length;
+    return { content, additionCount, deletionCount };
   }
 
   render() {
+    const deletionsByWord = this.getChanges({additions: false, diffingMode: 'diffWordsWithSpace'});
+    const deletionsByLine = this.getChanges({additions: false, diffingMode: 'diffTrimmedLines'});
+    const additionsByWord = this.getChanges({additions: true, diffingMode: 'diffWordsWithSpace'});
+    const additionsByLine = this.getChanges({additions: true, diffingMode: 'diffTrimmedLines'});
+
     return (
       <div className="container">
         <div className="bar">
           <div id="contractInfo">
-            Agreement on Doccos development team execution method
+            <i className="fas fa-arrow-left" id="backIcon"/> {this.props.title || "Agreement on Doccos development team execution method"}
           </div>
           <div className="title">
-            <div id="yours">Before</div>
-            <div id="theirs">After</div>
+            <div id="yours">{additionsByWord.additionCount} Deletions</div>
+            <div id="theirs">{deletionsByWord.deletionCount} Additions</div>
           </div>
         </div>
         <div>
           <div className="differences hidden-content">
             <div className="diff left hidden-content">
-              {this.getAdditionsByLine()}
+            {additionsByLine.content}
             </div>
             <div className="diff right hidden-content">
-            {this.getSubtractionsByLine()}
+            {deletionsByLine.content}
             </div>
           </div>
           <div className="differences visible">
-            {<div className="diff left">{this.getAdditionsByWord()}</div>}
-            {<div className="diff right">{this.getSubtractionsByWord()}</div>}
+            {<div className="diff left">{additionsByWord.content}</div>}
+            {<div className="diff right">{deletionsByWord.content}</div>}
           </div>
         </div>
       </div>
@@ -110,7 +88,7 @@ class DifferencesView extends Component {
 
 const mapStateToProps = (state, ownProps) => { // eslint-disable-line
 
-  const contract = state.entities.negotiations[68]; //  should be changed to ownProps.match.params.id
+  const contract = state.entities.negotiations[31]; //  should be changed to ownProps.match.params.id
   if (contract) {
     const yourContent = state.entities.proposals[contract.yourContent];
     const theirContent = state.entities.proposals[contract.theirContent];

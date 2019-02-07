@@ -11,7 +11,7 @@ const apiMiddleware = store => next => action => {
     Accept: 'application/json',
     'Content-Type': 'application/json'
   };
-
+// eslint-disable-next-line
   const token = store.getState().authentication.token;
   if (token) {
     defaultHeaders.authorization = `Bearer ${token}`

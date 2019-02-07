@@ -3,14 +3,18 @@ import { connect } from 'react-redux';
 import './ContractPage.css';
 import SearchBar from '../../components/SearchBar';
 import TeamSection from '../../components/TeamSection';
-import EditorView from '../../components/EditorView';
 import SideBar from '../../components/SideBar';
 import { getOne, saveNegotiation } from '../../redux/actions';
 import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
 import ContractBrancher from '../../components/ContractBrancher/ContractBrancher';
 // eslint-disable-next-line
 class ContractPage extends Component {
-  componentDidMount() {
+  constructor(props) {
+    super(props);
+    this.toggleView = this.toggleView.bind(this);
+  }
+
+  componentDidMount () {
     // will be written out of this.props.match.params
     const content = {}; // eslint-disable-line
     const { match } = this.props;
@@ -32,6 +36,11 @@ class ContractPage extends Component {
     };
     saveContractAct(api);
   };
+
+  toggleView() {
+    const { match } = this.props; // eslint-disable-line
+    this.props.history.push(`/diff/${68}`); // eslint-disable-line
+  }
 
   render() {
     const {
@@ -70,7 +79,7 @@ class ContractPage extends Component {
           <div className="contract">
             <ContractBrancher {...this.props} />
             <div className="sidebar-controls">
-              <SideBar saveContract={this.handleSaveContract} />
+              <SideBar saveContract={this.handleSaveContract} toggleChanges={this.toggleView} />
             </div>
           </div>
         </div>

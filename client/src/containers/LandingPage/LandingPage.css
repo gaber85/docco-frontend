@@ -18,6 +18,7 @@ margin: auto;
 }
 
 .login {
+  display: flex;
   padding: 15px;
   font-size: 18px;
   color: white;
