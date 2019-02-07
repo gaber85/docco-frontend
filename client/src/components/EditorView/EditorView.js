@@ -58,7 +58,6 @@ class ContractSection extends Component {
 
   render() {
     const { content } = this.props || 'No Content';
-    console.log(content);
     return (
       <div className="contract-container">
         <div className="content-body">

@@ -6,7 +6,8 @@ import TeamSection from '../../components/TeamSection';
 import SideBar from '../../components/SideBar';
 import { getOne } from '../../redux/actions';
 import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
-// eslint-disable-next-line
+import EditorView from '../../components/EditorView/EditorView';
+
 class ContractPage extends Component {
 
   constructor(props) {
@@ -15,9 +16,7 @@ class ContractPage extends Component {
   }
 
   componentDidMount () {
-    // will be written out of this.props.match.params
-    const { match } = this.props;
-    const { getOneAct } = this.props;
+    const { match, getOneAct } = this.props;
     const api = {
       route: `negotiations/${match.params.id}`,
       schema: negotiationSchema
@@ -26,8 +25,8 @@ class ContractPage extends Component {
   }
 
   toggleView() {
-    const { match } = this.props; // eslint-disable-line
-    this.props.history.push(`/diff/${31}`); // eslint-disable-line
+    const { contract } = this.props;
+    this.props.history.push(`/diff/${contract.id}`); // eslint-disable-line
   }
 
   render () {
