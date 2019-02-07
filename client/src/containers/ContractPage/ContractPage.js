@@ -24,11 +24,13 @@ class ContractPage extends Component {
 
   handleSaveContract = () => {
     const { saveContractAct, contract } = this.props;
+    const testText = {content: "dummy Text", dealAgreed: false};
     const api = {
-      route: `negotiations/publish/${contract.id}`
+      route: `negotiations/publish/${contract.id}`,
+      method: 'POST',
+      body: JSON.stringify(testText)
     };
-    console.log('onClick handleSaveContract api, ', api)
-    // saveContractAct(api);
+    saveContractAct(api);
   };
 
   render() {

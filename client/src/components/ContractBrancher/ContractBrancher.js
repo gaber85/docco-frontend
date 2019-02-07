@@ -18,13 +18,9 @@ const ContractBrancher = props => {
         state.content = yourContent.content;
       }
     }
-
-    if (Diff.diffChars(yourContent.content, theirContent.content).length) {
-      return <DifferencesView content={{yourContent: props.yourContent.content, theirContent: props.theirContent.content}} />;
-    };
-    return <EditorView {...props} content="component B"/>;
+    return <EditorView {...props} content={state.content}/>;
   }
-  return <EditorView {...props} content="loading"/>;
+  return <EditorView {...props} content="loading" />;
 };
 
 export default ContractBrancher;
