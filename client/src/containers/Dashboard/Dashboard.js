@@ -81,8 +81,8 @@ const DashboardTopRow = styled('div')`
   align-items: center;
 `;
 const DashboardMainRow = styled('div')`
-  margin: 20px;
   margin-top: 0;
+  overflow-y: scroll;
   width: 90%;
   flex: 1;
   border: solid;

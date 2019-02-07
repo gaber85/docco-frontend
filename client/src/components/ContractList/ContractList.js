@@ -39,14 +39,13 @@ export const ContractList = props => {
 const ContractListContainer = styled('div')`
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
   flex-wrap: wrap;
   overflow-y: scroll;
 `;
 const ContractTitle = styled('div')`
   text-align: center;
   padding-top: 5px;
-  max-width: 200px;
+  width: 150px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

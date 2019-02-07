@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './TeamSection.css';
 import userImg from '../NavBar/assets/user-image.png';
+import gabePic from './gabe-image.jpg';
+import edPic from './ed-image.jpg';
 
 // eslint-disable-next-line
 class TeamSection extends Component {
@@ -10,13 +12,13 @@ class TeamSection extends Component {
       <div className="team-container">
         <div className="all-members">
           <div className="team-member">
-            <img className="user-image" src={userPic} alt="user-profile" />
-            <div className="member-name">John Smith</div>
+            <img className="user-image" src={gabePic} alt="user-profile" />
+            <div className="member-name">Gabe Riera</div>
             <div className="minus-sign"><i className="fas fa-minus" /></div>
           </div>
           <div className="team-member">
-            <img className="user-image" src={userPic} alt="user-profile" />
-            <div className="member-name">John Smith</div>
+            <img className="user-image" src={edPic} alt="user-profile" />
+            <div className="member-name">Edward Neuwirth</div>
             <i className="fas fa-minus minus-sign" />
           </div>
         </div>
