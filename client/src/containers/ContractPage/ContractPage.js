@@ -8,11 +8,15 @@ import { getOne, saveNegotiation } from '../../redux/actions';
 import { negotiationSchema } from '../../redux/middlewares/schemas/schemas';
 import EditorView from '../../components/EditorView/EditorView';
 
+import woofmark from 'woofmark';
+
 class ContractPage extends Component {
 
   constructor(props) {
     super(props);
     this.toggleView = this.toggleView.bind(this);
+
+    this.editorRef = React.createRef();
   }
 
   componentDidMount () {
@@ -24,13 +28,17 @@ class ContractPage extends Component {
     getOneAct(api);
   }
 
+  getWoofmarkText = () => {
+    return woofmark.find(this.editorRef.current).value();
+  }
+
   handleSaveContract = () => {
     const { saveContractAct, contract } = this.props;
-    const testText = {content: "dummy Text", dealAgreed: false};
+    const text = {content: this.getWoofmarkText(), dealAgreed: false};
     const api = {
       route: `negotiations/publish/${contract.id}`,
       method: 'POST',
-      body: JSON.stringify(testText)
+      body: JSON.stringify(text)
     };
     saveContractAct(api);
   };
@@ -40,9 +48,11 @@ class ContractPage extends Component {
     this.props.history.push(`/diff/${contract.id}`); // eslint-disable-line
   }
 
+
+
   render () {
 
-    const { details, contract, content } = this.props;
+    const { details, contract, content, getWoofmarkText } = this.props;
 
     return (
       <div className="main-container">
@@ -55,7 +65,7 @@ class ContractPage extends Component {
             <div className="search-bar-section"><SearchBar /></div>
           </div>
           <div className="contract">
-            <EditorView content={ content } />
+            <EditorView content={ content } forwardedRef={this.editorRef}/>
             <div className="sidebar-controls">
               <SideBar saveContract={this.handleSaveContract} toggleChanges={this.toggleView} />
             </div>
