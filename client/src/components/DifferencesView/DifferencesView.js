@@ -88,7 +88,11 @@ class DifferencesView extends Component {
 
 const mapStateToProps = (state, ownProps) => { // eslint-disable-line
 
+<<<<<<< Updated upstream
   const contract = state.entities.negotiations[31]; //  should be changed to ownProps.match.params.id
+=======
+  const contract = state.entities.negotiations[88]; //  should be changed to ownProps.match.params.id
+>>>>>>> Stashed changes
   if (contract) {
     const yourContent = state.entities.proposals[contract.yourContent];
     const theirContent = state.entities.proposals[contract.theirContent];
