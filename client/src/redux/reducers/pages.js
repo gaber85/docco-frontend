@@ -12,8 +12,6 @@ const initState = {
 const pages = (state = initState, action) => {
   if (!action.data || !action.data.result) return state;
 
-
-
   switch (action.type) {
 
     case 'GET_ALL_PENDING':
@@ -66,7 +64,6 @@ const pages = (state = initState, action) => {
     default: return state;
 
   }
-
-}
+};
 
 export default pages;
