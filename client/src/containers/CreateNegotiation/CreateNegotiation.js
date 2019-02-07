@@ -28,7 +28,8 @@ export class CreateNegotiation extends Component {
     const negotiationArr = Object.values(negotiations);
     const specificNegotiation = negotiationArr[negotiationArr.length - 1];
     if (specificNegotiation && specificNegotiation.title === document.title) {
-      history.push(`/contract/${specificNegotiation.id}`);
+      history.push('/dashboard')
+      // history.push(`/contract/${specificNegotiation.id}`);
     }
   }
 

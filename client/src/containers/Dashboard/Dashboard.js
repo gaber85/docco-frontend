@@ -23,11 +23,11 @@ class Dashboard extends Component {
   }
 
   render() {
-    const {handleInactiveNegotiations} = this;
-    const { contractList, history, logOutAct } = this.props;
+    const { handleInactiveNegotiations } = this;
+    const { contractList, history, logOutAct, partyDetails } = this.props;
     return (
       <DashboardContainer>
-        <NavBar name="Gabe Riera" history={history} logOutAct={logOutAct}/>
+        <NavBar name={`${partyDetails.displayName}`} history={history} logOutAct={logOutAct}/>
         <DashboardTopRow>
           <div className="left">
             <h1>My Active Negotiations</h1>
@@ -121,7 +121,8 @@ const mapStateToProps = state => ({
   contractList: state.pages.contractList.result.map(id => {
     return state.entities.negotiations[id];
   }),
-  page: state.pages.contractList // this can be changed from contractList to parent-container name)
+  page: state.pages.contractList, // this can be changed from contractList to parent-container name);
+  partyDetails: state.authentication,
 });
 
 export default connect(
