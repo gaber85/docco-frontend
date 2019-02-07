@@ -70,9 +70,9 @@ const mapStateToProps = (state, ownProps) => { // eslint-disable-line
     }
     let content = '';
     if (contract && contract.youEditedLast) {
-      content = yourContent.content; // eslint-disable-line
+      content = yourContent && yourContent.content || ''; // eslint-disable-line
     } else {
-      content = theirContent.content; // eslint-disable-line
+      content = theirContent && theirContent.content || ''; // eslint-disable-line
     }
     return {
       content,
