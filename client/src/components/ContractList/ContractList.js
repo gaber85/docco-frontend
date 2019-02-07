@@ -46,7 +46,7 @@ const ContractListContainer = styled('div')`
 const ContractTitle = styled('div')`
   text-align: center;
   padding-top: 5px;
-  max-width: 200px;
+  width: 200px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
