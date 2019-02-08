@@ -1,12 +1,12 @@
 # Docco Inc.
 
-![Docco Logo](/Users/gabe/Desktop/CodeWorks/Docco/docco-frontend/src/containers/LandingPage/Docco Logo.png)
+<img alt="docco logo" src="https://github.com/gaber85/docco-frontend/blob/develop/src/containers/LandingPage/Docco%20Logo.png?raw=true" />
 
 Docco contract management software goes beyond traditional back and forth paper hussle to help medium to large-sized business easily share contracts and update without the typical paper trail associated. Facilitate collaboration with your internal team and external parties. Handle negotiations and contract versioning with Docco!
 
 ## Screenshots
 
-![Docco Screenshots](/Users/gabe/Desktop/Docco Screenshots.png)
+<img alt="docco screenshots" src="https://github.com/gaber85/docco-frontend/blob/develop/extras/Docco%20Screenshots.png?raw=true" />
 
 ## Getting Started
 
