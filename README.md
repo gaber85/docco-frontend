@@ -1,6 +1,7 @@
 # Docco Inc.
-
+<p align="center">
 <img alt="docco logo" src="https://github.com/gaber85/docco-frontend/blob/develop/src/containers/LandingPage/Docco%20Logo.png?raw=true" />
+</p>
 
 Docco contract management software goes beyond traditional back and forth paper hussle to help medium to large-sized business easily share contracts and update without the typical paper trail associated. Facilitate collaboration with your internal team and external parties. Handle negotiations and contract versioning with Docco!
 
