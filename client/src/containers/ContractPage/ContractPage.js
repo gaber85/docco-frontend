@@ -66,7 +66,7 @@ class ContractPage extends Component {
         <div className="contract-display">
           <div className="container-top">
             <ContractTitle>
-            <div className="title">Negotiation: { contract && contract.title }</div>
+            <div>Negotiation: { contract && contract.title }</div>
             </ContractTitle>
             <div className="search-bar-section"><SearchBar /></div>
           </div>
