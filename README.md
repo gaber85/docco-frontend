@@ -1,6 +1,6 @@
 # Docco Inc.
 
-![Docco Logo](/Users/gabe/Desktop/CodeWorks/Docco/docco-frontend/client/src/containers/LandingPage/Docco Logo.png)
+![Docco Logo](/Users/gabe/Desktop/CodeWorks/Docco/docco-frontend/src/containers/LandingPage/Docco Logo.png)
 
 Docco contract management software goes beyond traditional back and forth paper hussle to help medium to large-sized business easily share contracts and update without the typical paper trail associated. Facilitate collaboration with your internal team and external parties. Handle negotiations and contract versioning with Docco!
 
@@ -14,7 +14,7 @@ Docco contract management software goes beyond traditional back and forth paper 
 
    ```bash
    $ git clone https://github.com/gaber85/docco-frontend.git
-   $ cd docco-frontend/client 
+   $ cd docco-frontend
    ```
 
 2. Install dependencies
@@ -34,7 +34,7 @@ Docco contract management software goes beyond traditional back and forth paper 
    1. Navigating to: 
 
       ```bash
-      docco-frontend/client/src/redux/middlewares/api.js
+      docco-frontend/src/redux/middlewares/api.js
       ```
 
       and update the baseURL to http://localhost:3000/
