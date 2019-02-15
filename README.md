@@ -1,5 +1,3 @@
-[![CircleCI](https://circleci.com/gh/gaber85/docco-frontend.svg?style=svg)](https://circleci.com/gh/gaber85/docco-frontend)
-
 # Docco Inc.
 <p align="center">
 <img alt="docco logo" src="https://github.com/gaber85/docco-frontend/blob/develop/extras/Docco%20Logo.png?raw=true" />
